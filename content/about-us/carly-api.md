@@ -4,9 +4,9 @@ title = "About Carly Kay"
 weight = 8
 +++
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/img_24e509b1-14c9-4512-8f47-f5cc0e00c2cc.png)
+## Meet Carly Kay, Simulated Human of Midori AI
 
-# Meet Carly
+![Midori AI photo](https://tea-cup.midori-ai.xyz/download/img_24e509b1-14c9-4512-8f47-f5cc0e00c2cc.png)
 
 She is a fully advanced simulated human. This is a profile for her and some docs on her.
 

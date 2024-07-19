@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/howtos/easy-model-installer/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/subsystem/manager/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/howtos/by_hand/easy-model/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/howtos/by_hand/easy-setup-docker/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/howtos/by_hand/easy-setup-embeddings/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/howtos/by_hand/easy-request/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/howtos/homellmxlocalai/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/index.html</loc>
+  </url>
+</urlset>

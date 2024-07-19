@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Voice Assistant HA-OS :: Midori-AI">
+    <meta name="twitter:description" content="In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
+HACS for easy installation of the other tools on Home Assistant.
+LocalAI for the backend of the LLM.
+Home-LLM to connect our LocalAI instance to Home-assistant.
+HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as the LLM as a fallback if no intent is found.">
+    <meta property="og:title" content="Voice Assistant HA-OS :: Midori-AI">
+    <meta property="og:description" content="In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
+HACS for easy installation of the other tools on Home Assistant.
+LocalAI for the backend of the LLM.
+Home-LLM to connect our LocalAI instance to Home-assistant.
+HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as the LLM as a fallback if no intent is found.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/howtos/voice_assistance_guide/index.html">
+    <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>Voice Assistant HA-OS :: Midori-AI</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721357082" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721357082" rel="stylesheet">
+    <link href="/css/fonts.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721357082" rel="stylesheet">
+    <link href="/css/theme-auto.css?1721357082" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1721357082" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721357082" rel="stylesheet">
+    <link href="/css/print.css?1721357082" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1721357082" rel="stylesheet">
+    <script src="/js/url.js?1721357082"></script>
+    <script src="/js/variant.js?1721357082"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/howtos/voice_assistance_guide/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#in-this-guide-i-will-explain-how-ive-setup-my-local-voice-assistant-and-satellites">In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites!</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-1-installing-localai">Step 1) Installing LocalAI</a></li>
+    <li><a href="#step-1a-downloading-the-llm-model">Step 1.a) Downloading the LLM model</a></li>
+    <li><a href="#step-2-installing-home-llm">Step 2) Installing Home-LLM</a></li>
+    <li><a href="#step-3-installing-ha-fallback-conversationhttpsgithubcomm50ha-fallback-conversation">Step 3) Installing <a href="https://github.com/m50/ha-fallback-conversation">HA-Fallback-Conversation</a></a></li>
+    <li><a href="#step-4-selecting-the-right-agent-in-the-voice-assistant-settings">Step 4) Selecting the right agent in the Voice assistant settings.</a></li>
+    <li><a href="#step-5-setting-up-willow-voice-assistant-satellites">Step 5) Setting up Willow Voice assistant satellites.</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/howtos/index.html"><span itemprop="name">LocalAI How-tos</span></a><meta itemprop="position" content="1">&nbsp;->&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Voice Assistant HA-OS</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/voice_assistance_guide/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/homellmxlocalai/index.html" title="HA-OS (HomeLLM) x LocalAI (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/models/index.html" title="Models Repository (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="voice-assistant-ha-os">Voice Assistant HA-OS</h1>
+
+<h3 id="in-this-guide-i-will-explain-how-ive-setup-my-local-voice-assistant-and-satellites">In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites!</h3>
+<p>A few softwares will be used in this guide.</p>
+<p><a href="https://hacs.xyz/" target="_blank">HACS</a> for easy installation of the other tools on Home Assistant.<br>
+<a href="https://localai.io/" target="_blank">LocalAI</a> for the backend of the LLM.<br>
+<a href="https://github.com/acon96/home-llm" target="_blank">Home-LLM</a> to connect our LocalAI instance to Home-assistant.<br>
+<a href="https://github.com/m50/ha-fallback-conversation" target="_blank">HA-Fallback-Conversation</a> to allow HA to use both the baked-in intent as well as the LLM as a fallback if no intent is found.<br>
+<a href="https://heywillow.io/" target="_blank">Willow</a> for the ESP32 sattelites.</p>
+<hr>
+<h2 id="step-1-installing-localai">Step 1) Installing LocalAI</h2>
+<p>We will start by installing <code>LocalAI</code> on our machine learning host.<br>
+I recommend using a good machine with access to a GPU with at least 12 GB of Vram. As <code>Willow</code> itself can takes up to 6gb of Vram with another 4-5GB for our LLM model.   I recommend keeping those loaded in the machine at all time for speedy reaction times on our satellites.</p>
+<p><strong>Here an example of the VRAM usage for  <code>Willow</code> and <code>LocalAI</code> with the <code>Llampa 8B</code> model:</strong></p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+-----------------------------------------------------------------------------------------+
+</span></span><span class="line"><span class="cl">| NVIDIA-SMI 555.42.02              Driver Version: 555.42.02      CUDA Version: 12.5     |
+</span></span><span class="line"><span class="cl">|-----------------------------------------+------------------------+----------------------+
+</span></span><span class="line"><span class="cl">| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+</span></span><span class="line"><span class="cl">| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+</span></span><span class="line"><span class="cl">|                                         |                        |               MIG M. |
+</span></span><span class="line"><span class="cl">|=========================================+========================+======================|
+</span></span><span class="line"><span class="cl">|   0  NVIDIA GeForce RTX 3090        Off |   00000000:01:00.0 Off |                  N/A |
+</span></span><span class="line"><span class="cl">|  0%   39C    P8             16W /  370W |   10341MiB /  24576MiB |      0%      Default |
+</span></span><span class="line"><span class="cl">|                                         |                        |                  N/A |
+</span></span><span class="line"><span class="cl">+-----------------------------------------+------------------------+----------------------+
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+-----------------------------------------------------------------------------------------+
+</span></span><span class="line"><span class="cl">| Processes:                                                                              |
+</span></span><span class="line"><span class="cl">|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+</span></span><span class="line"><span class="cl">|        ID   ID                                                               Usage      |
+</span></span><span class="line"><span class="cl">|=========================================================================================|
+</span></span><span class="line"><span class="cl">|    0   N/A  N/A      2862      C   /opt/conda/bin/python                        3646MiB |
+</span></span><span class="line"><span class="cl">|    0   N/A  N/A      2922      C   /usr/bin/python                              2108MiB |
+</span></span><span class="line"><span class="cl">|    0   N/A  N/A   2724851      C   .../backend-assets/grpc/llama-cpp-avx2       4568MiB |
+</span></span><span class="line"><span class="cl">+-----------------------------------------------------------------------------------------+</span></span></code></pre></div><p>I&rsquo;ve chosen the Docker-Compose method for my LocalAI installation, this allows for easy management and easier upgrades when new relases are available.<br>
+This allows us to quickly create a container running LocalAI on our machine.</p>
+<p>In order to do so, stop by the how to on how to setup a docker compose for LocalAI</p>
+<p><a href="/howtos/by_hand/easy-setup-docker/index.html">Setup LocalAI with Docker Compose</a></p>
+<p>Once that is done simply use <code>docker compose up -d</code> and your LocalAI instance should now be available at:
+<code>http://(hostipadress):8080/</code></p>
+<hr>
+<h2 id="step-1a-downloading-the-llm-model">Step 1.a) Downloading the LLM model</h2>
+<p>Once LocalAI if installed, you should be able to browse to the &ldquo;Models&rdquo; tab, that redirects to <code>http://{{host}}:8080/browse</code>. There we will search for the <code>mistral-7b-instruct-v0.3</code> model and install it.</p>
+<p>Once that is done, make sure that the model is working by heading to the <code>Chat</code> tab and selecting the model <code>mistral-7b-instruct-v0.3</code> and initiating a chat.</p>
+<p><a href="#R-image-33dfa4745d1540eef50718205145dc6d" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-33dfa4745d1540eef50718205145dc6d"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<hr>
+<h2 id="step-2-installing-home-llm">Step 2) Installing Home-LLM</h2>
+<ul>
+<li>
+<p>1: You will first need to install the Home-LLM integration to Home-Assistant<br>
+Thankfuly, there is a neat link to do that easely on <a href="https://github.com/acon96/home-llm" target="_blank">their repo</a>!</p>
+<p><a href="https://my.home-assistant.io/redirect/hacs_repository/?category=Integration&repository=home-llm&owner=acon96" target="_blank">Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.</a></p>
+</li>
+<li>
+<p>2: Restart <code>Home Assistant</code></p>
+</li>
+<li>
+<p>3: You will then need to add the  <code>Home LLM Conversation</code> integration to Home-Assistant in order to connect LocalAI to it.</p>
+<ul>
+<li>1: Access the <code>Settings</code> page.</li>
+<li>2: Click on <code>Devices &amp; services</code>.</li>
+<li>3: Click on <code>+ ADD INTEGRATION</code> on the lower-right part of the screen.</li>
+<li>4: Type and then select <code>Local LLM Conversation</code>.</li>
+<li>5: Select the <code>Generic OpenAI Compatible API</code>.</li>
+<li>6: Enter the hostname or IP Address of your LocalAI host.</li>
+<li>7: Enter the used port (Default is <code>8080</code>).</li>
+<li>8: Enter <code>mistral-7b-instruct-v0.3</code> as the <code>Model Name*</code>
+<ul>
+<li>Leave <code>API Key</code> empty</li>
+<li>Do not check <code>Use HTTPS</code></li>
+<li>leave <code>API Path*</code> as <code>/v1</code></li>
+</ul>
+</li>
+<li>9: Press <code>Next</code></li>
+<li>10: Select <code>Assist</code> under <code>Selected LLM API</code></li>
+<li>11: Make sure the <code>Prompt Format*</code> is set to <code>Mistral</code></li>
+<li>12: Make sure <code>Enable in context learning (ICL) examples</code> is checked.</li>
+<li>13: Press <code>Sumbit</code></li>
+<li>14: Press <code>Finish</code></li>
+</ul>
+</li>
+</ul>
+<p><a href="#R-image-db1367a4afc418771dc734161ed42340" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-db1367a4afc418771dc734161ed42340"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<hr>
+<h2 id="step-3-installing-ha-fallback-conversationhttpsgithubcomm50ha-fallback-conversation">Step 3) Installing <a href="https://github.com/m50/ha-fallback-conversation" target="_blank">HA-Fallback-Conversation</a></h2>
+<ul>
+<li>
+<p>1:  Integrate Fallback Conversation to Home-Assistant</p>
+<ul>
+<li>1: Access the <code>HACS</code> page.</li>
+<li>2: Search for <code>Fallback</code></li>
+<li>3: Click on <code>fallback_conversation</code>.</li>
+<li>4: Click on <code>Download</code> and install the integration</li>
+<li>5: Restart <code>Home Assistant</code> for the integration to be detected.</li>
+<li>6: Access the <code>Settings</code> page.</li>
+<li>7: Click on <code>Devices &amp; services</code>.</li>
+<li>8: Click on <code>+ ADD INTEGRATION</code> on the lower-right part of the screen.</li>
+<li>8: Search for <code>Fallback</code></li>
+<li>9: Click on <code>Fallback Conversation Agent</code>.</li>
+<li>10 Set the debug level at <code>Some Debug</code> for now.</li>
+<li>11: Click <code>Sumbit</code></li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>2: Configure the Voice assistant within Home-assistant to use the newly added model through the <code>Fallback Conversation Agent</code>.</p>
+<ul>
+<li>1: Access the <code>Settings</code> page.</li>
+<li>2: Click on <code>Devices &amp; services</code>.</li>
+<li>3: Click on <code>Fallback Conversation Agent</code>.</li>
+<li>4: Click on <code>CONFIGURE</code>.</li>
+<li>5: Select <code>Home assistnat</code> as the <code>Primary Conversation Agent</code>.</li>
+<li>6: Select <code>LLM MODEL 'mistral-7b-instruct-v0.3'(remote)</code> as the <code>Falback conversation Agent</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="step-4-selecting-the-right-agent-in-the-voice-assistant-settings">Step 4) Selecting the right agent in the Voice assistant settings.</h2>
+<ul>
+<li>1:  Integrate Fallback Conversation to Home-Assistant</li>
+<li>1: Access the <code>Settings</code> page.</li>
+<li>2: Click on <code>Voice assistants</code> page.</li>
+<li>3: Click on <code>Add Assistant</code>.</li>
+<li>4: Set the fields as wanted except for <code>Conversation Agent</code>.</li>
+<li>5: Select <code>Fallback Conversation Agent</code> as the <code>Conversation agent</code>.</li>
+</ul>
+<hr>
+<h2 id="step-5-setting-up-willow-voice-assistant-satellites">Step 5) Setting up Willow Voice assistant satellites.</h2>
+<p>Since willow is a more complex Software, I will simply leave <a href="https://heywillow.io/quick-start-guide/" target="_blank">Their guide here</a>.
+I do recommend deploying your own Willow Inference Server in order to remain completely local!</p>
+<p>Once the Willow sattelites are connencted to <code>Home Assistant</code>, they should automatically use your default Voice Assistant.
+Be sure to set the one using the fallback system as your favorite/default one!</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://io.midori-ai.xyz"><img src="https://tea-cup.midori-ai.xyz/download/logo_color3.png"></a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1721357082" defer></script>
+        <script src="/js/search.js?1721357082" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/about-us/index.html" class="alwaysopen"><input type="checkbox" id="R-section-baeea306eb3fcc2ed63ff974c8424eb6" aria-controls="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" checked><label for="R-section-baeea306eb3fcc2ed63ff974c8424eb6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu About</span></label><a class="padding" href="/about-us/index.html">About</a><ul id="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" class="morespace collapsible-menu">
+          <li data-nav-id="/about-us/about-luna/index.html" class=""><a class="padding" href="/about-us/about-luna/index.html">About Luna Midori</a></li>
+          <li data-nav-id="/about-us/carly-api/index.html" class=""><a class="padding" href="/about-us/carly-api/index.html">About Carly Kay</a></li>
+          <li data-nav-id="/about-us/contact-us/index.html" class=""><a class="padding" href="/about-us/contact-us/index.html">Contact Us</a></li></ul></li>
+          <li data-nav-id="/subsystem/index.html" class="alwaysopen"><input type="checkbox" id="R-section-db26b88c7dfe913d0ab581ff2ea3b589" aria-controls="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" checked><label for="R-section-db26b88c7dfe913d0ab581ff2ea3b589"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Midori AI Subsystem</span></label><a class="padding" href="/subsystem/index.html">Midori AI Subsystem</a><ul id="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/manager/index.html" class=""><a class="padding" href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a></li>
+          <li data-nav-id="/subsystem/updates/index.html" class=""><a class="padding" href="/subsystem/updates/index.html">Subsystem Update Log</a></li>
+          <li data-nav-id="/subsystem/anythingllm/index.html" class=""><a class="padding" href="/subsystem/anythingllm/index.html">AnythingLLM</a></li>
+          <li data-nav-id="/subsystem/big-agi/index.html" class=""><a class="padding" href="/subsystem/big-agi/index.html">Big-AGI</a></li>
+          <li data-nav-id="/subsystem/local-ai/index.html" class="alwaysopen"><input type="checkbox" id="R-section-d198ef07e31ad4eb3f6b0ed16a35c680" aria-controls="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" checked><label for="R-section-d198ef07e31ad4eb3f6b0ed16a35c680"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI</span></label><a class="padding" href="/subsystem/local-ai/index.html">LocalAI</a><ul id="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/local-ai/install_models/index.html" class=""><a class="padding" href="/subsystem/local-ai/install_models/index.html">Install LocalAI Models</a></li></ul></li>
+          <li data-nav-id="/subsystem/invokeai/index.html" class=""><a class="padding" href="/subsystem/invokeai/index.html">InvokeAI</a></li></ul></li>
+          <li data-nav-id="/howtos/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-3dcecad42a46e0552c78b880d49b0312" aria-controls="R-subsections-3dcecad42a46e0552c78b880d49b0312" checked><label for="R-section-3dcecad42a46e0552c78b880d49b0312"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI How-tos</span></label><a class="padding" href="/howtos/index.html">LocalAI How-tos</a><ul id="R-subsections-3dcecad42a46e0552c78b880d49b0312" class="morespace collapsible-menu">
+          <li data-nav-id="/howtos/by_hand/easy-model/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-model/index.html">Easy Model Setup</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-docker/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-docker/index.html">Easy Setup - Docker</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-embeddings/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-embeddings/index.html">Easy Setup - Embeddings</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-sd/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-sd/index.html">Easy Setup - Stable Diffusion</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-request/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-request/index.html">Easy Request - All</a></li>
+          <li data-nav-id="/howtos/homellmxlocalai/index.html" class=""><a class="padding" href="/howtos/homellmxlocalai/index.html">HA-OS (HomeLLM) x LocalAI</a></li>
+          <li data-nav-id="/howtos/voice_assistance_guide/index.html" class="active"><a class="padding" href="/howtos/voice_assistance_guide/index.html">Voice Assistant HA-OS</a></li></ul></li>
+          <li data-nav-id="/models/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eff503bb1bf6086ff29fa85fae09c902" aria-controls="R-subsections-eff503bb1bf6086ff29fa85fae09c902" checked><label for="R-section-eff503bb1bf6086ff29fa85fae09c902"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Models Repository</span></label><a class="padding" href="/models/index.html">Models Repository</a><ul id="R-subsections-eff503bb1bf6086ff29fa85fae09c902" class="morespace collapsible-menu">
+          <li data-nav-id="/models/modeltemplate/index.html" class=""><a class="padding" href="/models/modeltemplate/index.html">Model Template</a></li>
+          <li data-nav-id="/models/onsite_models/index.html" class=""><a class="padding" href="/models/onsite_models/index.html">Recommended Models</a></li>
+          <li data-nav-id="/models/offsite_models/index.html" class=""><a class="padding" href="/models/offsite_models/index.html">Offsite Supported Models</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/howtos/voice_assistance_guide/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-auto" value="auto" selected>Auto</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
+                      <option id="R-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1721357082" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721357082" defer></script>
+    <script src="/js/theme.js?1721357082" defer></script>
+  </body>
+</html>

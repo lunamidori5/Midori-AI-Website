@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LocalAI on Midori-AI</title>
+    <link>http://localhost:1313/subsystem/local-ai/index.html</link>
+    <description>Recent content in LocalAI on Midori-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/subsystem/local-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install LocalAI Models</title>
+      <link>http://localhost:1313/subsystem/local-ai/install_models/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/local-ai/install_models/index.html</guid>
+      <description>Install a Model from the Midori AI Model Repo Step 1: Start the Midori AI Subsystem Step 2: On the Main Menu, Type 5 to Enter the Backend Program Menu Step 3: On the Backend Program Menu, Type 10 to Enter the LocalAI Model Installer Step 4a: If you have LocalAI installed in the subsystem, skip this step. If you do not have LocalAI installed in the subsystem, the program will ask you to enter the LocalAI docker&amp;rsquo;s name.</description>
+    </item>
+  </channel>
+</rss>

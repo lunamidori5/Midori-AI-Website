@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Models Repository on Midori-AI</title>
+    <link>http://localhost:1313/models/index.html</link>
+    <description>Recent content in Models Repository on Midori-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/models/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Model Template</title>
+      <link>http://localhost:1313/models/modeltemplate/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/models/modeltemplate/index.html</guid>
+      <description>Model Card for [model name here] Put your info about your model here
+Training Some info about training if you want to add that here
+Models (Quantised / Non Quantised) Quant Mode Description Q3_K_L Smallest, significant quality loss - not recommended Q4_K_M Medium, balanced quality Q5_K_M Large, very low quality loss - recommended Q6_K Very large, extremely low quality loss None Extremely large, No quality loss, hard to install - not recommended Make sure you have this box here, all models must be quantised and non quantised for our hosting</description>
+    </item>
+    <item>
+      <title>Recommended Models</title>
+      <link>http://localhost:1313/models/onsite_models/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/models/onsite_models/index.html</guid>
+      <description>All models are highly recommened for newer users as they are super easy to use and use the CHAT templ files from Twinz
+Model Size Description Links 7b CPU Friendly, small, okay quality https://huggingface.co/TheBloke/dolphin-2.6-mistral-7B-GGUF 2x7b Normal sized, good quality Removed for the time being, the model was acting up 8x7b Big, great quality https://huggingface.co/TheBloke/dolphin-2.7-mixtral-8x7b-GGUF 70b Large, hard to run, significant quality https://huggingface.co/TheBloke/dolphin-2.2-70B-GGUF Quant Mode Description Q3 Smallest , significant quality loss - not recommended Q4 Medium, balanced quality Q5 Large, very low quality loss - recommended for most users Q6 Very large, extremely low quality loss Q8 Extremely large, extremely low quality loss, hard to use - not recommended None Extremely large, No quality loss, super hard to use - really not recommended The minimum RAM and VRAM requirements for each model size, as a rough estimate.</description>
+    </item>
+    <item>
+      <title>Offsite Supported Models</title>
+      <link>http://localhost:1313/models/offsite_models/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/models/offsite_models/index.html</guid>
+      <description>All of these models originate from outside of the Midori AI model repository, and are not subject to the vetting process of Midori AI, although they are compatible with the model installer.
+Note that some of these models may deviate from our conventional model formatting standards (Quantized/Non-Quantized), and will be served using a rounding-down approach. For instance, if you request a Q8 model and none is available, the Q6 model will be served instead, and so on.</description>
+    </item>
+  </channel>
+</rss>

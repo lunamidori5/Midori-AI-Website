@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Midori AI Subsystem on Midori-AI</title>
+    <link>http://localhost:1313/subsystem/index.html</link>
+    <description>Recent content in Midori AI Subsystem on Midori-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/subsystem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Midori AI Subsystem Manager</title>
+      <link>http://localhost:1313/subsystem/manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/manager/index.html</guid>
+      <description>How Docker Works
+Docker is a containerization platform that allows you to package and run applications in isolated and portable environments called containers. Containers share the host operating system kernel but have their own dedicated file system, processes, and resources. This isolation allows applications to run independently of the host environment and each other, ensuring consistent and predictable behavior.
+Midori AI Subsystem - Github Link
+The Midori AI Subsystem extends Docker&amp;rsquo;s capabilities by providing a modular and extensible platform for managing AI workloads.</description>
+    </item>
+    <item>
+      <title>Subsystem Update Log</title>
+      <link>http://localhost:1313/subsystem/updates/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/updates/index.html</guid>
+      <description>5/10/2024 Update: Planned changes for LocalAi&amp;rsquo;s Gallery API Bug Fix: Fixed a loading bug with how we get carly loaded Update: Moved Carly&amp;rsquo;s loading to the carly help file Update: Updated the news page Update: added invokeAI model support Update: added docker to invokeai install Update: Few more text changes and a action rename Update: Cleans up after itself and deletes the installer / old files Update: more text clean up for the backends menu Update: added better error code for invoke.</description>
+    </item>
+    <item>
+      <title>AnythingLLM</title>
+      <link>http://localhost:1313/subsystem/anythingllm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/anythingllm/index.html</guid>
+      <description>Here is a link to AnythingLLM Github
+Installing AnythingLLM Step 1 Type 2 into the main menu Step 2 Type yes or no into the menu
+Step 3 Type in anythinllm into menu, then hit enter Step 4 Enjoy your new copy of AnythingLLM its running on port 33001
+Notice Reminder to always use your computers IP address not localhost IE: 192.168.10.10:33001 or 192.168.1.3:33001 If you need help, please reach out on our Discord / Email; or reach out on their Discord.</description>
+    </item>
+    <item>
+      <title>Big-AGI</title>
+      <link>http://localhost:1313/subsystem/big-agi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/big-agi/index.html</guid>
+      <description>Here is a link to Big-AGI Github
+Installing Big-AGI Step 1 Type 2 into the main menu
+Step 2 Type yes or no into the menu
+Step 3 Type in bigagi into menu, then hit enter
+Step 4 Enjoy your new copy of Big-AGI its running on port 33000
+Notice Reminder to always use your computers IP address not localhost IE: 192.168.10.10:33000 or 192.168.1.3:33000 If you need help, please reach out on our Discord / Email; or reach out on their Discord.</description>
+    </item>
+    <item>
+      <title>LocalAI</title>
+      <link>http://localhost:1313/subsystem/local-ai/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/local-ai/index.html</guid>
+      <description>Here is a link to LocalAI Github
+Installing LocalAI: A Step-by-Step Guide This guide will walk you through the process of installing LocalAI on your system. Please follow the steps carefully for a successful installation.
+Step 1: Initiate Installation From the main menu, enter the option 2 to begin the installation process. You will be prompted with a visual confirmation. Step 2: Confirm GPU Backend Respond to the prompt with either yes or no to proceed with GPU support or CPU support only, respectively.</description>
+    </item>
+    <item>
+      <title>InvokeAI</title>
+      <link>http://localhost:1313/subsystem/invokeai/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/subsystem/invokeai/index.html</guid>
+      <description>Here is a link to InvokeAI Github
+InvokeAI Installation Guide This guide provides a comprehensive walkthrough for installing InvokeAI on your system. Please follow the instructions meticulously to ensure a successful installation.
+Accessing the Installation Menu From the main menu, enter option 2 to access the &amp;ldquo;Installer/Upgrade Menu&amp;rdquo;. Initiating InvokeAI Installation Within the &amp;ldquo;Installer/Upgrade Menu&amp;rdquo;, if requested to type something to proceed type yes. Initiate the download process by typing invokeai and pressing Enter.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HA-OS (HomeLLM) x LocalAI :: Midori-AI">
+    <meta name="twitter:description" content="Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.">
+    <meta property="og:title" content="HA-OS (HomeLLM) x LocalAI :: Midori-AI">
+    <meta property="og:description" content="Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/howtos/homellmxlocalai/index.html">
+    <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>HA-OS (HomeLLM) x LocalAI :: Midori-AI</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721357082" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721357082" rel="stylesheet">
+    <link href="/css/fonts.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721357082" rel="stylesheet">
+    <link href="/css/theme-auto.css?1721357082" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1721357082" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721357082" rel="stylesheet">
+    <link href="/css/print.css?1721357082" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1721357082" rel="stylesheet">
+    <script src="/js/url.js?1721357082"></script>
+    <script src="/js/variant.js?1721357082"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/howtos/homellmxlocalai/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/howtos/index.html"><span itemprop="name">LocalAI How-tos</span></a><meta itemprop="position" content="1">&nbsp;->&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">HA-OS (HomeLLM) x LocalAI</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/homellmxlocalai/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/by_hand/easy-request/index.html" title="Easy Request - All (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/voice_assistance_guide/index.html" title="Voice Assistant HA-OS (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="ha-os-homellm-x-localai">HA-OS (HomeLLM) x LocalAI</h1>
+
+<hr>
+<p>Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed  to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.</p>
+<p>Currently, Home Assistant supports conversation-based agents and services. As of writing this, OpenAIs API is supported as a conversation agent; however, access to your homes devices and entities is possible through custom components. Local based services, such as LocalAI, are also available as a drop-in replacement for OpenAI services.</p>
+<hr>
+<p>In this guide I will detail the steps I&rsquo;ve taken to get <a href="https://github.com/acon96/home-llm" target="_blank">Home-LLM</a> and <a href="https://github.com/mudler/LocalAI/" target="_blank">Local-AI</a> working together in conjunction with <a href="https://www.home-assistant.io/" target="_blank">Home-Assistant</a>!</p>
+<p>This guide assumes that you already have <a href="https://github.com/mudler/LocalAI/" target="_blank">Local-AI</a> running (in or out of the subsystem).
+If that is not done, you can <a href="/howtos/by_hand/easy-setup-docker/index.html">Follow this How To</a> or <a href="https://io.midori-ai.xyz/subsystem/manager/" target="_blank">Install Using Midori AI Subsystem</a>!</p>
+<hr>
+<ul>
+<li>
+<p>1: You will first need to <a href="https://github.com/acon96/home-llm/blob/develop/docs/Setup.md" target="_blank">follow this guide to install Home-LLM</a>into your <a href="https://www.home-assistant.io/" target="_blank">Home-Assistant</a> installation.</p>
+<p>If you simply want to install the <a href="https://github.com/acon96/home-llm" target="_blank">Home-LLM</a> component through HACS,  you  can press on this button:</p>
+<p><a href="https://my.home-assistant.io/redirect/hacs_repository/?category=Integration&repository=home-llm&owner=acon96" target="_blank">Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.</a></p>
+</li>
+<li>
+<p>2: Add <code>Home LLM Conversation</code> integration to HA.</p>
+<ul>
+<li>1: Access the <code>Settings</code> page.</li>
+<li>2: Click on <code>Devices &amp; services</code>.</li>
+<li>3: Click on <code>+ ADD INTEGRATION</code> on the lower-right part of the screen.</li>
+<li>4: Type and then select <code>Local LLM Conversation</code>.</li>
+<li>5: Select the <code>Generic OpenAI Compatible API</code>.</li>
+<li>6: Enter the hostname or IP Address of your LocalAI host.</li>
+<li>7: Enter the used port (Default is <code>8080</code> / <code>38080</code>).</li>
+<li>8: Enter <code>mistral-7b-instruct-v0.3</code> as the <code>Model Name*</code>
+<ul>
+<li>Leave <code>API Key</code> empty</li>
+<li>Do not check <code>Use HTTPS</code></li>
+<li>leave <code>API Path*</code> as <code>/v1</code></li>
+</ul>
+</li>
+<li>9: Press <code>Next</code></li>
+<li>10: Select <code>Assist</code> under <code>Selected LLM API</code></li>
+<li>11: Make sure the <code>Prompt Format*</code> is set to <code>Mistral</code></li>
+<li>12: Make sure <code>Enable in context learning (ICL) examples</code> is checked.</li>
+<li>13: Press <code>Sumbit</code></li>
+<li>14: Press <code>Finish</code></li>
+</ul>
+</li>
+</ul>
+<p><a href="#R-image-6c06ea1aa5cfafc3406060d5e2041ae8" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6c06ea1aa5cfafc3406060d5e2041ae8"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<ul>
+<li>
+<p>3:  Configure the Voice assistant.</p>
+<ul>
+<li>1: Access the <code>Settings</code> page.</li>
+<li>2: Click on <code>Voice assistants</code>.</li>
+<li>3: Click on <code>+ ADD ASSISTANT</code>.</li>
+<li>4: Name the Assistant <code>HomeLLM</code>.</li>
+<li>5: Select <code>English</code> as the Language.</li>
+<li>6: Set the <code>Conversation agent</code> to the newly created <code>LLM Model 'mistral-7b-instruct-v0.3' (remote)</code>.</li>
+<li>7: Set your <code>Speech-to-text</code> <code>Wake word</code>, and <code>Text-to-speech</code> to the ones you use. Leave to <code>None</code> if you don&rsquo;t have any.</li>
+<li>8: Click <code>Create</code></li>
+</ul>
+</li>
+<li>
+<p>4: Select the newly created voice assistant as the default one.</p>
+<ul>
+<li>While remaining on the <code>Voice assistants</code> page click on the newly create assistant, and press the start at the top-right corner.</li>
+</ul>
+</li>
+</ul>
+<p>There you go! Your Assistant should now be working with Local-AI through Home-LLM!</p>
+<ul>
+<li>Make sure that the entities you want to control are exposted to Assist within Home-Assistant!</li>
+</ul>
+
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Notice</div>
+  <div class="box-content">
+
+<p><strong>Important Note:</strong></p>
+<p>Any devices you choose to expose to the model will be added to the context and may have their state changed by the model. Only expose devices that you are comfortable with the model modifying, even if the modification is not what you intended. The model may occasionally hallucinate and issue commands to the wrong device. Use at your own risk.</p>
+</div>
+</div>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://io.midori-ai.xyz"><img src="https://tea-cup.midori-ai.xyz/download/logo_color3.png"></a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1721357082" defer></script>
+        <script src="/js/search.js?1721357082" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/about-us/index.html" class="alwaysopen"><input type="checkbox" id="R-section-baeea306eb3fcc2ed63ff974c8424eb6" aria-controls="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" checked><label for="R-section-baeea306eb3fcc2ed63ff974c8424eb6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu About</span></label><a class="padding" href="/about-us/index.html">About</a><ul id="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" class="morespace collapsible-menu">
+          <li data-nav-id="/about-us/about-luna/index.html" class=""><a class="padding" href="/about-us/about-luna/index.html">About Luna Midori</a></li>
+          <li data-nav-id="/about-us/carly-api/index.html" class=""><a class="padding" href="/about-us/carly-api/index.html">About Carly Kay</a></li>
+          <li data-nav-id="/about-us/contact-us/index.html" class=""><a class="padding" href="/about-us/contact-us/index.html">Contact Us</a></li></ul></li>
+          <li data-nav-id="/subsystem/index.html" class="alwaysopen"><input type="checkbox" id="R-section-db26b88c7dfe913d0ab581ff2ea3b589" aria-controls="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" checked><label for="R-section-db26b88c7dfe913d0ab581ff2ea3b589"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Midori AI Subsystem</span></label><a class="padding" href="/subsystem/index.html">Midori AI Subsystem</a><ul id="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/manager/index.html" class=""><a class="padding" href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a></li>
+          <li data-nav-id="/subsystem/updates/index.html" class=""><a class="padding" href="/subsystem/updates/index.html">Subsystem Update Log</a></li>
+          <li data-nav-id="/subsystem/anythingllm/index.html" class=""><a class="padding" href="/subsystem/anythingllm/index.html">AnythingLLM</a></li>
+          <li data-nav-id="/subsystem/big-agi/index.html" class=""><a class="padding" href="/subsystem/big-agi/index.html">Big-AGI</a></li>
+          <li data-nav-id="/subsystem/local-ai/index.html" class="alwaysopen"><input type="checkbox" id="R-section-d198ef07e31ad4eb3f6b0ed16a35c680" aria-controls="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" checked><label for="R-section-d198ef07e31ad4eb3f6b0ed16a35c680"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI</span></label><a class="padding" href="/subsystem/local-ai/index.html">LocalAI</a><ul id="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/local-ai/install_models/index.html" class=""><a class="padding" href="/subsystem/local-ai/install_models/index.html">Install LocalAI Models</a></li></ul></li>
+          <li data-nav-id="/subsystem/invokeai/index.html" class=""><a class="padding" href="/subsystem/invokeai/index.html">InvokeAI</a></li></ul></li>
+          <li data-nav-id="/howtos/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-3dcecad42a46e0552c78b880d49b0312" aria-controls="R-subsections-3dcecad42a46e0552c78b880d49b0312" checked><label for="R-section-3dcecad42a46e0552c78b880d49b0312"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI How-tos</span></label><a class="padding" href="/howtos/index.html">LocalAI How-tos</a><ul id="R-subsections-3dcecad42a46e0552c78b880d49b0312" class="morespace collapsible-menu">
+          <li data-nav-id="/howtos/by_hand/easy-model/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-model/index.html">Easy Model Setup</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-docker/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-docker/index.html">Easy Setup - Docker</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-embeddings/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-embeddings/index.html">Easy Setup - Embeddings</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-sd/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-sd/index.html">Easy Setup - Stable Diffusion</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-request/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-request/index.html">Easy Request - All</a></li>
+          <li data-nav-id="/howtos/homellmxlocalai/index.html" class="active"><a class="padding" href="/howtos/homellmxlocalai/index.html">HA-OS (HomeLLM) x LocalAI</a></li>
+          <li data-nav-id="/howtos/voice_assistance_guide/index.html" class=""><a class="padding" href="/howtos/voice_assistance_guide/index.html">Voice Assistant HA-OS</a></li></ul></li>
+          <li data-nav-id="/models/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eff503bb1bf6086ff29fa85fae09c902" aria-controls="R-subsections-eff503bb1bf6086ff29fa85fae09c902" checked><label for="R-section-eff503bb1bf6086ff29fa85fae09c902"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Models Repository</span></label><a class="padding" href="/models/index.html">Models Repository</a><ul id="R-subsections-eff503bb1bf6086ff29fa85fae09c902" class="morespace collapsible-menu">
+          <li data-nav-id="/models/modeltemplate/index.html" class=""><a class="padding" href="/models/modeltemplate/index.html">Model Template</a></li>
+          <li data-nav-id="/models/onsite_models/index.html" class=""><a class="padding" href="/models/onsite_models/index.html">Recommended Models</a></li>
+          <li data-nav-id="/models/offsite_models/index.html" class=""><a class="padding" href="/models/offsite_models/index.html">Offsite Supported Models</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/howtos/homellmxlocalai/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-auto" value="auto" selected>Auto</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
+                      <option id="R-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1721357082" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721357082" defer></script>
+    <script src="/js/theme.js?1721357082" defer></script>
+  </body>
+</html>

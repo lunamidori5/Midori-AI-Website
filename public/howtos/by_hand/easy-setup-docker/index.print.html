@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Easy Setup - Docker :: Midori-AI">
+    <meta name="twitter:description" content="Note It is highly recommended to check out the Midori AI Subsystem Manager for setting up LocalAI. It does all of this for you!
+You will need about 10gb of RAM Free You will need about 15gb of space free on C drive for Docker compose We are going to run LocalAI with docker compose for this set up.
+Lets setup our folders for LocalAI (run these to make the folders for you if you wish)">
+    <meta property="og:title" content="Easy Setup - Docker :: Midori-AI">
+    <meta property="og:description" content="Note It is highly recommended to check out the Midori AI Subsystem Manager for setting up LocalAI. It does all of this for you!
+You will need about 10gb of RAM Free You will need about 15gb of space free on C drive for Docker compose We are going to run LocalAI with docker compose for this set up.
+Lets setup our folders for LocalAI (run these to make the folders for you if you wish)">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/howtos/by_hand/easy-setup-docker/index.html">
+    <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>Easy Setup - Docker :: Midori-AI</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721357082" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721357082" rel="stylesheet">
+    <link href="/css/fonts.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721357082" rel="stylesheet">
+    <link href="/css/theme-auto.css?1721357082" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1721357082" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721357082" rel="stylesheet">
+    <link href="/css/print.css?1721357082" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1721357082" rel="stylesheet">
+    <link href="/css/ie.css?1721357082" rel="stylesheet">
+    <script src="/js/url.js?1721357082"></script>
+    <script src="/js/variant.js?1721357082"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/howtos/by_hand/easy-setup-docker/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/howtos/index.html"><span itemprop="name">LocalAI How-tos</span></a><meta itemprop="position" content="1">&nbsp;->&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Easy Setup - Docker</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="easy-setup---docker">Easy Setup - Docker</h1>
+
+
+<div class="box notices cstyle note">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-circle"></i> Note</div>
+  <div class="box-content">
+
+<p>It is highly recommended to check out the <a href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a> for setting up LocalAI. It does all of this for you!</p>
+</div>
+</div>
+
+<div class="box notices cstyle Note">
+  <div class="box-label"></div>
+  <div class="box-content">
+
+<ul>
+<li>You will need about 10gb of RAM Free</li>
+<li>You will need about 15gb of space free on C drive for <code>Docker compose</code></li>
+</ul>
+</div>
+</div>
+<p>We are going to run <code>LocalAI</code> with <code>docker compose</code> for this set up.</p>
+<p>Lets setup our folders for <code>LocalAI</code> (run these to make the folders for you if you wish)</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="line"><span class="cl"><span class="k">mkdir</span> <span class="s2">&#34;LocalAI&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">cd</span> LocalAI
+</span></span><span class="line"><span class="cl"><span class="k">mkdir</span> <span class="s2">&#34;models&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">mkdir</span> <span class="s2">&#34;images&#34;</span></span></span></code></pre></div><p>At this point we want to set up our <code>.env</code> file, here is a copy for you to use if you wish, Make sure this is in the <code>LocalAI</code> folder.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">## Set number of threads.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Note: prefer the number of physical cores. Overbooking the CPU degrades performance notably.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">THREADS</span><span class="o">=</span><span class="m">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Specify a different bind address (defaults to &#34;:8080&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ADDRESS=127.0.0.1:8080</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Define galleries.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## models will to install will be visible in `/models/available`</span>
+</span></span><span class="line"><span class="cl"><span class="nv">GALLERIES</span><span class="o">=[{</span><span class="s2">&#34;name&#34;</span>:<span class="s2">&#34;model-gallery&#34;</span>, <span class="s2">&#34;url&#34;</span>:<span class="s2">&#34;github:go-skynet/model-gallery/index.yaml&#34;</span><span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;url&#34;</span>: <span class="s2">&#34;github:go-skynet/model-gallery/huggingface.yaml&#34;</span>,<span class="s2">&#34;name&#34;</span>:<span class="s2">&#34;huggingface&#34;</span><span class="o">}]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Default path for models</span>
+</span></span><span class="line"><span class="cl"><span class="nv">MODELS_PATH</span><span class="o">=</span>/models
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Enable debug mode</span>
+</span></span><span class="line"><span class="cl"><span class="nv">DEBUG</span><span class="o">=</span><span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Disables COMPEL (Lets Stable Diffuser work)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">COMPEL</span><span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Enable/Disable single backend (useful if only one GPU is available)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># SINGLE_ACTIVE_BACKEND=true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Specify a build type. Available: cublas, openblas, clblas.</span>
+</span></span><span class="line"><span class="cl"><span class="nv">BUILD_TYPE</span><span class="o">=</span>cublas
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">REBUILD</span><span class="o">=</span><span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Enable go tags, available: stablediffusion, tts</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## stablediffusion: image generation with stablediffusion</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## tts: enables text-to-speech with go-piper </span>
+</span></span><span class="line"><span class="cl"><span class="c1">## (requires REBUILD=true)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#GO_TAGS=tts</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Path where to store generated images</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># IMAGE_PATH=/tmp</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Specify a default upload limit in MB (whisper)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># UPLOAD_LIMIT</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># HUGGINGFACEHUB_API_TOKEN=Token here</span></span></span></code></pre></div><p>Now that we have the <code>.env</code> set lets set up our <code>docker-compose.yaml</code> file.
+It will use a container from <a href="https://quay.io/repository/go-skynet/local-ai?tab=tags" target="_blank">quay.io</a>.</p>
+
+<div class="tab-panel" data-tab-group="1437c4442878bae5e3ce700e476441a0">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="vanilla--cpu-images"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('1437c4442878bae5e3ce700e476441a0','vanilla--cpu-images')"
+    >
+      <span class="tab-nav-text">Vanilla / CPU Images</span>
+    </button>
+    <button
+      data-tab-item="gpu-images-cuda-11"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1437c4442878bae5e3ce700e476441a0','gpu-images-cuda-11')"
+    >
+      <span class="tab-nav-text">GPU Images CUDA 11</span>
+    </button>
+    <button
+      data-tab-item="gpu-images-cuda-12"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1437c4442878bae5e3ce700e476441a0','gpu-images-cuda-12')"
+    >
+      <span class="tab-nav-text">GPU Images CUDA 12</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="vanilla--cpu-images"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<p>Recommened Midori AI - LocalAI Images</p>
+<ul>
+<li><code>lunamidori5/midori_ai_subsystem_localai_cpu:master</code></li>
+</ul>
+<p>For a full list of tags or images please <a href="https://hub.docker.com/r/lunamidori5/midori_ai_subsystem_localai_cpu/tags" target="_blank">check our docker repo</a></p>
+<p>Base LocalAI Images</p>
+<ul>
+<li><code>master</code></li>
+<li><code>latest</code></li>
+</ul>
+<p>Core Images - Smaller images without predownload python dependencies</p>
+</div>
+    </div>
+    <div
+      data-tab-item="gpu-images-cuda-11"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Images with Nvidia accelleration support</p>
+<blockquote>
+<p>If you do not know which version of CUDA do you have available, you can check with <code>nvidia-smi</code> or <code>nvcc --version</code></p>
+</blockquote>
+<p>Recommened Midori AI - LocalAI Images (Only Nvidia works for now)</p>
+<ul>
+<li><code>lunamidori5/midori_ai_subsystem_localai_nvidia_gpu:master</code></li>
+<li><code>lunamidori5/midori_ai_subsystem_localai_hipblas_gpu:master</code></li>
+<li><code>lunamidori5/midori_ai_subsystem_localai_intelf16_gpu:master</code></li>
+<li><code>lunamidori5/midori_ai_subsystem_localai_intelf32_gpu:master</code></li>
+</ul>
+<p>For a full list of tags or images please <a href="https://hub.docker.com/r/lunamidori5/midori_ai_subsystem_localai_gpu/tags" target="_blank">check our docker repo</a></p>
+<p>Base LocalAI Images</p>
+<ul>
+<li><code>master-cublas-cuda11</code></li>
+<li><code>master-cublas-cuda11-core</code></li>
+<li><code>master-cublas-cuda11-ffmpeg</code></li>
+<li><code>master-cublas-cuda11-ffmpeg-core</code></li>
+</ul>
+<p>Core Images - Smaller images without predownload python dependencies</p>
+</div>
+    </div>
+    <div
+      data-tab-item="gpu-images-cuda-12"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Images with Nvidia accelleration support</p>
+<blockquote>
+<p>If you do not know which version of CUDA do you have available, you can check with <code>nvidia-smi</code> or <code>nvcc --version</code></p>
+</blockquote>
+<p>Recommened Midori AI - LocalAI Images (Only Nvidia works for now)</p>
+<ul>
+<li><code>lunamidori5/midori_ai_subsystem_localai_nvidia_gpu:master</code></li>
+<li><code>lunamidori5/midori_ai_subsystem_localai_hipblas_gpu:master</code></li>
+<li><code>lunamidori5/midori_ai_subsystem_localai_intelf16_gpu:master</code></li>
+<li><code>lunamidori5/midori_ai_subsystem_localai_intelf32_gpu:master</code></li>
+</ul>
+<p>For a full list of tags or images please <a href="https://hub.docker.com/r/lunamidori5/midori_ai_subsystem_localai_gpu/tags" target="_blank">check our docker repo</a></p>
+<p>Base LocalAI Images</p>
+<ul>
+<li><code>master-cublas-cuda12</code></li>
+<li><code>master-cublas-cuda12-core</code></li>
+<li><code>master-cublas-cuda12-ffmpeg</code></li>
+<li><code>master-cublas-cuda12-ffmpeg-core</code></li>
+</ul>
+<p>Core Images - Smaller images without predownload python dependencies</p>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-panel" data-tab-group="2090618899ea1dcb50efd7c589b1f543">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="cpu-only"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('2090618899ea1dcb50efd7c589b1f543','cpu-only')"
+    >
+      <span class="tab-nav-text">CPU Only</span>
+    </button>
+    <button
+      data-tab-item="gpu-and-cpu"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('2090618899ea1dcb50efd7c589b1f543','gpu-and-cpu')"
+    >
+      <span class="tab-nav-text">GPU and CPU</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="cpu-only"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<p>Also note this <code>docker-compose.yaml</code> file is for <code>CPU</code> only.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">version: <span class="s1">&#39;3.6&#39;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>services:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>  localai-midori-ai-backend:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    image: lunamidori5/midori_ai_subsystem_localai_cpu:master<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    <span class="c1">## use this for localai&#39;s base </span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    <span class="c1">## image: quay.io/go-skynet/local-ai:master</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    tty: <span class="nb">true</span> <span class="c1"># enable colorized logs</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: always <span class="c1"># should this be on-failure ?</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    ports:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - 8080:8080<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    env_file:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - .env<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    volumes:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./models:/models<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./images/:/tmp/generated/images/<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    command: <span class="o">[</span><span class="s2">&#34;/usr/bin/local-ai&#34;</span> <span class="o">]</span></span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="gpu-and-cpu"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Also note this <code>docker-compose.yaml</code> file is for <code>CUDA</code> only.</p>
+<p>Please change the image to what you need.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">version: <span class="s1">&#39;3.6&#39;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>services:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>  localai-midori-ai-backend:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    deploy:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      resources:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        reservations:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>          devices:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>            - driver: nvidia<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>              count: <span class="m">1</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>              capabilities: <span class="o">[</span>gpu<span class="o">]</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    <span class="c1">## use this for localai&#39;s base </span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    <span class="c1">## image: quay.io/go-skynet/local-ai:CHANGEMETOIMAGENEEDED</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    image: lunamidori5/midori_ai_subsystem_localai_nvidia_gpu:master<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    tty: <span class="nb">true</span> <span class="c1"># enable colorized logs</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: always <span class="c1"># should this be on-failure ?</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    ports:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - 8080:8080<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    env_file:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - .env<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    volumes:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./models:/models<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./images/:/tmp/generated/images/<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    command: <span class="o">[</span><span class="s2">&#34;/usr/bin/local-ai&#34;</span> <span class="o">]</span></span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+<p>Make sure to save that in the root of the <code>LocalAI</code> folder. Then lets spin up the Docker run this in a <code>CMD</code> or <code>BASH</code></p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose up -d --pull always</span></span></code></pre></div><p>Now we are going to let that set up, once it is done, lets check to make sure our huggingface / localai galleries are working (wait until you see this screen to do this)</p>
+<p>You should see:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">┌───────────────────────────────────────────────────┐
+</span></span><span class="line"><span class="cl">│                   Fiber v2.42.0                   │
+</span></span><span class="line"><span class="cl">│               http://127.0.0.1:8080               │
+</span></span><span class="line"><span class="cl">│       (bound on host 0.0.0.0 and port 8080)       │
+</span></span><span class="line"><span class="cl">│                                                   │
+</span></span><span class="line"><span class="cl">│ Handlers ............. 1  Processes ........... 1 │
+</span></span><span class="line"><span class="cl">│ Prefork ....... Disabled  PID ................. 1 │
+</span></span><span class="line"><span class="cl">└───────────────────────────────────────────────────┘</span></span></code></pre></div><p>Now that we got that setup, lets go setup a <a href="/howtos/by_hand/easy-model/index.html">model</a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1721357082" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721357082" defer></script>
+    <script src="/js/theme.js?1721357082" defer></script>
+  </body>
+</html>

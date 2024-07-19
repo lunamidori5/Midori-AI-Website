@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Easy Model Setup :: Midori-AI">
+    <meta name="twitter:description" content="&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash; Use the model installer to install all of the base models like Llava, tts, Stable Diffusion, and more! Click Here
+&mdash;&ndash; By Hand Setup &mdash;&ndash; (You do not have to run these steps if you have already done the auto manager)
+Lets learn how to setup a model, for this How To we are going to use the Dolphin Mistral 7B model.
+To download the model to your models folder, run this command in a commandline of your picking.">
+    <meta property="og:title" content="Easy Model Setup :: Midori-AI">
+    <meta property="og:description" content="&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash; Use the model installer to install all of the base models like Llava, tts, Stable Diffusion, and more! Click Here
+&mdash;&ndash; By Hand Setup &mdash;&ndash; (You do not have to run these steps if you have already done the auto manager)
+Lets learn how to setup a model, for this How To we are going to use the Dolphin Mistral 7B model.
+To download the model to your models folder, run this command in a commandline of your picking.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/howtos/by_hand/easy-model/index.html">
+    <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>Easy Model Setup :: Midori-AI</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721357082" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721357082" rel="stylesheet">
+    <link href="/css/fonts.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721357082" rel="stylesheet">
+    <link href="/css/theme-auto.css?1721357082" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1721357082" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721357082" rel="stylesheet">
+    <link href="/css/print.css?1721357082" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1721357082" rel="stylesheet">
+    <script src="/js/url.js?1721357082"></script>
+    <script src="/js/variant.js?1721357082"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/howtos/by_hand/easy-model/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#------midori-ai-subsystem-manager------">&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash;</a></li>
+    <li><a href="#------by-hand-setup------">&mdash;&ndash; By Hand Setup &mdash;&ndash;</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/howtos/index.html"><span itemprop="name">LocalAI How-tos</span></a><meta itemprop="position" content="1">&nbsp;->&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Easy Model Setup</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/by_hand/easy-model/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/index.html" title="LocalAI How-tos (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/by_hand/easy-setup-docker/index.html" title="Easy Setup - Docker (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="easy-model-setup">Easy Model Setup</h1>
+
+<h2 id="------midori-ai-subsystem-manager------">&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash;</h2>
+<p>Use the model installer to install all of the base models like <code>Llava</code>, <code>tts</code>, <code>Stable Diffusion</code>, and more! <a href="/subsystem/manager/index.html">Click Here</a></p>
+<h2 id="------by-hand-setup------">&mdash;&ndash; By Hand Setup &mdash;&ndash;</h2>
+<p><em>(You do not have to run these steps if you have already done the auto manager)</em></p>
+<p>Lets learn how to setup a model, for this <code>How To</code> we are going to use the <code>Dolphin Mistral 7B</code> model.</p>
+<p>To download the model to your models folder, run this command in a commandline of your picking.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -O https://tea-cup.midori-ai.xyz/download/7bmodelQ5.gguf</span></span></code></pre></div><p>Each model needs at least <code>4</code> files, with out these files, the model will run raw, what that means is you can not change settings of the model.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">File 1 - The model&#39;s GGUF file
+</span></span><span class="line"><span class="cl">File 2 - The model&#39;s .yaml file
+</span></span><span class="line"><span class="cl">File 3 - The Chat API .tmpl file
+</span></span><span class="line"><span class="cl">File 4 - The Chat API helper .tmpl file</span></span></code></pre></div><p>So lets fix that! We are using <code>lunademo</code> name for this <code>How To</code> but you can name the files what ever you want! Lets make blank files to start with</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">touch lunademo-chat.tmpl
+</span></span><span class="line"><span class="cl">touch lunademo-chat-block.tmpl
+</span></span><span class="line"><span class="cl">touch lunademo.yaml</span></span></code></pre></div><p>Now lets edit the <code>&quot;lunademo-chat-block.tmpl&quot;</code>, This is the template that model &ldquo;Chat&rdquo; trained models use, but changed for LocalAI</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">&lt;|im_start|&gt;{{if eq .RoleName &#34;assistant&#34;}}assistant{{else if eq .RoleName &#34;system&#34;}}system{{else if eq .RoleName &#34;user&#34;}}user{{end}}
+</span></span><span class="line"><span class="cl">{{if .Content}}{{.Content}}{{end}}
+</span></span><span class="line"><span class="cl">&lt;|im_end|&gt;</span></span></code></pre></div><p>For the <code>&quot;lunademo-chat.tmpl&quot;</code>, Looking at the huggingface repo, this model uses the <code>&lt;|im_start|&gt;assistant</code> tag for when the AI replys, so lets make sure to add that to this file. Do not add the user as we will be doing that in our yaml file!</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">{{.Input}}
+</span></span><span class="line"><span class="cl">&lt;|im_start|&gt;assistant</span></span></code></pre></div><p>For the <code>&quot;lunademo.yaml&quot;</code> file. Lets set it up for your computer or hardware. (If you want to see advanced yaml configs - <a href="https://localai.io/advanced/" target="_blank">Link</a>)</p>
+<p>We are going to 1st setup the backend and context size.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">context_size</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span></span></span></code></pre></div><p>What this does is tell <code>LocalAI</code> how to load the model. Then we are going to <strong>add</strong> our settings in after that. Lets add the models name and the models settings. The models <code>name:</code> is what you will put into your request when sending a <code>OpenAI</code> request to <code>LocalAI</code></p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">lunademo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">parameters</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l">7bmodelQ5.gguf</span></span></span></code></pre></div><p>Now that LocalAI knows what file to load with our request, lets add the stopwords and template files to our models yaml file now.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">stopwords</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;user|&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;assistant|&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;system|&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;&lt;|im_end|&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;&lt;|im_start|&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">template</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">chat</span><span class="p">:</span><span class="w"> </span><span class="l">lunademo-chat</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">chat_message</span><span class="p">:</span><span class="w"> </span><span class="l">lunademo-chat-block</span></span></span></code></pre></div><p>If you are running on <code>GPU</code> or want to tune the model, you can add settings like (higher the GPU Layers the more GPU used)</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">f16</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">gpu_layers</span><span class="p">:</span><span class="w"> </span><span class="m">4</span></span></span></code></pre></div><p>To fully tune the model to your like. But be warned, you <strong>must</strong> restart <code>LocalAI</code> after changing a yaml file</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose restart</span></span></code></pre></div><p>If you want to check your models yaml, here is a full copy!</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">context_size</span><span class="p">:</span><span class="w"> </span><span class="m">2000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">##Put settings right here for tunning!! Before name but after Backend! (remove this comment before saving the file)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">lunademo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">parameters</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l">7bmodelQ5.gguf</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">stopwords</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;user|&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;assistant|&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;system|&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;&lt;|im_end|&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="s2">&#34;&lt;|im_start|&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">template</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">chat</span><span class="p">:</span><span class="w"> </span><span class="l">lunademo-chat</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">chat_message</span><span class="p">:</span><span class="w"> </span><span class="l">lunademo-chat-block</span></span></span></code></pre></div><p>Now that we got that setup, lets test it out but sending a <a href="/howtos/by_hand/easy-request/index.html">request</a> to Localai!</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://io.midori-ai.xyz"><img src="https://tea-cup.midori-ai.xyz/download/logo_color3.png"></a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1721357082" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1721357082" defer></script>
+        <script src="/js/search.js?1721357082" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/about-us/index.html" class="alwaysopen"><input type="checkbox" id="R-section-baeea306eb3fcc2ed63ff974c8424eb6" aria-controls="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" checked><label for="R-section-baeea306eb3fcc2ed63ff974c8424eb6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu About</span></label><a class="padding" href="/about-us/index.html">About</a><ul id="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" class="morespace collapsible-menu">
+          <li data-nav-id="/about-us/about-luna/index.html" class=""><a class="padding" href="/about-us/about-luna/index.html">About Luna Midori</a></li>
+          <li data-nav-id="/about-us/carly-api/index.html" class=""><a class="padding" href="/about-us/carly-api/index.html">About Carly Kay</a></li>
+          <li data-nav-id="/about-us/contact-us/index.html" class=""><a class="padding" href="/about-us/contact-us/index.html">Contact Us</a></li></ul></li>
+          <li data-nav-id="/subsystem/index.html" class="alwaysopen"><input type="checkbox" id="R-section-db26b88c7dfe913d0ab581ff2ea3b589" aria-controls="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" checked><label for="R-section-db26b88c7dfe913d0ab581ff2ea3b589"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Midori AI Subsystem</span></label><a class="padding" href="/subsystem/index.html">Midori AI Subsystem</a><ul id="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/manager/index.html" class=""><a class="padding" href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a></li>
+          <li data-nav-id="/subsystem/updates/index.html" class=""><a class="padding" href="/subsystem/updates/index.html">Subsystem Update Log</a></li>
+          <li data-nav-id="/subsystem/anythingllm/index.html" class=""><a class="padding" href="/subsystem/anythingllm/index.html">AnythingLLM</a></li>
+          <li data-nav-id="/subsystem/big-agi/index.html" class=""><a class="padding" href="/subsystem/big-agi/index.html">Big-AGI</a></li>
+          <li data-nav-id="/subsystem/local-ai/index.html" class="alwaysopen"><input type="checkbox" id="R-section-d198ef07e31ad4eb3f6b0ed16a35c680" aria-controls="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" checked><label for="R-section-d198ef07e31ad4eb3f6b0ed16a35c680"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI</span></label><a class="padding" href="/subsystem/local-ai/index.html">LocalAI</a><ul id="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/local-ai/install_models/index.html" class=""><a class="padding" href="/subsystem/local-ai/install_models/index.html">Install LocalAI Models</a></li></ul></li>
+          <li data-nav-id="/subsystem/invokeai/index.html" class=""><a class="padding" href="/subsystem/invokeai/index.html">InvokeAI</a></li></ul></li>
+          <li data-nav-id="/howtos/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-3dcecad42a46e0552c78b880d49b0312" aria-controls="R-subsections-3dcecad42a46e0552c78b880d49b0312" checked><label for="R-section-3dcecad42a46e0552c78b880d49b0312"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI How-tos</span></label><a class="padding" href="/howtos/index.html">LocalAI How-tos</a><ul id="R-subsections-3dcecad42a46e0552c78b880d49b0312" class="morespace collapsible-menu">
+          <li data-nav-id="/howtos/by_hand/easy-model/index.html" class="active"><a class="padding" href="/howtos/by_hand/easy-model/index.html">Easy Model Setup</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-docker/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-docker/index.html">Easy Setup - Docker</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-embeddings/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-embeddings/index.html">Easy Setup - Embeddings</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-sd/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-sd/index.html">Easy Setup - Stable Diffusion</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-request/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-request/index.html">Easy Request - All</a></li>
+          <li data-nav-id="/howtos/homellmxlocalai/index.html" class=""><a class="padding" href="/howtos/homellmxlocalai/index.html">HA-OS (HomeLLM) x LocalAI</a></li>
+          <li data-nav-id="/howtos/voice_assistance_guide/index.html" class=""><a class="padding" href="/howtos/voice_assistance_guide/index.html">Voice Assistant HA-OS</a></li></ul></li>
+          <li data-nav-id="/models/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eff503bb1bf6086ff29fa85fae09c902" aria-controls="R-subsections-eff503bb1bf6086ff29fa85fae09c902" checked><label for="R-section-eff503bb1bf6086ff29fa85fae09c902"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Models Repository</span></label><a class="padding" href="/models/index.html">Models Repository</a><ul id="R-subsections-eff503bb1bf6086ff29fa85fae09c902" class="morespace collapsible-menu">
+          <li data-nav-id="/models/modeltemplate/index.html" class=""><a class="padding" href="/models/modeltemplate/index.html">Model Template</a></li>
+          <li data-nav-id="/models/onsite_models/index.html" class=""><a class="padding" href="/models/onsite_models/index.html">Recommended Models</a></li>
+          <li data-nav-id="/models/offsite_models/index.html" class=""><a class="padding" href="/models/offsite_models/index.html">Offsite Supported Models</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                      <option id="R-en" value="/howtos/by_hand/easy-model/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-auto" value="auto" selected>Auto</option>
+                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-learn" value="learn">Learn</option>
+                      <option id="R-neon" value="neon">Neon</option>
+                      <option id="R-blue" value="blue">Blue</option>
+                      <option id="R-green" value="green">Green</option>
+                      <option id="R-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1721357082" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721357082" defer></script>
+    <script src="/js/theme.js?1721357082" defer></script>
+  </body>
+</html>

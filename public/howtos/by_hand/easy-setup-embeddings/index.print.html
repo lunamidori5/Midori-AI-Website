@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Easy Setup - Embeddings :: Midori-AI">
+    <meta name="twitter:description" content="To install an embedding model, run the following command
+curl http://localhost:8080/models/apply -H &#34;Content-Type: application/json&#34; -d &#39;{ &#34;id&#34;: &#34;model-gallery@bert-embeddings&#34; }&#39; When you would like to request the model from CLI you can do
+curl http://localhost:8080/v1/embeddings \ -H &#34;Content-Type: application/json&#34; \ -d &#39;{ &#34;input&#34;: &#34;The food was delicious and the waiter...&#34;, &#34;model&#34;: &#34;bert-embeddings&#34; }&#39;See OpenAI Embedding for more info!">
+    <meta property="og:title" content="Easy Setup - Embeddings :: Midori-AI">
+    <meta property="og:description" content="To install an embedding model, run the following command
+curl http://localhost:8080/models/apply -H &#34;Content-Type: application/json&#34; -d &#39;{ &#34;id&#34;: &#34;model-gallery@bert-embeddings&#34; }&#39; When you would like to request the model from CLI you can do
+curl http://localhost:8080/v1/embeddings \ -H &#34;Content-Type: application/json&#34; \ -d &#39;{ &#34;input&#34;: &#34;The food was delicious and the waiter...&#34;, &#34;model&#34;: &#34;bert-embeddings&#34; }&#39;See OpenAI Embedding for more info!">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/howtos/by_hand/easy-setup-embeddings/index.html">
+    <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>Easy Setup - Embeddings :: Midori-AI</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721357082" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721357082" rel="stylesheet">
+    <link href="/css/fonts.css?1721357082" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721357082" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721357082" rel="stylesheet">
+    <link href="/css/theme-auto.css?1721357082" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1721357082" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721357082" rel="stylesheet">
+    <link href="/css/print.css?1721357082" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1721357082" rel="stylesheet">
+    <link href="/css/ie.css?1721357082" rel="stylesheet">
+    <script src="/js/url.js?1721357082"></script>
+    <script src="/js/variant.js?1721357082"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/howtos/by_hand/easy-setup-embeddings/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/howtos/index.html"><span itemprop="name">LocalAI How-tos</span></a><meta itemprop="position" content="1">&nbsp;->&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Easy Setup - Embeddings</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="easy-setup---embeddings">Easy Setup - Embeddings</h1>
+
+<p>To install an embedding model, run the following command</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl http://localhost:8080/models/apply -H <span class="s2">&#34;Content-Type: application/json&#34;</span> -d <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">     &#34;id&#34;: &#34;model-gallery@bert-embeddings&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">   }&#39;</span>  </span></span></code></pre></div><p>When you would like to request the model from CLI you can do</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl http://localhost:8080/v1/embeddings <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -H <span class="s2">&#34;Content-Type: application/json&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -d <span class="s1">&#39;{
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;input&#34;: &#34;The food was delicious and the waiter...&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#34;model&#34;: &#34;bert-embeddings&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  }&#39;</span></span></span></code></pre></div><p>See <a href="https://platform.openai.com/docs/api-reference/embeddings/object" target="_blank">OpenAI Embedding</a> for more info!</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1721357082" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721357082" defer></script>
+    <script src="/js/theme.js?1721357082" defer></script>
+  </body>
+</html>

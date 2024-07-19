@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LocalAI How-tos on Midori-AI</title>
+    <link>http://localhost:1313/howtos/index.html</link>
+    <description>Recent content in LocalAI How-tos on Midori-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/howtos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easy Model Setup</title>
+      <link>http://localhost:1313/howtos/by_hand/easy-model/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/by_hand/easy-model/index.html</guid>
+      <description>&amp;mdash;&amp;ndash; Midori AI Subsystem Manager &amp;mdash;&amp;ndash; Use the model installer to install all of the base models like Llava, tts, Stable Diffusion, and more! Click Here
+&amp;mdash;&amp;ndash; By Hand Setup &amp;mdash;&amp;ndash; (You do not have to run these steps if you have already done the auto manager)
+Lets learn how to setup a model, for this How To we are going to use the Dolphin Mistral 7B model.
+To download the model to your models folder, run this command in a commandline of your picking.</description>
+    </item>
+    <item>
+      <title>Easy Setup - Docker</title>
+      <link>http://localhost:1313/howtos/by_hand/easy-setup-docker/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/by_hand/easy-setup-docker/index.html</guid>
+      <description>Note It is highly recommended to check out the Midori AI Subsystem Manager for setting up LocalAI. It does all of this for you!
+You will need about 10gb of RAM Free You will need about 15gb of space free on C drive for Docker compose We are going to run LocalAI with docker compose for this set up.
+Lets setup our folders for LocalAI (run these to make the folders for you if you wish)</description>
+    </item>
+    <item>
+      <title>Easy Setup - Embeddings</title>
+      <link>http://localhost:1313/howtos/by_hand/easy-setup-embeddings/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/by_hand/easy-setup-embeddings/index.html</guid>
+      <description>To install an embedding model, run the following command
+curl http://localhost:8080/models/apply -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39;{ &amp;#34;id&amp;#34;: &amp;#34;model-gallery@bert-embeddings&amp;#34; }&amp;#39; When you would like to request the model from CLI you can do
+curl http://localhost:8080/v1/embeddings \ -H &amp;#34;Content-Type: application/json&amp;#34; \ -d &amp;#39;{ &amp;#34;input&amp;#34;: &amp;#34;The food was delicious and the waiter...&amp;#34;, &amp;#34;model&amp;#34;: &amp;#34;bert-embeddings&amp;#34; }&amp;#39;See OpenAI Embedding for more info!</description>
+    </item>
+    <item>
+      <title>Easy Setup - Stable Diffusion</title>
+      <link>http://localhost:1313/howtos/by_hand/easy-setup-sd/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/by_hand/easy-setup-sd/index.html</guid>
+      <description>&amp;mdash;&amp;ndash; Midori AI Subsystem Manager &amp;mdash;&amp;ndash; Use the model installer to install all of the base models like Llava, tts, Stable Diffusion, and more! Click Here
+&amp;mdash;&amp;ndash; By Hand Setup &amp;mdash;&amp;ndash; (You do not have to run these steps if you have already done the auto installer)
+In your models folder make a file called stablediffusion.yaml, then edit that file with the following. (You can change dreamlike-art/dreamlike-anime-1.0 with what ever model you would like.</description>
+    </item>
+    <item>
+      <title>Easy Request - All</title>
+      <link>http://localhost:1313/howtos/by_hand/easy-request/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/by_hand/easy-request/index.html</guid>
+      <description>Curl Request Curl Chat API -
+curl http://localhost:8080/v1/chat/completions -H &amp;#34;Content-Type: application/json&amp;#34; -d &amp;#39;{ &amp;#34;model&amp;#34;: &amp;#34;lunademo&amp;#34;, &amp;#34;messages&amp;#34;: [{&amp;#34;role&amp;#34;: &amp;#34;user&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;How are you?&amp;#34;}], &amp;#34;temperature&amp;#34;: 0.9 }&amp;#39;Openai V1 - Recommended This is for Python, OpenAI=&amp;gt;V1
+OpenAI Chat API Python -
+from openai import OpenAI client = OpenAI(base_url=&amp;#34;http://localhost:8080/v1&amp;#34;, api_key=&amp;#34;sk-xxx&amp;#34;) messages = [ {&amp;#34;role&amp;#34;: &amp;#34;system&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;You are LocalAI, a helpful, but really confused ai, you will only reply with confused emotes&amp;#34;}, {&amp;#34;role&amp;#34;: &amp;#34;user&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;Hello How are you today LocalAI&amp;#34;} ] completion = client.</description>
+    </item>
+    <item>
+      <title>HA-OS (HomeLLM) x LocalAI</title>
+      <link>http://localhost:1313/howtos/homellmxlocalai/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/homellmxlocalai/index.html</guid>
+      <description>Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.</description>
+    </item>
+    <item>
+      <title>Voice Assistant HA-OS</title>
+      <link>http://localhost:1313/howtos/voice_assistance_guide/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/howtos/voice_assistance_guide/index.html</guid>
+      <description>In this guide I will explain how I&amp;rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
+HACS for easy installation of the other tools on Home Assistant.
+LocalAI for the backend of the LLM.
+Home-LLM to connect our LocalAI instance to Home-assistant.
+HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as the LLM as a fallback if no intent is found.</description>
+    </item>
+  </channel>
+</rss>

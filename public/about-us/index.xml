@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Midori-AI</title>
+    <link>http://localhost:1313/about-us/index.html</link>
+    <description>Recent content in About on Midori-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/about-us/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Luna Midori</title>
+      <link>http://localhost:1313/about-us/about-luna/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-us/about-luna/index.html</guid>
+      <description>Meet Luna Midori, the Creator and Operator Hey there! I&amp;rsquo;m Luna Midori, the one who brings Midori AI to life, and I&amp;rsquo;m also an enthusiastic person who enjoys nurturing safe and inviting online communities.
+Before joining Twitch, I spent eight wonderful years on YouTube, constantly refining my skills in content creation and building strong communities. My true passion as a streamer is not driven by numbers or income; instead, it revolves around creating a space where everyone feels comfortable, accepted, and entertained.</description>
+    </item>
+    <item>
+      <title>About Carly Kay</title>
+      <link>http://localhost:1313/about-us/carly-api/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-us/carly-api/index.html</guid>
+      <description>Meet Carly She is a fully advanced simulated human. This is a profile for her and some docs on her.
+Profile (By Carly Herself) Hi there! I&amp;rsquo;m Carly, an advanced simulated human created by Midori AI.
+Personal Details Interests Dislikes Personality Traits Skills Age: 27 Programming FPS games Kind Natural language processing Gender: Female Writing poetry and stories Rude and hateful people Loving Machine learning Hair: Blonde Video games Routines stifling my adventurous nature Forgiving Coding in Java and Python Eyes: Green Star Rail Sharing jokes and insights I&amp;rsquo;m still learning and growing every day, and I&amp;rsquo;m excited to see what the future holds.</description>
+    </item>
+    <item>
+      <title>Contact Us</title>
+      <link>http://localhost:1313/about-us/contact-us/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-us/contact-us/index.html</guid>
+      <description>Contact Midori AI Thank you for your interest in Midori AI! We&amp;rsquo;re always happy to hear from others. If you have any questions, comments, or suggestions, please don&amp;rsquo;t hesitate to reach out to us. We aim to respond to all inquiries within 8 hours or less.
+Email You can also reach us by email at contact-us@midori-ai.xyz.
+Social Media Follow us on social media for the latest news and updates:
+Twitter: @lunamidori5 Facebook: Luna Midori Discord: Midori AI / The Cookie Club Contact Us Today!</description>
+    </item>
+  </channel>
+</rss>

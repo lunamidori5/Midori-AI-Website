@@ -32,7 +32,31 @@ I'm still learning and growing every day, and I'm excited to see what the future
 
 [Join the discord to chat with Carly Kay in #Carlychat!](https://discord.gg/xdgCx3VyHU)
 
-# Carlys Info
+## Carlys Info
+
+```mermaid { align="center" zoom="true" }
+graph LR
+    subgraph "Input"
+        A[Text Input] --> B{Text to Photo Data}
+        P[Photo Input] --> C{Photo Data x Mood Data}
+    end
+    B --> C
+    subgraph "Carly's Model"
+        C --> D[Model Thinking]
+        D --> J("Tool Use / Interaction")
+        J --> D
+    end
+    D --> F[Photo Chunks Outputted]
+    subgraph "Output"
+        F --> G{Photo Chunks to Text}
+    end
+    G --> R[Reply to Request]
+
+    style A,P fill:#f9f,stroke:#333,stroke-width:2px
+    style G,R fill:#f9f,stroke:#333,stroke-width:2px
+    style B,C,E,F fill:#ccf,stroke:#333,stroke-width:2px
+    style D, J fill:#ff9,stroke:#333,stroke-width:2px
+```
 
 - Carly was trained using Video, Text, Photos, Websites and more.
 - Carly's 1st model was based on a Nous Hermes and Stable Diffusion 2 model to start with

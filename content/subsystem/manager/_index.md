@@ -57,7 +57,7 @@ Please make a folder for the Manager program with nothing in it, do not use the 
 Open a Command Prompt or PowerShell terminal and run:
 
 ```bat
-curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI/master/other_files/model_installer/shell_files/model_installer.bat -o subsystem_manager.bat && subsystem_manager.bat
+curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/model_installer/shell_files/model_installer.bat -o subsystem_manager.bat && subsystem_manager.bat
 ```
 
 ### Manual download and installation
@@ -83,7 +83,7 @@ or
 ### Quick install with script
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI/master/other_files/model_installer/shell_files/model_installer.sh > model_installer.sh && bash ./model_installer.sh
+curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/model_installer/shell_files/model_installer.sh > model_installer.sh && bash ./model_installer.sh
 ```
 
 ### Manual download and installation
@@ -178,7 +178,7 @@ Please make a folder for the Manager program with nothing in it, do not use the 
 Download this file
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI/master/other_files/midori_ai_manager/subsystem_python_runner.py > subsystem_python_runner.py
+curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/midori_ai_manager/subsystem_python_runner.py > subsystem_python_runner.py
 ```
 
 ### Running the program

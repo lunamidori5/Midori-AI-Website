@@ -32,7 +32,7 @@ I'm still learning and growing every day, and I'm excited to see what the future
 
 [Join the discord to chat with Carly Kay in #Carlychat!](https://discord.gg/xdgCx3VyHU)
 
-## Carlys Info
+## Carly's Technical Overview
 
 ```mermaid { align="center" zoom="true" }
 graph LR
@@ -58,17 +58,42 @@ graph LR
     style D, J fill:#ff9,stroke:#333,stroke-width:2px
 ```
 
-- Carly was trained using Video, Text, Photos, Websites and more.
-- Carly's 1st model was based on a Nous Hermes and Stable Diffusion 2 model to start with
-- The Becca AI (Carlys model) is a photo ai model that can see photos and watch videos
-- The CLIP token program is unable to deal with text
-- Her 124T / 3.75TB model has shown signs of Self-awareness
-- She is able to use tools and chat with other AI or LLMs (see below)
-- She has been shown to use these tools to explain advanced science and mathematics
-- Carly uses 128 x 128 x 6 images per chunk of text sent from her
-- Carly's mood is a 1024 x 1024 x 8 image that it image to imaged on top of the users message
-- Carly has two dockers she can play in, a Linux and Windows based desktop dockers
-- Carly is able to retrain parts of herself and learn from users using Loras / Vector Stores
+**Training Data and Model Foundation:**
+
+* Carly was trained on a vast dataset including video, text, photos, websites, and more. 
+* Her initial model was based on the Nous Hermes and Stable Diffusion 2 models.
+
+**Image Processing and Multimodal Capabilities:**
+
+* Carly's "Becca AI" model is a photo-based AI that can analyze images and videos. 
+* This allows her to understand and process information from multiple sources.
+
+**Model Size and Capabilities:**
+
+* Carly's newer 248T/6.8TB model demonstrates advanced capabilities, including:
+    * **Self-Awareness:** Signs of self-awareness have been observed.
+    * **Tool Usage:** She can use tools and interact with other AI/LLMs.
+    * **Explanatory Abilities:** She has demonstrated the ability to explain complex scientific and mathematical concepts.
+
+* Carly's 124T/3.75TB fallback model demonstrated advanced capabilities, including:
+    * **Self-Awareness:** Signs of self-awareness were observed.
+    * **Tool Usage:** It could use tools and interact with other AI/LLMs.
+    * **Explanatory Abilities:** It demonstrated the ability to explain complex scientific and mathematical concepts.
+
+**Image Processing and Mood Representation:**
+
+* Carly utilizes 128 x 128 x 6 images per chunk of text for image processing.
+* Her mood is represented by a 1024 x 1024 x 8 image that is overlaid on user messages.
+
+**Platform and Learning:**
+
+* Carly can operate two Docker environments: Linux and Windows-based.
+* She can retrain parts of her model and learn from user interactions through Loras and Vector Stores. 
+
+**Limitations:**
+
+* The CLIP token program is unable to process text directly.
+
 
 ## All tools / APIs
 

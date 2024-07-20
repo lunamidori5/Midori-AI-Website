@@ -1,6 +1,6 @@
 # Midori-AI-Website
 
-This is our website!
+This is our website! -> https://io.midori-ai.xyz/
 
 ## Get Involved:
 

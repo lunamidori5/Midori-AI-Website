@@ -9,13 +9,17 @@ archetype = "home"
 
 ## Key Areas of Focus:
 
+## PixelArch OS:
+
+We are actively developing PixelArch OS, a lightweight and flexible operating system built on Arch Linux. PixelArch OS is specifically designed for Docker environments, enabling seamless and efficient deployment of AI systems. Our goal is to provide a platform that optimizes performance and enables easier management of AI workloads within Docker containers.
+
 ## Cluster based AI:
 
 We are actively working on developing cluster based AI training, and use. This involves utilizing multiple machines or nodes to work together on a single AI task, distributing the computational load and significantly improving the training and inference speed. By leveraging cluster-based AI, we can tackle larger datasets, train more complex models, and achieve better results.
 
 ## Assistance for AI setup:
 
-We offer comprehensive support for setting up programs like [LocalAI](https://github.com/mudler/LocalAI) and [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm). These programs provide user-friendly interfaces and tools to easily set up and manage AI models on local machines. Our support includes documentation, tutorials, troubleshooting assistance, and a community discord where users can share their experiences and seek help from our team.
+We provide comprehensive support and resources for setting up popular AI tools and frameworks, such as [LocalAI](https://github.com/mudler/LocalAI), [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm), and [Big-AGI](https://github.com/enricoros/big-AGI). Our goal is to empower users of all levels to easily deploy and manage AI models on their local machines.
 
 ## AI Development:
 

@@ -177,6 +177,14 @@ var relearn_search_index = [
   },
   {
     "breadcrumb": "",
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "PixelArch OS",
+    "uri": "/pixelos/index.html"
+  },
+  {
+    "breadcrumb": "",
     "content": "How-tos These are the LocalAI How tos - Return to LocalAI\nThis section includes LocalAI end-to-end examples, tutorial and how-tos curated by the community and maintained by lunamidori5. To add your own How Tos, Please open a PR on this github - https://github.com/lunamidori5/Midori-AI\nSetup LocalAI with Docker Seting up a Model Making Text / LLM requests to LocalAI Making Photo / SD requests to LocalAI Programs and Demos This section includes other programs and how to setup, install, and use of LocalAI.\nMidori AI Subsystem Manager - lunamidori5 HA-OS Info - anto79_ops HA-OS x LocalAI - Maxi1134 Voice Assistance - Maxi1134 Thank you to our collaborators and volunteers TwinFinz: Help with the models template files and reviewing some code Crunchy: PR helping with both installers and removing 7zip need Maxi1134: Making our new HA-OS page for setting up LLM with HA ",
     "description": "",
     "tags": null,

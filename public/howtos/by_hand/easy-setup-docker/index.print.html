@@ -23,20 +23,20 @@ Lets setup our folders for LocalAI (run these to make the folders for you if you
     <meta property="og:site_name" content="Midori-AI">
     <title>Easy Setup - Docker :: Midori-AI</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1721692139" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721692139" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1721692139" rel="stylesheet">
-    <link href="/css/auto-complete.css?1721692139" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721692139" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1721692139" rel="stylesheet">
-    <link href="/css/fonts.css?1721692139" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721692139" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1721692139" rel="stylesheet">
-    <link href="/css/theme-auto.css?1721692139" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1721692139" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1721692139" rel="stylesheet">
-    <link href="/css/print.css?1721692139" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1721692139" rel="stylesheet">
-    <link href="/css/ie.css?1721692139" rel="stylesheet">
-    <script src="/js/url.js?1721692139"></script>
-    <script src="/js/variant.js?1721692139"></script>
+    <link href="/css/fontawesome-all.min.css?1721778558" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1721778558" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1721778558" rel="stylesheet">
+    <link href="/css/auto-complete.css?1721778558" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1721778558" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1721778558" rel="stylesheet">
+    <link href="/css/fonts.css?1721778558" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1721778558" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1721778558" rel="stylesheet">
+    <link href="/css/theme-auto.css?1721778558" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1721778558" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1721778558" rel="stylesheet">
+    <link href="/css/print.css?1721778558" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1721778558" rel="stylesheet">
+    <link href="/css/ie.css?1721778558" rel="stylesheet">
+    <script src="/js/url.js?1721778558"></script>
+    <script src="/js/variant.js?1721778558"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -154,27 +154,27 @@ Lets setup our folders for LocalAI (run these to make the folders for you if you
 </span></span><span class="line"><span class="cl"><span class="c1"># HUGGINGFACEHUB_API_TOKEN=Token here</span></span></span></code></pre></div><p>Now that we have the <code>.env</code> set lets set up our <code>docker-compose.yaml</code> file.
 It will use a container from <a href="https://quay.io/repository/go-skynet/local-ai?tab=tags" target="_blank">quay.io</a>.</p>
 
-<div class="tab-panel" data-tab-group="aabedb8d6b13cb48b2ac1ee82c2b8a83">
+<div class="tab-panel" data-tab-group="082fafa7d46b35c8de00ca54071c9c51">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="vanilla--cpu-images"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('aabedb8d6b13cb48b2ac1ee82c2b8a83','vanilla--cpu-images')"
+      onclick="switchTab('082fafa7d46b35c8de00ca54071c9c51','vanilla--cpu-images')"
     >
       <span class="tab-nav-text">Vanilla / CPU Images</span>
     </button>
     <button
       data-tab-item="gpu-images-cuda-11"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('aabedb8d6b13cb48b2ac1ee82c2b8a83','gpu-images-cuda-11')"
+      onclick="switchTab('082fafa7d46b35c8de00ca54071c9c51','gpu-images-cuda-11')"
     >
       <span class="tab-nav-text">GPU Images CUDA 11</span>
     </button>
     <button
       data-tab-item="gpu-images-cuda-12"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('aabedb8d6b13cb48b2ac1ee82c2b8a83','gpu-images-cuda-12')"
+      onclick="switchTab('082fafa7d46b35c8de00ca54071c9c51','gpu-images-cuda-12')"
     >
       <span class="tab-nav-text">GPU Images CUDA 12</span>
     </button>
@@ -255,20 +255,20 @@ It will use a container from <a href="https://quay.io/repository/go-skynet/local
   </div>
 </div>
 
-<div class="tab-panel" data-tab-group="6e8bda1d15c190e189f1013ea481dc3a">
+<div class="tab-panel" data-tab-group="58eb2dfbb34e344462ff1c033b6bc979">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="cpu-only"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('6e8bda1d15c190e189f1013ea481dc3a','cpu-only')"
+      onclick="switchTab('58eb2dfbb34e344462ff1c033b6bc979','cpu-only')"
     >
       <span class="tab-nav-text">CPU Only</span>
     </button>
     <button
       data-tab-item="gpu-and-cpu"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('6e8bda1d15c190e189f1013ea481dc3a','gpu-and-cpu')"
+      onclick="switchTab('58eb2dfbb34e344462ff1c033b6bc979','gpu-and-cpu')"
     >
       <span class="tab-nav-text">GPU and CPU</span>
     </button>
@@ -351,8 +351,8 @@ It will use a container from <a href="https://quay.io/repository/go-skynet/local
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1721692139" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1721692139" defer></script>
-    <script src="/js/theme.js?1721692139" defer></script>
+    <script src="/js/clipboard.min.js?1721778558" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1721778558" defer></script>
+    <script src="/js/theme.js?1721778558" defer></script>
   </body>
 </html>

@@ -144,6 +144,14 @@ var relearn_search_index = [
     "uri": "/subsystem/index.html"
   },
   {
+    "breadcrumb": "About",
+    "content": "Meet Alexander Ryan, Lead Manager / QA Manager My name is Alexander Ryan, Nice to meet you. I’m a longtime MMO brat, born and raised through Final Fantasy 11. Through this experience I have sought to form strong connections with people from all walks of life.\nI stream, I lead, and I ensure success through constant failure. Again and again and again until we succeed. There is no success without failure.\nWhat this means is that I’m apart of the backbone of Midori AI. I make sure Luna and her team at Midori AI is available to the entire world. Each step of the way.\n",
+    "description": "",
+    "tags": null,
+    "title": "About Alexander Ryan",
+    "uri": "/about-us/about-alex/index.html"
+  },
+  {
     "breadcrumb": "Midori AI Subsystem",
     "content": " Help page for xyz in the docker subsystem\n",
     "description": "",

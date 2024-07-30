@@ -32,28 +32,79 @@ git clone https://github.com/lunamidori5/Midori-AI-Cluster-OS.git
 cd Midori-AI-Cluster-OS/aiclusteros
 ```
 
-### 3. Build the Docker Image
-
-```bash
-docker build -t pixelarch -f arch_dockerfile .
-```
-
-### 4. Run the Image and Access the Shell
+### 3. Run the Image and Access the Shell
 
 **Using `docker-compose`:**
 
 **a. Edit the `docker-compose.yaml` file:**
 
+Each level builds upon the last, adding more features and configurations:
+
+- **Level 1: Quartz** - The base installation, like a blank canvas.
+- **Level 2: Amethyst** - Essential tools (like `curl`, `wget`, `docker`, and more) and a few quality-of-life improvements.
+- **Level 3: Topaz** -  Specialized software for development. Comes with `python`, `nodejs`, and `rust` preinstalled.
+- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate`) for development preinstalled.
+
+{{< tabs >}}
+{{% tab title="Quartz" %}}
+
 ```yaml
 services:
   pixelarch-os:
-    build:
-      context: .
-      dockerfile: ./arch_dockerfile
+    image: lunamidori5/pixelarch:quartz
     tty: true
     restart: always
+    privileged: false
     command: ["sleep", "infinity"]
 ```
+
+{{% /tab %}}
+{{% tab title="Amethyst" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:amethyst
+    tty: true
+    restart: always
+    privileged: true
+    command: ["sleep", "infinity"]
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+```
+
+{{% /tab %}}
+{{% tab title="Topaz" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:topaz
+    tty: true
+    restart: always
+    privileged: true
+    command: ["sleep", "infinity"]
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+```
+
+{{% /tab %}}
+{{% tab title="Emerald" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:emerald
+    tty: true
+    restart: always
+    privileged: true
+    command: ["sleep", "infinity"]
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 **b. Start the container in detached mode:**
 
@@ -70,6 +121,11 @@ docker exec -it aiclusteros-pixelarch-os-1 /bin/bash
 
 **Using `docker run`:** (Not Recommened)
 
+Build the Docker Image
+```bash
+docker build -t pixelarch -f arch_dockerfile .
+```
+Run the docker bash shell
 ```bash
 docker run -it pixelarch /bin/bash
 ```

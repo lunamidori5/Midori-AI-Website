@@ -4,6 +4,8 @@ title = "PixelArch OS"
 weight = 8
 +++
 
+![pixelarch-logo](https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png)
+
 ## PixelArch OS: A Docker-Optimized Arch Linux Distribution
 
 PixelArch OS is a lightweight and efficient Arch Linux distribution specifically designed for Docker environments. It offers a streamlined platform for developing, deploying, and managing containerized applications.

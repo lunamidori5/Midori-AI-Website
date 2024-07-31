@@ -23,20 +23,20 @@ Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and
     <meta property="og:site_name" content="Midori-AI">
     <title>PixelArch OS :: Midori-AI</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1722353867" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722353867" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1722353867" rel="stylesheet">
-    <link href="/css/auto-complete.css?1722353867" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722353867" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1722353867" rel="stylesheet">
-    <link href="/css/fonts.css?1722353867" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722353867" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1722353867" rel="stylesheet">
-    <link href="/css/theme-auto.css?1722353867" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1722353867" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1722353867" rel="stylesheet">
-    <link href="/css/print.css?1722353867" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1722353867" rel="stylesheet">
-    <link href="/css/ie.css?1722353867" rel="stylesheet">
-    <script src="/js/url.js?1722353867"></script>
-    <script src="/js/variant.js?1722353867"></script>
+    <link href="/css/fontawesome-all.min.css?1722385083" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722385083" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722385083" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722385083" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722385083" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722385083" rel="stylesheet">
+    <link href="/css/fonts.css?1722385083" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722385083" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722385083" rel="stylesheet">
+    <link href="/css/theme-auto.css?1722385083" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1722385083" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722385083" rel="stylesheet">
+    <link href="/css/print.css?1722385083" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1722385083" rel="stylesheet">
+    <link href="/css/ie.css?1722385083" rel="stylesheet">
+    <script src="/js/url.js?1722385083"></script>
+    <script src="/js/variant.js?1722385083"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -84,8 +84,8 @@ Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and
             </header>
 <h1 id="pixelarch-os">PixelArch OS</h1>
 
-<p><a href="#R-image-3814bacd37294d133a127d52d7954b6a" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png" alt="pixelarch-logo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3814bacd37294d133a127d52d7954b6a"><img src="https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png" alt="pixelarch-logo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-31c37e60374717a0037c462a8fa00446" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png" alt="pixelarch-logo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31c37e60374717a0037c462a8fa00446"><img src="https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png" alt="pixelarch-logo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <h2 id="pixelarch-os-a-docker-optimized-arch-linux-distribution">PixelArch OS: A Docker-Optimized Arch Linux Distribution</h2>
 <p>PixelArch OS is a lightweight and efficient Arch Linux distribution specifically designed for Docker environments. It offers a streamlined platform for developing, deploying, and managing containerized applications.</p>
 <p><strong>Key Features:</strong></p>
@@ -97,6 +97,99 @@ Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and
 <li><strong>Minimal Footprint:</strong> Designed to be lightweight and resource-efficient, ideal for running in Docker containers.</li>
 </ul>
 <h2 id="getting-started">Getting Started</h2>
+<h3 id="using-distrobox">Using Distrobox</h3>
+<p>Each level builds upon the last, adding more features and configurations:</p>
+<ul>
+<li><strong>Level 1: Quartz</strong> - The base installation, like a blank canvas.</li>
+<li><strong>Level 2: Amethyst</strong> - Essential tools (like <code>curl</code>, <code>wget</code>, <code>docker</code>, and more) and a few quality-of-life improvements.</li>
+<li><strong>Level 3: Topaz</strong> -  Specialized software for development. Comes with <code>python</code>, <code>nodejs</code>, and <code>rust</code> preinstalled.</li>
+<li><strong>Level 4: Emerald</strong> - Remote shell and tunnel support (via <code>tmate</code> or <code>ssh</code>) for development preinstalled.</li>
+</ul>
+
+<div class="tab-panel" data-tab-group="2bf4d85c968365d1dd02768e8da49d96">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="quartz"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('2bf4d85c968365d1dd02768e8da49d96','quartz')"
+    >
+      <span class="tab-nav-text">Quartz</span>
+    </button>
+    <button
+      data-tab-item="amethyst"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('2bf4d85c968365d1dd02768e8da49d96','amethyst')"
+    >
+      <span class="tab-nav-text">Amethyst</span>
+    </button>
+    <button
+      data-tab-item="topaz"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('2bf4d85c968365d1dd02768e8da49d96','topaz')"
+    >
+      <span class="tab-nav-text">Topaz</span>
+    </button>
+    <button
+      data-tab-item="emerald"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('2bf4d85c968365d1dd02768e8da49d96','emerald')"
+    >
+      <span class="tab-nav-text">Emerald</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="quartz"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<p>Image Size - <code>530mb</code></p>
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:quartz -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="amethyst"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Image Size - <code>870mb</code></p>
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:amethyst -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="topaz"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Image Size - <code>1.15gb</code></p>
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:topaz -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="emerald"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Image Size - <code>1.2gb</code></p>
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:emerald -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<h3 id="using-docker">Using Docker</h3>
 <h3 id="1-clone-the-repository">1. Clone the Repository</h3>
 <div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/lunamidori5/Midori-AI-Cluster-OS.git</span></span></code></pre></div><h3 id="2-navigate-to-the-aiclusteros-directory">2. Navigate to the <code>aiclusteros</code> Directory</h3>
 <div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> Midori-AI-Cluster-OS/aiclusteros</span></span></code></pre></div><h3 id="3-run-the-image-and-access-the-shell">3. Run the Image and Access the Shell</h3>
@@ -110,34 +203,34 @@ Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and
 <li><strong>Level 4: Emerald</strong> - Remote shell and tunnel support (via <code>tmate</code> or <code>ssh</code>) for development preinstalled.</li>
 </ul>
 
-<div class="tab-panel" data-tab-group="f90245e1f1fdd79215897dae23a60969">
+<div class="tab-panel" data-tab-group="4e7600b79a62f0ec519c90d115790bbc">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="quartz"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('f90245e1f1fdd79215897dae23a60969','quartz')"
+      onclick="switchTab('4e7600b79a62f0ec519c90d115790bbc','quartz')"
     >
       <span class="tab-nav-text">Quartz</span>
     </button>
     <button
       data-tab-item="amethyst"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('f90245e1f1fdd79215897dae23a60969','amethyst')"
+      onclick="switchTab('4e7600b79a62f0ec519c90d115790bbc','amethyst')"
     >
       <span class="tab-nav-text">Amethyst</span>
     </button>
     <button
       data-tab-item="topaz"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('f90245e1f1fdd79215897dae23a60969','topaz')"
+      onclick="switchTab('4e7600b79a62f0ec519c90d115790bbc','topaz')"
     >
       <span class="tab-nav-text">Topaz</span>
     </button>
     <button
       data-tab-item="emerald"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('f90245e1f1fdd79215897dae23a60969','emerald')"
+      onclick="switchTab('4e7600b79a62f0ec519c90d115790bbc','emerald')"
     >
       <span class="tab-nav-text">Emerald</span>
     </button>
@@ -236,8 +329,8 @@ Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1722353867" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1722353867" defer></script>
-    <script src="/js/theme.js?1722353867" defer></script>
+    <script src="/js/clipboard.min.js?1722385083" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722385083" defer></script>
+    <script src="/js/theme.js?1722385083" defer></script>
   </body>
 </html>

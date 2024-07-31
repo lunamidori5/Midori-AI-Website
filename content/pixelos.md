@@ -20,6 +20,50 @@ PixelArch OS is a lightweight and efficient Arch Linux distribution specifically
 
 ## Getting Started
 
+### Using Distrobox
+
+Each level builds upon the last, adding more features and configurations:
+
+- **Level 1: Quartz** - The base installation, like a blank canvas.
+- **Level 2: Amethyst** - Essential tools (like `curl`, `wget`, `docker`, and more) and a few quality-of-life improvements.
+- **Level 3: Topaz** -  Specialized software for development. Comes with `python`, `nodejs`, and `rust` preinstalled.
+- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate` or `ssh`) for development preinstalled.
+
+{{< tabs >}}
+{{% tab title="Quartz" %}}
+Image Size - ``530mb``
+
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:quartz -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+
+{{% /tab %}}
+{{% tab title="Amethyst" %}}
+Image Size - ``870mb``
+
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:amethyst -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
+{{% tab title="Topaz" %}}
+Image Size - ``1.15gb``
+
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:topaz -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
+{{% tab title="Emerald" %}}
+Image Size - ``1.2gb``
+
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:emerald -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
+{{< /tabs >}}
+
+
+### Using Docker
+
 ### 1. Clone the Repository
 
 ```bash

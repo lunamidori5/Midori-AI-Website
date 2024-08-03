@@ -27,7 +27,7 @@ Each level builds upon the last, adding more features and configurations:
 - **Level 1: Quartz** - The base installation, like a blank canvas.
 - **Level 2: Amethyst** - Essential tools (like `curl`, `wget`, `docker`, and more) and a few quality-of-life improvements.
 - **Level 3: Topaz** -  Specialized software for development. Comes with `python`, `nodejs`, and `rust` preinstalled.
-- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate` or `ssh`) for development preinstalled.
+- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate`, `rdp` or `ssh`), and a full [Enlightenment](https://wiki.archlinux.org/title/Enlightenment) Desktop preinstalled.
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
@@ -87,7 +87,7 @@ Each level builds upon the last, adding more features and configurations:
 - **Level 1: Quartz** - The base installation, like a blank canvas.
 - **Level 2: Amethyst** - Essential tools (like `curl`, `wget`, `docker`, and more) and a few quality-of-life improvements.
 - **Level 3: Topaz** -  Specialized software for development. Comes with `python`, `nodejs`, and `rust` preinstalled.
-- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate` or `ssh`) for development preinstalled.
+- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate`, `rdp` or `ssh`), and a full [Enlightenment](https://wiki.archlinux.org/title/Enlightenment) Desktop preinstalled. (Better for Distrobox, docker it will not work)
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}

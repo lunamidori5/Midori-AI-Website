@@ -23,19 +23,19 @@ Lets setup our folders for LocalAI (run these to make the folders for you if you
     <meta property="og:site_name" content="Midori-AI">
     <title>Easy Setup - Docker :: Midori-AI</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1722707595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722707595" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1722707595" rel="stylesheet">
-    <link href="/css/auto-complete.css?1722707595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722707595" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1722707595" rel="stylesheet">
-    <link href="/css/fonts.css?1722707595" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722707595" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1722707595" rel="stylesheet">
-    <link href="/css/theme-auto.css?1722707595" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1722707595" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1722707595" rel="stylesheet">
-    <link href="/css/print.css?1722707595" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1722707595" rel="stylesheet">
-    <script src="/js/url.js?1722707595"></script>
-    <script src="/js/variant.js?1722707595"></script>
+    <link href="/css/fontawesome-all.min.css?1722733925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722733925" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1722733925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722733925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722733925" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1722733925" rel="stylesheet">
+    <link href="/css/fonts.css?1722733925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722733925" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1722733925" rel="stylesheet">
+    <link href="/css/theme-auto.css?1722733925" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1722733925" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1722733925" rel="stylesheet">
+    <link href="/css/print.css?1722733925" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1722733925" rel="stylesheet">
+    <script src="/js/url.js?1722733925"></script>
+    <script src="/js/variant.js?1722733925"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -173,27 +173,27 @@ Lets setup our folders for LocalAI (run these to make the folders for you if you
 </span></span><span class="line"><span class="cl"><span class="c1"># HUGGINGFACEHUB_API_TOKEN=Token here</span></span></span></code></pre></div><p>Now that we have the <code>.env</code> set lets set up our <code>docker-compose.yaml</code> file.
 It will use a container from <a href="https://quay.io/repository/go-skynet/local-ai?tab=tags" target="_blank">quay.io</a>.</p>
 
-<div class="tab-panel" data-tab-group="b31a0151d6ba6ab450da9bba0c6cf6af">
+<div class="tab-panel" data-tab-group="f099740f023b05ae5abb7b0621e4738f">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="vanilla--cpu-images"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('b31a0151d6ba6ab450da9bba0c6cf6af','vanilla--cpu-images')"
+      onclick="switchTab('f099740f023b05ae5abb7b0621e4738f','vanilla--cpu-images')"
     >
       <span class="tab-nav-text">Vanilla / CPU Images</span>
     </button>
     <button
       data-tab-item="gpu-images-cuda-11"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('b31a0151d6ba6ab450da9bba0c6cf6af','gpu-images-cuda-11')"
+      onclick="switchTab('f099740f023b05ae5abb7b0621e4738f','gpu-images-cuda-11')"
     >
       <span class="tab-nav-text">GPU Images CUDA 11</span>
     </button>
     <button
       data-tab-item="gpu-images-cuda-12"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('b31a0151d6ba6ab450da9bba0c6cf6af','gpu-images-cuda-12')"
+      onclick="switchTab('f099740f023b05ae5abb7b0621e4738f','gpu-images-cuda-12')"
     >
       <span class="tab-nav-text">GPU Images CUDA 12</span>
     </button>
@@ -274,20 +274,20 @@ It will use a container from <a href="https://quay.io/repository/go-skynet/local
   </div>
 </div>
 
-<div class="tab-panel" data-tab-group="cea66dc3d19416e5f4e7b8e5d540d3e7">
+<div class="tab-panel" data-tab-group="b9dc70929ef254e630e5e06c2c79b47d">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="cpu-only"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('cea66dc3d19416e5f4e7b8e5d540d3e7','cpu-only')"
+      onclick="switchTab('b9dc70929ef254e630e5e06c2c79b47d','cpu-only')"
     >
       <span class="tab-nav-text">CPU Only</span>
     </button>
     <button
       data-tab-item="gpu-and-cpu"
       class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('cea66dc3d19416e5f4e7b8e5d540d3e7','gpu-and-cpu')"
+      onclick="switchTab('b9dc70929ef254e630e5e06c2c79b47d','gpu-and-cpu')"
     >
       <span class="tab-nav-text">GPU and CPU</span>
     </button>
@@ -385,12 +385,12 @@ It will use a container from <a href="https://quay.io/repository/go-skynet/local
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1722707595" defer></script>
-        <script src="/js/lunr/lunr.min.js?1722707595" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1722707595" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1722707595" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1722707595" defer></script>
-        <script src="/js/search.js?1722707595" defer></script>
+        <script src="/js/auto-complete.js?1722733925" defer></script>
+        <script src="/js/lunr/lunr.min.js?1722733925" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1722733925" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1722733925" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1722733925" defer></script>
+        <script src="/js/search.js?1722733925" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -485,8 +485,8 @@ It will use a container from <a href="https://quay.io/repository/go-skynet/local
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1722707595" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1722707595" defer></script>
-    <script src="/js/theme.js?1722707595" defer></script>
+    <script src="/js/clipboard.min.js?1722733925" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1722733925" defer></script>
+    <script src="/js/theme.js?1722733925" defer></script>
   </body>
 </html>

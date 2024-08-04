@@ -53,7 +53,7 @@ Image Size - ``1.15gb``
 
 {{% /tab %}}
 {{% tab title="Emerald" %}}
-Image Size - ``1.2gb``
+Image Size - ``3.5gb``
 
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:emerald -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
@@ -137,7 +137,7 @@ services:
 
 {{% /tab %}}
 {{% tab title="Emerald" %}}
-Image Size - ``1.2gb``
+Image Size - ``3.5gb``
 
 ```yaml
 services:

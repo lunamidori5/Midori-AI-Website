@@ -27,20 +27,20 @@ HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as 
     <meta property="og:site_name" content="Midori-AI">
     <title>Voice Assistant HA-OS :: Midori-AI</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1722733925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1722733925" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1722733925" rel="stylesheet">
-    <link href="/css/auto-complete.css?1722733925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1722733925" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1722733925" rel="stylesheet">
-    <link href="/css/fonts.css?1722733925" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1722733925" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1722733925" rel="stylesheet">
-    <link href="/css/theme-auto.css?1722733925" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1722733925" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1722733925" rel="stylesheet">
-    <link href="/css/print.css?1722733925" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1722733925" rel="stylesheet">
-    <link href="/css/ie.css?1722733925" rel="stylesheet">
-    <script src="/js/url.js?1722733925"></script>
-    <script src="/js/variant.js?1722733925"></script>
+    <link href="/css/fontawesome-all.min.css?1723592957" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723592957" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723592957" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723592957" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723592957" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723592957" rel="stylesheet">
+    <link href="/css/fonts.css?1723592957" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723592957" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723592957" rel="stylesheet">
+    <link href="/css/theme-auto.css?1723592957" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1723592957" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723592957" rel="stylesheet">
+    <link href="/css/print.css?1723592957" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1723592957" rel="stylesheet">
+    <link href="/css/ie.css?1723592957" rel="stylesheet">
+    <script src="/js/url.js?1723592957"></script>
+    <script src="/js/variant.js?1723592957"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -131,8 +131,8 @@ This allows us to quickly create a container running LocalAI on our machine.</p>
 <h2 id="step-1a-downloading-the-llm-model">Step 1.a) Downloading the LLM model</h2>
 <p>Once LocalAI if installed, you should be able to browse to the &ldquo;Models&rdquo; tab, that redirects to <code>http://{{host}}:8080/browse</code>. There we will search for the <code>mistral-7b-instruct-v0.3</code> model and install it.</p>
 <p>Once that is done, make sure that the model is working by heading to the <code>Chat</code> tab and selecting the model <code>mistral-7b-instruct-v0.3</code> and initiating a chat.</p>
-<p><a href="#R-image-5605278585b07aadf3a20eaa31f6ad6d" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5605278585b07aadf3a20eaa31f6ad6d"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-b258ca966dc9dd96ecf5766431c5f6bc" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b258ca966dc9dd96ecf5766431c5f6bc"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <hr>
 <h2 id="step-2-installing-home-llm">Step 2) Installing Home-LLM</h2>
 <ul>
@@ -170,8 +170,8 @@ Thankfuly, there is a neat link to do that easely on <a href="https://github.com
 </ul>
 </li>
 </ul>
-<p><a href="#R-image-4b2c8ce83ebd7cff502d084dde71719b" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4b2c8ce83ebd7cff502d084dde71719b"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-3a2419d277d74cb7f03b1cb782a59ddf" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a2419d277d74cb7f03b1cb782a59ddf"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <hr>
 <h2 id="step-3-installing-ha-fallback-conversationhttpsgithubcomm50ha-fallback-conversation">Step 3) Installing <a href="https://github.com/m50/ha-fallback-conversation" target="_blank">HA-Fallback-Conversation</a></h2>
 <ul>
@@ -229,8 +229,8 @@ Be sure to set the one using the fallback system as your favorite/default one!</
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1722733925" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1722733925" defer></script>
-    <script src="/js/theme.js?1722733925" defer></script>
+    <script src="/js/clipboard.min.js?1723592957" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723592957" defer></script>
+    <script src="/js/theme.js?1723592957" defer></script>
   </body>
 </html>

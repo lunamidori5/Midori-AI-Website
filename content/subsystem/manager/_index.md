@@ -199,6 +199,8 @@ sudo python3 subsystem_python_runner.py
 {{% /tab %}}
 {{< /tabs >}}
 
+*the github actions are failing, we are looking into why*
+
 [![Auto Lint, Test, and Build.](https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml/badge.svg)](https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml)
 
 {{% notice style="info" title="Notice" %}}

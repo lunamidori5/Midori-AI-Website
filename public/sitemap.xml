@@ -10,6 +10,9 @@
     <loc>http://localhost:1313/models/modeltemplate/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/subsystem/updates/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/subsystem/anythingllm/index.html</loc>
   </url>
   <url>
@@ -28,7 +31,7 @@
     <loc>http://localhost:1313/howtos/by_hand/easy-setup-sd/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/subsystem/invokeai/index.html</loc>
+    <loc>http://localhost:1313/subsystem/local-ai/install_models/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/about-us/carly-api/index.html</loc>

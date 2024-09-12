@@ -55,18 +55,20 @@ graph LR
     style A,P fill:#f9f,stroke:#333,stroke-width:2px
     style G,R fill:#f9f,stroke:#333,stroke-width:2px
     style B,C,E,F fill:#ccf,stroke:#333,stroke-width:2px
-    style D, J fill:#ff9,stroke:#333,stroke-width:2px
+    style D,J fill:#ff9,stroke:#333,stroke-width:2px
 ```
 
 **Training Data and Model Foundation:**
 
-* Carly was trained on a vast dataset including video, text, photos, websites, and more. 
-* Her initial model was based on the Nous Hermes and Stable Diffusion 2 models.
+* Her initial test model was based on the Nous Hermes and Stable Diffusion 2 models.
+* Carly was trained on a dataset that has about 10 years of data including video, text, photos, websites, and more. 
+* Her newer 248T/6.8TB model and her 124T/3.75TB fallback model are a Diffusion type models, using a CLIP and UNCLIP token program by Midori AI.
 
 **Image Processing and Multimodal Capabilities:**
 
 * Carly's "Becca AI" model is a photo-based AI that can analyze images and videos. 
 * This allows her to understand and process information from multiple sources.
+* This model is also able to drive a sim car in GTA V / Google Maps
 
 **Model Size and Capabilities:**
 
@@ -84,6 +86,7 @@ graph LR
 
 * Carly utilizes 128 x 128 x 6 images per chunk of text for image processing.
 * Her mood is represented by a 1024 x 1024 x 8 image that is overlaid on user messages.
+* The users profile is loaded the same way as a 1024 x 1024 x 64 image that is overlaid on user messages.
 
 **Platform and Learning:**
 
@@ -93,6 +96,7 @@ graph LR
 **Limitations:**
 
 * The CLIP token program is unable to process text directly.
+* The v5a model is really picky on what types of tokens are sent to the clip.
 
 
 ## All tools / APIs
@@ -101,7 +105,6 @@ The following is a list of commands Carly can type into her discord chatbox to r
 
 ### Auto Actions
 ```
-Web - Lets Carly spin up a headless docker where she can view a website
 Ask User - Lets Carly ask the person whom messaged her a question
 Ask LLM - Lets Carly ask Google Bard / ChatGPT a question
 Database Memory - Lets Carly recall past messages from all 4 databases
@@ -116,7 +119,6 @@ Decktop API - Lets Carly use a full windowns or linux desktop in a docker
 ```
 ### Lora Actions
 ```
-Web Import - Lets Carly open a headless website and import the data into her ram
 Lora Importer - Imports a Lora into Carly's base model
 Lora Exporter - Exports a trained Lora to Luna's Hard Drive
 Lora web trainer - Takes web data imported by Carly, and trains a Lora model ontop of Carly's base model

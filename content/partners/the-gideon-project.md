@@ -4,8 +4,6 @@ title = "The Gideon Project"
 weight = 2
 +++
 
-![photo](https://tea-cup.midori-ai.xyz/download/tgp-logo.jpg)
-
 ### Sophisticated Simplicity
 The Gideon Project (TGP) is a company dedicated to creating custom personalized AI solutions for smaller businesses and enterprises to enhance workflow efficiency in their production. Where others target narrow and specialized domains, we aim to provide a versatile solution that enables a broader range of applications. TGP is about making AI technology available to businesses that could benefit from it, but do not know how to deploy it or may not even have considered how they might benefit from it yet. 
 
@@ -16,3 +14,5 @@ TGP puts customer experience at the top of our priorities. While a lot of focus 
 
 
 Overall, TGP is the perfect solution for your own startup or webshop where you need automated features. Whether that is turning on the coffee machine or managing complex data within your own custom database, Gideon can be programmed to accomplish a variety of tasks, and TGP will be by your side throughout the entire process.
+
+![photo](https://tea-cup.midori-ai.xyz/download/tgp-logo.jpg)

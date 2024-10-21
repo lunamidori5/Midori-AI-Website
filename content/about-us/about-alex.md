@@ -8,9 +8,8 @@ weight = 4
 
 ![photo of a person](https://tea-cup.midori-ai.xyz/download/IMG_20240723_005758.jpg)
 
-My name is Alexander Ryan, Nice to meet you.
-I'm a longtime MMO brat, born and raised through Final Fantasy 11. Through this experience I have sought to form strong connections with people from all walks of life. 
+Hello everyone, I'm Alexander -  but please, call me Alex. I'm thrilled to connect with you all! I've been a passionate gamer for as long as I can remember, practically raised in the world of Final Fantasy XI. Those early experiences taught me the power of community and the importance of forging genuine connections.
 
-I stream, I lead, and I ensure success through constant failure. Again and again and again until we succeed. There is no success without failure. 
+These days, you can find me streaming, leading groups, and constantly pushing boundaries. I believe that true success is built upon a foundation of resilience and a willingness to learn from every setback. And trust me, I've had my fair share of those!
 
-What this means is that I'm apart of the backbone of Midori AI. I make sure Luna and her team at Midori AI is available to the entire world. Each step of the way.
+I'm incredibly passionate about Midori AI and its potential to change the world.  That's why I'm proud to be a part of the team, working behind the scenes to ensure Luna and everyone at Midori AI have the support they need to share their vision with the world.

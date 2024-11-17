@@ -13,7 +13,7 @@ To try them out, pick your system from the tabs and try the command! (Warning th
 {{< tabs >}}
 {{% tab title="PixelArch OS" %}}
 
-[PixelArch OS]({{%relref "pixelos" %}}) already has our tools baked in, but if you are running a nonstandard copy of thing one of the tools is not installed right, please feel free to run this command.
+[PixelArch OS]({{%relref "pixelos" %}}) already has our tools baked in, but if you are running a nonstandard copy of the os or one of the tools is not installed right, please feel free to run this command.
 
 ```bash
 curl -k --disable --disable-eprt -s https://tea-cup.midori-ai.xyz/download/pixelarch-midori-ai-updater > updater && sudo chmod +x updater && sudo mv updater /usr/local/bin/midori-ai-updater && sudo midori-ai-updater

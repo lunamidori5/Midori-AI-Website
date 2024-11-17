@@ -29,6 +29,11 @@ curl -k --disable --disable-eprt -s https://tea-cup.midori-ai.xyz/download/pixel
 curl -k --disable --disable-eprt -s https://tea-cup.midori-ai.xyz/download/standard-linux-midori-ai-updater > updater && sudo chmod +x updater && sudo mv updater /usr/local/bin/midori-ai-updater && sudo midori-ai-updater
 ```
 {{% /tab %}}
+{{% tab title="Build from source" %}}
+```bash
+COMEING SOON
+```
+{{% /tab %}}
 {{< /tabs >}}
 
 

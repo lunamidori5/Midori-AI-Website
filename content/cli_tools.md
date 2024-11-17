@@ -4,7 +4,7 @@ title = "Midori AI CLI"
 weight = 9
 +++
 
-![pixelarch-logo](https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png)
+![command_line_tools_banner_photo](https://tea-cup.midori-ai.xyz/download/command_line_tools_banner_photo.png)
 
 Our tools include our `downloader`, `uploader`, `file-manager`, `hf-downloader`, `login program`, and `updater`
 

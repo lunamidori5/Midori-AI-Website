@@ -31,7 +31,7 @@ curl -k --disable --disable-eprt -s https://tea-cup.midori-ai.xyz/download/stand
 {{% /tab %}}
 {{% tab title="Build from source" %}}
 ```bash
-COMEING SOON
+SOON!
 ```
 {{% /tab %}}
 {{< /tabs >}}

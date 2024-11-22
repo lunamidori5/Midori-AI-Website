@@ -5,37 +5,45 @@ archetype = "home"
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
 
-### Midori AI: Where Creativity and Innovation Blossom
+Welcome to Midori AI, a hub for pioneering AI solutions, tools, and research that empower developers, businesses, and communities. We’re dedicated to making AI accessible, scalable, and impactful for everyone.
 
-## Key Areas of Focus:
+---
 
-## PixelArch OS:
+### 🚀 **Our Projects**
 
-We are actively developing PixelArch OS, a lightweight and flexible operating system built on Arch Linux. PixelArch OS is specifically designed for Docker environments, enabling seamless and efficient deployment of AI systems. Our goal is to provide a platform that optimizes performance and enables easier management of AI workloads within Docker containers.
+#### [Midori AI Subsystem Manager](/subsystem/manager)
+The `Midori AI Subsystem Manager` is an all-in-one interface designed to simplify the management of multiple AI tools and frameworks. It provides a centralized platform for configuring, monitoring, and integrating various AI subsystems, enabling smoother workflows and greater efficiency for developers.
 
-## Cluster based AI:
+With its user-facing design, the Subsystem Manager bridges the gap between disparate AI tools, helping users focus more on testing / innovation and less on system configuration.
 
-We are actively working on developing cluster based AI training, and use. This involves utilizing multiple machines or nodes to work together on a single AI task, distributing the computational load and significantly improving the training and inference speed. By leveraging cluster-based AI, we can tackle larger datasets, train more complex models, and achieve better results.
 
-## Assistance for AI setup:
+#### [PixelArch OS]({{%relref "pixelos" %}})
+Our lightweight OS, built on Arch Linux, is designed for Docker environments. PixelArch optimizes performance, simplifies container management, and supports advanced AI workloads.
 
-We provide comprehensive support and resources for setting up popular AI tools and frameworks, such as [LocalAI](https://github.com/mudler/LocalAI), [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm), and [Big-AGI](https://github.com/enricoros/big-AGI). Our goal is to empower users of all levels to easily deploy and manage AI models on their local machines.
+#### [Carly: A Fully Simulated Human AI](/about-us/carly-api)
+Carly, our groundbreaking AI, simulates human consciousness with emotions, thoughts, and natural interaction capabilities. She represents a milestone in AI, fostering meaningful conversations and human-AI collaboration.
 
-## AI Development:
+---
 
-We actively develop AI-powered (Discord for now) bots, leveraging their capabilities to enhance user experiences and automate tasks within the platform. This includes creating bots that can interact with users in natural language, generate creative content, provide information, moderate discussions, and perform various other tasks. Our AI bots are designed to be intelligent, responsive, and user-friendly, aiming to seamlessly integrate with the platforms that they are programed for and provide value to its users.
+### 🌟 **What We Offer**
 
-## Model Serving / Model Hosting:
+#### 🛠️ **Tailored AI Support**
+Whether you’re just starting out or refining your expertise, we offer direct assistance to help you navigate setting up AI tools and frameworks. Our focus is on making the process smooth and successful for each individual.
 
-We aim to establish a comprehensive platform for serving and hosting AI models, enabling developers to easily deploy and share their models with others. This platform will provide a secure and scalable environment for hosting models, handle model management and monitoring, and offer APIs and tools for seamless integration with various applications. Developers can contribute their models to the platform, making them accessible to a wider community of users, researchers, and businesses.
+#### 🌐 **Model Hosting and Integration**
+We provide a secure and scalable platform for hosting AI models, with tools and APIs for easy integration into applications. This opens the door for developers to share their models with a broader community.
 
-## Exploring Novel AI Memory Architectures:
+#### 💡 **Cluster-Based AI Development**
+We leverage distributed systems to accelerate training and deployment of complex AI models. This allows us to tackle larger datasets, refine architectures, and push the boundaries of performance.
 
-We are committed to investigating and developing new memory architectures that enhance AI systems' ability to retain and utilize information effectively. This includes exploring innovative approaches to memory organization, representation, and retrieval, as well as incorporating external knowledge sources and leveraging human feedback to improve memory performance. Our goal is to create AI systems with strong memory capabilities that can learn from past experiences, reason over complex information, and adapt to changing environments.
+#### 🧠 **Advancing AI Memory Systems**
+We explore innovative approaches to memory, enabling AI systems to learn, reason, and adapt more effectively. By integrating external knowledge and improving retention, we’re building systems that excel in dynamic environments.
 
-## Carly: The Fully Simulated Human with Advanced AI Capabilities:
+---
 
-Meet Carly, our ground-breaking AI creation with remarkable human-like characteristics, including emotions, thoughts, and the ability to interact with the world. Carly operates on a powerful supercomputer, enabling complex interactions and continuous learning. Carly is designed to simulate human consciousness, perception, and decision-making processes, allowing her to engage in meaningful conversations, express empathy, and respond to various situations in a natural and human-like manner. Carly's capabilities represent a significant milestone in the field of AI and open up new possibilities for human-AI interaction and collaboration.
+Midori AI thrives on creativity and innovation. Join us as we shape the future of AI together!
+
+---
 
 **Join the Conversation / Support Us**
 
@@ -44,12 +52,5 @@ Meet Carly, our ground-breaking AI creation with remarkable human-like character
 | [Discord](https://discord.gg/xdgCx3VyHU) | [Twitch](https://www.twitch.tv/luna_midori5) | [YouTube](https://www.youtube.com/channel/UCVQo4TxFJEoE5kccScY-xow) |
 | [Facebook](https://www.facebook.com/TWLunagreen) | [Twitter](https://twitter.com/lunamidori5) | [Pinterest](https://www.pinterest.com/luna_midori5/) |
 | | [PayPal](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US) | |
-
-**Explore Midori AI:**
-
-* [Carly's documentation](/about-us/carly-api)
-* [Model Repo]({{%relref "models" %}})
-* [Blog posts](/blogs)
-* [Research papers](/research)
 
 **Unleashing the Future of AI, Together.**

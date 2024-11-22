@@ -20,8 +20,8 @@ PixelArch OS is a lightweight and efficient Arch Linux distribution specifically
 
 ## Getting Started
 
-### Using Distrobox
-
+{{< tabs >}}
+{{% tab title="Distrobox" %}}
 Each level builds upon the last, adding more features and configurations:
 
 - **Level 1: Quartz** - The base installation, like a blank canvas.
@@ -62,23 +62,21 @@ Image Size - ``3.5gb``
 {{< /tabs >}}
 
 
-### Using Docker
-
+{{% /tab %}}
+{{% tab title="Docker Compose" %}}
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/lunamidori5/Midori-AI-Cluster-OS.git
 ```
 
-### 2. Navigate to the `aiclusteros` Directory
+### 2. Navigate to the `pixelarch_os` Directory
 
 ```bash
-cd Midori-AI-Cluster-OS/aiclusteros
+cd Midori-AI-Cluster-OS/pixelarch_os
 ```
 
 ### 3. Run the Image and Access the Shell
-
-**Using `docker-compose`:**
 
 **a. Edit the `docker-compose.yaml` file:**
 
@@ -163,11 +161,26 @@ docker compose up -d
 **c. Access the container shell:**
 
 ```bash
-docker exec -it aiclusteros-pixelarch-os-1 /bin/bash
+docker exec -it pixelarch_os-pixelarch-os-1 /bin/bash
 ```
 *Note: The container name might differ from pixelarch-os, check your Docker Compose output or `docker ps -a` for the actual name.*
 
-**Using `docker run`:** (Not Recommened)
+{{% /tab %}}
+{{% tab title="Docker Run (Not Recommened)" %}}
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/lunamidori5/Midori-AI-Cluster-OS.git
+```
+
+### 2. Navigate to the `pixelarch_os` Directory
+
+```bash
+cd Midori-AI-Cluster-OS/pixelarch_os
+```
+
+### 3. Build the Image and Access the Shell
 
 Build the Docker Image
 ```bash
@@ -177,6 +190,8 @@ Run the docker bash shell
 ```bash
 docker run -it pixelarch /bin/bash
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Package Management
 

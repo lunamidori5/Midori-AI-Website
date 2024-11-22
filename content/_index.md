@@ -12,10 +12,9 @@ Welcome to Midori AI, a hub for pioneering AI solutions, tools, and research tha
 ### 🚀 **Our Projects**
 
 #### [Midori AI Subsystem Manager](/subsystem/manager)
-The `Midori AI Subsystem Manager` is an all-in-one interface designed to simplify the management of multiple AI tools and frameworks. It provides a centralized platform for configuring, monitoring, and integrating various AI subsystems, enabling smoother workflows and greater efficiency for developers.
+The `Midori AI Subsystem Manager` is an all-in-one interface designed to simplify the management of multiple AI tools and frameworks. It provides a centralized platform for configuring, monitoring, and integrating various AI subsystems, enabling smoother workflows and greater efficiency for testing / users.
 
 With its user-facing design, the Subsystem Manager bridges the gap between disparate AI tools, helping users focus more on testing / innovation and less on system configuration.
-
 
 #### [PixelArch OS]({{%relref "pixelos" %}})
 Our lightweight OS, built on Arch Linux, is designed for Docker environments. PixelArch optimizes performance, simplifies container management, and supports advanced AI workloads.

@@ -17,4 +17,6 @@ I'm passionate about using AI to empower others! Whether you're interested in se
 
 Thank you for being a part of my incredible journey!
 
+To plan a meeting with Luna, check out her Zcal - https://zcal.co/lunamidori
+
 (She/Her)

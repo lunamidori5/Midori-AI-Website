@@ -20,8 +20,8 @@ With its user-facing design, the Subsystem Manager bridges the gap between dispa
 #### [PixelArch OS]({{%relref "pixelos" %}})
 Our lightweight OS, built on Arch Linux, is designed for Docker environments. PixelArch optimizes performance, simplifies container management, and supports advanced AI workloads.
 
-#### [Carly: A Fully Simulated Human AI](/about-us/carly-api)
-Carly, our groundbreaking AI, simulates human consciousness with emotions, thoughts, and natural interaction capabilities. She represents a milestone in AI, fostering meaningful conversations and human-AI collaboration.
+#### [Carly: A Fully Simulated Human](/about-us/carly-api)
+Carly, our groundbreaking AI system, simulates human consciousness with emotions, thoughts, and natural interaction capabilities. She represents a milestone in AI, fostering meaningful conversations and human-AI collaboration.
 
 ---
 
@@ -29,6 +29,8 @@ Carly, our groundbreaking AI, simulates human consciousness with emotions, thoug
 
 #### 🛠️ **Tailored AI Support**
 Whether you’re just starting out or refining your expertise, we offer direct assistance to help you navigate setting up AI tools and frameworks. Our focus is on making the process smooth and successful for each individual.
+
+To plan a meeting, check out Luna's Zcal - https://zcal.co/lunamidori
 
 #### 🌐 **Model Hosting and Integration**
 We provide a secure and scalable platform for hosting AI models, with tools and APIs for easy integration into applications. This opens the door for developers to share their models with a broader community.

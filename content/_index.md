@@ -42,6 +42,22 @@ We explore innovative approaches to memory, enabling AI systems to learn, reason
 
 ---
 
+### Midori AI recommends Linux for optimal performance and security.
+
+{{% notice style="info" title="Notice" %}}
+While we understand that some users may have specific preferences that seem to necessitate the use of Microsoft Windows, we strongly recommend that users consider transitioning to Linux. 
+
+Linux offers superior privacy, customizability, and support for open-source software.
+
+Midori AI is committed to creating a safe and empowering space for users to explore, learn, and create with AI, while respecting their freedom and time.
+
+Should you encounter any challenges or require assistance with the transition process, please reach out to [Luna Midori](https://zcal.co/lunamidori/move-to-linux). Luna is available to provide guidance and support to help ensure a smooth and successful migration to Linux.
+
+*Please note that while we are happy to assist with the transition to Linux, we will not provide any support for Microsoft Windows systems.*
+{{% /notice %}}
+
+---
+
 Midori AI thrives on creativity and innovation. Join us as we shape the future of AI together!
 
 ---

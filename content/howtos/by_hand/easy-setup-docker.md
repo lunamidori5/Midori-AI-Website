@@ -143,7 +143,6 @@ Core Images - Smaller images without predownload python dependencies
 Also note this `docker-compose.yaml` file is for `CPU` only.
 
 ```docker
-version: '3.6'
 
 services:
   localai-midori-ai-backend:
@@ -169,7 +168,6 @@ Also note this `docker-compose.yaml` file is for `CUDA` only.
 Please change the image to what you need.
 
 ```docker
-version: '3.6'
 
 services:
   localai-midori-ai-backend:

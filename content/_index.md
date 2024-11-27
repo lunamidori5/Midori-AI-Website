@@ -68,6 +68,6 @@ Midori AI thrives on creativity and innovation. Join us as we shape the future o
 |---|---|---|
 | [Discord](https://discord.gg/xdgCx3VyHU) | [Twitch](https://www.twitch.tv/luna_midori5) | [YouTube](https://www.youtube.com/channel/UCVQo4TxFJEoE5kccScY-xow) |
 | [Facebook](https://www.facebook.com/TWLunagreen) | [Twitter](https://twitter.com/lunamidori5) | [Pinterest](https://www.pinterest.com/luna_midori5/) |
-| | [PayPal](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US) | |
+| | [PayPal](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US) | [Email Us](mailto:contact-us@midori-ai.xyz) |
 
 **Unleashing the Future of AI, Together.**

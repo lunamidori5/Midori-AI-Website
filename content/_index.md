@@ -31,9 +31,6 @@ Whether you’re just starting out or refining your expertise, we offer direct a
 
 To plan a meeting, check out Luna's Zcal - https://zcal.co/lunamidori
 
-#### 🌐 **Model Hosting and Integration**
-We provide a secure and scalable platform for hosting AI models, with tools and APIs for easy integration into applications. This opens the door for developers to share their models with a broader community.
-
 #### 💡 **Cluster-Based AI Development**
 We leverage distributed systems to accelerate training and deployment of complex AI models. This allows us to tackle larger datasets, refine architectures, and push the boundaries of performance.
 

@@ -1,6 +1,6 @@
 +++
 disableToc = false
-title = "Midori AI Subsystem Manager"
+title = "Midori AI Subsystem Manager V2"
 weight = 1
 +++
 
@@ -10,7 +10,7 @@ weight = 1
 
 Docker is a containerization platform that allows you to package and run applications in isolated and portable environments called containers. Containers share the host operating system kernel but have their own dedicated file system, processes, and resources. This isolation allows applications to run independently of the host environment and each other, ensuring consistent and predictable behavior.
 
-[**Midori AI Subsystem** - Github Link](https://github.com/lunamidori5/Midori-AI)
+[**Midori AI Subsystem** - Github Link](https://github.com/lunamidori5/Midori-AI-Subsystem-Manager)
 
 The Midori AI Subsystem extends Docker's capabilities by providing a modular and extensible platform for managing AI workloads. Each AI system is encapsulated within  its own dedicated Docker image, which contains the necessary software and dependencies. This approach provides several benefits:
 
@@ -20,165 +20,31 @@ The Midori AI Subsystem extends Docker's capabilities by providing a modular and
 {{% notice style="warning" title="Notice" %}}
 **Warnings / Heads up**
 - This program is in beta! By using it you take on risk, please see the disclaimer in the footnotes
-- The Webserver should be back up, sorry for the outage
 
 **Known Issues**
 - Server Rework is underway! Thank you for giving us lots of room to grow!
 - **Report Issuses** -> [Github Issue](https://github.com/lunamidori5/Midori-AI/issues/new/choose)
-
-**Windows Users**
-- There seems to be false positive from virus checkers, [this file](https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip) is safe to download, [check here for the code](https://github.com/lunamidori5/Midori-AI/tree/master/other_files)
-- This seems to be a widely known bug with Google Chorme, Edge, and others, here are our [virus scans from a few websites](https://www.virustotal.com/gui/url/6d36b491ed76cc9f1e284b43fe7fcd4158696edb5730b614469bbdf6f1e616f0/details). We will try other ways of packing the files.
 {{% /notice %}}
 
 ## Install Midori AI Subsystem Manager
 
-{{% notice style="info" title="Notice" %}}
-- As we are in beta, we have implemented telemetry to enhance bug discovery and resolution. This data is anonymized and will be configurable when out of beta.
-{{% /notice %}}
-
 {{< tabs >}}
-{{% tab title="Windows" %}}
-### Recommened Prerequisites
-Should you be missing this prerequisite, the manager is capable of installing it on your behalf.
-[Docker Desktop Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-### Recommended
-Please make a folder for the Manager program with nothing in it, do not use the user folder.
-
-### Quick install
-
-1. Download - https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip
-2. Unzip into the folder you made
-3. Run `subsystem_manager.exe`
-
-### Quick install with script
-
-Open a Command Prompt or PowerShell terminal and run:
-
-```bat
-curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/model_installer/shell_files/model_installer.bat -o subsystem_manager.bat && subsystem_manager.bat
-```
-
-### Manual download and installation
-
-Open a Command Prompt or PowerShell terminal and run:
-
-```bat
-curl -sSL https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip -o subsystem_manager.zip
-powershell Expand-Archive subsystem_manager.zip -DestinationPath .
-subsystem_manager.exe
-```
-{{% /tab %}}
-
-{{% tab title="Linux" %}}
-### Recommened Prerequisites
-If these prerequisites are missing, the manager can install them for you on Debian or Arch-based distros.
-[Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
-
-or 
-
-[Docker Desktop Linux](https://docs.docker.com/desktop/install/linux-install/)
-
-### Quick install with script
-
-```sh
-curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/model_installer/shell_files/model_installer.sh > model_installer.sh && bash ./model_installer.sh
-```
-
-### Manual download and installation
-
-Open a terminal and run:
-
-```sh
-curl -sSL https://tea-cup.midori-ai.xyz/download/model_installer_linux.tar.gz -o subsystem_manager.tar.gz
-tar -xzf subsystem_manager.tar.gz
-chmod +x subsystem_manager
-sudo ./subsystem_manager
-```
-{{% /tab %}}
-{{% tab title="Unraid" %}}
-### Warning
-Unraid is not fully supported by the Subsystem Manager, We are working hard to fix this, if you have issues please let us know on the github.
-
-### Prerequisites
-Download and set up [Docker Compose Plugin](https://forums.unraid.net/topic/114415-plugin-docker-compose-manager/)
-
-### Manual download and installation
-Click on the ``settings`` gear icon, then click the ``compose file`` menu item
-
-After that copy and paste this into the Docker Compose Manager plugin
-**You may need to edit the mounts to the left of the ``:``**
-
-CPU Only:
-```yaml
-services:
-  midori_ai_unraid:
-    image: lunamidori5/subsystem_manager:master
-    ports:
-    - 39090:9090
-    privileged: true
-    restart: always
-    tty: true
-    volumes:
-    - /mnt/user/appdata/MidoriAI/system:/var/lib/docker/volumes/midoriai_midori-ai/_data
-    - /mnt/user/appdata/MidoriAI/models:/var/lib/docker/volumes/midoriai_midori-ai-models/_data
-    - /mnt/user/appdata/MidoriAI/images:/var/lib/docker/volumes/midoriai_midori-ai-images/_data
-    - /mnt/user/appdata/MidoriAI/audio:/var/lib/docker/volumes/midoriai_midori-ai-audio/_data
-    - /var/run/docker.sock:/var/run/docker.sock
-```
-
-CPU and Nvidia GPU:
-```yaml
-services:
-  midori_ai_unraid:
-    deploy:
-      resources:
-         reservations:
-            devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu] 
-    image: lunamidori5/subsystem_manager:master
-    ports:
-    - 39090:9090
-    privileged: true
-    restart: always
-    tty: true
-    volumes:
-    - /mnt/user/appdata/MidoriAI/system:/var/lib/docker/volumes/midoriai_midori-ai/_data
-    - /mnt/user/appdata/MidoriAI/models:/var/lib/docker/volumes/midoriai_midori-ai-models/_data
-    - /mnt/user/appdata/MidoriAI/images:/var/lib/docker/volumes/midoriai_midori-ai-images/_data
-    - /mnt/user/appdata/MidoriAI/audio:/var/lib/docker/volumes/midoriai_midori-ai-audio/_data
-    - /var/run/docker.sock:/var/run/docker.sock
-```
-
-### Running the program
-
-Start up that docker then run the following in it by clicking ``console``
-
-```bash
-python3 subsystem_python_runner.py
-```
-
-{{% /tab %}}
-{{% tab title="Other OS" %}}
+{{% tab title="V2 (UV)" %}}
 ### Prerequisites
 - [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
-- [Python 3.10](https://www.python.org/downloads/release/python-3100/)
-- [Python Venv](https://virtualenv.pypa.io/en/latest/installation.html)
-
-### Recommended
-***Do not use on windows***
-
-Please make a folder for the Manager program with nothing in it, do not use the user folder.
+- [UV](https://docs.astral.sh/uv/getting-started/installation/)
+- [git](https://git-scm.com/downloads)
 
 ### Quick install with script
 
-Download this file
+Copy and paste this into a SH or Batch file then run it.
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/midori_ai_manager/subsystem_python_runner.py > subsystem_python_runner.py
+git clone https://github.com/lunamidori5/Midori-AI-Subsystem-Manager.git
+cd Midori-AI-Subsystem-Manager/
+cd subsystem-manager-2-uv/
+uv run main.py
 ```
 
 ### Running the program
@@ -186,17 +52,26 @@ curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Mana
 Open a terminal and run:
 
 ```bash
-python3 subsystem_python_runner.py
+uv run main.py
 ```
 
-### Running the program as root (Linux Only)
+### Running the program as root
 
 Open a terminal and run:
 
 ```bash
-sudo python3 subsystem_python_runner.py
+sudo uv run main.py
 ```
 {{% /tab %}}
+
+{{% tab title="V2 (Docker)" %}}
+Coming soon! Please use UV for now.
+{{% /tab %}}
+
+{{% tab title="V1 (SUNSETTING)" %}}
+[Click here to go to the old install page](subsystemv1/)
+{{% /tab %}}
+
 {{< /tabs >}}
 
 [![Auto Lint, Test, and Build.](https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml/badge.svg)](https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml)

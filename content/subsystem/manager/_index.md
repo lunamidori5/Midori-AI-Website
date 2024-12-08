@@ -6,16 +6,17 @@ weight = 1
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logosubsystem.png)
 
-**How Docker Works**
+The ``Midori AI Subsystem`` offers an innovative solution for managing AI workloads through its advanced integration with containerization technologies. Leveraging the lightweight and efficient design of [PixelArch OS](https://io.midori-ai.xyz/pixelos/), this system empowers developers, researchers, and hobbyists test AI systems effortlessly across a variety of environments.
 
-Docker is a containerization platform that allows you to package and run applications in isolated and portable environments called containers. Containers share the host operating system kernel but have their own dedicated file system, processes, and resources. This isolation allows applications to run independently of the host environment and each other, ensuring consistent and predictable behavior.
+At the heart of the Midori AI Subsystem is [PixelArch OS](https://io.midori-ai.xyz/pixelos/), a custom Arch Linux-based operating system optimized for containerized workloads. It provides a lightweight, streamlined environment tailored for modern AI development. 
 
-[**Midori AI Subsystem** - Github Link](https://github.com/lunamidori5/Midori-AI-Subsystem-Manager)
+* Simplified Deployment: Deploy AI systems effortlessly with pre-configured or built-on-request container images tailored to your needs.
+* Platform Versatility: Supports Docker, Podman, LXC, and other systems, allowing you to choose the best fit for your infrastructure.
+* Seamless Experimentation: Experiment with various AI tools and models in isolated environments without worrying about conflicts or resource constraints.
+* Effortless Scalability: Scale AI workloads efficiently by leveraging containerization technologies.
+* Standardized Configurations: Reduce guesswork with standardized setups for AI programs.
+* Unleash Creativity: Focus on innovating and developing AI solutions while the Subsystem handles system configuration and compatibility.
 
-The Midori AI Subsystem extends Docker's capabilities by providing a modular and extensible platform for managing AI workloads. Each AI system is encapsulated within  its own dedicated Docker image, which contains the necessary software and dependencies. This approach provides several benefits:
-
-* **Simplified Deployment:** The Midori AI Subsystem provides a streamlined and efficient way to deploy AI systems using Docker container technology.
-* **Eliminates Guesswork:** Standardized configurations and settings reduce complexities, enabling seamless setup and management of AI programs.
 
 {{% notice style="warning" title="Notice" %}}
 **Warnings / Heads up**
@@ -95,7 +96,7 @@ The functionality of this product is subject to a variety of factors that are be
 
 ## ----- Footnotes -----
 
-*For your safety we have posted the code of this program onto github, please check it out! - [Github](https://github.com/lunamidori5/Midori-AI/tree/master/other_files)
+*For your safety we have posted the code of this program onto github, please check it out! - [Github](https://github.com/lunamidori5/Midori-AI-Subsystem-Manager/tree/master/subsystem-manager-2-uv)
 
 **If you would like to give to help us get better servers - [Give Support](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US)
 

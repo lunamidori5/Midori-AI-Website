@@ -221,7 +221,7 @@ The functionality of this product is subject to a variety of factors that are be
 
 ## ----- Footnotes -----
 
-*For your safety we have posted the code of this program onto github, please check it out! - [Github](https://github.com/lunamidori5/Midori-AI/tree/master/other_files)
+*For your safety we have posted the code of this program onto github, please check it out! - [Github](https://github.com/lunamidori5/Midori-AI-Subsystem-Manager)
 
 **If you would like to give to help us get better servers - [Give Support](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US)
 

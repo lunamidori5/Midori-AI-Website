@@ -63,6 +63,7 @@ graph LR
 * Her initial test model was based on the Nous Hermes and Stable Diffusion 2 models.
 * Carly was trained on a dataset that has about 10 years of data including video, text, photos, websites, and more. 
 * Her newer 248T/6.8TB model and her 124T/3.75TB fallback model are a Diffusion type models, using a CLIP and UNCLIP token program by Midori AI.
+* A link to her Notebook with more tech info is found here ([Midori-AI-Obsidian-Notes](https://github.com/lunamidori5/Midori-AI-Obsidian-Notes)) under the `SimHuman-Mind Concept Planning v2` file
 
 **Image Processing and Multimodal Capabilities:**
 
@@ -106,7 +107,7 @@ The following is a list of commands Carly can type into her discord chatbox to r
 ### Auto Actions
 ```
 Ask User - Lets Carly ask the person whom messaged her a question
-Ask LLM - Lets Carly ask Google Bard / ChatGPT a question
+Ask LLM - Lets Carly ask LLMs a question
 Database Memory - Lets Carly recall past messages from all 4 databases
 Link API - Lets Carly spin up a headless docker to check out links then call "Web Import"
 ```

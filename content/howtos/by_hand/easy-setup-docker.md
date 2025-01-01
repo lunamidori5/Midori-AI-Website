@@ -29,46 +29,46 @@ At this point we want to set up our `.env` file, here is a copy for you to use i
 ```bash
 ## Set number of threads.
 ## Note: prefer the number of physical cores. Overbooking the CPU degrades performance notably.
-THREADS=2
+LOCALAI_THREADS=2
 
 ## Specify a different bind address (defaults to ":8080")
 # ADDRESS=127.0.0.1:8080
 
 ## Define galleries.
 ## models will to install will be visible in `/models/available`
-GALLERIES=[{"name":"model-gallery", "url":"github:go-skynet/model-gallery/index.yaml"}, {"url": "github:go-skynet/model-gallery/huggingface.yaml","name":"huggingface"}]
+LOCALAI_GALLERIES=[{"name":"model-gallery", "url":"github:go-skynet/model-gallery/index.yaml"}, {"url": "github:go-skynet/model-gallery/huggingface.yaml","name":"huggingface"}]
 
 ## Default path for models
-MODELS_PATH=/models
+LOCALAI_MODELS_PATH=/models
 
 ## Enable debug mode
-DEBUG=true
+LOCALAI_DEBUG=true
 
 ## Disables COMPEL (Lets Stable Diffuser work)
-COMPEL=0
+LOCALAI_COMPEL=0
 
 ## Enable/Disable single backend (useful if only one GPU is available)
 # SINGLE_ACTIVE_BACKEND=true
 
 ## Specify a build type. Available: cublas, openblas, clblas.
-BUILD_TYPE=cublas
+LOCALAI_BUILD_TYPE=cublas
 
-REBUILD=true
+LOCALAI_REBUILD=true
 
 ## Enable go tags, available: stablediffusion, tts
 ## stablediffusion: image generation with stablediffusion
 ## tts: enables text-to-speech with go-piper 
-## (requires REBUILD=true)
+## (requires LOCALAI_REBUILD=true)
 #
-#GO_TAGS=tts
+# LOCALAI_GO_TAGS=tts
 
 ## Path where to store generated images
-# IMAGE_PATH=/tmp
+# LOCALAI_IMAGE_PATH=/tmp
 
 ## Specify a default upload limit in MB (whisper)
-# UPLOAD_LIMIT
+# LOCALAI_UPLOAD_LIMIT
 
-# HUGGINGFACEHUB_API_TOKEN=Token here
+# LOCALAI_HUGGINGFACEHUB_API_TOKEN=Token here
 ```
 
 

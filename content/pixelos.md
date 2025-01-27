@@ -166,6 +166,37 @@ docker exec -it pixelarch_os-pixelarch-os-1 /bin/bash
 *Note: The container name might differ from pixelarch-os, check your Docker Compose output or `docker ps -a` for the actual name.*
 
 {{% /tab %}}
+{{% tab title="WSL2 (Not Recommened)" %}}
+
+Midori AI recommends switching to Linux off of windows, if you still wish to use Pixelarch in WSL2 here is how, No support will be give to fix bugs on windows.
+
+### 1. Setup the docker image
+
+```bash
+docker run -t --name wsl_export lunamidori5/pixelarch:quartz ls /
+```
+
+### 2. Export the `pixelarch` os from docker
+
+```bash
+docker export wsl_export > /mnt/c/temp/pixelarch.tar
+```
+
+### 3. Clean up the docker iamge
+
+```bash
+docker rm wsl_export
+```
+
+### 4. Import Pixelarch into WSL
+
+```batch
+cd C:\temp
+mkdir E:\wslDistroStorage\pixelarch
+wsl --import Pixelarch E:\wslDistroStorage\pixelarch .\pixelarch.tar
+```
+
+{{% /tab %}}
 {{% tab title="Docker Run (Not Recommened)" %}}
 
 ### 1. Clone the Repository

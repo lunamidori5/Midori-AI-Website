@@ -18,16 +18,19 @@ PixelArch OS is a lightweight and efficient Arch Linux distribution specifically
 - **Package Management:** Utilizes the powerful yay package manager alongside the traditional pacman, providing a flexible and efficient way to manage software packages.
 - **Minimal Footprint:** Designed to be lightweight and resource-efficient, ideal for running in Docker containers.
 
+## PixelArch Flavors: A Tiered Approach
+
+PixelArch is offered in a tiered structure, with each level building upon the previous, providing increasing functionality and customization options:
+
+- **Level 1: Quartz** -  The foundation; a minimal base system, providing a clean slate for your specific needs.
+- **Level 2: Amethyst** - Core utilities; includes essential tools like `curl`, `wget`, and `docker`, alongside several quality-of-life enhancements.
+- **Level 3: Topaz** - Development focused; pre-configured with key development languages and tools, including `python`, `nodejs`, and `rust`.
+- **Level 4: Emerald** - Remote access and desktop environment; provides secure remote shell and tunnel capabilities (via `tmate`, `rdp`, or `ssh`).
+
 ## Getting Started
 
 {{< tabs >}}
 {{% tab title="Distrobox" %}}
-Each level builds upon the last, adding more features and configurations:
-
-- **Level 1: Quartz** - The base installation, like a blank canvas.
-- **Level 2: Amethyst** - Essential tools (like `curl`, `wget`, `docker`, and more) and a few quality-of-life improvements.
-- **Level 3: Topaz** -  Specialized software for development. Comes with `python`, `nodejs`, and `rust` preinstalled.
-- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate`, `rdp` or `ssh`), and a full [Enlightenment](https://wiki.archlinux.org/title/Enlightenment) Desktop preinstalled.
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
@@ -79,13 +82,6 @@ cd Midori-AI-Cluster-OS/pixelarch_os
 ### 3. Run the Image and Access the Shell
 
 **a. Edit the `docker-compose.yaml` file:**
-
-Each level builds upon the last, adding more features and configurations:
-
-- **Level 1: Quartz** - The base installation, like a blank canvas.
-- **Level 2: Amethyst** - Essential tools (like `curl`, `wget`, `docker`, and more) and a few quality-of-life improvements.
-- **Level 3: Topaz** -  Specialized software for development. Comes with `python`, `nodejs`, and `rust` preinstalled.
-- **Level 4: Emerald** - Remote shell and tunnel support (via `tmate`, `rdp` or `ssh`), and a full [Enlightenment](https://wiki.archlinux.org/title/Enlightenment) Desktop preinstalled. (Better for Distrobox, docker it will not work)
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
@@ -199,28 +195,43 @@ wsl --import Pixelarch E:\wslDistroStorage\pixelarch .\pixelarch.tar
 {{% /tab %}}
 {{% tab title="Docker Run (Not Recommened)" %}}
 
-### 1. Clone the Repository
+### 1. Use Pixelarch shell
+
+{{< tabs >}}
+{{% tab title="Quartz" %}}
+Image Size - ``530mb``
 
 ```bash
-git clone https://github.com/lunamidori5/Midori-AI-Cluster-OS.git
+docker run -it --rm lunamidori5/pixelarch:quartz /bin/bash
 ```
 
-### 2. Navigate to the `pixelarch_os` Directory
+
+{{% /tab %}}
+{{% tab title="Amethyst" %}}
+Image Size - ``870mb``
 
 ```bash
-cd Midori-AI-Cluster-OS/pixelarch_os
+docker run -it --rm lunamidori5/pixelarch:amethyst /bin/bash
 ```
 
-### 3. Build the Image and Access the Shell
+{{% /tab %}}
+{{% tab title="Topaz" %}}
+Image Size - ``1.15gb``
 
-Build the Docker Image
 ```bash
-docker build -t pixelarch -f arch_dockerfile .
+docker run -it --rm lunamidori5/pixelarch:topaz /bin/bash
 ```
-Run the docker bash shell
+
+{{% /tab %}}
+{{% tab title="Emerald" %}}
+Image Size - ``3.5gb``
+
 ```bash
-docker run -it pixelarch /bin/bash
+docker run -it --rm lunamidori5/pixelarch:emerald /bin/bash
 ```
+
+{{% /tab %}}
+{{< /tabs >}}
 {{% /tab %}}
 {{< /tabs >}}
 

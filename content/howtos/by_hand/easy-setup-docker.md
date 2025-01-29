@@ -31,8 +31,8 @@ At this point we want to set up our `.env` file, here is a copy for you to use i
 ## Note: prefer the number of physical cores. Overbooking the CPU degrades performance notably.
 LOCALAI_THREADS=2
 
-## Specify a different bind address (defaults to ":8080")
-# ADDRESS=127.0.0.1:8080
+## **do not change this at all, this must be here to work**
+LOCALAI_ADDRESS=0.0.0.0:8080
 
 ## Define galleries.
 ## models will to install will be visible in `/models/available`
@@ -53,7 +53,7 @@ LOCALAI_COMPEL=0
 ## Specify a build type. Available: cublas, openblas, clblas.
 LOCALAI_BUILD_TYPE=cublas
 
-LOCALAI_REBUILD=true
+# LOCALAI_REBUILD=true
 
 ## Enable go tags, available: stablediffusion, tts
 ## stablediffusion: image generation with stablediffusion

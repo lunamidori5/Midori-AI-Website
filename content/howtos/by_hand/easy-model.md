@@ -90,7 +90,7 @@ docker compose restart
 If you want to check your models yaml, here is a full copy!
 ```yaml
 context_size: 2000
-##Put settings right here for tunning!! Before name but after Backend! (remove this comment before saving the file)
+##Put settings right here for tunning!! Before name but after context_size! (remove this comment before saving the file)
 name: lunademo
 parameters:
   model: 7bmodelQ5.gguf

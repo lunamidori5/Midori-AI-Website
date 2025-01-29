@@ -78,9 +78,9 @@ It will use a container from [quay.io](https://quay.io/repository/go-skynet/loca
 {{< tabs >}}
 {{% tab title="Vanilla / CPU Images" %}}
 Recommened Midori AI - LocalAI Images
-- `lunamidori5/midori_ai_subsystem_localai_cpu:master`
+- `lunamidori5/localai_cpu:master`
 
-For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/midori_ai_subsystem_localai_cpu/tags)
+For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/localai_cpu/tags)
 
 Base LocalAI Images
 - `master`
@@ -96,12 +96,12 @@ Images with Nvidia accelleration support
 > If you do not know which version of CUDA do you have available, you can check with `nvidia-smi` or `nvcc --version`
 
 Recommened Midori AI - LocalAI Images (Only Nvidia works for now)
-- `lunamidori5/midori_ai_subsystem_localai_nvidia_gpu:master`
-- `lunamidori5/midori_ai_subsystem_localai_hipblas_gpu:master`
-- `lunamidori5/midori_ai_subsystem_localai_intelf16_gpu:master`
-- `lunamidori5/midori_ai_subsystem_localai_intelf32_gpu:master`
+- `lunamidori5/localai_nvidia_gpu:master`
+- `lunamidori5/localai_hipblas_gpu:master`
+- `lunamidori5/localai_intelf16_gpu:master`
+- `lunamidori5/localai_intelf32_gpu:master`
 
-For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/midori_ai_subsystem_localai_gpu/tags)
+For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/localai_gpu/tags)
 
 Base LocalAI Images
 - `master-cublas-cuda11`
@@ -119,12 +119,12 @@ Images with Nvidia accelleration support
 > If you do not know which version of CUDA do you have available, you can check with `nvidia-smi` or `nvcc --version`
 
 Recommened Midori AI - LocalAI Images (Only Nvidia works for now)
-- `lunamidori5/midori_ai_subsystem_localai_nvidia_gpu:master`
-- `lunamidori5/midori_ai_subsystem_localai_hipblas_gpu:master`
-- `lunamidori5/midori_ai_subsystem_localai_intelf16_gpu:master`
-- `lunamidori5/midori_ai_subsystem_localai_intelf32_gpu:master`
+- `lunamidori5/localai_nvidia_gpu:master`
+- `lunamidori5/localai_hipblas_gpu:master`
+- `lunamidori5/localai_intelf16_gpu:master`
+- `lunamidori5/localai_intelf32_gpu:master`
 
-For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/midori_ai_subsystem_localai_gpu/tags)
+For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/localai_gpu/tags)
 
 Base LocalAI Images
 - `master-cublas-cuda12`
@@ -146,7 +146,7 @@ Also note this `docker-compose.yaml` file is for `CPU` only.
 
 services:
   localai-midori-ai-backend:
-    image: lunamidori5/midori_ai_subsystem_localai_cpu:master
+    image: lunamidori5/localai_cpu:master
     ## use this for localai's base 
     ## image: quay.io/go-skynet/local-ai:master
     tty: true # enable colorized logs
@@ -180,7 +180,7 @@ services:
               capabilities: [gpu]
     ## use this for localai's base 
     ## image: quay.io/go-skynet/local-ai:CHANGEMETOIMAGENEEDED
-    image: lunamidori5/midori_ai_subsystem_localai_nvidia_gpu:master
+    image: lunamidori5/localai_nvidia_gpu:master
     tty: true # enable colorized logs
     restart: always # should this be on-failure ?
     ports:

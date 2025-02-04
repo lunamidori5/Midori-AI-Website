@@ -33,7 +33,8 @@ At the heart of the Midori AI Subsystem is [PixelArch OS](https://io.midori-ai.x
 
 {{% tab title="V2 (UV)" %}}
 ### Prerequisites
-- [Docker Engine](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
+- [Docker Engine](https://docs.docker.com/engine/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 - [UV](https://docs.astral.sh/uv/getting-started/installation/)
 - [git](https://git-scm.com/downloads)
 
@@ -42,9 +43,8 @@ At the heart of the Midori AI Subsystem is [PixelArch OS](https://io.midori-ai.x
 Copy and paste this into a SH or Batch file then run it.
 
 ```bash
-git clone https://github.com/lunamidori5/Midori-AI-Subsystem-Manager.git
-cd Midori-AI-Subsystem-Manager/
-cd subsystem-manager-2-uv/
+git clone https://github.com/lunamidori5/subsystem-manager.git
+cd subsystem-manager
 uv run main.py
 ```
 

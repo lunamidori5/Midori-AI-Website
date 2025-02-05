@@ -66,10 +66,19 @@ sudo uv run main.py
 {{% /tab %}}
 
 {{% tab title="V2 (Docker)" %}}
-Coming soon! Please use UV for now.
+### Prerequisites
+- [Docker Engine](https://docs.docker.com/engine/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+Open a terminal and run:
+
+```bash
+docker run --gpus all -p 39090:9090 --privileged --restart always -d -v /var/run/docker.sock:/var/run/docker.sock lunamidori5/pixelarch:subsystem
+```
 {{% /tab %}}
 
 {{% tab title="V1 (SUNSETTING)" %}}
+Do not use, will no longer work...
 [Click here to go to the old install page](subsystemv1/)
 {{% /tab %}}
 

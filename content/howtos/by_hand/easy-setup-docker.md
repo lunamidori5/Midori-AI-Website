@@ -14,11 +14,11 @@ It is highly recommended to check out the [Midori AI Subsystem Manager]({{%relre
 - You will need about 15gb of space free on C drive for ``Docker compose``
 {{% /notice %}}
 
-We are going to run `LocalAI` with `docker compose` for this set up.
+We are going to run `localai` with `docker compose` for this set up.
 
-Lets setup our folders for ``LocalAI`` (run these to make the folders for you if you wish)
+Lets setup our folders for ``localai`` (run these to make the folders for you if you wish)
 ```batch
-mkdir "LocalAI"
+mkdir "localai"
 cd LocalAI
 mkdir "models"
 mkdir "images"

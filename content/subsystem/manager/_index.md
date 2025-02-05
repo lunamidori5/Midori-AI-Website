@@ -63,6 +63,9 @@ Open a terminal and run:
 ```bash
 sudo uv run main.py
 ```
+
+The application will attempt to automatically launch the web UI. If the automatic launch is unsuccessful, a link to the web UI will be provided in the application output. Please use this link to manually open the web UI. Automatic updates are implemented through continuous integration with GitHub. While manual rebuilds are generally unnecessary, the application will rebuild as needed to maintain stability and incorporate the latest changes.
+
 {{% /tab %}}
 
 {{% tab title="V2 (Docker)" %}}
@@ -70,11 +73,24 @@ sudo uv run main.py
 - [Docker Engine](https://docs.docker.com/engine/install/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
+### Running the program
+
 Open a terminal and run:
 
 ```bash
-docker run --gpus all -p 39090:9090 --privileged --restart always -d -v /var/run/docker.sock:/var/run/docker.sock lunamidori5/pixelarch:subsystem
+docker run -p 39090:8000 --privileged --name subsystem_manager --restart always -d -v /var/run/docker.sock:/var/run/docker.sock lunamidori5/pixelarch:subsystem
 ```
+
+### Running the program (With GPU)
+
+Open a terminal and run:
+
+```bash
+docker run --gpus all -p 39090:8000 --privileged --name subsystem_manager --restart always -d -v /var/run/docker.sock:/var/run/docker.sock lunamidori5/pixelarch:subsystem
+```
+
+Access the user interface by navigating to your IP address on port 39090. Please allow 2-10 minutes for the initial build process to complete. The system automatically updates upon each GitHub push. While a manual rebuild is typically unnecessary, the application will rebuild as required.
+
 {{% /tab %}}
 
 {{% tab title="V1 (SUNSETTING)" %}}

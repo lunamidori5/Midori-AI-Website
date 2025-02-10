@@ -101,7 +101,7 @@ Recommened Midori AI - LocalAI Images (Only Nvidia works for now)
 - `lunamidori5/localai_intelf16_gpu:master`
 - `lunamidori5/localai_intelf32_gpu:master`
 
-For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/localai_gpu/tags)
+For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5)
 
 Base LocalAI Images
 - `master-cublas-cuda11`
@@ -124,7 +124,7 @@ Recommened Midori AI - LocalAI Images (Only Nvidia works for now)
 - `lunamidori5/localai_intelf16_gpu:master`
 - `lunamidori5/localai_intelf32_gpu:master`
 
-For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5/localai_gpu/tags)
+For a full list of tags or images please [check our docker repo](https://hub.docker.com/r/lunamidori5)
 
 Base LocalAI Images
 - `master-cublas-cuda12`

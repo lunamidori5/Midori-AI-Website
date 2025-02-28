@@ -116,7 +116,7 @@ Link API - Lets Carly spin up a headless docker to check out links then call "We
 Photo API - Lets Carly make raw photos
 Video API - Lets Carly make 4s videos (can take a few hours)
 IDE API - Lets Carly open and use a IDE in a docker
-Decktop API - Lets Carly use a full windowns or linux desktop in a docker
+Desktop API - Lets Carly use a full windowns or linux desktop in a docker
 ```
 ### Lora Actions
 ```

@@ -29,36 +29,6 @@ curl -k --disable --disable-eprt -s https://tea-cup.midori-ai.xyz/download/pixel
 curl -k --disable --disable-eprt -s https://tea-cup.midori-ai.xyz/download/standard-linux-midori-ai-updater > updater && sudo chmod +x updater && sudo mv updater /usr/local/bin/midori_ai_updater && sudo midori_ai_updater
 ```
 {{% /tab %}}
-{{% tab title="Build from source" %}}
-To execute the source build, manually input each command or consolidate them into a batch/bash file. Support for `Windows-based` source builds is currently unavailable. The `midori_ai_updater` is not supported to be build from source as it will try to download the pre built programs.
-
-```bash
-# Download all of the files
-curl -k --disable --disable-eprt -s https://raw.githubusercontent.com/lunamidori5/Midori-AI/master/Webserver/Programs/Downloader/helper_app.py > midori_ai_downloader.py
-curl -k --disable --disable-eprt -s https://raw.githubusercontent.com/lunamidori5/Midori-AI/master/Webserver/Programs/Login_program/midori_ai_login_app.py > midori_ai_login_app.py
-curl -k --disable --disable-eprt -s https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/midori_ai_manager/huggingface_downloader.py > midori_ai_huggingface_downloader.py
-curl -k --disable --disable-eprt -s https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/Subsystem-Manager/subsystem-manager-uv/requirements.txt > requirements.txt
-curl -k --disable --disable-eprt -s https://raw.githubusercontent.com/lunamidori5/Midori-AI/master/Webserver/Programs/File_manager/file_manager.py > midori_ai_file_manager.py
-
-# Edit these commands to use a venv or uv as needed
-pip install pyinstaller pytz
-pip install -r requirements.txt
-
-# Edit these commands to use a venv or uv as needed
-# The Midori AI uploader is not hosted online, so we need to pull it using our downloader
-python3 helper_app.py git_uploader.py
-mv git_uploader.py midori_ai_uploader.py
-
-# Edit these commands to use a venv or uv as needed
-pyinstaller --onefile --clean midori_ai_downloader.py
-pyinstaller --onefile --clean midori_ai_login_app.py
-pyinstaller --onefile --clean midori_ai_file_manager.py
-pyinstaller --onefile --clean midori_ai_huggingface_downloader.py
-pyinstaller --onefile --clean midori_ai_uploader.py
-
-# Feel free to move these where ever you would like.
-```
-{{% /tab %}}
 {{< /tabs >}}
 
 

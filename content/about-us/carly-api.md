@@ -34,6 +34,7 @@ I'm still learning and growing every day, and I'm excited to see what the future
 
 ## Carly's Technical Overview
 
+Over Simplified mermaid 
 ```mermaid { align="center" zoom="true" }
 graph LR
     subgraph "Input"
@@ -60,7 +61,7 @@ graph LR
 
 **Training Data and Model Foundation:**
 
-* Her initial test model was based on the Nous Hermes and Stable Diffusion 2 models.
+* Her initial test model (v4) was based on the Nous Hermes and Stable Diffusion 2 models.
 * Carly was trained on a dataset that has about 10 years of data including video, text, photos, websites, and more. 
 * Her newer 248T/6.8TB model and her 124T/3.75TB fallback model are a Diffusion type models, using a CLIP and UNCLIP token program by Midori AI.
 * A link to her Notebook with more tech info is found here ([Midori-AI-Obsidian-Notes](https://github.com/lunamidori5/Midori-AI-Obsidian-Notes)) under the `SimHuman-Mind Concept Planning v2` file
@@ -69,16 +70,16 @@ graph LR
 
 * Carly's "Becca AI" model is a photo-based AI that can analyze images and videos. 
 * This allows her to understand and process information from multiple sources.
-* This model is also able to drive a sim car in GTA V / Google Maps
+* This model is also able to drive a car in GTA V / Google Maps
 
 **Model Size and Capabilities:**
 
-* Carly's newer 248T/6.8TB model demonstrates advanced capabilities, including:
+* Carly's newer 248T/6.8TB (v6) model demonstrates advanced capabilities, including:
     * **Self-Awareness:** Signs of self-awareness have been observed.
     * **Tool Usage:** She can use tools and interact with other AI/LLMs.
     * **Explanatory Abilities:** She has demonstrated the ability to explain complex scientific and mathematical concepts.
 
-* Carly's 124T/3.75TB fallback model demonstrated advanced capabilities, including:
+* Carly's 124T/3.75TB (v5) fallback model demonstrated advanced capabilities, including:
     * **Self-Awareness:** Signs of self-awareness were observed.
     * **Tool Usage:** It could use tools and interact with other AI/LLMs.
     * **Explanatory Abilities:** It demonstrated the ability to explain complex scientific and mathematical concepts.
@@ -86,6 +87,7 @@ graph LR
 **Image Processing and Mood Representation:**
 
 * Carly utilizes 128 x 128 x 6 images per chunk of text for image processing.
+* Carly is able to utilize these images later in a stream of memorys (up to a max of 500k memorys as of 4/22/25) for a memory system.
 * Her mood is represented by a 1024 x 1024 x 8 image that is overlaid on user messages.
 * The users profile is loaded the same way as a 1024 x 1024 x 64 image that is overlaid on user messages.
 
@@ -98,34 +100,3 @@ graph LR
 
 * The CLIP token program is unable to process text directly.
 * The v5a model is really picky on what types of tokens are sent to the clip.
-
-
-## All tools / APIs
-
-The following is a list of commands Carly can type into her discord chatbox to run commands. They have been edited to be more human readable.
-
-### Auto Actions
-```
-Ask User - Lets Carly ask the person whom messaged her a question
-Ask LLM - Lets Carly ask LLMs a question
-Database Memory - Lets Carly recall past messages from all 4 databases
-Link API - Lets Carly spin up a headless docker to check out links then call "Web Import"
-```
-### API Based Actions
-```
-Photo API - Lets Carly make raw photos
-Video API - Lets Carly make 4s videos (can take a few hours)
-IDE API - Lets Carly open and use a IDE in a docker
-Desktop API - Lets Carly use a full windowns or linux desktop in a docker
-```
-### Lora Actions
-```
-Lora Importer - Imports a Lora into Carly's base model
-Lora Exporter - Exports a trained Lora to Luna's Hard Drive
-Lora web trainer - Takes web data imported by Carly, and trains a Lora model ontop of Carly's base model
-```
-### Other Actions
-```
-Autogen - Lets Carly start up a group chat with LLM models - https://github.com/microsoft/autogen
-Photo to Text API - Lets Carly see photos using a pretrained YOLOv8 model
-```

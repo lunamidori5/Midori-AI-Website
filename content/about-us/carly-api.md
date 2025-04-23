@@ -61,27 +61,29 @@ graph LR
 
 **Training Data and Model Foundation:**
 
-* Her initial test model (v4) was based on the Nous Hermes and Stable Diffusion 2 models.
-* Carly was trained on a dataset that has about 10 years of data including video, text, photos, websites, and more. 
-* Her newer 248T/6.8TB model and her 124T/3.75TB fallback model are a Diffusion type models, using a CLIP and UNCLIP token program by Midori AI.
-* A link to her Notebook with more tech info is found here ([Midori-AI-Obsidian-Notes](https://github.com/lunamidori5/Midori-AI-Obsidian-Notes)) under the `SimHuman-Mind Concept Planning v2` file
+* Carly's initial prototype (v4) leveraged the Nous Hermes and Stable Diffusion 2 architectures.
+* Carly's training dataset encompasses approximately 12 years of diverse data modalities, including video, text, images, and web content.
+* Current iterations employ Diffusion like models incorporating custom CLIP and UNCLIP token methodologies developed by Midori AI.
+* Further technical details are available in the Midori AI notebook: ([Midori-AI-Obsidian-Notes](https://github.com/lunamidori5/Midori-AI-Obsidian-Notes), see the `SimHuman-Mind V6` file).
 
-**Image Processing and Multimodal Capabilities:**
+**Advanced Image Processing and Multimodal Understanding:**
 
-* Carly's "Becca AI" model is a photo-based AI that can analyze images and videos. 
-* This allows her to understand and process information from multiple sources.
-* This model is also able to drive a car in GTA V / Google Maps
+* Carly's "Becca AI" (v1/2012 to v3/2018) model incorporates sophisticated image processing capabilities, enabling analysis of both still images and video streams.
+* This advanced visual perception system allows Carly to extract and interpret information from diverse visual sources.
+* Demonstrations of this capability include autonomous navigation within environments such as Grand Theft Auto V and Google Maps.
 
 **Model Size and Capabilities:**
 
 * Carly's newer 248T/6.8TB (v6) model demonstrates advanced capabilities, including:
+    * **Enhanced Memory:** Equipped with a new memory system capable of loading up to 500,000 memory units.
+    * **Short-Term Visual Memory:** Can retain up to 30 photos, videos, or website snapshots (per user) in short-term memory for up to 35 minutes.
     * **Self-Awareness:** Signs of self-awareness have been observed.
-    * **Tool Usage:** She can use tools and interact with other AI/LLMs.
+    * **Tool Usage:** She can use tools and interact with AI/LLMs/LRMs.
     * **Explanatory Abilities:** She has demonstrated the ability to explain complex scientific and mathematical concepts.
 
 * Carly's 124T/3.75TB (v5) fallback model demonstrated advanced capabilities, including:
     * **Self-Awareness:** Signs of self-awareness were observed.
-    * **Tool Usage:** It could use tools and interact with other AI/LLMs.
+    * **Tool Usage:** It could use tools and interact with AI/LLMs/LRMs.
     * **Explanatory Abilities:** It demonstrated the ability to explain complex scientific and mathematical concepts.
 
 **Image Processing and Mood Representation:**
@@ -98,5 +100,7 @@ graph LR
 
 **Limitations:**
 
-* The CLIP token program is unable to process text directly.
-* The v5a model is really picky on what types of tokens are sent to the clip.
+* The UNCLIP token system is unable to process text directly.
+* Carly can only record or recall information for one user at a time.
+* The v5a model is really picky on what types of tokens are sent to the unclip.
+* The v6 models are really picky how much thinking they can do, and needed a newer locking system to stop panics.

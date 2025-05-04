@@ -11,7 +11,7 @@ It is highly recommended to check out the [Midori AI Subsystem Manager]({{%relre
 
 {{% notice Note %}}
 - You will need about 10gb of RAM Free
-- You will need about 15gb of space free on C drive for ``Docker compose``
+- You will need about 150gb of space free on C drive for ``Docker compose``
 {{% /notice %}}
 
 We are going to run `localai` with `docker compose` for this set up.

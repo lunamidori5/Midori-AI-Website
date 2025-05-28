@@ -54,6 +54,7 @@ LOCALAI_COMPEL=0
 LOCALAI_BUILD_TYPE=cublas
 
 # LOCALAI_REBUILD=true
+LOCALAI_SINGLE_ACTIVE_BACKEND=true
 
 ## Enable go tags, available: stablediffusion, tts
 ## stablediffusion: image generation with stablediffusion
@@ -106,8 +107,7 @@ For a full list of tags or images please [check our docker repo](https://hub.doc
 Base LocalAI Images
 - `master-cublas-cuda11`
 - `master-cublas-cuda11-core`
-- `master-cublas-cuda11-ffmpeg`
-- `master-cublas-cuda11-ffmpeg-core`
+- `master-cublas-cuda11-extras`
 
 Core Images - Smaller images without predownload python dependencies
 {{% /tab %}}
@@ -129,8 +129,7 @@ For a full list of tags or images please [check our docker repo](https://hub.doc
 Base LocalAI Images
 - `master-cublas-cuda12`
 - `master-cublas-cuda12-core`
-- `master-cublas-cuda12-ffmpeg`
-- `master-cublas-cuda12-ffmpeg-core`
+- `master-cublas-cuda12-extras`
 
 Core Images - Smaller images without predownload python dependencies
 
@@ -158,7 +157,7 @@ services:
     volumes:
       - ./models:/models
       - ./images/:/tmp/generated/images/
-    command: ["/usr/bin/local-ai" ]
+    command: ["local-ai"]
 ```
 {{% /tab %}}
 
@@ -190,7 +189,7 @@ services:
     volumes:
       - ./models:/models
       - ./images/:/tmp/generated/images/
-    command: ["/usr/bin/local-ai" ]
+    command: ["local-ai"]
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -205,7 +204,7 @@ docker compose up -d --pull always
 
 Now we are going to let that set up, once it is done, lets check to make sure our huggingface / localai galleries are working (wait until you see this screen to do this)
 
-You should see:
+You should see (This is outdated and needs to be updated to show the new ready text):
 ```
 ┌───────────────────────────────────────────────────┐
 │                   Fiber v2.42.0                   │

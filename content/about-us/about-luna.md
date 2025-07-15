@@ -4,7 +4,7 @@ title = "About Luna Midori"
 weight = 2
 +++
 
-## Meet Luna Midori, the Creator and Operator
+## Meet Luna Midori, the Creator, Operator, and Founding Engineer / CTO
 ![Luna Midori photo](https://tea-cup.midori-ai.xyz/download/lunamidoriphoto.png)
 
 Hey there! I'm Luna Midori, the one who brings Midori AI to life, and I'm also an enthusiastic person who enjoys nurturing safe and inviting online communities.

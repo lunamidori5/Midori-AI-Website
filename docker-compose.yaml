@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: dockerfile
+    tty: true
+    restart: always
     ports:
       - 32767:1313
     volumes:

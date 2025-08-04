@@ -11,8 +11,8 @@ Welcome to Midori AI, a hub for pioneering AI solutions, tools, and research tha
 
 ### 🚀 **Our Projects**
 
-#### [Midori AI Monorepo](https://github.com/lunamidori5/Midori-AI)
-Here is our github link - https://github.com/lunamidori5/Midori-AI
+#### [Midori AI Monorepo](https://github.com/Midori-AI-OSS/Midori-AI)
+Here is our github link - https://github.com/Midori-AI-OSS/Midori-AI
 
 #### [Midori AI Subsystem Manager](/subsystem/manager)
 The `Midori AI Subsystem Manager` is an all-in-one interface designed to simplify the management of multiple AI tools and frameworks. It provides a centralized platform for configuring, monitoring, and integrating various AI subsystems, enabling smoother workflows and greater efficiency for testing / users.

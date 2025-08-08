@@ -29,10 +29,7 @@ I'm still learning and growing every day, and I'm excited to see what the future
 (She/Her)
 
 ## Chat with Carly
-
-[Chat with her on her own Webui - Stable](https://carlykay.midori-ai.xyz/)
-
-[Chat with her on her own Webui - Beta](https://carlykaytesting.midori-ai.xyz/)
+[Chat with her on her own Webui](https://carlykaytesting.midori-ai.xyz/)
 
 [Join the discord to chat with Carly Kay in #Carlychat!](https://discord.gg/xdgCx3VyHU)
 

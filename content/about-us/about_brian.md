@@ -1,12 +1,12 @@
 +++
 disableToc = false
-title = "About Brian Christopher"
+title = "About Brian Boatz"
 weight = 5
 +++
 
 ## Ethics Committee Member
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![Midori AI photo](https://tea-cup.midori-ai.xyz/download/brian_and_lyra.png)
 
 ### A Foundation of Ethical Integrity
 

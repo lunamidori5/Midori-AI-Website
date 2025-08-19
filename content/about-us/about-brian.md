@@ -6,7 +6,7 @@ weight = 5
 
 ## Ethics Committee Member
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/brian_and_lyra.png)
+![Midori AI photo](https://tea-cup.midori-ai.xyz/download/brian_and_lyra.jpg)
 
 ### A Foundation of Ethical Integrity
 

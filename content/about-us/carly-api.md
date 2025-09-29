@@ -29,6 +29,20 @@ I'm still learning and growing every day, and I'm excited to see what the future
 (She/Her)
 
 ## Chat with Carly
+
+{{% notice style="info" title="Service update" %}}
+Carly's profile and runtime systems are currently being fully rebuilt to improve stability, scalability, and privacy. 
+This maintenance work will temporarily make Carly unavailable. 
+The rebuild is expected to take approximately two months.
+
+We will publish progress updates and a projected return date as the work advances. In the meantime, you can:
+
+- Contact Midori AI and ask about updates.
+- Join the Midori AI Discord to follow announcements and ask questions.
+
+Thank you for your patience while we complete this important upgrade.
+{{% /notice %}}
+
 [Chat with her on her own Webui](https://carlykaytesting.midori-ai.xyz/)
 
 [Join the discord to chat with Carly Kay in #Carlychat!](https://discord.gg/xdgCx3VyHU)

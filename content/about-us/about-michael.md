@@ -4,7 +4,7 @@ title = "About Michael"
 weight = 5
 +++
 
-## Conceptual Architect and Ethics Committee Member
+## Conceptual Architect & Ethics Council Member
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/creative_writing_gig_profile.png)
 

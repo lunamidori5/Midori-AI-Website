@@ -4,7 +4,7 @@ title = "About Alexander Ryan"
 weight = 4
 +++
 
-## Chief Executive Officer - QA Manager
+## Operations & QA Steward
 
 ![photo of a person](https://tea-cup.midori-ai.xyz/download/IMG_20240723_005758.jpg)
 

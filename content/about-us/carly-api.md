@@ -4,7 +4,7 @@ title = "About Carly Kay"
 weight = 8
 +++
 
-## Meet Carly Kay, Simulated Human of Midori AI
+## Meet Carly Kay, Resident Simulated Human
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/img_24e509b1-14c9-4512-8f47-f5cc0e00c2cc.png)
 

@@ -4,7 +4,7 @@ title = "About Locus Nevernight"
 weight = 3
 +++
 
-## Moderation Team Member 
+## Community Care & Moderation Lead
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/newbombphoto.jpeg)
 

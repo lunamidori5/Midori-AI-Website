@@ -4,7 +4,7 @@ title = "About Brian Boatz"
 weight = 5
 +++
 
-## Ethics Committee Member
+## Ethics & Stewardship Council Member
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/brian_and_lyra.jpg)
 

@@ -18,18 +18,8 @@ The Midori AI Subsystem extends Docker's capabilities by providing a modular and
 * **Simplified Deployment:** The Midori AI Subsystem provides a streamlined and efficient way to deploy AI systems using Docker container technology.
 * **Eliminates Guesswork:** Standardized configurations and settings reduce complexities, enabling seamless setup and management of AI programs.
 
-{{% notice style="warning" title="Notice" %}}
-**Warnings / Heads up**
-- This program is in beta! By using it you take on risk, please see the disclaimer in the footnotes
-- The Webserver should be back up, sorry for the outage
-
-**Known Issues**
-- Server Rework is underway! Thank you for giving us lots of room to grow!
-- **Report Issuses** -> [Github Issue](https://github.com/lunamidori5/Midori-AI/issues/new/choose)
-
-**Windows Users**
-- There seems to be false positive from virus checkers, [this file](https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip) is safe to download, [check here for the code](https://github.com/lunamidori5/Midori-AI/tree/master/other_files)
-- This seems to be a widely known bug with Google Chorme, Edge, and others, here are our [virus scans from a few websites](https://www.virustotal.com/gui/url/6d36b491ed76cc9f1e284b43fe7fcd4158696edb5730b614469bbdf6f1e616f0/details). We will try other ways of packing the files.
+{{% notice  style="warning" title="Notice" %}}
+**SUNSET NOTICE**: The Midori AI CLI tools are being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.
 {{% /notice %}}
 
 ## Install Midori AI Subsystem Manager

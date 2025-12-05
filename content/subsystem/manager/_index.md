@@ -18,13 +18,8 @@ At the heart of the Midori AI Subsystem is [PixelArch OS](https://io.midori-ai.x
 * Unleash Creativity: Focus on innovating and developing AI solutions while the Subsystem handles system configuration and compatibility.
 
 
-{{% notice style="warning" title="Notice" %}}
-**Warnings / Heads up**
-- This program is in beta! By using it you take on risk, please see the disclaimer in the footnotes
-
-**Known Issues**
-- Server Rework is underway! Thank you for giving us lots of room to grow!
-- **Report Issuses** -> [Github Issue](https://github.com/lunamidori5/Midori-AI/issues/new/choose)
+{{% notice  style="warning" title="Notice" %}}
+**SUNSET NOTICE**: The Midori AI CLI tools are being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.
 {{% /notice %}}
 
 ## Install Midori AI Subsystem Manager

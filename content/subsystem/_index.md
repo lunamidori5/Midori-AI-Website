@@ -6,8 +6,8 @@ weight = 3
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logosubsystem.png)
 
-{{% notice warning %}}
-**SUNSET NOTICE**: The Midori AI Subsystem is being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.
+{{% notice  style="warning" title="Notice" %}}
+**SUNSET NOTICE**: The Midori AI CLI tools are being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.
 {{% /notice %}}
 
 ***Subsystem and Manager are still in beta!***

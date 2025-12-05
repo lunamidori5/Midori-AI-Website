@@ -6,6 +6,10 @@ weight = 8
 
 ![command_line_tools_banner_photo](https://tea-cup.midori-ai.xyz/download/command_line_tools_banner_photo.png)
 
+{{% notice warning %}}
+**SUNSET NOTICE**: The Midori AI CLI tools are being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.
+{{% /notice %}}
+
 Our tools include our `downloader`, `uploader`, `file-manager`, `hf-downloader`, `login program`, and `updater`
 
 To try them out, pick your system from the tabs and try the command! (Warning the updater needs root to work)

@@ -18,8 +18,8 @@ The Midori AI Subsystem extends Docker's capabilities by providing a modular and
 * **Simplified Deployment:** The Midori AI Subsystem provides a streamlined and efficient way to deploy AI systems using Docker container technology.
 * **Eliminates Guesswork:** Standardized configurations and settings reduce complexities, enabling seamless setup and management of AI programs.
 
-{{% notice  style="warning" title="Notice" %}}
-**SUNSET NOTICE**: The Midori AI CLI tools are being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.
+{{% notice style="warning" title="Notice" %}}
+**SUNSET NOTICE**: The Midori AI Subsystem is being sunset and will be retired on January 1st, 2026 in favor of our new Python packages.
 {{% /notice %}}
 
 ## Install Midori AI Subsystem Manager

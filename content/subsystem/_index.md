@@ -9,5 +9,3 @@ weight = 3
 {{% notice style="warning" title="Notice" %}}
 **SUNSET NOTICE**: The Midori AI Subsystem is being sunset and will be retired on January 1st, 2026 in favor of our new Python packages.
 {{% /notice %}}
-
-For Issues, Please open a PR on this github - [https://github.com/lunamidori5/Midori-AI](https://github.com/lunamidori5/Midori-AI)

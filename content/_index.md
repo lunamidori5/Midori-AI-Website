@@ -5,41 +5,29 @@ archetype = "home"
 
 ![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
 
-Welcome to Midori AI, a hub for pioneering ML solutions, tools, and research that empower developers, businesses, and communities. We’re dedicated to making ML accessible, scalable, and impactful for everyone.
+Welcome to Midori AI — we love helping people build, break, and tinker with machine learning. This is a friendly, experimental space for makers, learners, and teams to explore practical tools, try bold ideas, and ship imperfect prototypes. Come mess with models, experiment loudly, and learn together — we’ll help you every step of the way.
 
 ---
 
-### 🚀 **Our Projects**
+## Projects
 
-#### [Midori AI Monorepo](https://github.com/Midori-AI-OSS/Midori-AI)
-Here is our github link - https://github.com/Midori-AI-OSS/Midori-AI
-
-#### [PixelArch OS]({{%relref "pixelos" %}})
-Our lightweight OS, built on Arch Linux, is designed for Docker environments. PixelArch optimizes performance, simplifies container management, and supports advanced ML workloads.
-
-#### [Carly: A Fully Simulated Human](/about-us/carly-api)
-Carly, our groundbreaking ML system, simulates human consciousness with emotions, thoughts, and natural interaction capabilities. She represents a milestone in ML, fostering meaningful conversations and human-ML collaboration.
+- **Midori AI Monorepo** — central source for our projects and tooling. GitHub: https://github.com/Midori-AI-OSS/Midori-AI
+- **PixelArch OS** — lightweight Arch-based OS optimized for Docker and ML workloads. Learn more: [PixelArch OS]({{< relref "pixelos.md" >}})
+- **Carly** — an advanced conversational research project. Learn more: [Carly]({{< relref "about-us/carly-api.md" >}})
 
 ---
 
-### 🌟 **What We Offer**
+## What We Offer
 
-#### 🛠️ **Tailored ML Support**
-Whether you’re just starting out or refining your expertise, we offer direct assistance to help you navigate setting up ML tools and frameworks. Our focus is on making the process smooth and successful for each individual.
-
-To plan a meeting, check out Luna's Zcal - https://zcal.co/lunamidori
-
-#### 💡 **Cluster-Based ML Development**
-We leverage distributed systems to accelerate training and deployment of complex ML models. This allows us to tackle larger datasets, refine architectures, and push the boundaries of performance.
-
-#### 🧠 **Advancing ML Memory Systems**
-We explore innovative approaches to memory, enabling ML systems to learn, reason, and adapt more effectively. By integrating external knowledge and improving retention, we’re building systems that excel in dynamic environments.
+- **OS for ML Development:** deployment for larger experiments.
+- **Memory & Retrieval Research:** improving external memory and long-term learning for models.
+- **Tailored ML Support:** hands-on help for setup, tooling, and workflows. Schedule with Luna: https://zcal.co/lunamidori
 
 ---
 
 ### Midori AI recommends Linux for optimal performance and security.
 
-{{% notice style="info" title="Notice" %}}
+{{% notice style="info" title="Platform Recommendation" %}}
 While we understand that some users may have specific preferences that seem to necessitate the use of Microsoft Windows, we strongly recommend that users consider transitioning to Linux. 
 
 Linux offers superior privacy, customizability, and support for open-source software.
@@ -53,11 +41,7 @@ Should you encounter any challenges or require assistance with the transition pr
 
 ---
 
-Midori AI thrives on creativity and innovation. Join us as we shape the future of ML together!
-
----
-
-**Join the Conversation / Support Us**
+## Join the Conversation / Support Us
 
 |Check|Us|Out|
 |---|---|---|
@@ -65,4 +49,4 @@ Midori AI thrives on creativity and innovation. Join us as we shape the future o
 | [Facebook](https://www.facebook.com/TWLunagreen) | [Twitter](https://twitter.com/lunamidori5) | [Pinterest](https://www.pinterest.com/luna_midori5/) |
 | | [PayPal](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US) | [Email Us](mailto:contact-us@midori-ai.xyz) |
 
-**Unleashing the Future of ML, Together.**
+**Where Creativity and Innovation Blossom, Together**

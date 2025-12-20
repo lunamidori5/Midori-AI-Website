@@ -14,8 +14,8 @@ _____
 
 In this guide I will detail the steps I've taken to get [Home-LLM](https://github.com/acon96/home-llm) and [Local-AI](https://github.com/mudler/LocalAI/) working together in conjunction with [Home-Assistant](https://www.home-assistant.io/)!
 
-This guide assumes that you already have [Local-AI](https://github.com/mudler/LocalAI/) running (in or out of the subsystem). 
-If that is not done, you can [Follow this How To]({{%relref "howtos/by_hand/easy-setup-docker" %}}) or [Install Using Midori AI Subsystem](https://io.midori-ai.xyz/subsystem/manager/)!
+This guide assumes that you already have [Local-AI](https://github.com/mudler/LocalAI/) running.
+If that is not done, you can [Follow this How To]({{%relref "howtos/by_hand/easy-setup-docker" %}}) to set up LocalAI.
 
 _____
 

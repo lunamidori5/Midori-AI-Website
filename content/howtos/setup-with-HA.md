@@ -20,7 +20,7 @@ Please note that both of the projects are similar in term of visual interfaces, 
 
 ## Installation Instructions – LocalAI
 
-To install LocalAI, use our [Midori AI Subsystem Manager]({{%relref "subsystem/manager" %}})
+To install LocalAI, follow the LocalAI installation instructions or the [Easy Docker setup]({{%relref "howtos/by_hand/easy-setup-docker" %}}) guide.
 
 ## Installation Instructions – Home LLM (The HA plugin)
 
@@ -32,7 +32,7 @@ Before adding the Llama Conversation agent in Home Assistant, you must download 
 
 The models can be found on the Midori AI model repo, as a part of the LocalAI manager.
 
-Use the [Midori AI Subsystem Manager]({{%relref "subsystem/manager" %}}) for a easy time installing models or follow [Seting up a Model]({{%relref "howtos/by_hand/easy-model" %}})
+You can follow [Setting up a Model]({{%relref "howtos/by_hand/easy-model" %}}) to install models by hand.
 
 ## Setting up the "remote" backend:
 

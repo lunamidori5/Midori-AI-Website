@@ -5,10 +5,6 @@ title = "Easy Setup - Docker"
 weight = 2
 +++
 
-{{% notice note %}}
-It is highly recommended to check out the [Midori AI Subsystem Manager]({{%relref "subsystem/manager" %}}) for setting up LocalAI. It does all of this for you!
-{{% /notice %}}
-
 {{% notice Note %}}
 - You will need about 10gb of RAM Free
 - You will need about 150gb of space free on C drive for ``Docker compose``

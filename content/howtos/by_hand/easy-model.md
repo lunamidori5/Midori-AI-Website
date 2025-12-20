@@ -5,12 +5,6 @@ title = "Easy Model Setup"
 weight = 2
 +++
 
-## ----- Midori AI Subsystem Manager -----
-Use the model installer to install all of the base models like ``Llava``, ``tts``, ``Stable Diffusion``, and more! [Click Here]({{%relref "subsystem/manager" %}})
-
-## ----- By Hand Setup -----
-*(You do not have to run these steps if you have already done the auto manager)*
-
 Lets learn how to setup a model, for this ``How To`` we are going to use the ``Dolphin Mistral 7B`` model.
 
 To download the model to your models folder, run this command in a commandline of your picking.

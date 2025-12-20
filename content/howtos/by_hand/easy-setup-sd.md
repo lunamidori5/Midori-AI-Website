@@ -4,12 +4,6 @@ title = "Easy Setup - Stable Diffusion"
 weight = 2
 +++
 
-## ----- Midori AI Subsystem Manager -----
-Use the model installer to install all of the base models like ``Llava``, ``tts``, ``Stable Diffusion``, and more! [Click Here]({{%relref "subsystem/manager" %}})
-
-## ----- By Hand Setup -----
-*(You do not have to run these steps if you have already done the auto installer)*
-
 In your ``models`` folder make a file called ``stablediffusion.yaml``, then edit that file with the following. (You can change ``dreamlike-art/dreamlike-anime-1.0`` with what ever model you would like.)
 ```yaml
 name: animagine

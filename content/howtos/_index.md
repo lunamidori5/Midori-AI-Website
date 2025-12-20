@@ -1,7 +1,7 @@
 +++
 disableToc = false
 title = "LocalAI How-tos"
-weight = 9
+weight = 11
 +++
 
 ## How-tos

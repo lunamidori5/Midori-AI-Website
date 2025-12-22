@@ -4,6 +4,10 @@ title = "Voice Assistant HA-OS"
 weight = 11
 +++
 
+{{% notice style="info" title="Notice" %}}
+Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+{{% /notice %}}
+
 ### In this guide I will explain how I've setup my Local voice assistant and satellites!  
 A few softwares will be used in this guide.
 

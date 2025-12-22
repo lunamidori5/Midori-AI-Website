@@ -5,6 +5,10 @@ title = "Home Assistant x LocalAI"
 weight = 10
 +++
 
+{{% notice style="info" title="Notice" %}}
+Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+{{% /notice %}}
+
 Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed  to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.
 
 Currently, Home Assistant supports conversation-based agents and services. As of writing this, OpenAIs API is supported as a conversation agent; however, access to your homes devices and entities is possible through custom components. Local based services, such as LocalAI, are also available as a drop-in replacement for OpenAI services.

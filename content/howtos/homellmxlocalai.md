@@ -4,6 +4,10 @@ title = "HA-OS (HomeLLM) x LocalAI"
 weight = 10
 +++
 
+{{% notice style="info" title="Notice" %}}
+Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+{{% /notice %}}
+
 _____
 
 Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed  to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.

@@ -67,8 +67,7 @@ My listening habits are basically a moodboard of who I am right now:
 ## Say hi
 If you want to chat, collaborate, or just vibe in the same corner of the internet, say hello in Discord.
 
-You can also schedule time with me here:  
-**https://zcal.co/i/XY9Nf5jW**
+You can also schedule time with me here: **https://zcal.co/lunamidori**
 
 ## Links
 - Steam: https://steamcommunity.com/id/lunamidori_5/

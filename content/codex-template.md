@@ -13,7 +13,7 @@ The **Codex Contributor Template** is a standardized framework for establishing 
 Designed from the ground up for LRM-assisted development, this template enables teams to leverage tools like GitHub Copilot, Claude, and other LRM assistants with clear, structured context while maintaining human oversight and accountability.
 
 {{% notice style="info" title="Template in Action" %}}
-This template is actively used across all Midori LRM projects including Carly-AGI, Endless Autofighter, and this website itself. See the real-world implementation in our [GitHub repositories](https://github.com/Midori-AI-OSS).
+This template is actively used across all Midori AI projects including Carly-AGI, Endless Autofighter, and this website itself. See the real-world implementation in our [GitHub repositories](https://github.com/Midori-AI-OSS).
 {{% /notice %}}
 
 ## Key Features

@@ -129,13 +129,16 @@ git push
 {{% /tab %}}
 {{% tab title="LRM Assistant Setup" %}}
 
-### Using with GitHub Copilot
+### Have Agent Setup Template
 
-The template is designed to work seamlessly with GitHub Copilot. Once installed, you can invoke modes directly:
+You can install the template by just sending this message to your agent (Codex, GitHub Copilot, Claude) and it will set it up.
 
 ```markdown
-@workspace Task Master, please review task priorities in .codex/tasks/
+Clone the Codex Contributor Template (https://github.com/Midori-AI-OSS/codex_template_repo.git) repo into a new clean temp folder,
+copy its `AGENTS.md` and `.codex/modes` folder into this current project, then customize the instructions to match the project's tooling and workflow.
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 ### Mode Invocation Pattern
 
@@ -145,46 +148,6 @@ When requesting a specific mode, start with the role name:
 - "**Reviewer**, please audit the authentication documentation"
 - "**Coder**, implement the login feature from task abc123def"
 
-{{% /tab %}}
-{{% tab title="Customization Guide" %}}
-
-### Essential Customizations
-
-**1. Update Team Communication Channels**
-In `AGENTS.md`, replace placeholders with your team's channels:
-- Discord server/channels
-- Slack workspaces
-- Email contacts
-- Issue tracker URLs
-
-**2. Document Environment Setup**
-Add project-specific setup instructions:
-- Language/runtime versions
-- Package managers
-- Build tools
-- IDE recommendations
-
-**3. Create Initial Cheat Sheets**
-In `.codex/tools/`, create quick-reference guides:
-- Common commands
-- Testing procedures
-- Deployment steps
-- Code style conventions
-
-**4. Configure Active Modes**
-Remove unused mode files or add custom ones:
-- Delete modes your team won't use
-- Create project-specific modes if needed
-- Update mode guidelines for your workflow
-
-**5. Synchronize Documentation**
-Ensure consistency across:
-- `.codex/tasks/` - Active work items
-- `.codex/implementation/` - Technical docs
-- `.codex/notes/` - Process conventions
-
-{{% /tab %}}
-{{< /tabs >}}
 
 ## File Naming Convention
 

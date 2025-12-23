@@ -58,6 +58,8 @@ Some of the fun stuff I tinker with:
 ## My soundtrack
 My listening habits are basically a moodboard of who I am right now:
 
+- Spotify: [Luna's Spotify profile](https://open.spotify.com/user/jaredis5)
+- Suno: [Luna's Suno profile](https://suno.com/@lunamidori)
 - Reflective / “quiet room” music (focus + calm)
 - Worship / prayer-style playlists (peaceful, grounding vibes)
 - Video game / orchestral / soundtrack energy (especially when I’m coding or worldbuilding)

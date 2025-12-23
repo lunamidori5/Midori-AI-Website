@@ -24,7 +24,7 @@ Welcome to Midori AI — we love helping people build, break, and tinker with ma
 - **Tailored ML Support:** hands-on help for setup, tooling, and workflows. Schedule with Luna: https://zcal.co/lunamidori
  - **VMs for Students:** free virtual machines for high-school students to learn programming, machine learning, and systems work in a safe environment.
  - **Community Hangouts:** regular Discord hangouts for tutorials, office hours, project help, and informal collaboration — join our community to learn together.
- - **Safe Research Environment:** hosted support for larger, ground-breaking projects (for example, Carly) while keeping work open and reproducible so the world can see our process. Learn more about [Carly]({{< relref "about-us/carly-api.md" >}})
+ - **Safe Research / Hosting Environment:** hosted support for larger, ground-breaking projects (for example, Carly, and The Gideon Project) while keeping work open and reproducible so the world can see our (and our partners) process.
 
 ---
 

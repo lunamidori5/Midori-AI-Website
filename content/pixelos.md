@@ -8,7 +8,7 @@ weight = 8
 
 ## PixelArch OS: A Docker-Optimized Arch Linux Distribution
 
-PixelArch OS is a lightweight and efficient Arch Linux distribution specifically designed for Docker environments. It offers a streamlined platform for developing, deploying, and managing containerized applications.
+PixelArch OS is a lightweight and efficient Arch Linux distribution designed for containerized environments. It provides a streamlined platform for developing, deploying, and managing Docker-based workflows.
 
 **Key Features:**
 
@@ -25,7 +25,7 @@ PixelArch is offered in a tiered structure, with each level building upon the pr
 - **Level 1: Quartz** -  The foundation; a minimal base system, providing a clean slate for your specific needs.
 - **Level 2: Amethyst** - Core utilities; includes essential tools like `curl`, `wget`, and `docker`, alongside several quality-of-life enhancements.
 - **Level 3: Topaz** - Development focused; pre-configured with key development languages and tools, including `python`, `nodejs`, and `rust`.
-- **Level 4: Emerald** - Remote access and desktop environment; provides secure remote shell and tunnel capabilities (via `tmate`, `rdp`, or `ssh`).
+- **Level 4: Emerald** - Remote access and desktop environment; provides secure remote shell and tunnel capabilities (via `tmate`, `rdp`, or `ssh`) and a full Enlightenment Desktop.
 
 ## Getting Started
 
@@ -67,21 +67,9 @@ Image Size - ``3.5gb``
 
 {{% /tab %}}
 {{% tab title="Docker Compose" %}}
-### 1. Clone the Repository
+### 1. Create a `docker-compose.yaml`
 
-```bash
-git clone https://github.com/lunamidori5/Midori-AI-Cluster-OS.git
-```
-
-### 2. Navigate to the `pixelarch_os` Directory
-
-```bash
-cd Midori-AI-Cluster-OS/pixelarch_os
-```
-
-### 3. Run the Image and Access the Shell
-
-**a. Edit the `docker-compose.yaml` file:**
+Pick a flavor and create a `docker-compose.yaml` with the matching config:
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
@@ -110,7 +98,7 @@ services:
     privileged: true
     command: ["sleep", "infinity"]
     volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
 ```
 
 {{% /tab %}}
@@ -126,7 +114,7 @@ services:
     privileged: true
     command: ["sleep", "infinity"]
     volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
 ```
 
 {{% /tab %}}
@@ -142,29 +130,28 @@ services:
     privileged: true
     command: ["sleep", "infinity"]
     volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
 ```
 
 {{% /tab %}}
 {{< /tabs >}}
 
-**b. Start the container in detached mode:**
+### 2. Start the container in detached mode
 
 ```bash
 docker compose up -d
 ```
 
-**c. Access the container shell:**
+### 3. Access the container shell
 
 ```bash
-docker exec -it pixelarch_os-pixelarch-os-1 /bin/bash
+docker compose exec pixelarch-os /bin/bash
 ```
-*Note: The container name might differ from pixelarch-os, check your Docker Compose output or `docker ps -a` for the actual name.*
 
 {{% /tab %}}
-{{% tab title="WSL2 (Not Recommened)" %}}
+{{% tab title="WSL2 (Not Recommended)" %}}
 
-Midori AI recommends switching to Linux off of windows, if you still wish to use Pixelarch in WSL2 here is how, No support will be give to fix bugs on windows.
+Midori AI recommends switching to Linux instead of Windows. If you still want to use PixelArch in WSL2, follow the steps below. No Windows-specific support is provided.
 
 ### 1. Setup the docker image
 
@@ -172,19 +159,19 @@ Midori AI recommends switching to Linux off of windows, if you still wish to use
 docker run -t --name wsl_export lunamidori5/pixelarch:quartz ls /
 ```
 
-### 2. Export the `pixelarch` os from docker
+### 2. Export the PixelArch filesystem from docker
 
 ```bash
 docker export wsl_export > /mnt/c/temp/pixelarch.tar
 ```
 
-### 3. Clean up the docker iamge
+### 3. Clean up the docker image
 
 ```bash
 docker rm wsl_export
 ```
 
-### 4. Import Pixelarch into WSL
+### 4. Import PixelArch into WSL
 
 ```batch
 cd C:\temp
@@ -193,9 +180,9 @@ wsl --import Pixelarch E:\wslDistroStorage\pixelarch .\pixelarch.tar
 ```
 
 {{% /tab %}}
-{{% tab title="Docker Run (Not Recommened)" %}}
+{{% tab title="Docker Run (Not Recommended)" %}}
 
-### 1. Use Pixelarch shell
+### 1. Use PixelArch shell
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}

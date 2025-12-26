@@ -4,7 +4,7 @@ title = "PixelGen OS"
 weight = 2
 +++
 
-![pixelgen-logo](https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png)
+![pixelgen-logo](https://tea-cup.midori-ai.xyz/download/pixelgen-banner.png)
 
 ## PixelGen OS: A Docker-Optimized Gentoo Linux Distribution
 
@@ -22,15 +22,6 @@ PixelGen OS is a Gentoo Linux-based operating system designed for advanced users
 ## Getting Started
 
 {{< tabs >}}
-{{% tab title="Docker Hub" %}}
-
-Pre-built images are available at: https://hub.docker.com/repository/docker/lunamidori5/pixelgen/general
-
-{{% notice style="info" title="Tags" %}}
-Choose a tag from Docker Hub; if you don’t specify one, Docker will use `latest`.
-{{% /notice %}}
-
-{{% /tab %}}
 {{% tab title="Docker Compose" %}}
 
 ### 1. Create a `docker-compose.yaml`

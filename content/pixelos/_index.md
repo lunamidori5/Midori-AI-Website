@@ -13,8 +13,3 @@ Pixel OS is Midori AI’s family of container-first Linux distributions designed
 - **PixelArch OS**: Arch Linux-based, lightweight, and Docker-optimized.
 - **PixelGen OS**: Gentoo Linux-based, source-built, performance-focused, and highly customizable.
 
-## Pages
-
-- [PixelArch OS]({{< relref "pixelos/pixelarch.md" >}})
-- [PixelGen OS]({{< relref "pixelos/pixelgen.md" >}})
-

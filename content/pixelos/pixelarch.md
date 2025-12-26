@@ -1,7 +1,7 @@
 +++
 disableToc = false
 title = "PixelArch OS"
-weight = 8
+weight = 1
 +++
 
 ![pixelarch-logo](https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png)
@@ -174,9 +174,9 @@ docker rm wsl_export
 ### 4. Import PixelArch into WSL
 
 ```batch
-cd C:\temp
-mkdir E:\wslDistroStorage\pixelarch
-wsl --import Pixelarch E:\wslDistroStorage\pixelarch .\pixelarch.tar
+cd C:\\temp
+mkdir E:\\wslDistroStorage\\pixelarch
+wsl --import Pixelarch E:\\wslDistroStorage\\pixelarch .\\pixelarch.tar
 ```
 
 {{% /tab %}}
@@ -250,3 +250,4 @@ If you encounter any issues or require further assistance, please feel free to r
 
 * **Midori AI Discord:** https://discord.gg/xdgCx3VyHU
 * **Midori AI Email:** [Email Us](mailto:contact-us@midori-ai.xyz)
+

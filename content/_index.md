@@ -12,7 +12,7 @@ Welcome to Midori AI — we love helping people build, break, and tinker with ma
 ## Projects
 
 - **Midori AI Monorepo** — central source for our projects and tooling. GitHub: https://github.com/Midori-AI-OSS/Midori-AI
-- **PixelArch OS** — lightweight Arch-based OS optimized for Docker and ML workloads. Learn more: [PixelArch OS]({{< relref "pixelos.md" >}})
+- **Pixel OS** — container-first Linux distributions for Docker and ML workloads (PixelArch + PixelGen). Learn more: [Pixel OS]({{< relref "pixelos/_index.md" >}})
 - **Carly** — an advanced conversational research project. Learn more: [Carly]({{< relref "about-us/carly-api.md" >}})
 
 ---

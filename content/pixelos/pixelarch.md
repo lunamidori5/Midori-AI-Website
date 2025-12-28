@@ -22,10 +22,43 @@ PixelArch OS is a lightweight and efficient Arch Linux distribution designed for
 
 PixelArch is offered in a tiered structure, with each level building upon the previous, providing increasing functionality and customization options:
 
-- **Level 1: Quartz** -  The foundation; a minimal base system, providing a clean slate for your specific needs.
-- **Level 2: Amethyst** - Core utilities; includes essential tools like `curl`, `wget`, and `docker`, alongside several quality-of-life enhancements.
-- **Level 3: Topaz** - Development focused; pre-configured with key development languages and tools, including `python`, `nodejs`, and `rust`.
-- **Level 4: Emerald** - Remote access and tooling; includes `openssh` + `tmate`, Tor utilities (`tor`, `torsocks`, `torbrowser-launcher`), and developer CLIs (`gh`, `claude-code`, `openai-codex-bin`, `github-copilot-cli`) plus `lynx`.
+{{< tabs >}}
+{{% tab title="Quartz" %}}
+Level 1: Quartz
+
+The foundation: a minimal base system providing a clean slate for your specific needs.
+{{% /tab %}}
+
+{{% tab title="Amethyst" %}}
+Level 2: Amethyst
+
+Core utilities and quality-of-life tools. Common packages include `curl`, `wget`, and `docker`.
+{{% /tab %}}
+
+{{% tab title="Topaz" %}}
+Level 3: Topaz
+
+Development-focused. Pre-configured with key languages and tools such as `python`, `nodejs`, and `rust`.
+{{% /tab %}}
+
+{{% tab title="Emerald" %}}
+Level 4: Emerald
+
+Remote access, Agents, and developer tooling, presented for clarity:
+
+- Remote access: `openssh`, `tmate`
+- Tor utilities: `tor`, `torsocks`, `torbrowser-launcher`
+- Developer CLIs:
+  - `gh` (GitHub CLI)
+- LRM Agent Systems:
+  - `claude-code`
+  - `openai-codex-bin`
+  - `github-copilot-cli`
+- Text browser: `lynx`
+
+This flavor is optimized for secure remote workflows and developer interactions.
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Getting Started
 

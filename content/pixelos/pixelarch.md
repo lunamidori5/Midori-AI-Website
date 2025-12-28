@@ -26,11 +26,15 @@ PixelArch is offered in a tiered structure, with each level building upon the pr
 {{% tab title="Quartz" %}}
 Level 1: Quartz
 
+Image Size - ``1.4GB``
+
 The foundation: a minimal base system providing a clean slate for your specific needs.
 {{% /tab %}}
 
 {{% tab title="Amethyst" %}}
 Level 2: Amethyst
+
+Image Size - ``1.99GB``
 
 Core utilities and quality-of-life tools. Common packages include `curl`, `wget`, and `docker`.
 {{% /tab %}}
@@ -38,11 +42,15 @@ Core utilities and quality-of-life tools. Common packages include `curl`, `wget`
 {{% tab title="Topaz" %}}
 Level 3: Topaz
 
+Image Size - ``3.73GB``
+
 Development-focused. Pre-configured with key languages and tools such as `python`, `nodejs`, and `rust`.
 {{% /tab %}}
 
 {{% tab title="Emerald" %}}
 Level 4: Emerald
+
+Image Size - ``5.33GB``
 
 Remote access, Agents, and developer tooling, presented for clarity:
 
@@ -67,30 +75,22 @@ This flavor is optimized for secure remote workflows and developer interactions.
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
-Image Size - ``530mb``
-
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:quartz -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
 
 
 {{% /tab %}}
 {{% tab title="Amethyst" %}}
-Image Size - ``870mb``
-
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:amethyst -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
 
 {{% /tab %}}
 {{% tab title="Topaz" %}}
-Image Size - ``1.15gb``
-
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:topaz -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
 
 {{% /tab %}}
 {{% tab title="Emerald" %}}
-Image Size - ``3.5gb``
-
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:emerald -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
 
@@ -106,7 +106,6 @@ Pick a flavor and create a `docker-compose.yaml` with the matching config:
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
-Image Size - ``530mb``
 
 ```yaml
 services:
@@ -120,7 +119,6 @@ services:
 
 {{% /tab %}}
 {{% tab title="Amethyst" %}}
-Image Size - ``870mb``
 
 ```yaml
 services:
@@ -136,7 +134,6 @@ services:
 
 {{% /tab %}}
 {{% tab title="Topaz" %}}
-Image Size - ``1.15gb``
 
 ```yaml
 services:
@@ -152,7 +149,6 @@ services:
 
 {{% /tab %}}
 {{% tab title="Emerald" %}}
-Image Size - ``3.5gb``
 
 ```yaml
 services:
@@ -219,7 +215,6 @@ wsl --import Pixelarch E:\\wslDistroStorage\\pixelarch .\\pixelarch.tar
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
-Image Size - ``530mb``
 
 ```bash
 docker run -it --rm lunamidori5/pixelarch:quartz /bin/bash
@@ -228,7 +223,6 @@ docker run -it --rm lunamidori5/pixelarch:quartz /bin/bash
 
 {{% /tab %}}
 {{% tab title="Amethyst" %}}
-Image Size - ``870mb``
 
 ```bash
 docker run -it --rm lunamidori5/pixelarch:amethyst /bin/bash
@@ -236,7 +230,6 @@ docker run -it --rm lunamidori5/pixelarch:amethyst /bin/bash
 
 {{% /tab %}}
 {{% tab title="Topaz" %}}
-Image Size - ``1.15gb``
 
 ```bash
 docker run -it --rm lunamidori5/pixelarch:topaz /bin/bash
@@ -244,7 +237,6 @@ docker run -it --rm lunamidori5/pixelarch:topaz /bin/bash
 
 {{% /tab %}}
 {{% tab title="Emerald" %}}
-Image Size - ``3.5gb``
 
 ```bash
 docker run -it --rm lunamidori5/pixelarch:emerald /bin/bash

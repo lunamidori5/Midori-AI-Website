@@ -25,7 +25,7 @@ PixelArch is offered in a tiered structure, with each level building upon the pr
 - **Level 1: Quartz** -  The foundation; a minimal base system, providing a clean slate for your specific needs.
 - **Level 2: Amethyst** - Core utilities; includes essential tools like `curl`, `wget`, and `docker`, alongside several quality-of-life enhancements.
 - **Level 3: Topaz** - Development focused; pre-configured with key development languages and tools, including `python`, `nodejs`, and `rust`.
-- **Level 4: Emerald** - Remote access and desktop environment; provides secure remote shell and tunnel capabilities (via `tmate`, `rdp`, or `ssh`) and a full Enlightenment Desktop.
+- **Level 4: Emerald** - Remote access and tooling; includes `openssh` + `tmate`, Tor utilities (`tor`, `torsocks`, `torbrowser-launcher`), and developer CLIs (`gh`, `claude-code`, `openai-codex-bin`, `github-copilot-cli`) plus `lynx`.
 
 ## Getting Started
 
@@ -250,4 +250,3 @@ If you encounter any issues or require further assistance, please feel free to r
 
 * **Midori AI Discord:** https://discord.gg/xdgCx3VyHU
 * **Midori AI Email:** [Email Us](mailto:contact-us@midori-ai.xyz)
-

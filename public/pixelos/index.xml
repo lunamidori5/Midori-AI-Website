@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PixelArch OS on Midori-AI</title>
-    <link>http://localhost:1313/pixelos/index.html</link>
-    <description>Recent content in PixelArch OS on Midori-AI</description>
+    <title>Pixel OS on Midori-AI</title>
+    <link>https://io.midori-ai.xyz/pixelos/index.html</link>
+    <description>Recent content in Pixel OS on Midori-AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/pixelos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://io.midori-ai.xyz/pixelos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PixelArch OS</title>
+      <link>https://io.midori-ai.xyz/pixelos/pixelarch/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://io.midori-ai.xyz/pixelos/pixelarch/index.html</guid>
+      <description>PixelArch OS: A Docker-Optimized Arch Linux Distribution PixelArch OS is a lightweight and efficient Arch Linux distribution designed for containerized environments. It provides a streamlined platform for developing, deploying, and managing Docker-based workflows.
+Key Features:
+Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and extensive package selection. Docker-Optimized: Tailored for efficient Docker usage, allowing for seamless integration with your containerized workflows. Frequent Updates: Regularly receives security and performance updates, ensuring a secure and up-to-date environment.</description>
+    </item>
+    <item>
+      <title>PixelGen OS</title>
+      <link>https://io.midori-ai.xyz/pixelos/pixelgen/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://io.midori-ai.xyz/pixelos/pixelgen/index.html</guid>
+      <description>PixelGen OS: A Docker-Optimized Gentoo Linux Distribution PixelGen OS is a Gentoo Linux-based operating system designed for advanced users who want maximum performance and customization in containerized environments. It leverages Gentoo’s source-based package management within Docker containers, providing flexible, optimized builds for specialized workloads.
+Key Features:
+Gentoo-Based: Built on Gentoo Linux for deep system customization. Source-Based Compilation: Compile packages with your preferred CFLAGS, USE flags, and optimization settings. Docker-Optimized: Designed for consistent container deployments while keeping Gentoo’s flexibility.</description>
+    </item>
   </channel>
 </rss>

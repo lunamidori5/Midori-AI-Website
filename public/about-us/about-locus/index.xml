@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Locus Nevernight on Midori-AI</title>
-    <link>http://localhost:1313/about-us/about-locus/index.html</link>
+    <link>https://io.midori-ai.xyz/about-us/about-locus/index.html</link>
     <description>Recent content in About Locus Nevernight on Midori-AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/about-us/about-locus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://io.midori-ai.xyz/about-us/about-locus/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

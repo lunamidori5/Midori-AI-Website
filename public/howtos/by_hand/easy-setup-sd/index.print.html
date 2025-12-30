@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Hugo 0.121.0">
     <meta name="generator" content="Relearn 5.25.0+tip">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Documentation for Midori-AI">
     <meta name="author" content="Luna Midori">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Easy Setup - Stable Diffusion :: Midori-AI">
-    <meta name="twitter:description" content="&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash; Use the model installer to install all of the base models like Llava, tts, Stable Diffusion, and more! Click Here
-&mdash;&ndash; By Hand Setup &mdash;&ndash; (You do not have to run these steps if you have already done the auto installer)
-In your models folder make a file called stablediffusion.yaml, then edit that file with the following. (You can change dreamlike-art/dreamlike-anime-1.0 with what ever model you would like.">
+    <meta name="twitter:description" content="In your models folder make a file called stablediffusion.yaml, then edit that file with the following. (You can change dreamlike-art/dreamlike-anime-1.0 with what ever model you would like.)
+name: animagine parameters: model: dreamlike-art/dreamlike-anime-1.0 backend: diffusers cuda: true f16: true diffusers: scheduler_type: dpm_2_aIf you are using docker, you will need to run in the localai folder with the docker-compose.yaml file in it
+docker compose downThen in your .env file uncomment this line.">
     <meta property="og:title" content="Easy Setup - Stable Diffusion :: Midori-AI">
-    <meta property="og:description" content="&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash; Use the model installer to install all of the base models like Llava, tts, Stable Diffusion, and more! Click Here
-&mdash;&ndash; By Hand Setup &mdash;&ndash; (You do not have to run these steps if you have already done the auto installer)
-In your models folder make a file called stablediffusion.yaml, then edit that file with the following. (You can change dreamlike-art/dreamlike-anime-1.0 with what ever model you would like.">
+    <meta property="og:description" content="In your models folder make a file called stablediffusion.yaml, then edit that file with the following. (You can change dreamlike-art/dreamlike-anime-1.0 with what ever model you would like.)
+name: animagine parameters: model: dreamlike-art/dreamlike-anime-1.0 backend: diffusers cuda: true f16: true diffusers: scheduler_type: dpm_2_aIf you are using docker, you will need to run in the localai folder with the docker-compose.yaml file in it
+docker compose downThen in your .env file uncomment this line.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:1313/howtos/by_hand/easy-setup-sd/index.html">
+    <meta property="og:url" content="https://io.midori-ai.xyz/howtos/by_hand/easy-setup-sd/index.html">
     <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
     <meta property="og:site_name" content="Midori-AI">
     <title>Easy Setup - Stable Diffusion :: Midori-AI</title>
+    <link href="https://io.midori-ai.xyz/howtos/by_hand/easy-setup-sd/index.html" rel="canonical" type="text/html" title="Easy Setup - Stable Diffusion :: Midori-AI">
+    <link href="/howtos/by_hand/easy-setup-sd/index.xml" rel="alternate" type="application/rss+xml" title="Easy Setup - Stable Diffusion :: Midori-AI">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724647731" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724647731" rel="stylesheet">
-    <link href="/css/fonts.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724647731" rel="stylesheet">
-    <link href="/css/theme-auto.css?1724647731" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1724647731" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724647731" rel="stylesheet">
-    <link href="/css/print.css?1724647731" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1724647731" rel="stylesheet">
-    <link href="/css/ie.css?1724647731" rel="stylesheet">
-    <script src="/js/url.js?1724647731"></script>
-    <script src="/js/variant.js?1724647731"></script>
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1767104664" rel="stylesheet">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -44,10 +45,10 @@ In your models folder make a file called stablediffusion.yaml, then edit that fi
       var root_url="/";
       var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
       // variant stuff
       window.relearn.themeVariantModifier='';
-      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      window.variants && variants.init( [ 'relearn-dark' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
       window.T_Copied_to_clipboard = `Copied to clipboard!`;
@@ -85,10 +86,6 @@ In your models folder make a file called stablediffusion.yaml, then edit that fi
             </header>
 <h1 id="easy-setup---stable-diffusion">Easy Setup - Stable Diffusion</h1>
 
-<h2 id="------midori-ai-subsystem-manager------">&mdash;&ndash; Midori AI Subsystem Manager &mdash;&ndash;</h2>
-<p>Use the model installer to install all of the base models like <code>Llava</code>, <code>tts</code>, <code>Stable Diffusion</code>, and more! <a href="/subsystem/manager/index.html">Click Here</a></p>
-<h2 id="------by-hand-setup------">&mdash;&ndash; By Hand Setup &mdash;&ndash;</h2>
-<p><em>(You do not have to run these steps if you have already done the auto installer)</em></p>
 <p>In your <code>models</code> folder make a file called <code>stablediffusion.yaml</code>, then edit that file with the following. (You can change <code>dreamlike-art/dreamlike-anime-1.0</code> with what ever model you would like.)</p>
 <div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">animagine</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">parameters</span><span class="p">:</span><span class="w">
@@ -113,8 +110,8 @@ In your models folder make a file called stablediffusion.yaml, then edit that fi
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1724647731" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724647731" defer></script>
-    <script src="/js/theme.js?1724647731" defer></script>
+    <script src="/js/clipboard.min.js?1767104664" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104664" defer></script>
+    <script src="/js/theme.js?1767104664" defer></script>
   </body>
 </html>

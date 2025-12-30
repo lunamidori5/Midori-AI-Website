@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.121.0">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Endless-Autofighter :: Midori-AI">
+    <meta name="twitter:description" content="Midori AI — Endless-Autofighter Endless-Autofighter (a.k.a. Midori AI AutoFighter) is a web-based auto-battler that blends tactical party management, elemental systems, collectible characters, and deep progression systems into a compact, replayable experience. Built with a Svelte frontend and a Python Quart backend, the project supports both lightweight local play and optional LLM-enhanced features for narrative and chat.
+Quick snapshot Platform: Web (Svelte frontend, Python Quart backend) Play mode: Auto-battler / roguelite runs Key systems: Elemental damage types, DoT/HoT effects, relics &amp; cards, gacha-style recruits, action-gauge turn order Deployment: Runs with Docker Compose; optional LRM profiles for CPU/GPU Core Features Strategic Party Combat Combat runs automatically, but depth comes from pre-run party composition, relics, and upgrade choices.">
+    <meta property="og:title" content="Endless-Autofighter :: Midori-AI">
+    <meta property="og:description" content="Midori AI — Endless-Autofighter Endless-Autofighter (a.k.a. Midori AI AutoFighter) is a web-based auto-battler that blends tactical party management, elemental systems, collectible characters, and deep progression systems into a compact, replayable experience. Built with a Svelte frontend and a Python Quart backend, the project supports both lightweight local play and optional LLM-enhanced features for narrative and chat.
+Quick snapshot Platform: Web (Svelte frontend, Python Quart backend) Play mode: Auto-battler / roguelite runs Key systems: Elemental damage types, DoT/HoT effects, relics &amp; cards, gacha-style recruits, action-gauge turn order Deployment: Runs with Docker Compose; optional LRM profiles for CPU/GPU Core Features Strategic Party Combat Combat runs automatically, but depth comes from pre-run party composition, relics, and upgrade choices.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://io.midori-ai.xyz/endless-autofighter/index.html">
+    <meta property="article:section" content="">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>Endless-Autofighter :: Midori-AI</title>
+    <link href="/endless-autofighter/index.xml" rel="alternate" type="application/rss+xml" title="Endless-Autofighter :: Midori-AI">
+    <link href="/endless-autofighter/index.print.html" rel="alternate" type="text/html" title="Endless-Autofighter :: Midori-AI">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/endless-autofighter/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#midori-ai--endless-autofighter">Midori AI — Endless-Autofighter</a>
+      <ul>
+        <li><a href="#quick-snapshot">Quick snapshot</a></li>
+      </ul>
+    </li>
+    <li><a href="#core-features">Core Features</a>
+      <ul>
+        <li><a href="#strategic-party-combat">Strategic Party Combat</a></li>
+        <li><a href="#elemental-damage-types-and-effects">Elemental Damage Types and Effects</a></li>
+        <li><a href="#action-queue--turn-order">Action Queue &amp; Turn Order</a></li>
+        <li><a href="#relics-cards-and-rewards">Relics, Cards, and Rewards</a></li>
+        <li><a href="#roster--character-customization">Roster &amp; Character Customization</a></li>
+        <li><a href="#procedural-maps--rooms">Procedural Maps &amp; Rooms</a></li>
+        <li><a href="#optional-lrm-enhancements">Optional LRM Enhancements</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-play-quick-start">How to Play (Quick Start)</a>
+      <ul>
+        <li><a href="#recommended-docker-compose-easiest">Recommended: Docker Compose (easiest)</a></li>
+      </ul>
+    </li>
+    <li><a href="#deep-dive--systems--mechanics">Deep Dive — Systems &amp; Mechanics</a>
+      <ul>
+        <li><a href="#combat-details">Combat details</a></li>
+        <li><a href="#damage-types-and-canonical-behaviors">Damage types and canonical behaviors</a></li>
+        <li><a href="#progression-and-economy">Progression and economy</a></li>
+        <li><a href="#plugin-based-architecture">Plugin-based architecture</a></li>
+      </ul>
+    </li>
+    <li><a href="#playable-roster-high-level">Playable Roster (high-level)</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#assets--screenshots">Assets &amp; Screenshots</a></li>
+    <li><a href="#links--resources">Links &amp; Resources</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Endless-Autofighter</span><meta itemprop="position" content="1"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/endless-autofighter/index.print.html" title="Print whole chapter (CTRL&#43;ALT&#43;p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/pixelos/pixelgen/index.html" title="PixelGen OS (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/agents-packages/index.html" title="Midori AI Agents Packages (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="endless-autofighter">Endless-Autofighter</h1>
+
+<p><a href="#R-image-73b57c1d9f95ed480aca6d0ae33653f3" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logo_color1.png" alt="autofighter-banner" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-73b57c1d9f95ed480aca6d0ae33653f3"><img src="https://tea-cup.midori-ai.xyz/download/logo_color1.png" alt="autofighter-banner" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<h2 id="midori-ai--endless-autofighter">Midori AI — Endless-Autofighter</h2>
+<p>Endless-Autofighter (a.k.a. Midori AI AutoFighter) is a web-based auto-battler that blends tactical party management, elemental systems, collectible characters, and deep progression systems into a compact, replayable experience. Built with a Svelte frontend and a Python Quart backend, the project supports both lightweight local play and optional LLM-enhanced features for narrative and chat.</p>
+<h3 id="quick-snapshot">Quick snapshot</h3>
+<ul>
+<li>Platform: Web (Svelte frontend, Python Quart backend)</li>
+<li>Play mode: Auto-battler / roguelite runs</li>
+<li>Key systems: Elemental damage types, DoT/HoT effects, relics &amp; cards, gacha-style recruits, action-gauge turn order</li>
+<li>Deployment: Runs with Docker Compose; optional LRM profiles for CPU/GPU</li>
+</ul>
+<h2 id="core-features">Core Features</h2>
+<h3 id="strategic-party-combat">Strategic Party Combat</h3>
+<p>Combat runs automatically, but depth comes from pre-run party composition, relics, and upgrade choices. Party size, element synergies, and relic combinations all materially change how a run plays out.</p>
+<h3 id="elemental-damage-types-and-effects">Elemental Damage Types and Effects</h3>
+<p>Each damage type (Fire, Lightning, Ice, Wind, Light, Dark, etc.) is implemented as a plugin providing unique DoT/HoT mechanics and signature ultimates. The system supports stacking DoTs, multi-hit ultimates, and effects that interact in emergent ways.</p>
+<h3 id="action-queue--turn-order">Action Queue &amp; Turn Order</h3>
+<p>Every combatant uses an action gauge system (10,000 base gauge) to determine turn order. Lower action values act first; action pacing and visible action values help players plan and anticipate important interactions.</p>
+<h3 id="relics-cards-and-rewards">Relics, Cards, and Rewards</h3>
+<p>Wins award gold, relic choices, and cards. Players pick one card (or relic) from curated choices after fights. Relics unlock passive and active synergies and can alter run-level mechanics like rare drop rate (RDR).</p>
+<h3 id="roster--character-customization">Roster &amp; Character Customization</h3>
+<p>Playable characters are defined as plugin classes in <code>backend/plugins/characters/</code>. Each fighter exposes passives, signature moves, and metadata (<code>about</code> and <code>prompt</code>) for future LRM integration. An in-game editor lets players distribute stat points, choose pronouns, and set a damage type for the Player slot.</p>
+<h3 id="procedural-maps--rooms">Procedural Maps &amp; Rooms</h3>
+<p>Each floor contains 45 rooms generated by a seeded <code>MapGenerator</code> and must include at least two shops and two rest rooms. Rooms types include battle (normal/boss), rest, shop, and scripted chat scenes (LRM-dependent).</p>
+<h3 id="optional-lrm-enhancements">Optional LRM Enhancements</h3>
+<p>When LRM extras are enabled, the game supports:</p>
+<ul>
+<li>LRM-powered chat with party members (per-run scoped memory via ChromaDB)</li>
+<li>Model testing and async model loading</li>
+<li>Player and foe memory for richer interactions</li>
+</ul>
+<h2 id="how-to-play-quick-start">How to Play (Quick Start)</h2>
+<h3 id="recommended-docker-compose-easiest">Recommended: Docker Compose (easiest)</h3>
+<p>Prerequisites: Docker &amp; Docker Compose installed.</p>
+<p>Download the Repo - <a href="https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter" target="_blank">https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter</a></p>
+<p>Standard run (frontend + backend):</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose up --build frontend backend</span></span></code></pre></div><p>Open your browser to <code>http://YOUR_SYSTEM_IP:59001</code>.</p>
+<h2 id="deep-dive--systems--mechanics">Deep Dive — Systems &amp; Mechanics</h2>
+<h3 id="combat-details">Combat details</h3>
+<ul>
+<li>Foes scale by floor, room pressure, and loop count. Each defeated foe temporarily boosts the run&rsquo;s <code>rdr</code> by +55% for the remainder of the battle, increasing relic and gold expectations.</li>
+<li>Boss rooms have increased relic drop odds and unique encounter rules (always spawn exactly one foe).</li>
+<li>Effect hit rate and resistance interact such that very high effect hit rates can apply multiple DoT stacks by looping in 100% hit chunks.</li>
+</ul>
+<h3 id="damage-types-and-canonical-behaviors">Damage types and canonical behaviors</h3>
+<ul>
+<li>Fire: Scales with missing HP, applies &ldquo;Blazing Torment&rdquo; DoT, ultimate scorches all foes at the cost of self-burn stacking.</li>
+<li>Lightning: Pops DoTs on hit and applies &ldquo;Charged Decay&rdquo; (stun on final tick); ultimate scatters DoTs and grants Aftertaste.</li>
+<li>Ice: Applies Frozen Wound (reduces actions per turn) and cold wounds with stack caps; big ultimates hit multiple times with scaling.</li>
+<li>Wind: Repeats hits and applies Gale Erosion (reduces mitigation); ultimates strike many targets repeatedly.</li>
+<li>Light / Dark: Support and drain mechanics (heals, shields, HP siphon, and field-wide status effects).</li>
+</ul>
+<h3 id="progression-and-economy">Progression and economy</h3>
+<ul>
+<li>Gold, relics, card picks, and upgrade items form the core progression loop. Shops heal a fraction of party HP and sell upgrade items and cards.</li>
+<li>Pull tickets are extremely rare but can be earned via very low odds; relics and card star ranks can be improved by extremely high <code>rdr</code> values.</li>
+</ul>
+<h3 id="plugin-based-architecture">Plugin-based architecture</h3>
+<p>The backend auto-discovers plugin modules (players, foes, relics, cards, adjectives) and wires them through a shared event bus. Plugins expose metadata like <code>about</code> and optional <code>prompt</code> strings to support future ML features.</p>
+<h2 id="playable-roster-high-level">Playable Roster (high-level)</h2>
+<p>A large roster lives in <code>backend/plugins/characters/</code> with defined rarities and special signature traits. Story-only characters like Luna remain encounter-only; others are gacha recruits. See the README and <code>ABOUTGAME.md</code> for the full table of characters and signature abilities.</p>
+<h2 id="contributing">Contributing</h2>
+<p>We welcome contributions. If you&rsquo;d like to help:</p>
+<ul>
+<li>Check <code>AGENTS.md</code> and <code>.codex/</code> for contributor guides and implementation notes</li>
+<li>Run tests before opening a PR</li>
+<li>Keep imports and coding style consistent with repo conventions (see <code>AGENTS.md</code>)</li>
+</ul>
+<h2 id="assets--screenshots">Assets &amp; Screenshots</h2>
+<p>Screenshots used in docs live in <code>.codex/screenshots/</code>.</p>
+<h2 id="links--resources">Links &amp; Resources</h2>
+<ul>
+<li>Repository root: <a href="https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter" target="_blank">https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter</a></li>
+<li>Issues: <a href="https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter/issues" target="_blank">https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter/issues</a></li>
+<li>Discord: <a href="https://discord.gg/xdgCx3VyHU" target="_blank">https://discord.gg/xdgCx3VyHU</a></li>
+</ul>
+<hr>
+<p><em>This page was autogenerated from repository docs (README.md &amp; ABOUTGAME.md). If you&rsquo;d like changes, edit the source documents or open a PR.</em></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="https://io.midori-ai.xyz"><img src="https://tea-cup.midori-ai.xyz/download/logo_color3.png"></a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.min.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1767104664" defer></script>
+        <script src="/js/search.js?1767104664" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/about-us/index.html" class="alwaysopen"><input type="checkbox" id="R-section-73c78e84381adee6eefe923825d2371f" aria-controls="R-subsections-73c78e84381adee6eefe923825d2371f" checked><label for="R-section-73c78e84381adee6eefe923825d2371f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu About</span></label><a class="padding" href="/about-us/index.html">About</a><ul id="R-subsections-73c78e84381adee6eefe923825d2371f" class="morespace collapsible-menu">
+          <li data-nav-id="/about-us/about-luna/index.html" class=""><a class="padding" href="/about-us/about-luna/index.html">About Luna Midori</a></li>
+          <li data-nav-id="/about-us/about-locus/index.html" class=""><a class="padding" href="/about-us/about-locus/index.html">About Locus Nevernight</a></li>
+          <li data-nav-id="/about-us/about-alex/index.html" class=""><a class="padding" href="/about-us/about-alex/index.html">About Alexander Ryan</a></li>
+          <li data-nav-id="/about-us/about-brian/index.html" class=""><a class="padding" href="/about-us/about-brian/index.html">About Brian Boatz</a></li>
+          <li data-nav-id="/about-us/about-michael/index.html" class=""><a class="padding" href="/about-us/about-michael/index.html">About Michael</a></li>
+          <li data-nav-id="/about-us/carly-api/index.html" class=""><a class="padding" href="/about-us/carly-api/index.html">About Carly Kay</a></li>
+          <li data-nav-id="/about-us/contact-us/index.html" class=""><a class="padding" href="/about-us/contact-us/index.html">Contact Us</a></li></ul></li>
+          <li data-nav-id="/subsystem/index.html" class="alwaysopen"><input type="checkbox" id="R-section-46039424884a5012598e38f4eecdfc57" aria-controls="R-subsections-46039424884a5012598e38f4eecdfc57" checked><label for="R-section-46039424884a5012598e38f4eecdfc57"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Midori AI Subsystem</span></label><a class="padding" href="/subsystem/index.html">Midori AI Subsystem</a><ul id="R-subsections-46039424884a5012598e38f4eecdfc57" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/manager/index.html" class=""><a class="padding" href="/subsystem/manager/index.html">Midori AI Subsystem Manager V2</a></li></ul></li>
+          <li data-nav-id="/cli_tools/index.html" class=""><a class="padding" href="/cli_tools/index.html">Midori AI CLI</a></li>
+          <li data-nav-id="/pixelos/index.html" class="alwaysopen"><input type="checkbox" id="R-section-9ef3aa812d48b188e4e38886c80bf9af" aria-controls="R-subsections-9ef3aa812d48b188e4e38886c80bf9af" checked><label for="R-section-9ef3aa812d48b188e4e38886c80bf9af"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pixel OS</span></label><a class="padding" href="/pixelos/index.html">Pixel OS</a><ul id="R-subsections-9ef3aa812d48b188e4e38886c80bf9af" class="morespace collapsible-menu">
+          <li data-nav-id="/pixelos/pixelarch/index.html" class=""><a class="padding" href="/pixelos/pixelarch/index.html">PixelArch OS</a></li>
+          <li data-nav-id="/pixelos/pixelgen/index.html" class=""><a class="padding" href="/pixelos/pixelgen/index.html">PixelGen OS</a></li></ul></li>
+          <li data-nav-id="/endless-autofighter/index.html" class="active"><a class="padding" href="/endless-autofighter/index.html">Endless-Autofighter</a></li>
+          <li data-nav-id="/agents-packages/index.html" class=""><a class="padding" href="/agents-packages/index.html">Midori AI Agents Packages</a></li>
+          <li data-nav-id="/codex-template/index.html" class=""><a class="padding" href="/codex-template/index.html">Codex Contributor Template</a></li>
+          <li data-nav-id="/howtos/index.html" class="alwaysopen"><input type="checkbox" id="R-section-816500d91966e741d856519feb929340" aria-controls="R-subsections-816500d91966e741d856519feb929340" checked><label for="R-section-816500d91966e741d856519feb929340"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI How-tos</span></label><a class="padding" href="/howtos/index.html">LocalAI How-tos</a><ul id="R-subsections-816500d91966e741d856519feb929340" class="morespace collapsible-menu">
+          <li data-nav-id="/howtos/by_hand/easy-model/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-model/index.html">Easy Model Setup</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-docker/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-docker/index.html">Easy Setup - Docker</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-embeddings/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-embeddings/index.html">Easy Setup - Embeddings</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-setup-sd/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-sd/index.html">Easy Setup - Stable Diffusion</a></li>
+          <li data-nav-id="/howtos/by_hand/easy-request/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-request/index.html">Easy Request - All</a></li>
+          <li data-nav-id="/howtos/homellmxlocalai/index.html" class=""><a class="padding" href="/howtos/homellmxlocalai/index.html">HA-OS (HomeLLM) x LocalAI</a></li>
+          <li data-nav-id="/howtos/voice_assistance_guide/index.html" class=""><a class="padding" href="/howtos/voice_assistance_guide/index.html">Voice Assistant HA-OS</a></li></ul></li>
+          <li data-nav-id="/partners/index.html" class="alwaysopen"><input type="checkbox" id="R-section-9fa6a43914627cd8a1749f2fd6f21dd1" aria-controls="R-subsections-9fa6a43914627cd8a1749f2fd6f21dd1" checked><label for="R-section-9fa6a43914627cd8a1749f2fd6f21dd1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Partners</span></label><a class="padding" href="/partners/index.html">Partners</a><ul id="R-subsections-9fa6a43914627cd8a1749f2fd6f21dd1" class="morespace collapsible-menu">
+          <li data-nav-id="/partners/the-gideon-project/index.html" class=""><a class="padding" href="/partners/the-gideon-project/index.html">The Gideon Project</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1767104664" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104664" defer></script>
+    <script src="/js/theme.js?1767104664" defer></script>
+  </body>
+</html>

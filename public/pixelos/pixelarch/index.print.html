@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.121.0">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PixelArch OS :: Midori-AI">
+    <meta name="twitter:description" content="PixelArch OS: A Docker-Optimized Arch Linux Distribution PixelArch OS is a lightweight and efficient Arch Linux distribution designed for containerized environments. It provides a streamlined platform for developing, deploying, and managing Docker-based workflows.
+Key Features:
+Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and extensive package selection. Docker-Optimized: Tailored for efficient Docker usage, allowing for seamless integration with your containerized workflows. Frequent Updates: Regularly receives security and performance updates, ensuring a secure and up-to-date environment.">
+    <meta property="og:title" content="PixelArch OS :: Midori-AI">
+    <meta property="og:description" content="PixelArch OS: A Docker-Optimized Arch Linux Distribution PixelArch OS is a lightweight and efficient Arch Linux distribution designed for containerized environments. It provides a streamlined platform for developing, deploying, and managing Docker-based workflows.
+Key Features:
+Arch-Based: Built on the foundation of Arch Linux, known for its flexibility and extensive package selection. Docker-Optimized: Tailored for efficient Docker usage, allowing for seamless integration with your containerized workflows. Frequent Updates: Regularly receives security and performance updates, ensuring a secure and up-to-date environment.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://io.midori-ai.xyz/pixelos/pixelarch/index.html">
+    <meta property="article:section" content="Pixel OS :: Midori-AI">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>PixelArch OS :: Midori-AI</title>
+    <link href="https://io.midori-ai.xyz/pixelos/pixelarch/index.html" rel="canonical" type="text/html" title="PixelArch OS :: Midori-AI">
+    <link href="/pixelos/pixelarch/index.xml" rel="alternate" type="application/rss+xml" title="PixelArch OS :: Midori-AI">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1767104664" rel="stylesheet">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/pixelos/pixelarch/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/pixelos/index.html"><span itemprop="name">Pixel OS</span></a><meta itemprop="position" content="1">&nbsp;->&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">PixelArch OS</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="pixelarch-os">PixelArch OS</h1>
+
+<p><a href="#R-image-daa63e3467d1bf77947ab8b625e87118" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png" alt="pixelarch-logo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-daa63e3467d1bf77947ab8b625e87118"><img src="https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png" alt="pixelarch-logo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<h2 id="pixelarch-os-a-docker-optimized-arch-linux-distribution">PixelArch OS: A Docker-Optimized Arch Linux Distribution</h2>
+<p>PixelArch OS is a lightweight and efficient Arch Linux distribution designed for containerized environments. It provides a streamlined platform for developing, deploying, and managing Docker-based workflows.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li><strong>Arch-Based:</strong> Built on the foundation of Arch Linux, known for its flexibility and extensive package selection.</li>
+<li><strong>Docker-Optimized:</strong> Tailored for efficient Docker usage, allowing for seamless integration with your containerized workflows.</li>
+<li><strong>Frequent Updates:</strong> Regularly receives security and performance updates, ensuring a secure and up-to-date environment.</li>
+<li><strong>Package Management:</strong> Utilizes the powerful yay package manager alongside the traditional pacman, providing a flexible and efficient way to manage software packages.</li>
+<li><strong>Minimal Footprint:</strong> Designed to be lightweight and resource-efficient, ideal for running in Docker containers.</li>
+</ul>
+<h2 id="pixelarch-flavors-a-tiered-approach">PixelArch Flavors: A Tiered Approach</h2>
+<p>PixelArch is offered in a tiered structure, with each level building upon the previous, providing increasing functionality and customization options:</p>
+
+<div class="tab-panel" data-tab-group="e08b7f0be67a8ffd3cfa6b2588e8a87a">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="quartz"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('e08b7f0be67a8ffd3cfa6b2588e8a87a','quartz')"
+    >
+      <span class="tab-nav-text">Quartz</span>
+    </button>
+    <button
+      data-tab-item="amethyst"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('e08b7f0be67a8ffd3cfa6b2588e8a87a','amethyst')"
+    >
+      <span class="tab-nav-text">Amethyst</span>
+    </button>
+    <button
+      data-tab-item="topaz"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('e08b7f0be67a8ffd3cfa6b2588e8a87a','topaz')"
+    >
+      <span class="tab-nav-text">Topaz</span>
+    </button>
+    <button
+      data-tab-item="emerald"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('e08b7f0be67a8ffd3cfa6b2588e8a87a','emerald')"
+    >
+      <span class="tab-nav-text">Emerald</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="quartz"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<p>Level 1: Quartz</p>
+<p>Image Size - <code>1.4GB</code></p>
+<p>The foundation: a minimal base system providing a clean slate for your specific needs.</p>
+</div>
+    </div>
+    <div
+      data-tab-item="amethyst"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Level 2: Amethyst</p>
+<p>Image Size - <code>1.99GB</code></p>
+<p>Core utilities and quality-of-life tools. Common packages include <code>curl</code>, <code>wget</code>, and <code>docker</code>.</p>
+</div>
+    </div>
+    <div
+      data-tab-item="topaz"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Level 3: Topaz</p>
+<p>Image Size - <code>3.73GB</code></p>
+<p>Development-focused. Pre-configured with key languages and tools such as <code>python</code>, <code>nodejs</code>, and <code>rust</code>.</p>
+</div>
+    </div>
+    <div
+      data-tab-item="emerald"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Level 4: Emerald</p>
+<p>Image Size - <code>5.33GB</code></p>
+<p>Remote access, Agents, and developer tooling, presented for clarity:</p>
+<ul>
+<li>Remote access: <code>openssh</code>, <code>tmate</code></li>
+<li>Tor utilities: <code>tor</code>, <code>torsocks</code>, <code>torbrowser-launcher</code></li>
+<li>Developer CLIs:
+<ul>
+<li><code>gh</code> (GitHub CLI)</li>
+</ul>
+</li>
+<li>LRM Agent Systems:
+<ul>
+<li><code>claude-code</code></li>
+<li><code>openai-codex-bin</code></li>
+<li><code>github-copilot-cli</code></li>
+</ul>
+</li>
+<li>Text browser: <code>lynx</code></li>
+</ul>
+<p>This flavor is optimized for secure remote workflows and developer interactions.</p>
+</div>
+    </div>
+  </div>
+</div>
+<h2 id="getting-started">Getting Started</h2>
+
+<div class="tab-panel" data-tab-group="c2808c0f488781b8c092941019fd7c29">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="distrobox"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('c2808c0f488781b8c092941019fd7c29','distrobox')"
+    >
+      <span class="tab-nav-text">Distrobox</span>
+    </button>
+    <button
+      data-tab-item="docker-compose"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c2808c0f488781b8c092941019fd7c29','docker-compose')"
+    >
+      <span class="tab-nav-text">Docker Compose</span>
+    </button>
+    <button
+      data-tab-item="wsl2-not-recommended"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c2808c0f488781b8c092941019fd7c29','wsl2-not-recommended')"
+    >
+      <span class="tab-nav-text">WSL2 (Not Recommended)</span>
+    </button>
+    <button
+      data-tab-item="docker-run-not-recommended"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('c2808c0f488781b8c092941019fd7c29','docker-run-not-recommended')"
+    >
+      <span class="tab-nav-text">Docker Run (Not Recommended)</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="distrobox"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<div class="tab-panel" data-tab-group="fd82ef6c5057571d809085821ef397b6">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="quartz"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('fd82ef6c5057571d809085821ef397b6','quartz')"
+    >
+      <span class="tab-nav-text">Quartz</span>
+    </button>
+    <button
+      data-tab-item="amethyst"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('fd82ef6c5057571d809085821ef397b6','amethyst')"
+    >
+      <span class="tab-nav-text">Amethyst</span>
+    </button>
+    <button
+      data-tab-item="topaz"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('fd82ef6c5057571d809085821ef397b6','topaz')"
+    >
+      <span class="tab-nav-text">Topaz</span>
+    </button>
+    <button
+      data-tab-item="emerald"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('fd82ef6c5057571d809085821ef397b6','emerald')"
+    >
+      <span class="tab-nav-text">Emerald</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="quartz"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:quartz -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="amethyst"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:amethyst -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="topaz"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:topaz -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+    <div
+      data-tab-item="emerald"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<ul>
+<li>Step 1. Setup the OS (<code>distrobox create -i lunamidori5/pixelarch:emerald -n PixelArch --root</code>)</li>
+<li>Step 2. Enter the OS (<code>distrobox enter PixelArch --root</code>)</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    <div
+      data-tab-item="docker-compose"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<h3 id="1-create-a-docker-composeyaml">1. Create a <code>docker-compose.yaml</code></h3>
+<p>Pick a flavor and create a <code>docker-compose.yaml</code> with the matching config:</p>
+<div class="tab-panel" data-tab-group="758cc1a66d780504fb25d27bc740b7c3">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="quartz"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('758cc1a66d780504fb25d27bc740b7c3','quartz')"
+    >
+      <span class="tab-nav-text">Quartz</span>
+    </button>
+    <button
+      data-tab-item="amethyst"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('758cc1a66d780504fb25d27bc740b7c3','amethyst')"
+    >
+      <span class="tab-nav-text">Amethyst</span>
+    </button>
+    <button
+      data-tab-item="topaz"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('758cc1a66d780504fb25d27bc740b7c3','topaz')"
+    >
+      <span class="tab-nav-text">Topaz</span>
+    </button>
+    <button
+      data-tab-item="emerald"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('758cc1a66d780504fb25d27bc740b7c3','emerald')"
+    >
+      <span class="tab-nav-text">Emerald</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="quartz"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pixelarch-os</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">lunamidori5/pixelarch:quartz</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;sleep&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;infinity&#34;</span><span class="p">]</span></span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="amethyst"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pixelarch-os</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">lunamidori5/pixelarch:amethyst</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;sleep&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;infinity&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock</span></span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="topaz"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pixelarch-os</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">lunamidori5/pixelarch:topaz</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;sleep&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;infinity&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock</span></span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="emerald"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pixelarch-os</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">lunamidori5/pixelarch:emerald</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;sleep&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;infinity&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock</span></span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+<h3 id="2-start-the-container-in-detached-mode">2. Start the container in detached mode</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose up -d</span></span></code></pre></div><h3 id="3-access-the-container-shell">3. Access the container shell</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose <span class="nb">exec</span> pixelarch-os /bin/bash</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="wsl2-not-recommended"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<p>Midori AI recommends switching to Linux instead of Windows. If you still want to use PixelArch in WSL2, follow the steps below. No Windows-specific support is provided.</p>
+<h3 id="1-setup-the-docker-image">1. Setup the docker image</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -t --name wsl_export lunamidori5/pixelarch:quartz ls /</span></span></code></pre></div><h3 id="2-export-the-pixelarch-filesystem-from-docker">2. Export the PixelArch filesystem from docker</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker <span class="nb">export</span> wsl_export &gt; /mnt/c/temp/pixelarch.tar</span></span></code></pre></div><h3 id="3-clean-up-the-docker-image">3. Clean up the docker image</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker rm wsl_export</span></span></code></pre></div><h3 id="4-import-pixelarch-into-wsl">4. Import PixelArch into WSL</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-batch" data-lang="batch"><span class="line"><span class="cl"><span class="k">cd</span> C:\\temp
+</span></span><span class="line"><span class="cl"><span class="k">mkdir</span> E:\\wslDistroStorage\\pixelarch
+</span></span><span class="line"><span class="cl">wsl --import Pixelarch E:\\wslDistroStorage\\pixelarch .\\pixelarch.tar</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="docker-run-not-recommended"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<h3 id="1-use-pixelarch-shell">1. Use PixelArch shell</h3>
+<div class="tab-panel" data-tab-group="1522468f6d13a6bb7f8c541e7a1cfd32">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="quartz"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('1522468f6d13a6bb7f8c541e7a1cfd32','quartz')"
+    >
+      <span class="tab-nav-text">Quartz</span>
+    </button>
+    <button
+      data-tab-item="amethyst"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1522468f6d13a6bb7f8c541e7a1cfd32','amethyst')"
+    >
+      <span class="tab-nav-text">Amethyst</span>
+    </button>
+    <button
+      data-tab-item="topaz"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1522468f6d13a6bb7f8c541e7a1cfd32','topaz')"
+    >
+      <span class="tab-nav-text">Topaz</span>
+    </button>
+    <button
+      data-tab-item="emerald"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('1522468f6d13a6bb7f8c541e7a1cfd32','emerald')"
+    >
+      <span class="tab-nav-text">Emerald</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="quartz"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -it --rm lunamidori5/pixelarch:quartz /bin/bash</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="amethyst"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -it --rm lunamidori5/pixelarch:amethyst /bin/bash</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="topaz"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -it --rm lunamidori5/pixelarch:topaz /bin/bash</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="emerald"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -it --rm lunamidori5/pixelarch:emerald /bin/bash</span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+<h2 id="package-management">Package Management</h2>
+<p>Use the <code>yay</code> package manager to install and update software:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Syu &lt;package_name&gt;</span></span></code></pre></div><p><strong>Example:</strong></p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Syu vim</span></span></code></pre></div><p>This will install or update the <code>vim</code> text editor.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>Replace <code>&lt;package_name&gt;</code> with the actual name of the package you want to install or update.</li>
+<li>The <code>-Syu</code> flag performs a full system update, including package updates and dependencies.</li>
+</ul>
+<h2 id="support-and-assistance">Support and Assistance</h2>
+<p>If you encounter any issues or require further assistance, please feel free to reach out through the following channels:</p>
+<ul>
+<li><strong>Midori AI Discord:</strong> <a href="https://discord.gg/xdgCx3VyHU" target="_blank">https://discord.gg/xdgCx3VyHU</a></li>
+<li><strong>Midori AI Email:</strong> <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email Us</a></li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1767104665" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104665" defer></script>
+    <script src="/js/theme.js?1767104665" defer></script>
+  </body>
+</html>

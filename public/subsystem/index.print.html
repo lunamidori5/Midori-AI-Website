@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Hugo 0.121.0">
     <meta name="generator" content="Relearn 5.25.0+tip">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Documentation for Midori-AI">
     <meta name="author" content="Luna Midori">
     <meta name="twitter:card" content="summary">
@@ -14,24 +13,26 @@
     <meta property="og:title" content="Midori AI Subsystem :: Midori-AI">
     <meta property="og:description" content="Documentation for Midori-AI">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/subsystem/index.html">
+    <meta property="og:url" content="https://io.midori-ai.xyz/subsystem/index.html">
     <meta property="og:site_name" content="Midori-AI">
     <title>Midori AI Subsystem :: Midori-AI</title>
+    <link href="https://io.midori-ai.xyz/subsystem/index.html" rel="canonical" type="text/html" title="Midori AI Subsystem :: Midori-AI">
+    <link href="/subsystem/index.xml" rel="alternate" type="application/rss+xml" title="Midori AI Subsystem :: Midori-AI">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724647731" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724647731" rel="stylesheet">
-    <link href="/css/fonts.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724647731" rel="stylesheet">
-    <link href="/css/theme-auto.css?1724647731" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1724647731" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724647731" rel="stylesheet">
-    <link href="/css/print.css?1724647731" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1724647731" rel="stylesheet">
-    <link href="/css/ie.css?1724647731" rel="stylesheet">
-    <script src="/js/url.js?1724647731"></script>
-    <script src="/js/variant.js?1724647731"></script>
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1767104664" rel="stylesheet">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,10 +40,10 @@
       var root_url="/";
       var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
       // variant stuff
       window.relearn.themeVariantModifier='';
-      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      window.variants && variants.init( [ 'relearn-dark' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
       window.T_Copied_to_clipboard = `Copied to clipboard!`;
@@ -79,10 +80,16 @@
             </header>
 <h1 id="midori-ai-subsystem">Midori AI Subsystem</h1>
 
-<p><a href="#R-image-eafac87cd4c4cce39df8c2e15d45ef01" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-eafac87cd4c4cce39df8c2e15d45ef01"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<p><em><strong>Subsystem and Manager are still in beta!</strong></em></p>
-<p>For Issues, Please open a PR on this github - <a href="https://github.com/lunamidori5/Midori-AI" target="_blank">https://github.com/lunamidori5/Midori-AI</a></p>
+<p><a href="#R-image-ca82c1e2f1f64b7185d6c79c77e9c5dd" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ca82c1e2f1f64b7185d6c79c77e9c5dd"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Notice</div>
+  <div class="box-content">
+
+<p><strong>SUNSET NOTICE</strong>: The Midori AI Subsystem is being sunset and will be retired on January 1st, 2026 in favor of our new Python packages.</p>
+</div>
+</div>
 
             <footer class="footline">
             </footer>
@@ -93,205 +100,28 @@
           <article class="default">
             <header class="headline">
             </header>
-<h1 id="midori-ai-subsystem-manager">Midori AI Subsystem Manager</h1>
+<h1 id="midori-ai-subsystem-manager-v2">Midori AI Subsystem Manager V2</h1>
 
-<p><a href="#R-image-f78ec59f68bfe7559e59e4abc822bb0a" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f78ec59f68bfe7559e59e4abc822bb0a"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<p><strong>How Docker Works</strong></p>
-<p>Docker is a containerization platform that allows you to package and run applications in isolated and portable environments called containers. Containers share the host operating system kernel but have their own dedicated file system, processes, and resources. This isolation allows applications to run independently of the host environment and each other, ensuring consistent and predictable behavior.</p>
-<p><a href="https://github.com/lunamidori5/Midori-AI" target="_blank"><strong>Midori AI Subsystem</strong> - Github Link</a></p>
-<p>The Midori AI Subsystem extends Docker&rsquo;s capabilities by providing a modular and extensible platform for managing AI workloads. Each AI system is encapsulated within  its own dedicated Docker image, which contains the necessary software and dependencies. This approach provides several benefits:</p>
+<p><a href="#R-image-ef4429968822a2b230a996f5ae4093df" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef4429968822a2b230a996f5ae4093df"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>The <code>Midori AI Subsystem</code> offers an innovative solution for managing AI workloads through its advanced integration with containerization technologies. Leveraging the lightweight and efficient design of <a href="https://io.midori-ai.xyz/pixelos/" target="_blank">PixelArch OS</a>, this system empowers developers, researchers, and hobbyists test AI systems effortlessly across a variety of environments.</p>
+<p>At the heart of the Midori AI Subsystem is <a href="https://io.midori-ai.xyz/pixelos/" target="_blank">PixelArch OS</a>, a custom Arch Linux-based operating system optimized for containerized workloads. It provides a lightweight, streamlined environment tailored for modern AI development.</p>
 <ul>
-<li><strong>Simplified Deployment:</strong> The Midori AI Subsystem provides a streamlined and efficient way to deploy AI systems using Docker container technology.</li>
-<li><strong>Eliminates Guesswork:</strong> Standardized configurations and settings reduce complexities, enabling seamless setup and management of AI programs.</li>
+<li>Simplified Deployment: Deploy AI systems effortlessly with pre-configured or built-on-request container images tailored to your needs.</li>
+<li>Platform Versatility: Supports Docker, Podman, LXC, and other systems, allowing you to choose the best fit for your infrastructure.</li>
+<li>Seamless Experimentation: Experiment with various AI tools and models in isolated environments without worrying about conflicts or resource constraints.</li>
+<li>Effortless Scalability: Scale AI workloads efficiently by leveraging containerization technologies.</li>
+<li>Standardized Configurations: Reduce guesswork with standardized setups for AI programs.</li>
+<li>Unleash Creativity: Focus on innovating and developing AI solutions while the Subsystem handles system configuration and compatibility.</li>
 </ul>
 
 <div class="box notices cstyle warning">
   <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Notice</div>
   <div class="box-content">
 
-<p><strong>Warnings / Heads up</strong></p>
-<ul>
-<li>This program is in beta! By using it you take on risk, please see the disclaimer in the footnotes</li>
-<li>The Webserver should be back up, sorry for the outage</li>
-</ul>
-<p><strong>Known Issues</strong></p>
-<ul>
-<li>Server Rework is underway! Thank you for giving us lots of room to grow!</li>
-<li><strong>Report Issuses</strong> -&gt; <a href="https://github.com/lunamidori5/Midori-AI/issues/new/choose" target="_blank">Github Issue</a></li>
-</ul>
-<p><strong>Windows Users</strong></p>
-<ul>
-<li>There seems to be false positive from virus checkers, <a href="https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip" target="_blank">this file</a> is safe to download, <a href="https://github.com/lunamidori5/Midori-AI/tree/master/other_files" target="_blank">check here for the code</a></li>
-<li>This seems to be a widely known bug with Google Chorme, Edge, and others, here are our <a href="https://www.virustotal.com/gui/url/6d36b491ed76cc9f1e284b43fe7fcd4158696edb5730b614469bbdf6f1e616f0/details" target="_blank">virus scans from a few websites</a>. We will try other ways of packing the files.</li>
-</ul>
+<p><strong>SUNSET NOTICE</strong>: The Midori AI Subsystem is being sunset and will be retired on January 1st, 2026 in favor of our new Python packages.</p>
 </div>
 </div>
-<h2 id="install-midori-ai-subsystem-manager">Install Midori AI Subsystem Manager</h2>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Notice</div>
-  <div class="box-content">
-
-<ul>
-<li>As we are in beta, we have implemented telemetry to enhance bug discovery and resolution. This data is anonymized and will be configurable when out of beta.</li>
-</ul>
-</div>
-</div>
-
-<div class="tab-panel" data-tab-group="4e31fafd5b391635828ad40aca0044ce">
-  <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
-    <button
-      data-tab-item="windows"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('4e31fafd5b391635828ad40aca0044ce','windows')"
-    >
-      <span class="tab-nav-text">Windows</span>
-    </button>
-    <button
-      data-tab-item="linux"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('4e31fafd5b391635828ad40aca0044ce','linux')"
-    >
-      <span class="tab-nav-text">Linux</span>
-    </button>
-    <button
-      data-tab-item="unraid"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('4e31fafd5b391635828ad40aca0044ce','unraid')"
-    >
-      <span class="tab-nav-text">Unraid</span>
-    </button>
-    <button
-      data-tab-item="other-os"
-      class="tab-nav-button tab-panel-style cstyle initial"
-      onclick="switchTab('4e31fafd5b391635828ad40aca0044ce','other-os')"
-    >
-      <span class="tab-nav-text">Other OS</span>
-    </button>
-  </div>
-  <div class="tab-content-container">
-    <div
-      data-tab-item="windows"
-      class="tab-content tab-panel-style cstyle initial active">
-      <div class="tab-content-text">
-
-<h3 id="recommened-prerequisites">Recommened Prerequisites</h3>
-<p>Should you be missing this prerequisite, the manager is capable of installing it on your behalf.
-<a href="https://docs.docker.com/desktop/install/windows-install/" target="_blank">Docker Desktop Windows</a></p>
-<h3 id="recommended">Recommended</h3>
-<p>Please make a folder for the Manager program with nothing in it, do not use the user folder.</p>
-<h3 id="quick-install">Quick install</h3>
-<ol>
-<li>Download - <a href="https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip" target="_blank">https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip</a></li>
-<li>Unzip into the folder you made</li>
-<li>Run <code>subsystem_manager.exe</code></li>
-</ol>
-<h3 id="quick-install-with-script">Quick install with script</h3>
-<p>Open a Command Prompt or PowerShell terminal and run:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/model_installer/shell_files/model_installer.bat -o subsystem_manager.bat <span class="p">&amp;&amp;</span> subsystem_manager.bat</span></span></code></pre></div><h3 id="manual-download-and-installation">Manual download and installation</h3>
-<p>Open a Command Prompt or PowerShell terminal and run:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">curl -sSL https://tea-cup.midori-ai.xyz/download/model_installer_windows.zip -o subsystem_manager.zip
-</span></span><span class="line"><span class="cl">powershell Expand-Archive subsystem_manager.zip -DestinationPath .
-</span></span><span class="line"><span class="cl">subsystem_manager.exe</span></span></code></pre></div></div>
-    </div>
-    <div
-      data-tab-item="linux"
-      class="tab-content tab-panel-style cstyle initial">
-      <div class="tab-content-text">
-
-<h3 id="recommened-prerequisites">Recommened Prerequisites</h3>
-<p>If these prerequisites are missing, the manager can install them for you on Debian or Arch-based distros.
-<a href="https://docs.docker.com/engine/install/" target="_blank">Docker Engine</a> and <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a></p>
-<p>or</p>
-<p><a href="https://docs.docker.com/desktop/install/linux-install/" target="_blank">Docker Desktop Linux</a></p>
-<h3 id="quick-install-with-script">Quick install with script</h3>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/model_installer/shell_files/model_installer.sh &gt; model_installer.sh <span class="o">&amp;&amp;</span> bash ./model_installer.sh</span></span></code></pre></div><h3 id="manual-download-and-installation">Manual download and installation</h3>
-<p>Open a terminal and run:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl -sSL https://tea-cup.midori-ai.xyz/download/model_installer_linux.tar.gz -o subsystem_manager.tar.gz
-</span></span><span class="line"><span class="cl">tar -xzf subsystem_manager.tar.gz
-</span></span><span class="line"><span class="cl">chmod +x subsystem_manager
-</span></span><span class="line"><span class="cl">sudo ./subsystem_manager</span></span></code></pre></div></div>
-    </div>
-    <div
-      data-tab-item="unraid"
-      class="tab-content tab-panel-style cstyle initial">
-      <div class="tab-content-text">
-
-<h3 id="warning">Warning</h3>
-<p>Unraid is not fully supported by the Subsystem Manager, We are working hard to fix this, if you have issues please let us know on the github.</p>
-<h3 id="prerequisites">Prerequisites</h3>
-<p>Download and set up <a href="https://forums.unraid.net/topic/114415-plugin-docker-compose-manager/" target="_blank">Docker Compose Plugin</a></p>
-<h3 id="manual-download-and-installation">Manual download and installation</h3>
-<p>Click on the <code>settings</code> gear icon, then click the <code>compose file</code> menu item</p>
-<p>After that copy and paste this into the Docker Compose Manager plugin
-<strong>You may need to edit the mounts to the left of the <code>:</code></strong></p>
-<p>CPU Only:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">midori_ai_unraid</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">lunamidori5/subsystem_manager:master</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">39090</span><span class="p">:</span><span class="m">9090</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/system:/var/lib/docker/volumes/midoriai_midori-ai/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/models:/var/lib/docker/volumes/midoriai_midori-ai-models/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/images:/var/lib/docker/volumes/midoriai_midori-ai-images/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/audio:/var/lib/docker/volumes/midoriai_midori-ai-audio/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock</span></span></span></code></pre></div><p>CPU and Nvidia GPU:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">midori_ai_unraid</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">resources</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">reservations</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">devices</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span>- <span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l">nvidia</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">count</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">capabilities</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">gpu] </span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">lunamidori5/subsystem_manager:master</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="m">39090</span><span class="p">:</span><span class="m">9090</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/system:/var/lib/docker/volumes/midoriai_midori-ai/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/models:/var/lib/docker/volumes/midoriai_midori-ai-models/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/images:/var/lib/docker/volumes/midoriai_midori-ai-images/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/mnt/user/appdata/MidoriAI/audio:/var/lib/docker/volumes/midoriai_midori-ai-audio/_data</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">/var/run/docker.sock:/var/run/docker.sock</span></span></span></code></pre></div><h3 id="running-the-program">Running the program</h3>
-<p>Start up that docker then run the following in it by clicking <code>console</code></p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 subsystem_python_runner.py</span></span></code></pre></div></div>
-    </div>
-    <div
-      data-tab-item="other-os"
-      class="tab-content tab-panel-style cstyle initial">
-      <div class="tab-content-text">
-
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
-<li><a href="https://docs.docker.com/engine/install/" target="_blank">Docker Engine</a> and <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a></li>
-<li><a href="https://www.python.org/downloads/release/python-3100/" target="_blank">Python 3.10</a></li>
-<li><a href="https://virtualenv.pypa.io/en/latest/installation.html" target="_blank">Python Venv</a></li>
-</ul>
-<h3 id="recommended">Recommended</h3>
-<p><em><strong>Do not use on windows</strong></em></p>
-<p>Please make a folder for the Manager program with nothing in it, do not use the user folder.</p>
-<h3 id="quick-install-with-script">Quick install with script</h3>
-<p>Download this file</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -sSL https://raw.githubusercontent.com/lunamidori5/Midori-AI-Subsystem-Manager/master/midori_ai_manager/subsystem_python_runner.py &gt; subsystem_python_runner.py</span></span></code></pre></div><h3 id="running-the-program">Running the program</h3>
-<p>Open a terminal and run:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 subsystem_python_runner.py</span></span></code></pre></div><h3 id="running-the-program-as-root-linux-only">Running the program as root (Linux Only)</h3>
-<p>Open a terminal and run:</p>
-<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo python3 subsystem_python_runner.py</span></span></code></pre></div></div>
-    </div>
-  </div>
-</div>
-<p><a href="https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml" target="_blank"><a href="#R-image-7345e6e4a471d3b780474c55707577a8" class="lightbox-link"><img src="https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml/badge.svg" alt="Auto Lint, Test, and Build." class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7345e6e4a471d3b780474c55707577a8"><img src="https://github.com/lunamidori5/Midori-AI/actions/workflows/Auto_Test_Build.yaml/badge.svg" alt="Auto Lint, Test, and Build." class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></a></p>
 
 <div class="box notices cstyle info">
   <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Notice</div>
@@ -310,7 +140,7 @@
 <h2 id="------disclaimer------">&mdash;&ndash; Disclaimer &mdash;&ndash;</h2>
 <p>The functionality of this product is subject to a variety of factors that are beyond our control, and we cannot guarantee that it will work flawlessly in all situations. We have taken every possible measure to ensure that the product functions as intended, but there may be instances where it does not perform as expected. Please be aware that we cannot be held responsible for any issues that arise due to the product&rsquo;s functionality not meeting your expectations. By using this product, you acknowledge and accept the inherent risks associated with its use, and you agree to hold us harmless for any damages or losses that may result from its functionality not being guaranteed.</p>
 <h2 id="------footnotes------">&mdash;&ndash; Footnotes &mdash;&ndash;</h2>
-<p>*For your safety we have posted the code of this program onto github, please check it out! - <a href="https://github.com/lunamidori5/Midori-AI/tree/master/other_files" target="_blank">Github</a></p>
+<p>*For your safety we have posted the code of this program onto github, please check it out! - <a href="https://github.com/lunamidori5/Midori-AI-Subsystem-Manager/tree/master/subsystem-manager-2-uv" target="_blank">Github</a></p>
 <p>**If you would like to give to help us get better servers - <a href="https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US" target="_blank">Give Support</a></p>
 <p>***If you or someone you know would like a new backend supported by Midori AI Subsystem please reach out to us at <a href="mailto:contact-us@midori-ai.xyz" target="_blank">contact-us@midori-ai.xyz</a></p>
 
@@ -318,443 +148,15 @@
             </footer>
           </article>
 
-          <article class="default">
-            <header class="headline">
-            </header>
-<h1 id="subsystem-update-log">Subsystem Update Log</h1>
-
-<p><a href="#R-image-ed89b698e8f1ba620b044b1dca7f923c" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed89b698e8f1ba620b044b1dca7f923c"><img src="https://tea-cup.midori-ai.xyz/download/logosubsystem.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<h2 id="5102024">5/10/2024</h2>
-<ul>
-<li>Update: Planned changes for LocalAi&rsquo;s Gallery API</li>
-<li>Bug Fix: Fixed a loading bug with how we get carly loaded</li>
-<li>Update: Moved Carly&rsquo;s loading to the carly help file</li>
-<li>Update: Updated the news page</li>
-<li>Update: added invokeAI model support</li>
-<li>Update: added docker to invokeai install</li>
-<li>Update: Few more text changes and a action rename</li>
-<li>Update: Cleans up after itself and deletes the installer / old files</li>
-<li>Update: more text clean up for the backends menu</li>
-<li>Update: added better error code for invoke.ai system runner</li>
-<li>Update: added support for running InvokeAI on the system</li>
-<li>Bug Fix: Fixed the news menu</li>
-<li>Update: Added a new &ldquo;run InvokeAI&rdquo; menu for running the InvokeAI program</li>
-<li>Bug Fix: Did some bug fixes</li>
-</ul>
-<h2 id="572024">5/7/2024</h2>
-<ul>
-<li>Update: Added a way for &ldquo;other os&rdquo; type to auto-update</li>
-<li>Update: Added a yay or nay to purging the venv at the end of other os</li>
-<li>Update: Added a new UI/UX menu</li>
-<li>Bug Fix: Fixed the news menu</li>
-<li>Bug Fix: Fixed naming on the GitHub actions</li>
-<li>Update: Added a way to get the local IP address</li>
-<li>Update: Fully redid some actions that make the docker images</li>
-<li>Update: Reworked the subsystem docker files and the new news post</li>
-</ul>
-<h2 id="552024">5/5/2024</h2>
-<ul>
-<li>Update: Fixed some of Ollama&rsquo;s support</li>
-<li>Update: Action updates</li>
-<li>Bug Fix: Fixed some server ver bugs</li>
-<li>Bug Fix: Fixed a few more bugs</li>
-<li>Update: Removed verlocking</li>
-<li>Update: More fixes</li>
-<li>Update: Added a new way to deal with python env</li>
-<li>Update: Code clean up and fixed a socket error</li>
-</ul>
-<h2 id="4222024">4/22/2024</h2>
-<ul>
-<li>Update: Fully reworked how we pack the exec for all os</li>
-<li>Update: Fully redid our linting actions on github to run better</li>
-<li>Update: Mac OS Support should be &ldquo;working&rdquo;</li>
-<li>Bug Fix: Fixed a odd bug with VER</li>
-<li>Bug Fix: Fixed a bug with WSL purging docker for no reason</li>
-</ul>
-<h2 id="4202024">4/20/2024</h2>
-<ul>
-<li>Update: Added new &ldquo;WSL Docker Data&rdquo; backend program (in testing)</li>
-<li>Update: Added more GPU checks to make sure we know for sure if you have a GPU</li>
-<li>Update: Better logging for debugging</li>
-<li>Bug Fix: Fixed a few bugs and made the subsystem docker 200mbs smaller</li>
-<li>Update: Removed some outdated code</li>
-<li>Update: Added new git actions thanks to - <a href="https://github.com/cryptk" target="_blank">Cryptk</a></li>
-<li>Update: Subsystem Manager builds are now on github actions, check them out - <a href="https://github.com/lunamidori5/Midori-AI/actions" target="_blank">Actions</a></li>
-</ul>
-<h2 id="4132024">4/13/2024</h2>
-<ul>
-<li>Known Bug: Upstream changes to LocalAI is making API Keys not work, I am working on a temp fix, please use a outdated image for now.</li>
-</ul>
-<h2 id="4132024-1">4/13/2024</h2>
-<ul>
-<li>Update: Added InvokeAI Backend Program (Host installer)</li>
-<li>Update: Added InvokeAI Backend Program (Subsystem installer)</li>
-<li>Update: Site wide updates, added Big-AGI</li>
-<li>Update: Updated LocalAI Page</li>
-<li>Update: Updated InvokeAI Page</li>
-<li>Update: Fixed Port on Big-AGI (server side, was <code>3000</code> now <code>33000</code>)</li>
-<li>Update: Removed Home Assistant links</li>
-<li>Update: Removed Oobabooga links</li>
-<li>Update: Removed Ollama link</li>
-<li>Update: Full remake of the Subsystem index page to have better working links</li>
-</ul>
-<h2 id="4122024">4/12/2024</h2>
-<ul>
-<li>Bug Fix: Fixed the GPU question to only show up if you have a gpu installed</li>
-<li>Update: Getting ready for InvokeAI backend program to install on host</li>
-</ul>
-<h2 id="4102024">4/10/2024</h2>
-<ul>
-<li>Bug Fix: Fixed a bug that was making the user hit enter 3 times after a update</li>
-<li>Bug Fix: Fixed the system message on the 14b ai that helps in the program (she can now help uninstall the subsystem if needed)</li>
-<li>Update: Added new functions to the server for new function based commands for the helper ai</li>
-<li>Update: Updated Invoke AI installer (if its bugged let <a href="https://io.midori-ai.xyz/about-us/about-luna/" target="_blank">Luna</a> or <a href="https://io.midori-ai.xyz/about-us/carly-api/" target="_blank">Carly</a> know)</li>
-</ul>
-<h2 id="492024">4/9/2024</h2>
-<ul>
-<li>Bug Fix: Fixed a loop in the help context</li>
-<li>Bug Fix: Fixed the Huggingface downloader (Now runs as root and is its own program)</li>
-<li>Bug Fix: Fixed LocalAI image being out of date</li>
-<li>Bug Fix: Fixed LocalAI AIO image looping endlessly</li>
-<li>Update: <a href="https://github.com/lunamidori5/Midori-AI/actions/workflows/Make_Subsystem_Dockers.yml" target="_blank">Added LocalAI x Midori AI AIO images to github actions</a></li>
-<li>Update: Added more context to the 14B model used for the help menu</li>
-</ul>
-<h2 id="472024">4/7/2024</h2>
-<ul>
-<li>Bug Fix: AnythingLLM docker image is now fixed server side. Thank you for your help testers!</li>
-</ul>
-<h2 id="462024">4/6/2024</h2>
-<ul>
-<li>Bug Fix: Removed alot of old text</li>
-<li>Bug Fix: Fixed alot of outdated text</li>
-<li>Bug Fix: Removed Github heartbeat check ||(why were we checking if github was up??)||</li>
-<li><strong>Known Bug Update</strong>: Huggingface Downloader seems be bugged on LocalAI master&hellip; will be working on a fix</li>
-<li><strong>Known Bug Update</strong>: AnythingLLM docker image seems to be bugged, will be remaking its download / setup from scratch</li>
-</ul>
-<h2 id="432024">4/3/2024</h2>
-<ul>
-<li>New Backend: Added Big-AGI to the subsystem!</li>
-<li>Update: Added better huggingface downloader commands server side</li>
-<li>Update: Redid how the server sends models to the subsystem</li>
-<li>Bug Fix: Fixed a bug with ollama not starting with the subsystem</li>
-<li>Bug Fix: Fixed a bug with endlessly installing backends</li>
-</ul>
-<h2 id="422024">4/2/2024</h2>
-<ul>
-<li>Update: Added a menu to fork into nonsubsystem images for installing models</li>
-<li>Update: Added a way to install Huggingface based models into LocalAI using Midori AI&rsquo;s model repo</li>
-<li>Bug Fix: Fixed some type o and bad text in a few places that was confusing users</li>
-<li>Bug Fix: Fixed a bug when some links were used with Huggingface</li>
-<li>Update: Server upgrades to our model repo api</li>
-</ul>
-<h2 id="412024">4/1/2024</h2>
-<ul>
-<li>Update 1: Added a new safety check to make sure the subsystem manager is not in the Windows folder or in system32</li>
-<li>Update 2: Added more prompting for the baked in Carly model for if you are asking about GPU or not with cuda</li>
-</ul>
-<h2 id="3302024">3/30/2024</h2>
-<ul>
-<li>Update 1: Fixed a bug with the subsystem ver not matching the manager ver and endlessly updating the subsystem</li>
-</ul>
-<h2 id="3292024">3/29/2024</h2>
-<ul>
-<li>Update 1: Fixed a big bug if the user put the subsystem manager in a folder not named &ldquo;midoriai&rdquo;</li>
-<li>Update 2: Fixed the new LocalAI image to only download the models one time</li>
-<li>Update 3: Added server side checks to make sure models are ready for packing to end user</li>
-<li>Update 4: Better logging added to help debug the manager, thank you all for your help!</li>
-</ul>
-<h2 id="3272024">3/27/2024</h2>
-<ul>
-<li>Update 1: Fixed a bug that let the user use the subsystem manager with out installing the subsystem (oops)</li>
-<li>Update 2: LocalAI images are now from the Midori AI repo and are update to date with LocalAI&rsquo;s master images*</li>
-<li>Update 3: Added the start for &ldquo;auto update of docker images&rdquo; to the subsystem using hashes</li>
-</ul>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
-          <article class="default">
-            <header class="headline">
-            </header>
-<h1 id="anythingllm">AnythingLLM</h1>
-
-<p><a href="#R-image-b10bb0a4f3aaff4692db14a3691337ea" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_anythingllm.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b10bb0a4f3aaff4692db14a3691337ea"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_anythingllm.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<p>Here is a link to <a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank">AnythingLLM Github</a></p>
-<h2 id="installing-anythingllm">Installing AnythingLLM</h2>
-<h3 id="step-1">Step 1</h3>
-<p>Type <code>2</code> into the main menu
-<a href="#R-image-ff3f2c34f2f329febe27cd764b04a4a0" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/ad8ff901-2263-4108-907a-1bf0c7a81686-WindowsTerminal_RthdIfnXy1.png" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ff3f2c34f2f329febe27cd764b04a4a0"><img src="https://tea-cup.midori-ai.xyz/download/ad8ff901-2263-4108-907a-1bf0c7a81686-WindowsTerminal_RthdIfnXy1.png" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<h3 id="step-2">Step 2</h3>
-<p>Type <code>yes</code> or <code>no</code> into the menu</p>
-<h3 id="step-3">Step 3</h3>
-<p>Type in <code>anythinllm</code> into menu, then hit enter
-<a href="#R-image-b8630e477819bb3f2c6eb8017f0a7b7f" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/1dcdc436-4d11-4b88-9145-d585de6168b1-WindowsTerminal_lqsbcnNhNJ.png" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8630e477819bb3f2c6eb8017f0a7b7f"><img src="https://tea-cup.midori-ai.xyz/download/1dcdc436-4d11-4b88-9145-d585de6168b1-WindowsTerminal_lqsbcnNhNJ.png" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<h3 id="step-4">Step 4</h3>
-<p>Enjoy your new copy of AnythingLLM its running on port <code>33001</code></p>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Notice</div>
-  <div class="box-content">
-
-<ul>
-<li>Reminder to always use your computers IP address not <code>localhost</code></li>
-<li>IE: <code>192.168.10.10:33001</code> or <code>192.168.1.3:33001</code></li>
-</ul>
-</div>
-</div>
-<p>If you need help, please reach out on our <a href="https://discord.gg/xdgCx3VyHU" target="_blank">Discord</a> / <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email</a>; or reach out on their <a href="https://discord.gg/BXwCmkexFp" target="_blank">Discord</a>.</p>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
-          <article class="default">
-            <header class="headline">
-            </header>
-<h1 id="big-agi">Big-AGI</h1>
-
-<p><a href="#R-image-693b9c2db2ee0b93405451a8a3073ea5" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_bigagi.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-693b9c2db2ee0b93405451a8a3073ea5"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_bigagi.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<p>Here is a link to <a href="https://github.com/enricoros/big-AGI" target="_blank">Big-AGI Github</a></p>
-<h2 id="installing-big-agi">Installing Big-AGI</h2>
-<h3 id="step-1">Step 1</h3>
-<p>Type <code>2</code> into the main menu</p>
-<h3 id="step-2">Step 2</h3>
-<p>Type <code>yes</code> or <code>no</code> into the menu</p>
-<h3 id="step-3">Step 3</h3>
-<p>Type in <code>bigagi</code> into menu, then hit enter</p>
-<h3 id="step-4">Step 4</h3>
-<p>Enjoy your new copy of Big-AGI its running on port <code>33000</code></p>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Notice</div>
-  <div class="box-content">
-
-<ul>
-<li>Reminder to always use your computers IP address not <code>localhost</code></li>
-<li>IE: <code>192.168.10.10:33000</code> or <code>192.168.1.3:33000</code></li>
-</ul>
-</div>
-</div>
-<p>If you need help, please reach out on our <a href="https://discord.gg/xdgCx3VyHU" target="_blank">Discord</a> / <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email</a>; or reach out on their <a href="https://discord.gg/bCtgyv2Kq5" target="_blank">Discord</a>.</p>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
-          <article class="default">
-            <header class="headline">
-            </header>
-<h1 id="localai">LocalAI</h1>
-
-<p><a href="#R-image-6b4ead87f2955dcd4be9bbd8cf533e0d" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_localai.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6b4ead87f2955dcd4be9bbd8cf533e0d"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_localai.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<p>Here is a link to <a href="https://github.com/mudler/LocalAI" target="_blank">LocalAI Github</a></p>
-<h2 id="installing-localai-a-step-by-step-guide">Installing LocalAI: A Step-by-Step Guide</h2>
-<p>This guide will walk you through the process of installing LocalAI on your system. Please follow the steps carefully for a successful installation.</p>
-<h3 id="step-1-initiate-installation">Step 1: Initiate Installation</h3>
-<ol>
-<li>From the main menu, enter the option <code>2</code> to begin the installation process.</li>
-<li>You will be prompted with a visual confirmation.</li>
-</ol>
-<h3 id="step-2-confirm-gpu-backend">Step 2: Confirm GPU Backend</h3>
-<ol>
-<li>Respond to the prompt with either <code>yes</code> or <code>no</code> to proceed with GPU support or CPU support only, respectively.</li>
-</ol>
-<h3 id="step-3-confirm-localai-installation">Step 3: Confirm LocalAI installation</h3>
-<ol>
-<li>Type <code>localai</code> into the menu and press Enter to start the LocalAI installation.</li>
-</ol>
-<h3 id="step-4-wait-for-setup-completion">Step 4: Wait for Setup Completion</h3>
-<ol>
-<li>LocalAI will now automatically configure itself. This process may take approximately 10 to 30 minutes.</li>
-<li><strong>Important:</strong> Please do not restart your system or attempt to send requests to LocalAI during this setup phase.</li>
-</ol>
-<h3 id="step-5-access-localai">Step 5: Access LocalAI</h3>
-<ol>
-<li>Once the setup is complete, you can access LocalAI on port <code>38080</code>.</li>
-</ol>
-
-<div class="box notices cstyle info">
-  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Important Notes</div>
-  <div class="box-content">
-
-<ul>
-<li>Remember to use your computer&rsquo;s IP address instead of <code>localhost</code> when accessing LocalAI. For example, you would use <code>192.168.10.10:38080/v1</code> or <code>192.168.1.3:38080/v1</code> depending on your network configuration.</li>
-</ul>
-</div>
-</div>
-<h3 id="support-and-assistance">Support and Assistance</h3>
-<p>If you encounter any issues or require further assistance, please feel free to reach out through the following channels:</p>
-<ul>
-<li><strong>Midori AI Discord:</strong> <a href="https://discord.gg/xdgCx3VyHU" target="_blank">https://discord.gg/xdgCx3VyHU</a></li>
-<li><strong>Midori AI Email:</strong> <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email Us</a></li>
-<li><strong>LocalAI Discord:</strong> <a href="https://discord.gg/AHEt8BEwzG" target="_blank">https://discord.gg/AHEt8BEwzG</a></li>
-</ul>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
           <section>
-            <h1 class="a11y-only">Subsections of LocalAI</h1>
-          <article class="default">
-            <header class="headline">
-            </header>
-<h1 id="install-localai-models">Install LocalAI Models</h1>
-
-<p><a href="#R-image-364eca7ef72a84bd1a247c36382413d3" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_localai.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-364eca7ef72a84bd1a247c36382413d3"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_localai.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<h2 id="install-a-model-from-the-midori-ai-model-repo">Install a Model from the Midori AI Model Repo</h2>
-<h4 id="step-1">Step 1:</h4>
-<ul>
-<li>Start the Midori AI Subsystem</li>
-</ul>
-<h4 id="step-2">Step 2:</h4>
-<ul>
-<li>On the Main Menu, Type <code>5</code> to Enter the Backend Program Menu</li>
-</ul>
-<h4 id="step-3">Step 3:</h4>
-<ul>
-<li>On the Backend Program Menu, Type <code>10</code> to Enter the LocalAI Model Installer</li>
-</ul>
-<h4 id="step-4a">Step 4a:</h4>
-<ul>
-<li>If you have LocalAI installed in the subsystem, skip this step.</li>
-<li>If you do not have LocalAI installed in the subsystem, the program will ask you to enter the LocalAI docker&rsquo;s name. It will look something like <code>localai-api-1</code>, but not always. If you need help, reach out on the <a href="https://discord.gg/xdgCx3VyHU" target="_blank">Midori AI Discord</a> / <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email</a>.</li>
-</ul>
-<h4 id="step-4b">Step 4b:</h4>
-<ul>
-<li>If you have GPU support installed in that image, type <code>yes</code>.</li>
-<li>If you do not have GPU support installed in that image, type <code>no</code>.</li>
-</ul>
-<h4 id="step-5">Step 5:</h4>
-<ul>
-<li>Type in the size you would like for your LLM and then follow the prompts in the manager!</li>
-</ul>
-<h4 id="step-6">Step 6:</h4>
-<ul>
-<li>Sit Back and Let the Model Download from Midori AI&rsquo;s Model Repo</li>
-<li>Don&rsquo;t forget to note the name of the model you just installed so you can request it for OpenAI V1 later.</li>
-</ul>
-<p>Need help on how to do that? Stop by - <a href="/howtos/by_hand/easy-request/index.html">How to send OpenAI request to LocalAI</a></p>
-<h2 id="install-a-hugging-face-model-from-the-midori-ai-model-repo">Install a Hugging Face Model from the Midori AI Model Repo</h2>
-<h4 id="step-1-1">Step 1:</h4>
-<ul>
-<li>Start the Midori AI Subsystem</li>
-</ul>
-<h4 id="step-2-1">Step 2:</h4>
-<ul>
-<li>On the Main Menu, Type <code>5</code> to Enter the Backend Program Menu</li>
-</ul>
-<h4 id="step-3-1">Step 3:</h4>
-<ul>
-<li>On the Backend Program Menu, Type <code>10</code> to Enter the LocalAI Model Installer</li>
-</ul>
-<h4 id="step-4a-1">Step 4a:</h4>
-<ul>
-<li>If you have LocalAI installed in the subsystem, skip this step.</li>
-<li>If you do not have LocalAI installed in the subsystem, the program will ask you to enter the LocalAI docker&rsquo;s name. It will look something like <code>localai-api-1</code>, but not always. If you need help, reach out on the <a href="https://discord.gg/xdgCx3VyHU" target="_blank">Midori AI Discord</a> / <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email</a>.</li>
-</ul>
-<h4 id="step-4b-1">Step 4b:</h4>
-<ul>
-<li>If you have GPU support installed in that image, type <code>yes</code>.</li>
-<li>If you do not have GPU support installed in that image, type <code>no</code>.</li>
-</ul>
-<h4 id="step-5-1">Step 5:</h4>
-<ul>
-<li>Type <code>huggingface</code> when asked what size of model you would like.</li>
-</ul>
-<h4 id="step-6-1">Step 6:</h4>
-<ul>
-<li>Copy and Paste the Hugging Face Download URL That You Wish to Use</li>
-<li>For example: <code>https://huggingface.co/mlabonne/gemma-7b-it-GGUF/resolve/main/gemma-7b-it.Q2_K.gguf?download=true</code>
-<a href="#R-image-60e2a5d33a42123917b1fe2032a94624" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/0a975dc7-ff7f-42a9-a77c-8efdd5bd95e4-chrome_tC2H9nfRdA.png" alt="midori ai photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-60e2a5d33a42123917b1fe2032a94624"><img src="https://tea-cup.midori-ai.xyz/download/0a975dc7-ff7f-42a9-a77c-8efdd5bd95e4-chrome_tC2H9nfRdA.png" alt="midori ai photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></li>
-<li>Or you can use the huggingface naming from their api</li>
-<li>For example: <code>mlabonne/gemma-7b-it-GGUF/gemma-7b-it.Q2_K.gguf</code></li>
-</ul>
-<h4 id="step-7">Step 7:</h4>
-<ul>
-<li>Sit Back and Let the Model Download from Midori AI&rsquo;s Model Repo</li>
-<li>Don&rsquo;t forget to note the name of the model you just installed so you can request it for OpenAI V1 later.</li>
-</ul>
-<p>Need help on how to do that? Stop by - <a href="/howtos/by_hand/easy-request/index.html">How to send OpenAI request to LocalAI</a></p>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
+            <h1 class="a11y-only">Subsections of Midori AI Subsystem Manager V2</h1>
           </section>
-          <article class="default">
-            <header class="headline">
-            </header>
-<h1 id="invokeai">InvokeAI</h1>
-
-<p><a href="#R-image-83b633b247598c93acbb1f561eedd0a7" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_invokeai.png" alt="Midori AI photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-83b633b247598c93acbb1f561eedd0a7"><img src="https://tea-cup.midori-ai.xyz/download/Midori_subsystem_x_invokeai.png" alt="Midori AI photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
-<p>Here is a link to <a href="https://github.com/invoke-ai/InvokeAI/tree/main" target="_blank">InvokeAI Github</a></p>
-<h2 id="invokeai-installation-guide">InvokeAI Installation Guide</h2>
-<p>This guide provides a comprehensive walkthrough for installing InvokeAI on your system. Please follow the instructions meticulously to ensure a successful installation.</p>
-<h3 id="accessing-the-installation-menu">Accessing the Installation Menu</h3>
-<ol>
-<li>From the main menu, enter option <code>2</code> to access the &ldquo;Installer/Upgrade Menu&rdquo;.</li>
-</ol>
-<h3 id="initiating-invokeai-installation">Initiating InvokeAI Installation</h3>
-<ol>
-<li>Within the &ldquo;Installer/Upgrade Menu&rdquo;, if requested to type something to proceed type <code>yes</code>.</li>
-<li>Initiate the download process by typing <code>invokeai</code> and pressing Enter.</li>
-</ol>
-<h3 id="navigating-to-backend-programs">Navigating to Backend Programs</h3>
-<ol>
-<li>Return to the main menu and select option <code>5</code> to access the &ldquo;Backend Programs Menu&rdquo;.</li>
-</ol>
-<h3 id="selecting-installation-method">Selecting Installation Method</h3>
-<ol>
-<li>Choose the appropriate installation method based on your hardware configuration:
-<ul>
-<li><strong>Option 5:</strong> Recommended for systems with Nvidia GPUs.</li>
-<li><strong>Option 6:</strong> Recommended for systems without Nvidia GPUs.</li>
-</ul>
-</li>
-</ol>
-<h3 id="executing-the-installation-script">Executing the Installation Script</h3>
-<ol>
-<li>The installer will be executed after you press <code>enter</code></li>
-</ol>
-<h3 id="installation-process">Installation Process</h3>
-<ol>
-<li>The InvokeAI installer will guide you through the remaining steps. Should you require assistance, our support channels are available:
-<ul>
-<li><strong>Discord:</strong> <a href="https://discord.gg/xdgCx3VyHU" target="_blank">https://discord.gg/xdgCx3VyHU</a></li>
-<li><strong>Email:</strong> <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email Us</a></li>
-</ul>
-</li>
-</ol>
-<p><strong>Note:</strong> The installation process may appear inactive at times; however, rest assured that progress is being made. Please refrain from interrupting the process to ensure its successful completion.</p>
-<h3 id="support-and-resources">Support and Resources</h3>
-<p>Enjoy using InvokeAI! For additional help or information, please refer to the following resources:</p>
-<ul>
-<li><strong>Midori AI Discord:</strong> <a href="https://discord.gg/xdgCx3VyHU" target="_blank">https://discord.gg/xdgCx3VyHU</a></li>
-<li><strong>Midori AI Email:</strong> <a href="mailto:contact-us@midori-ai.xyz" target="_blank">Email Us</a></li>
-<li><strong>InvokeAI Discord:</strong> <a href="https://discord.gg/invoke-ai" target="_blank">https://discord.gg/invoke-ai</a></li>
-</ul>
-
-            <footer class="footline">
-            </footer>
-          </article>
-
           </section>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1724647731" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724647731" defer></script>
-    <script src="/js/theme.js?1724647731" defer></script>
+    <script src="/js/clipboard.min.js?1767104665" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104665" defer></script>
+    <script src="/js/theme.js?1767104665" defer></script>
   </body>
 </html>

@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Hugo 0.121.0">
     <meta name="generator" content="Relearn 5.25.0+tip">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Documentation for Midori-AI">
     <meta name="author" content="Luna Midori">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Home Assistant x LocalAI :: Midori-AI">
-    <meta name="twitter:description" content="Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.">
+    <meta name="twitter:description" content="Notice Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient.">
     <meta property="og:title" content="Home Assistant x LocalAI :: Midori-AI">
-    <meta property="og:description" content="Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.">
+    <meta property="og:description" content="Notice Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:1313/howtos/setup-with-ha/index.html">
+    <meta property="og:url" content="https://io.midori-ai.xyz/howtos/setup-with-ha/index.html">
     <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
     <meta property="og:site_name" content="Midori-AI">
     <title>Home Assistant x LocalAI :: Midori-AI</title>
+    <link href="https://io.midori-ai.xyz/howtos/setup-with-ha/index.html" rel="canonical" type="text/html" title="Home Assistant x LocalAI :: Midori-AI">
+    <link href="/howtos/setup-with-ha/index.xml" rel="alternate" type="application/rss+xml" title="Home Assistant x LocalAI :: Midori-AI">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724647731" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724647731" rel="stylesheet">
-    <link href="/css/fonts.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724647731" rel="stylesheet">
-    <link href="/css/theme-auto.css?1724647731" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1724647731" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724647731" rel="stylesheet">
-    <link href="/css/print.css?1724647731" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1724647731" rel="stylesheet">
-    <link href="/css/ie.css?1724647731" rel="stylesheet">
-    <script src="/js/url.js?1724647731"></script>
-    <script src="/js/variant.js?1724647731"></script>
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1767104664" rel="stylesheet">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -40,10 +43,10 @@
       var root_url="/";
       var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
       // variant stuff
       window.relearn.themeVariantModifier='';
-      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      window.variants && variants.init( [ 'relearn-dark' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
       window.T_Copied_to_clipboard = `Copied to clipboard!`;
@@ -81,6 +84,14 @@
             </header>
 <h1 id="home-assistant-x-localai">Home Assistant x LocalAI</h1>
 
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Notice</div>
+  <div class="box-content">
+
+<p>Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.</p>
+</div>
+</div>
 <p>Home Assistant is an open-source home automation platform that allows users to control and monitor various smart devices in their homes. It supports a wide range of devices, including lights, thermostats, security systems, and more. The platform is designed  to be user-friendly and customizable, enabling users to create automations and routines to make their homes more convenient and efficient. Home Assistant can be accessed through a web interface or a mobile app, and it can be installed on a variety of hardware platforms, such as Raspberry Pi or a dedicated server.</p>
 <p>Currently, Home Assistant supports conversation-based agents and services. As of writing this, OpenAIs API is supported as a conversation agent; however, access to your homes devices and entities is possible through custom components. Local based services, such as LocalAI, are also available as a drop-in replacement for OpenAI services.</p>
 <h2 id="there-are-multiple-custom-integrations-available">There are multiple custom integrations available:</h2>
@@ -91,13 +102,13 @@
 </ul>
 <h1 id="home-llm">Home-LLM</h1>
 <h2 id="installation-instructions--localai">Installation Instructions – LocalAI</h2>
-<p>To install LocalAI, use our <a href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a></p>
+<p>To install LocalAI, follow the LocalAI installation instructions or the <a href="/howtos/by_hand/easy-setup-docker/">Easy Docker setup</a> guide.</p>
 <h2 id="installation-instructions--home-llm-the-ha-plugin">Installation Instructions – Home LLM (The HA plugin)</h2>
 <p>Please follow the installation instructions on <a href="https://github.com/acon96/home-llm?tab=readme-ov-file#installing-with-hacs" target="_blank">Home-LLM</a> repo to install HACS plug-in.</p>
 <h2 id="setting-up-the-plugin-for-ha--localai">Setting up the plugin for HA &amp; LocalAI</h2>
 <p>Before adding the Llama Conversation agent in Home Assistant, you must download a LLM in the LocalAI models directory. Although you may use any model you want, this specific integration uses a model that has been specifically fine-tuned to work with Home Assistant. Performance will vary widely with other models.</p>
 <p>The models can be found on the Midori AI model repo, as a part of the LocalAI manager.</p>
-<p>Use the <a href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a> for a easy time installing models or follow <a href="/howtos/by_hand/easy-model/index.html">Seting up a Model</a></p>
+<p>You can follow <a href="/howtos/by_hand/easy-model/">Setting up a Model</a> to install models by hand.</p>
 <h2 id="setting-up-the-remote-backend">Setting up the &ldquo;remote&rdquo; backend:</h2>
 <p>You will need the following settings in order to configure LocalAI backend:</p>
 <ul>
@@ -141,8 +152,8 @@ High level Overview of the setup:</p>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1724647731" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724647731" defer></script>
-    <script src="/js/theme.js?1724647731" defer></script>
+    <script src="/js/clipboard.min.js?1767104664" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104664" defer></script>
+    <script src="/js/theme.js?1767104664" defer></script>
   </body>
 </html>

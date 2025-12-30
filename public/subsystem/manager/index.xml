@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Midori AI Subsystem Manager on Midori-AI</title>
-    <link>http://localhost:1313/subsystem/manager/index.html</link>
-    <description>Recent content in Midori AI Subsystem Manager on Midori-AI</description>
+    <title>Midori AI Subsystem Manager V2 on Midori-AI</title>
+    <link>https://io.midori-ai.xyz/subsystem/manager/index.html</link>
+    <description>Recent content in Midori AI Subsystem Manager V2 on Midori-AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/subsystem/manager/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://io.midori-ai.xyz/subsystem/manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Midori AI Subsystem Manager V1 (SUNSET)</title>
+      <link>https://io.midori-ai.xyz/subsystem/manager/subsystemv1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://io.midori-ai.xyz/subsystem/manager/subsystemv1/index.html</guid>
+      <description>How Docker Works
+Docker is a containerization platform that allows you to package and run applications in isolated and portable environments called containers. Containers share the host operating system kernel but have their own dedicated file system, processes, and resources. This isolation allows applications to run independently of the host environment and each other, ensuring consistent and predictable behavior.
+Midori AI Subsystem - Github Link
+The Midori AI Subsystem extends Docker&amp;rsquo;s capabilities by providing a modular and extensible platform for managing AI workloads.</description>
+    </item>
   </channel>
 </rss>

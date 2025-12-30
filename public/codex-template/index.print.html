@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.121.0">
+    <meta name="generator" content="Relearn 5.25.0+tip">
+    <meta name="description" content="Documentation for Midori-AI">
+    <meta name="author" content="Luna Midori">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Codex Contributor Template :: Midori-AI">
+    <meta name="twitter:description" content="LRM-Native Collaboration Framework The Codex Contributor Template is a standardized framework for establishing structured, LRM-assisted collaboration workflows in software development repositories. It provides a reusable foundation for implementing role-based contributor coordination systems using a .codex/ directory structure.
+Designed from the ground up for LRM-assisted development, this template enables teams to leverage tools like GitHub Copilot, Claude, and other LRM assistants with clear, structured context while maintaining human oversight and accountability.">
+    <meta property="og:title" content="Codex Contributor Template :: Midori-AI">
+    <meta property="og:description" content="LRM-Native Collaboration Framework The Codex Contributor Template is a standardized framework for establishing structured, LRM-assisted collaboration workflows in software development repositories. It provides a reusable foundation for implementing role-based contributor coordination systems using a .codex/ directory structure.
+Designed from the ground up for LRM-assisted development, this template enables teams to leverage tools like GitHub Copilot, Claude, and other LRM assistants with clear, structured context while maintaining human oversight and accountability.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://io.midori-ai.xyz/codex-template/index.html">
+    <meta property="article:section" content="">
+    <meta property="og:site_name" content="Midori-AI">
+    <title>Codex Contributor Template :: Midori-AI</title>
+    <link href="https://io.midori-ai.xyz/codex-template/index.html" rel="canonical" type="text/html" title="Codex Contributor Template :: Midori-AI">
+    <link href="/codex-template/index.xml" rel="alternate" type="application/rss+xml" title="Codex Contributor Template :: Midori-AI">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1767104664" rel="stylesheet">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/codex-template/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Codex Contributor Template</span><meta itemprop="position" content="1"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="codex-contributor-template">Codex Contributor Template</h1>
+
+<p><a href="#R-image-6d1f5c6072026fb64092d4ad87f739b7" class="lightbox-link"><img src="https://tea-cup.midori-ai.xyz/download/logo_color1.png" alt="codex-template-banner" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d1f5c6072026fb64092d4ad87f739b7"><img src="https://tea-cup.midori-ai.xyz/download/logo_color1.png" alt="codex-template-banner" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<h2 id="lrm-native-collaboration-framework">LRM-Native Collaboration Framework</h2>
+<p>The <strong>Codex Contributor Template</strong> is a standardized framework for establishing structured, LRM-assisted collaboration workflows in software development repositories. It provides a reusable foundation for implementing role-based contributor coordination systems using a <code>.codex/</code> directory structure.</p>
+<p>Designed from the ground up for LRM-assisted development, this template enables teams to leverage tools like GitHub Copilot, Claude, and other LRM assistants with clear, structured context while maintaining human oversight and accountability.</p>
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Template in Action</div>
+  <div class="box-content">
+
+<p>This template is actively used across all Midori AI projects including Carly-AGI, Endless Autofighter, and this website itself. See the real-world implementation in our <a href="https://github.com/Midori-AI-OSS" target="_blank">GitHub repositories</a>.</p>
+</div>
+</div>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>9 Specialized Contributor Modes</strong> - Clear role definitions with explicit boundaries (Task Master, Coder, Reviewer, Auditor, Manager, Blogger, Brainstormer, Prompter, Storyteller)</li>
+<li><strong>Protocol-Based Workflow</strong> - Structured handoff mechanisms like TMT (Task Master Ticket) system</li>
+<li><strong>LRM-Native Design</strong> - Optimized for LRM assistant consumption while remaining human-readable</li>
+<li><strong>Framework-Agnostic</strong> - No project-specific tooling requirements, works with any tech stack</li>
+<li><strong>Audit Trail Emphasis</strong> - Comprehensive documentation of decisions, reviews, and process evolution</li>
+<li><strong>Hash-Prefixed File Naming</strong> - Unique trackable filenames using <code>openssl rand -hex 4</code></li>
+<li><strong>Role Separation</strong> - Clear boundaries prevent scope creep (e.g., Task Masters never edit code)</li>
+<li><strong>Cheat Sheet Culture</strong> - Quick-reference guides maintained by each role</li>
+</ul>
+<h2 id="whats-included">What&rsquo;s Included</h2>
+<h3 id="core-documentation">Core Documentation</h3>
+<ul>
+<li><strong><code>AGENTS.md</code></strong> - Root-level contributor guide defining workflow practices, communication protocols, and mode selection rules</li>
+<li><strong><code>.codex/modes/</code></strong> - Directory containing 9 specialized contributor mode guides with detailed role-specific guidelines</li>
+</ul>
+<h3 id="directory-structure">Directory Structure</h3>
+<p>The template defines a comprehensive <code>.codex/</code> hierarchy:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">.</span><span class="n">codex</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">modes</span><span class="o">/</span>              <span class="c1"># Contributor role definitions</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">tasks</span><span class="o">/</span>              <span class="c1"># Active work items with unique hash-prefixed filenames</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">notes</span><span class="o">/</span>              <span class="c1"># Process notes and service-level conventions</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">implementation</span><span class="o">/</span>     <span class="c1"># Technical documentation accompanying code</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">reviews</span><span class="o">/</span>            <span class="c1"># Review notes and audit findings</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">audit</span><span class="o">/</span>              <span class="c1"># Comprehensive audit reports</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">ideas</span><span class="o">/</span>              <span class="c1"># Ideation session outputs</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">prompts</span><span class="o">/</span>            <span class="c1"># Reusable prompt templates</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">lore</span><span class="o">/</span>               <span class="c1"># Narrative context and storytelling materials</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="n">tools</span><span class="o">/</span>              <span class="c1"># Contributor cheat sheets and quick references</span>
+</span></span><span class="line"><span class="cl"><span class="err">└──</span> <span class="n">blog</span><span class="o">/</span>               <span class="c1"># Staged blog posts and announcements</span></span></span></code></pre></div><h2 id="the-nine-contributor-modes">The Nine Contributor Modes</h2>
+<h3 id="task-master-mode"><strong>Task Master Mode</strong></h3>
+<p>Coordinates work backlog, translates requirements into actionable tasks, maintains task health and priority. Creates hash-prefixed task files and never directly edits code.</p>
+<h3 id="manager-mode"><strong>Manager Mode</strong></h3>
+<p>Maintains contributor instructions, updates mode documentation, aligns process updates with stakeholders. Ensures <code>.codex/</code> documentation stays synchronized with project reality.</p>
+<h3 id="coder-mode"><strong>Coder Mode</strong></h3>
+<p>Implements features, writes tests, maintains code quality and technical documentation. Focuses on implementation without managing work backlog.</p>
+<h3 id="reviewer-mode"><strong>Reviewer Mode</strong></h3>
+<p>Audits documentation for accuracy, identifies outdated guidance, creates actionable follow-up tasks. Analysis-only mode that creates TMT tickets for Task Masters.</p>
+<h3 id="auditor-mode"><strong>Auditor Mode</strong></h3>
+<p>Performs comprehensive code/documentation reviews, verifies compliance, security, and quality standards. More thorough than Reviewer mode.</p>
+<h3 id="blogger-mode"><strong>Blogger Mode</strong></h3>
+<p>Communicates repository changes to community, creates platform-specific content with consistent voice. Drafts posts in <code>.codex/blog/</code> before publication.</p>
+<h3 id="brainstormer-mode"><strong>Brainstormer Mode</strong></h3>
+<p>Drives collaborative ideation, explores solution alternatives, captures design trade-offs. Documents ideas in <code>.codex/ideas/</code>.</p>
+<h3 id="prompter-mode"><strong>Prompter Mode</strong></h3>
+<p>Crafts high-quality prompts for LRM models, documents effective patterns, maintains prompt libraries in <code>.codex/prompts/</code>.</p>
+<h3 id="storyteller-mode"><strong>Storyteller Mode</strong></h3>
+<p>Maintains narrative consistency, organizes world lore/product storytelling, clarifies stakeholder vision. Manages <code>.codex/lore/</code>.</p>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li><strong>Multi-repository consistency</strong> - Standardizing collaboration practices across project portfolios</li>
+<li><strong>LRM-assisted development</strong> - Providing structured context for LRM coding assistants</li>
+<li><strong>Open source projects</strong> - Onboarding contributors with clear role definitions</li>
+<li><strong>Team coordination</strong> - Establishing clear boundaries between contributor responsibilities</li>
+<li><strong>Documentation-driven development</strong> - Maintaining synchronized code and documentation</li>
+<li><strong>Distributed teams</strong> - Enabling asynchronous collaboration with well-defined workflows</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+
+<div class="tab-panel" data-tab-group="802a6ef30a887092f15936c35d4ce2c8">
+  <div class="tab-nav">
+    <div class="tab-nav-title">&#8203;</div>
+    <button
+      data-tab-item="quick-setup"
+      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
+      onclick="switchTab('802a6ef30a887092f15936c35d4ce2c8','quick-setup')"
+    >
+      <span class="tab-nav-text">Quick Setup</span>
+    </button>
+    <button
+      data-tab-item="lrm-assistant-setup"
+      class="tab-nav-button tab-panel-style cstyle initial"
+      onclick="switchTab('802a6ef30a887092f15936c35d4ce2c8','lrm-assistant-setup')"
+    >
+      <span class="tab-nav-text">LRM Assistant Setup</span>
+    </button>
+  </div>
+  <div class="tab-content-container">
+    <div
+      data-tab-item="quick-setup"
+      class="tab-content tab-panel-style cstyle initial active">
+      <div class="tab-content-text">
+
+<h3 id="1-clone-the-template">1. Clone the Template</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/Midori-AI-OSS/codex_template_repo.git /tmp/codex-template</span></span></code></pre></div><h3 id="2-copy-core-files">2. Copy Core Files</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Copy to your repository root</span>
+</span></span><span class="line"><span class="cl">cp /tmp/codex-template/AGENTS.md ./
+</span></span><span class="line"><span class="cl">cp -r /tmp/codex-template/.codex ./</span></span></code></pre></div><h3 id="3-customize-for-your-project">3. Customize for Your Project</h3>
+<ul>
+<li>Replace placeholder text in <code>AGENTS.md</code> with project-specific instructions</li>
+<li>Update communication protocols and team channels</li>
+<li>Adjust mode definitions to match your workflow</li>
+<li>Create initial task examples in <code>.codex/tasks/</code></li>
+<li>Document tooling in <code>.codex/tools/</code></li>
+</ul>
+<h3 id="4-commit-and-share">4. Commit and Share</h3>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add AGENTS.md .codex/
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;[DOCS] Add Codex Contributor Template&#34;</span>
+</span></span><span class="line"><span class="cl">git push</span></span></code></pre></div></div>
+    </div>
+    <div
+      data-tab-item="lrm-assistant-setup"
+      class="tab-content tab-panel-style cstyle initial">
+      <div class="tab-content-text">
+
+<h3 id="have-agent-setup-template">Have Agent Setup Template</h3>
+<p>You can install the template by just sending this message to your agent (Codex, GitHub Copilot, Claude) and it will set it up.</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Clone the Codex Contributor Template (https://github.com/Midori-AI-OSS/codex_template_repo.git) repo into a new clean temp folder,
+</span></span><span class="line"><span class="cl">copy its <span class="sb">`AGENTS.md`</span> and <span class="sb">`.codex/modes`</span> folder into this current project, then customize the instructions to match the project&#39;s tooling and workflow.</span></span></code></pre></div></div>
+    </div>
+  </div>
+</div>
+<h3 id="mode-invocation-pattern">Mode Invocation Pattern</h3>
+<p>When requesting a specific mode, start with the role name:</p>
+<ul>
+<li>&ldquo;<strong>Task Master</strong>, what are the current priorities?&rdquo;</li>
+<li>&ldquo;<strong>Reviewer</strong>, please audit the authentication documentation&rdquo;</li>
+<li>&ldquo;<strong>Coder</strong>, implement the login feature from task abc123def&rdquo;</li>
+</ul>
+<h2 id="file-naming-convention">File Naming Convention</h2>
+<p>The template uses a unique hash-prefix system for trackability:</p>
+<div class="wrap-code highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Generate unique prefix</span>
+</span></span><span class="line"><span class="cl">openssl rand -hex <span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Example output: abc123def</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create task file</span>
+</span></span><span class="line"><span class="cl">touch .codex/tasks/abc123def-implement-login-feature.md</span></span></code></pre></div><p>This ensures:</p>
+<ul>
+<li>Unique identifiers across all tasks</li>
+<li>Easy cross-referencing in discussions</li>
+<li>Simple conflict resolution in version control</li>
+<li>Clear audit trail</li>
+</ul>
+<h2 id="workflow-examples">Workflow Examples</h2>
+<h3 id="task-master-creating-tasks">Task Master Creating Tasks</h3>
+<ol>
+<li>Draft new task files in <code>.codex/tasks/</code></li>
+<li>Use hash-prefixed filenames: <code>&lt;hash&gt;-&lt;description&gt;.md</code></li>
+<li>Include: purpose, acceptance criteria, priority</li>
+<li>Archive completed tasks to <code>.codex/tasks/archive/</code></li>
+<li>Update priorities and metadata regularly</li>
+</ol>
+<h3 id="reviewer-creating-tmt-tickets">Reviewer Creating TMT Tickets</h3>
+<ol>
+<li>Audit existing documentation</li>
+<li>Identify issues or outdated content</li>
+<li>Create <code>TMT-&lt;hash&gt;-&lt;description&gt;.md</code> in <code>.codex/tasks/</code></li>
+<li>Hand off to Task Master for prioritization</li>
+<li>Task Master schedules work for Coders</li>
+</ol>
+<h3 id="blogger-publishing-updates">Blogger Publishing Updates</h3>
+<ol>
+<li>Gather changes from last 5-10 commits</li>
+<li>Draft platform-specific posts (Twitter, Discord, blog)</li>
+<li>Stage content in <code>.codex/blog/</code></li>
+<li>Review with team</li>
+<li>Publish and remove temporary files</li>
+</ol>
+<h2 id="why-use-this-template">Why Use This Template?</h2>
+<ul>
+<li><strong>Reduces onboarding friction</strong> - Clear role definitions help new contributors start quickly</li>
+<li><strong>Prevents scope creep</strong> - Mode boundaries limit unintended work expansion</li>
+<li><strong>Facilitates code review</strong> - Structured documentation trails make reviews thorough</li>
+<li><strong>Enables async collaboration</strong> - Well-documented context reduces synchronous communication needs</li>
+<li><strong>Scales across projects</strong> - Single template applies to multiple repositories</li>
+<li><strong>Future-proof</strong> - Framework-agnostic design adapts to evolving toolchains</li>
+<li><strong>LRM-compatible</strong> - Structured context dramatically improves LRM assistant performance</li>
+</ul>
+<h2 id="support-and-assistance">Support and Assistance</h2>
+<ul>
+<li><strong>GitHub Repository</strong>: <a href="https://github.com/Midori-AI-OSS/codex_template_repo" target="_blank">Midori-AI-OSS/codex_template_repo</a></li>
+<li><strong>Documentation</strong>: Comprehensive guides included in template</li>
+<li><strong>Community Support</strong>: <a href="https://discord.gg/xdgCx3VyHU" target="_blank">Join our Discord</a></li>
+<li><strong>Email</strong>: <a href="mailto:contact@midori-ai.xyz" target="_blank">contact@midori-ai.xyz</a></li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1767104664" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104664" defer></script>
+    <script src="/js/theme.js?1767104664" defer></script>
+  </body>
+</html>

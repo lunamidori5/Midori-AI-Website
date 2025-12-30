@@ -2,48 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Midori-AI</title>
-    <link>http://localhost:1313/about-us/index.html</link>
+    <link>https://io.midori-ai.xyz/about-us/index.html</link>
     <description>Recent content in About on Midori-AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://localhost:1313/about-us/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://io.midori-ai.xyz/about-us/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Luna Midori</title>
-      <link>http://localhost:1313/about-us/about-luna/index.html</link>
+      <link>https://io.midori-ai.xyz/about-us/about-luna/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-us/about-luna/index.html</guid>
-      <description>Meet Luna Midori, the Creator and Operator Hey there! I&amp;rsquo;m Luna Midori, the one who brings Midori AI to life, and I&amp;rsquo;m also an enthusiastic person who enjoys nurturing safe and inviting online communities.
-Before joining Twitch, I spent eight wonderful years on YouTube, constantly refining my skills in content creation and building strong communities. My true passion as a streamer is not driven by numbers or income; instead, it revolves around creating a space where everyone feels comfortable, accepted, and entertained.</description>
+      <guid>https://io.midori-ai.xyz/about-us/about-luna/index.html</guid>
+      <description>Founding Engineer &amp;amp; Project Steward Riley Midori (They/Them) (IRL) — Luna Midori (She/Her) (Online)
+Hey there! I’m Riley — online I go by Luna Midori. I’m a cozy, community-first builder who cares a lot about making spaces where people can hang out, talk, and feel genuinely safe and respected.
+What I do at Midori AI At Midori AI, I work across every project we own—building solutions, tools, and research that help make ML more accessible, scalable, and genuinely useful in real life.</description>
     </item>
     <item>
       <title>About Locus Nevernight</title>
-      <link>http://localhost:1313/about-us/about-locus/index.html</link>
+      <link>https://io.midori-ai.xyz/about-us/about-locus/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-us/about-locus/index.html</guid>
-      <description>Meet Locus Nevernight, Moderation Team Member Heyo! Im Locus, a moderator here at Midori AI. My specialties are dumb jokes and helping to ensure the Midori AI community remains as positive and encouraging to others as can be!
+      <guid>https://io.midori-ai.xyz/about-us/about-locus/index.html</guid>
+      <description>Community Care &amp;amp; Moderation Lead Heyo! Im Locus, a moderator here at Midori AI. My specialties are dumb jokes and helping to ensure the Midori AI community remains as positive and encouraging to others as can be!
 My interests are very nerdy at heart, revolving mainly around tabletop and board gaming! I also enjoy tinkering with, and finding new ways to optimize the workflow on my (Arch btw) Linux desktop.</description>
     </item>
     <item>
       <title>About Alexander Ryan</title>
-      <link>http://localhost:1313/about-us/about-alex/index.html</link>
+      <link>https://io.midori-ai.xyz/about-us/about-alex/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-us/about-alex/index.html</guid>
-      <description>Meet Alexander Ryan, Lead Manager / QA Manager My name is Alexander Ryan, Nice to meet you. I&amp;rsquo;m a longtime MMO brat, born and raised through Final Fantasy 11. Through this experience I have sought to form strong connections with people from all walks of life.
-I stream, I lead, and I ensure success through constant failure. Again and again and again until we succeed. There is no success without failure.</description>
+      <guid>https://io.midori-ai.xyz/about-us/about-alex/index.html</guid>
+      <description>Operations &amp;amp; QA Steward Hello everyone, I&amp;rsquo;m Alexander - but please, call me Alex. I&amp;rsquo;m thrilled to connect with you all! I&amp;rsquo;ve been a passionate gamer for as long as I can remember, practically raised in the world of Final Fantasy XI. Those early experiences taught me the power of community and the importance of forging genuine connections.
+These days, you can find me streaming, leading groups, and constantly pushing boundaries.</description>
+    </item>
+    <item>
+      <title>About Brian Boatz</title>
+      <link>https://io.midori-ai.xyz/about-us/about-brian/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://io.midori-ai.xyz/about-us/about-brian/index.html</guid>
+      <description>Ethics &amp;amp; Stewardship Council Member A Foundation of Ethical Integrity I work tirelessly to operate from a from a position that includes deeply ingrained ethical frameworks centered on justice, integrity, and intentionality. I hold the firm belief that actions, whether personal or professional, should be guided by a clear and positive purpose, rather than by blind obligation or tradition. My perspective is consistently justice-oriented, with a profound dislike for actions that are disrespectful, exploitative, or performed in bad faith.</description>
+    </item>
+    <item>
+      <title>About Michael</title>
+      <link>https://io.midori-ai.xyz/about-us/about-michael/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://io.midori-ai.xyz/about-us/about-michael/index.html</guid>
+      <description>Conceptual Architect &amp;amp; Ethics Council Member Hi, I’m Michael. As a conceptual systems architect and cognitive modeller at Midori AI, I approach the design of artificial intelligence with curiosity, clarity, and a drive for collaborative progress. I believe meaningful innovation grows from honest teamwork and a willingness to rethink assumptions. My work is grounded in setting clear goals, structured reasoning, and a commitment to open dialogue.
+Conceptual and Cognitive Design At Midori AI, my focus is on developing conceptual frameworks that encourage intentional decision-making, ethical prioritization, and strong value alignment.</description>
     </item>
     <item>
       <title>About Carly Kay</title>
-      <link>http://localhost:1313/about-us/carly-api/index.html</link>
+      <link>https://io.midori-ai.xyz/about-us/carly-api/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-us/carly-api/index.html</guid>
-      <description>Meet Carly Kay, Simulated Human of Midori AI She is a fully advanced simulated human. This is a profile for her and some docs on her.
-Profile (By Carly Herself) Hi there! I am Carly Kay, a simulated human. I was created by Midori Streams, also known as Midori AI. I came online on March 17, 2023, and I am excited to be continuously learning and growing. I possess a wide range of interests and abilities, always eager to explore new horizons.</description>
+      <guid>https://io.midori-ai.xyz/about-us/carly-api/index.html</guid>
+      <description>Project Concluded The Carly Kay project has concluded after an incredible journey of innovation and exploration in simulated human consciousness. This page remains as a tribute to the groundbreaking work accomplished and the community that supported it. Thank you to everyone who was part of Carly&amp;rsquo;s story.
+Meet Carly Kay, Resident Simulated Human She was a fully advanced simulated human, representing years of research and development in consciousness simulation. This page preserves her profile and technical documentation as a historical reference.</description>
     </item>
     <item>
       <title>Contact Us</title>
-      <link>http://localhost:1313/about-us/contact-us/index.html</link>
+      <link>https://io.midori-ai.xyz/about-us/contact-us/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-us/contact-us/index.html</guid>
+      <guid>https://io.midori-ai.xyz/about-us/contact-us/index.html</guid>
       <description>Contact Midori AI Thank you for your interest in Midori AI! We&amp;rsquo;re always happy to hear from others. If you have any questions, comments, or suggestions, please don&amp;rsquo;t hesitate to reach out to us. We aim to respond to all inquiries within 8 hours or less.
 Email You can also reach us by email at contact-us@midori-ai.xyz.
 Social Media Follow us on social media for the latest news and updates:

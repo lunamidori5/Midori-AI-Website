@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.125.7">
+    <meta name="generator" content="Hugo 0.121.0">
     <meta name="generator" content="Relearn 5.25.0+tip">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Documentation for Midori-AI">
     <meta name="author" content="Luna Midori">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Voice Assistant HA-OS :: Midori-AI">
-    <meta name="twitter:description" content="In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
+    <meta name="twitter:description" content="Notice Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
 HACS for easy installation of the other tools on Home Assistant.
-LocalAI for the backend of the LLM.
-Home-LLM to connect our LocalAI instance to Home-assistant.
-HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as the LLM as a fallback if no intent is found.">
+LocalAI for the backend of the LLM.">
     <meta property="og:title" content="Voice Assistant HA-OS :: Midori-AI">
-    <meta property="og:description" content="In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
+    <meta property="og:description" content="Notice Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.
+In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites! A few softwares will be used in this guide.
 HACS for easy installation of the other tools on Home Assistant.
-LocalAI for the backend of the LLM.
-Home-LLM to connect our LocalAI instance to Home-assistant.
-HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as the LLM as a fallback if no intent is found.">
+LocalAI for the backend of the LLM.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:1313/howtos/voice_assistance_guide/index.html">
+    <meta property="og:url" content="https://io.midori-ai.xyz/howtos/voice_assistance_guide/index.html">
     <meta property="article:section" content="LocalAI How-tos :: Midori-AI">
     <meta property="og:site_name" content="Midori-AI">
     <title>Voice Assistant HA-OS :: Midori-AI</title>
+    <link href="/howtos/voice_assistance_guide/index.xml" rel="alternate" type="application/rss+xml" title="Voice Assistant HA-OS :: Midori-AI">
+    <link href="/howtos/voice_assistance_guide/index.print.html" rel="alternate" type="text/html" title="Voice Assistant HA-OS :: Midori-AI">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724647731" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724647731" rel="stylesheet">
-    <link href="/css/fonts.css?1724647731" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724647731" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724647731" rel="stylesheet">
-    <link href="/css/theme-auto.css?1724647731" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-auto.css?1724647731" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724647731" rel="stylesheet">
-    <link href="/css/print.css?1724647731" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1724647731" rel="stylesheet">
-    <script src="/js/url.js?1724647731"></script>
-    <script src="/js/variant.js?1724647731"></script>
+    <link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1767104664" rel="stylesheet">
+    <link href="/css/auto-complete.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1767104664" rel="stylesheet">
+    <link href="/css/fonts.css?1767104664" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1767104664" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1767104664" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1767104664" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1767104664" rel="stylesheet">
+    <link href="/css/print.css?1767104664" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1767104664" rel="stylesheet">
+    <script src="/js/url.js?1767104664"></script>
+    <script src="/js/variant.js?1767104664"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -47,10 +46,10 @@ HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as 
       var root_url="/";
       var baseUri=root_url.replace(/\/$/, '');
       window.relearn = window.relearn || {};
-      window.relearn.baseUriFull='http:\/\/localhost:1313/';
+      window.relearn.baseUriFull='https:\/\/io.midori-ai.xyz/';
       // variant stuff
       window.relearn.themeVariantModifier='';
-      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      window.variants && variants.init( [ 'relearn-dark' ] );
       // translations
       window.T_Copy_to_clipboard = `Copy to clipboard`;
       window.T_Copied_to_clipboard = `Copied to clipboard!`;
@@ -101,7 +100,7 @@ HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as 
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/howtos/homellmxlocalai/index.html" title="HA-OS (HomeLLM) x LocalAI (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/models/index.html" title="Models Repository (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/partners/index.html" title="Partners (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -122,6 +121,14 @@ HA-Fallback-Conversation to allow HA to use both the baked-in intent as well as 
             </header>
 <h1 id="voice-assistant-ha-os">Voice Assistant HA-OS</h1>
 
+
+<div class="box notices cstyle info">
+  <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Notice</div>
+  <div class="box-content">
+
+<p>Midori AI has been unable to reach the author of this page. Please be aware the content may be out of date and could be removed if we cannot contact them.</p>
+</div>
+</div>
 <h3 id="in-this-guide-i-will-explain-how-ive-setup-my-local-voice-assistant-and-satellites">In this guide I will explain how I&rsquo;ve setup my Local voice assistant and satellites!</h3>
 <p>A few softwares will be used in this guide.</p>
 <p><a href="https://hacs.xyz/" target="_blank">HACS</a> for easy installation of the other tools on Home Assistant.<br>
@@ -157,15 +164,15 @@ I recommend using a good machine with access to a GPU with at least 12 GB of Vra
 </span></span><span class="line"><span class="cl">+-----------------------------------------------------------------------------------------+</span></span></code></pre></div><p>I&rsquo;ve chosen the Docker-Compose method for my LocalAI installation, this allows for easy management and easier upgrades when new relases are available.<br>
 This allows us to quickly create a container running LocalAI on our machine.</p>
 <p>In order to do so, stop by the how to on how to setup a docker compose for LocalAI</p>
-<p><a href="/howtos/by_hand/easy-setup-docker/index.html">Setup LocalAI with Docker Compose</a></p>
+<p><a href="/howtos/by_hand/easy-setup-docker/">Setup LocalAI with Docker Compose</a></p>
 <p>Once that is done simply use <code>docker compose up -d</code> and your LocalAI instance should now be available at:
 <code>http://(hostipadress):8080/</code></p>
 <hr>
 <h2 id="step-1a-downloading-the-llm-model">Step 1.a) Downloading the LLM model</h2>
 <p>Once LocalAI if installed, you should be able to browse to the &ldquo;Models&rdquo; tab, that redirects to <code>http://{{host}}:8080/browse</code>. There we will search for the <code>mistral-7b-instruct-v0.3</code> model and install it.</p>
 <p>Once that is done, make sure that the model is working by heading to the <code>Chat</code> tab and selecting the model <code>mistral-7b-instruct-v0.3</code> and initiating a chat.</p>
-<p><a href="#R-image-8c2045e82a976764d59b269027fb1a3d" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c2045e82a976764d59b269027fb1a3d"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-168ef87a04ce2fb37854e84412a4d329" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-168ef87a04ce2fb37854e84412a4d329"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/ai_guide/chat_example.png?raw=true" alt="alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <hr>
 <h2 id="step-2-installing-home-llm">Step 2) Installing Home-LLM</h2>
 <ul>
@@ -203,8 +210,8 @@ Thankfuly, there is a neat link to do that easely on <a href="https://github.com
 </ul>
 </li>
 </ul>
-<p><a href="#R-image-7c62205b1d624bca582c76588eb64627" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c62205b1d624bca582c76588eb64627"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-efd528f6bdc5cd6e1b42726b2c7e87c5" class="lightbox-link"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-efd528f6bdc5cd6e1b42726b2c7e87c5"><img src="https://github.com/maxi1134/Home-Assistant-Config/blob/master/assets/home_llm_guide/home_llm_installation_video.gif?raw=true" alt="photo" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <hr>
 <h2 id="step-3-installing-ha-fallback-conversationhttpsgithubcomm50ha-fallback-conversation">Step 3) Installing <a href="https://github.com/m50/ha-fallback-conversation" target="_blank">HA-Fallback-Conversation</a></h2>
 <ul>
@@ -277,12 +284,12 @@ Be sure to set the one using the fallback system as your favorite/default one!</
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1724647731" defer></script>
-        <script src="/js/lunr/lunr.min.js?1724647731" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1724647731" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1724647731" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1724647731" defer></script>
-        <script src="/js/search.js?1724647731" defer></script>
+        <script src="/js/auto-complete.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.min.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1767104664" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1767104664" defer></script>
+        <script src="/js/search.js?1767104664" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -290,22 +297,24 @@ Be sure to set the one using the fallback system as your favorite/default one!</
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/about-us/index.html" class="alwaysopen"><input type="checkbox" id="R-section-baeea306eb3fcc2ed63ff974c8424eb6" aria-controls="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" checked><label for="R-section-baeea306eb3fcc2ed63ff974c8424eb6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu About</span></label><a class="padding" href="/about-us/index.html">About</a><ul id="R-subsections-baeea306eb3fcc2ed63ff974c8424eb6" class="morespace collapsible-menu">
+          <li data-nav-id="/about-us/index.html" class="alwaysopen"><input type="checkbox" id="R-section-73c78e84381adee6eefe923825d2371f" aria-controls="R-subsections-73c78e84381adee6eefe923825d2371f" checked><label for="R-section-73c78e84381adee6eefe923825d2371f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu About</span></label><a class="padding" href="/about-us/index.html">About</a><ul id="R-subsections-73c78e84381adee6eefe923825d2371f" class="morespace collapsible-menu">
           <li data-nav-id="/about-us/about-luna/index.html" class=""><a class="padding" href="/about-us/about-luna/index.html">About Luna Midori</a></li>
           <li data-nav-id="/about-us/about-locus/index.html" class=""><a class="padding" href="/about-us/about-locus/index.html">About Locus Nevernight</a></li>
           <li data-nav-id="/about-us/about-alex/index.html" class=""><a class="padding" href="/about-us/about-alex/index.html">About Alexander Ryan</a></li>
+          <li data-nav-id="/about-us/about-brian/index.html" class=""><a class="padding" href="/about-us/about-brian/index.html">About Brian Boatz</a></li>
+          <li data-nav-id="/about-us/about-michael/index.html" class=""><a class="padding" href="/about-us/about-michael/index.html">About Michael</a></li>
           <li data-nav-id="/about-us/carly-api/index.html" class=""><a class="padding" href="/about-us/carly-api/index.html">About Carly Kay</a></li>
           <li data-nav-id="/about-us/contact-us/index.html" class=""><a class="padding" href="/about-us/contact-us/index.html">Contact Us</a></li></ul></li>
-          <li data-nav-id="/subsystem/index.html" class="alwaysopen"><input type="checkbox" id="R-section-db26b88c7dfe913d0ab581ff2ea3b589" aria-controls="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" checked><label for="R-section-db26b88c7dfe913d0ab581ff2ea3b589"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Midori AI Subsystem</span></label><a class="padding" href="/subsystem/index.html">Midori AI Subsystem</a><ul id="R-subsections-db26b88c7dfe913d0ab581ff2ea3b589" class="morespace collapsible-menu">
-          <li data-nav-id="/subsystem/manager/index.html" class=""><a class="padding" href="/subsystem/manager/index.html">Midori AI Subsystem Manager</a></li>
-          <li data-nav-id="/subsystem/updates/index.html" class=""><a class="padding" href="/subsystem/updates/index.html">Subsystem Update Log</a></li>
-          <li data-nav-id="/subsystem/anythingllm/index.html" class=""><a class="padding" href="/subsystem/anythingllm/index.html">AnythingLLM</a></li>
-          <li data-nav-id="/subsystem/big-agi/index.html" class=""><a class="padding" href="/subsystem/big-agi/index.html">Big-AGI</a></li>
-          <li data-nav-id="/subsystem/local-ai/index.html" class="alwaysopen"><input type="checkbox" id="R-section-d198ef07e31ad4eb3f6b0ed16a35c680" aria-controls="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" checked><label for="R-section-d198ef07e31ad4eb3f6b0ed16a35c680"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI</span></label><a class="padding" href="/subsystem/local-ai/index.html">LocalAI</a><ul id="R-subsections-d198ef07e31ad4eb3f6b0ed16a35c680" class="morespace collapsible-menu">
-          <li data-nav-id="/subsystem/local-ai/install_models/index.html" class=""><a class="padding" href="/subsystem/local-ai/install_models/index.html">Install LocalAI Models</a></li></ul></li>
-          <li data-nav-id="/subsystem/invokeai/index.html" class=""><a class="padding" href="/subsystem/invokeai/index.html">InvokeAI</a></li></ul></li>
-          <li data-nav-id="/pixelos/index.html" class=""><a class="padding" href="/pixelos/index.html">PixelArch OS</a></li>
-          <li data-nav-id="/howtos/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-3dcecad42a46e0552c78b880d49b0312" aria-controls="R-subsections-3dcecad42a46e0552c78b880d49b0312" checked><label for="R-section-3dcecad42a46e0552c78b880d49b0312"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI How-tos</span></label><a class="padding" href="/howtos/index.html">LocalAI How-tos</a><ul id="R-subsections-3dcecad42a46e0552c78b880d49b0312" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/index.html" class="alwaysopen"><input type="checkbox" id="R-section-46039424884a5012598e38f4eecdfc57" aria-controls="R-subsections-46039424884a5012598e38f4eecdfc57" checked><label for="R-section-46039424884a5012598e38f4eecdfc57"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Midori AI Subsystem</span></label><a class="padding" href="/subsystem/index.html">Midori AI Subsystem</a><ul id="R-subsections-46039424884a5012598e38f4eecdfc57" class="morespace collapsible-menu">
+          <li data-nav-id="/subsystem/manager/index.html" class=""><a class="padding" href="/subsystem/manager/index.html">Midori AI Subsystem Manager V2</a></li></ul></li>
+          <li data-nav-id="/cli_tools/index.html" class=""><a class="padding" href="/cli_tools/index.html">Midori AI CLI</a></li>
+          <li data-nav-id="/pixelos/index.html" class="alwaysopen"><input type="checkbox" id="R-section-9ef3aa812d48b188e4e38886c80bf9af" aria-controls="R-subsections-9ef3aa812d48b188e4e38886c80bf9af" checked><label for="R-section-9ef3aa812d48b188e4e38886c80bf9af"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pixel OS</span></label><a class="padding" href="/pixelos/index.html">Pixel OS</a><ul id="R-subsections-9ef3aa812d48b188e4e38886c80bf9af" class="morespace collapsible-menu">
+          <li data-nav-id="/pixelos/pixelarch/index.html" class=""><a class="padding" href="/pixelos/pixelarch/index.html">PixelArch OS</a></li>
+          <li data-nav-id="/pixelos/pixelgen/index.html" class=""><a class="padding" href="/pixelos/pixelgen/index.html">PixelGen OS</a></li></ul></li>
+          <li data-nav-id="/endless-autofighter/index.html" class=""><a class="padding" href="/endless-autofighter/index.html">Endless-Autofighter</a></li>
+          <li data-nav-id="/agents-packages/index.html" class=""><a class="padding" href="/agents-packages/index.html">Midori AI Agents Packages</a></li>
+          <li data-nav-id="/codex-template/index.html" class=""><a class="padding" href="/codex-template/index.html">Codex Contributor Template</a></li>
+          <li data-nav-id="/howtos/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-816500d91966e741d856519feb929340" aria-controls="R-subsections-816500d91966e741d856519feb929340" checked><label for="R-section-816500d91966e741d856519feb929340"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu LocalAI How-tos</span></label><a class="padding" href="/howtos/index.html">LocalAI How-tos</a><ul id="R-subsections-816500d91966e741d856519feb929340" class="morespace collapsible-menu">
           <li data-nav-id="/howtos/by_hand/easy-model/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-model/index.html">Easy Model Setup</a></li>
           <li data-nav-id="/howtos/by_hand/easy-setup-docker/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-docker/index.html">Easy Setup - Docker</a></li>
           <li data-nav-id="/howtos/by_hand/easy-setup-embeddings/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-setup-embeddings/index.html">Easy Setup - Embeddings</a></li>
@@ -313,16 +322,14 @@ Be sure to set the one using the fallback system as your favorite/default one!</
           <li data-nav-id="/howtos/by_hand/easy-request/index.html" class=""><a class="padding" href="/howtos/by_hand/easy-request/index.html">Easy Request - All</a></li>
           <li data-nav-id="/howtos/homellmxlocalai/index.html" class=""><a class="padding" href="/howtos/homellmxlocalai/index.html">HA-OS (HomeLLM) x LocalAI</a></li>
           <li data-nav-id="/howtos/voice_assistance_guide/index.html" class="active"><a class="padding" href="/howtos/voice_assistance_guide/index.html">Voice Assistant HA-OS</a></li></ul></li>
-          <li data-nav-id="/models/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eff503bb1bf6086ff29fa85fae09c902" aria-controls="R-subsections-eff503bb1bf6086ff29fa85fae09c902" checked><label for="R-section-eff503bb1bf6086ff29fa85fae09c902"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Models Repository</span></label><a class="padding" href="/models/index.html">Models Repository</a><ul id="R-subsections-eff503bb1bf6086ff29fa85fae09c902" class="morespace collapsible-menu">
-          <li data-nav-id="/models/modeltemplate/index.html" class=""><a class="padding" href="/models/modeltemplate/index.html">Model Template</a></li>
-          <li data-nav-id="/models/onsite_models/index.html" class=""><a class="padding" href="/models/onsite_models/index.html">Recommended Models</a></li>
-          <li data-nav-id="/models/offsite_models/index.html" class=""><a class="padding" href="/models/offsite_models/index.html">Offsite Supported Models</a></li></ul></li>
+          <li data-nav-id="/partners/index.html" class="alwaysopen"><input type="checkbox" id="R-section-9fa6a43914627cd8a1749f2fd6f21dd1" aria-controls="R-subsections-9fa6a43914627cd8a1749f2fd6f21dd1" checked><label for="R-section-9fa6a43914627cd8a1749f2fd6f21dd1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Partners</span></label><a class="padding" href="/partners/index.html">Partners</a><ul id="R-subsections-9fa6a43914627cd8a1749f2fd6f21dd1" class="morespace collapsible-menu">
+          <li data-nav-id="/partners/the-gideon-project/index.html" class=""><a class="padding" href="/partners/the-gideon-project/index.html">The Gideon Project</a></li></ul></li>
           </ul>
         </div>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
         <div id="R-menu-footer">
-          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
-          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
             <ul>
               <li id="R-select-language-container" class="footerLangSwitch">
                 <div class="padding menu-control">
@@ -331,28 +338,19 @@ Be sure to set the one using the fallback system as your favorite/default one!</
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = baseUri + this.value;">
-                      <option id="R-en" value="/howtos/voice_assistance_guide/index.html" lang="en" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>
                 </div>
               </li>
-              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+              <li id="R-select-variant-container" class="footerVariantSwitch">
                 <div class="padding menu-control">
                   <i class="fas fa-paint-brush fa-fw"></i>
                   <span>&nbsp;</span>
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-variant">Theme</label>
                     <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                      <option id="R-auto" value="auto" selected>Auto</option>
-                      <option id="R-relearn-bright" value="relearn-bright">Relearn Bright</option>
-                      <option id="R-relearn-light" value="relearn-light">Relearn Light</option>
-                      <option id="R-relearn-dark" value="relearn-dark">Relearn Dark</option>
-                      <option id="R-learn" value="learn">Learn</option>
-                      <option id="R-neon" value="neon">Neon</option>
-                      <option id="R-blue" value="blue">Blue</option>
-                      <option id="R-green" value="green">Green</option>
-                      <option id="R-red" value="red">Red</option>
+                      <option id="R-relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
                     </select>
                   </div>
                   <div class="clear"></div>
@@ -377,8 +375,8 @@ Be sure to set the one using the fallback system as your favorite/default one!</
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1724647731" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724647731" defer></script>
-    <script src="/js/theme.js?1724647731" defer></script>
+    <script src="/js/clipboard.min.js?1767104664" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1767104664" defer></script>
+    <script src="/js/theme.js?1767104664" defer></script>
   </body>
 </html>

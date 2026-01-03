@@ -1,6 +1,7 @@
 +++
 disableToc = false
 title = "Midori AI Subsystem"
+hidden = true
 weight = 3
 +++
 

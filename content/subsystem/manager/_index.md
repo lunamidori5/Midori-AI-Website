@@ -1,6 +1,7 @@
 +++
 disableToc = false
 title = "Midori AI Subsystem Manager V2"
+hidden = true
 weight = 1
 +++
 

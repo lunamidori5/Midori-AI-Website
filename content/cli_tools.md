@@ -1,6 +1,7 @@
 +++
 disableToc = false
 title = "Midori AI CLI"
+hidden = true
 weight = 8
 +++
 

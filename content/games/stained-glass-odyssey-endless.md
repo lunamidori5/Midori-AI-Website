@@ -1,14 +1,15 @@
 +++
 disableToc = false
-title = "Endless-Autofighter"
-weight = 9
+title = "Stained Glass Odyssey: Endless"
+weight = 1
+aliases = ["/endless-autofighter/"]
 +++
 
 ![autofighter-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
 
-## Midori AI — Endless-Autofighter
+## Stained Glass Odyssey: Endless
 
-Endless-Autofighter (a.k.a. Midori AI AutoFighter) is a web-based auto-battler that blends tactical party management, elemental systems, collectible characters, and deep progression systems into a compact, replayable experience. Built with a Svelte frontend and a Python Quart backend, the project supports both lightweight local play and optional LLM-enhanced features for narrative and chat.
+Stained Glass Odyssey: Endless (formerly Endless-Autofighter / Midori AI AutoFighter) is a web-based auto-battler that blends tactical party management, elemental systems, collectible characters, and deep progression systems into a compact, replayable experience. Built with a Svelte frontend and a Python Quart backend, the project supports both lightweight local play and optional LLM-enhanced features for narrative and chat.
 
 ### Quick snapshot
 
@@ -49,7 +50,7 @@ When LRM extras are enabled, the game supports:
 
 Prerequisites: Docker & Docker Compose installed.
 
-Download the Repo - https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter
+Download the Repo - https://github.com/Midori-AI-OSS/Midori-AI/tree/master/Endless-Autofighter
 
 Standard run (frontend + backend):
 
@@ -99,8 +100,8 @@ Screenshots used in docs live in `.codex/screenshots/`.
 
 ## Links & Resources
 
-- Repository root: https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter
-- Issues: https://github.com/Midori-AI-OSS/Midori-AI-AutoFighter/issues
+- Repository root: https://github.com/Midori-AI-OSS/Midori-AI/tree/master/Endless-Autofighter
+- Issues: https://github.com/Midori-AI-OSS/Midori-AI/issues
 - Discord: https://discord.gg/xdgCx3VyHU
 
 ---

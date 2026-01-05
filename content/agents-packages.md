@@ -1,6 +1,6 @@
 +++
 disableToc = false
-title = "Midori AI Agents Packages"
+title = "Agents Packages"
 weight = 10
 +++
 

@@ -33,7 +33,7 @@ The game features a diverse roster of characters from the Stained Glass Odyssey 
 |-----------|-------|-------------|------|
 | Luna | ⭐⭐⭐⭐⭐⭐⭐ (7★) | Generic | Summoner with lunar swords |
 | Lady Fire and Ice | ⭐⭐⭐⭐⭐⭐ (6★) | Fire/Ice | Dual-element attacker |
-| Lady Storm | ⭐⭐⭐⭐⭐⭐ (6★) | Lightning | Storm controller |
+| Lady Storm | ⭐⭐⭐⭐⭐⭐ (6★) | Wind/Lightning | Storm controller |
 | Carly | ⭐⭐⭐⭐⭐ (5★) | Light | Guardian with protective barriers |
 | Becca | ⭐⭐⭐⭐⭐ (5★) | Light | Offsite support with menagerie bond |
 | Lady Lightning | ⭐⭐⭐⭐⭐ (5★) | Lightning | Chain damage specialist |

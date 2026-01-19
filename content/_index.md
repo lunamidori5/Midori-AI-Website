@@ -16,6 +16,7 @@ Welcome to Midori AI — we love helping people build, break, and tinker with ma
 - **Games** — Stained Glass Odyssey series (Endless + Idle). Learn more: [Games]({{< relref "games/_index.md" >}})
 - **Agents Runner** — run AI agents in Docker with workspace + GitHub management. Learn more: [Agents Runner]({{< relref "agent-runner/_index.md" >}})
 - **Carly** — an advanced conversational research project. Learn more: [Carly]({{< relref "about-us/carly-api.md" >}})
+- **Blog** — weekly updates and deep dives into our projects and research. Visit: https://blog.midori-ai.xyz/
 
 ---
 

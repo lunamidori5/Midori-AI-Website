@@ -1,6 +1,6 @@
 +++
 disableToc = false
-title = "Midori AI Agents Template"
+title = "Agents Template"
 weight = 11
 aliases = ["/codex-template/"]
 +++

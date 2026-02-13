@@ -1,14 +1,15 @@
 +++
 disableToc = false
-title = "Codex Contributor Template"
+title = "Midori AI Agents Template"
 weight = 11
+aliases = ["/codex-template/"]
 +++
 
-![codex-template-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![agents-template-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
 
 ## LRM-Native Collaboration Framework
 
-The **Codex Contributor Template** is a standardized framework for establishing structured, LRM-assisted collaboration workflows in software development repositories. It provides a reusable foundation for implementing role-based contributor coordination systems using a `.codex/` directory structure.
+The **Midori AI Agents Template** is a standardized framework for establishing structured, LRM-assisted collaboration workflows in software development repositories. It provides a reusable foundation for implementing role-based contributor coordination systems using a `.agents/` directory structure.
 
 Designed from the ground up for LRM-assisted development, this template enables teams to leverage tools like GitHub Copilot, Claude, and other LRM assistants with clear, structured context while maintaining human oversight and accountability.
 
@@ -32,14 +33,14 @@ This template is actively used across all Midori AI projects including Carly-AGI
 ### Core Documentation
 
 - **`AGENTS.md`** - Root-level contributor guide defining workflow practices, communication protocols, and mode selection rules
-- **`.codex/modes/`** - Directory containing 9 specialized contributor mode guides with detailed role-specific guidelines
+- **`.agents/modes/`** - Directory containing 9 specialized contributor mode guides with detailed role-specific guidelines
 
 ### Directory Structure
 
-The template defines a comprehensive `.codex/` hierarchy:
+The template defines a comprehensive `.agents/` hierarchy:
 
 ```
-.codex/
+.agents/
 ├── modes/              # Contributor role definitions
 ├── tasks/              # Active work items with unique hash-prefixed filenames
 ├── notes/              # Process notes and service-level conventions
@@ -59,7 +60,7 @@ The template defines a comprehensive `.codex/` hierarchy:
 Coordinates work backlog, translates requirements into actionable tasks, maintains task health and priority. Creates hash-prefixed task files and never directly edits code.
 
 ### **Manager Mode**
-Maintains contributor instructions, updates mode documentation, aligns process updates with stakeholders. Ensures `.codex/` documentation stays synchronized with project reality.
+Maintains contributor instructions, updates mode documentation, aligns process updates with stakeholders. Ensures `.agents/` documentation stays synchronized with project reality.
 
 ### **Coder Mode**
 Implements features, writes tests, maintains code quality and technical documentation. Focuses on implementation without managing work backlog.
@@ -71,16 +72,16 @@ Audits documentation for accuracy, identifies outdated guidance, creates actiona
 Performs comprehensive code/documentation reviews, verifies compliance, security, and quality standards. More thorough than Reviewer mode.
 
 ### **Blogger Mode**
-Communicates repository changes to community, creates platform-specific content with consistent voice. Drafts posts in `.codex/blog/` before publication.
+Communicates repository changes to community, creates platform-specific content with consistent voice. Drafts posts in `.agents/blog/` before publication.
 
 ### **Brainstormer Mode**
-Drives collaborative ideation, explores solution alternatives, captures design trade-offs. Documents ideas in `.codex/ideas/`.
+Drives collaborative ideation, explores solution alternatives, captures design trade-offs. Documents ideas in `.agents/ideas/`.
 
 ### **Prompter Mode**
-Crafts high-quality prompts for LRM models, documents effective patterns, maintains prompt libraries in `.codex/prompts/`.
+Crafts high-quality prompts for LRM models, documents effective patterns, maintains prompt libraries in `.agents/prompts/`.
 
 ### **Storyteller Mode**
-Maintains narrative consistency, organizes world lore/product storytelling, clarifies stakeholder vision. Manages `.codex/lore/`.
+Maintains narrative consistency, organizes world lore/product storytelling, clarifies stakeholder vision. Manages `.agents/lore/`.
 
 ## Use Cases
 
@@ -99,15 +100,15 @@ Maintains narrative consistency, organizes world lore/product storytelling, clar
 ### 1. Clone the Template
 
 ```bash
-git clone https://github.com/Midori-AI-OSS/codex_template_repo.git /tmp/codex-template
+git clone https://github.com/Midori-AI-OSS/agents_template.git /tmp/agents-template
 ```
 
 ### 2. Copy Core Files
 
 ```bash
 # Copy to your repository root
-cp /tmp/codex-template/AGENTS.md ./
-cp -r /tmp/codex-template/.codex ./
+cp /tmp/agents-template/AGENTS.md ./
+cp -r /tmp/agents-template/.agents ./
 ```
 
 ### 3. Customize for Your Project
@@ -115,14 +116,14 @@ cp -r /tmp/codex-template/.codex ./
 - Replace placeholder text in `AGENTS.md` with project-specific instructions
 - Update communication protocols and team channels
 - Adjust mode definitions to match your workflow
-- Create initial task examples in `.codex/tasks/`
-- Document tooling in `.codex/tools/`
+- Create initial task examples in `.agents/tasks/`
+- Document tooling in `.agents/tools/`
 
 ### 4. Commit and Share
 
 ```bash
-git add AGENTS.md .codex/
-git commit -m "[DOCS] Add Codex Contributor Template"
+git add AGENTS.md .agents/
+git commit -m "[DOCS] Add Midori AI Agents Template"
 git push
 ```
 
@@ -134,8 +135,8 @@ git push
 You can install the template by just sending this message to your agent (Codex, GitHub Copilot, Claude) and it will set it up.
 
 ```markdown
-Clone the Codex Contributor Template (https://github.com/Midori-AI-OSS/codex_template_repo.git) repo into a new clean temp folder,
-copy its `AGENTS.md` and `.codex/modes` folder into this current project, then customize the instructions to match the project's tooling and workflow.
+Clone the Midori AI Agents Template (https://github.com/Midori-AI-OSS/agents_template.git) repo into a new clean temp folder,
+copy its `AGENTS.md` and `.agents/modes` folder into this current project, then customize the instructions to match the project's tooling and workflow.
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -159,7 +160,7 @@ openssl rand -hex 4
 # Example output: abc123def
 
 # Create task file
-touch .codex/tasks/abc123def-implement-login-feature.md
+touch .agents/tasks/abc123def-implement-login-feature.md
 ```
 
 This ensures:
@@ -172,17 +173,17 @@ This ensures:
 
 ### Task Master Creating Tasks
 
-1. Draft new task files in `.codex/tasks/`
+1. Draft new task files in `.agents/tasks/`
 2. Use hash-prefixed filenames: `<hash>-<description>.md`
 3. Include: purpose, acceptance criteria, priority
-4. Archive completed tasks to `.codex/tasks/archive/`
+4. Archive completed tasks to `.agents/tasks/archive/`
 5. Update priorities and metadata regularly
 
 ### Reviewer Creating TMT Tickets
 
 1. Audit existing documentation
 2. Identify issues or outdated content
-3. Create `TMT-<hash>-<description>.md` in `.codex/tasks/`
+3. Create `TMT-<hash>-<description>.md` in `.agents/tasks/`
 4. Hand off to Task Master for prioritization
 5. Task Master schedules work for Coders
 
@@ -190,7 +191,7 @@ This ensures:
 
 1. Gather changes from last 5-10 commits
 2. Draft platform-specific posts (Twitter, Discord, blog)
-3. Stage content in `.codex/blog/`
+3. Stage content in `.agents/blog/`
 4. Review with team
 5. Publish and remove temporary files
 
@@ -206,7 +207,7 @@ This ensures:
 
 ## Support and Assistance
 
-- **GitHub Repository**: [Midori-AI-OSS/codex_template_repo](https://github.com/Midori-AI-OSS/codex_template_repo)
+- **GitHub Repository**: [Midori-AI-OSS/agents_template](https://github.com/Midori-AI-OSS/agents_template)
 - **Documentation**: Comprehensive guides included in template
 - **Community Support**: [Join our Discord](https://discord.gg/xdgCx3VyHU)
 - **Email**: [contact@midori-ai.xyz](mailto:contact@midori-ai.xyz)

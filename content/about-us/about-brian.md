@@ -1,6 +1,7 @@
 +++
 disableToc = false
 title = "About Brian Boatz"
+hidden = true
 weight = 5
 +++
 

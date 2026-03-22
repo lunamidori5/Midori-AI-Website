@@ -6,12 +6,12 @@ weight = 2
 
 ![uv-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
 
-## UV (Python)
+## Setup
 
 {{< tabs >}}
 {{% tab title="Ubuntu/Debian" %}}
 
-[uv Installation](https://docs.astral.sh/uv/getting-started/installation/)
+[UV Installation](https://docs.astral.sh/uv/getting-started/installation/)
 
 ```bash
 # Install uv!
@@ -53,7 +53,7 @@ uv --version
 ```
 
 {{% /tab %}}
-{{% tab title="Arch/Manjaro" %}}
+{{% tab title="Arch Flavors" %}}
 Use your package manager, `yay`, `paru`, `pacman`, what ever you have installed.
 We are going to be showing with `yay`, but its the same for all of them.
 

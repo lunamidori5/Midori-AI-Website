@@ -6,7 +6,7 @@ weight = 1
 
 ![docker-setup-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
 
-## Docker Setup
+## Setup
 
 {{< tabs >}}
 {{% tab title="Ubuntu/Debian" %}}

@@ -36,8 +36,11 @@ uv --version
 {{% tab title="Arch/Manjaro" %}}
 
 ```bash
-# TODO: install uv (recommended method)
-# TODO: verify with: uv --version
+# Install uv!
+yay -Syu uv
+
+# Test it out!
+uv --version
 ```
 
 {{% /tab %}}

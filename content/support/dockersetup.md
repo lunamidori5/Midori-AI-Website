@@ -69,8 +69,8 @@ docker run --rm lunamidori5/pixelarch:emerald /bin/bash -lc 'echo hello world'
 
 {{% /tab %}}
 {{% tab title="Arch Flavors" %}}
-Use your package manager, `yay`, `paru`, `pacman`, what ever you have installed.
-We are going to be showing with `yay`, but its the same for all of them.
+Use your package manager—`yay`, `paru`, `pacman`, or whatever you have installed.
+We use `yay` in the example, but the steps are the same for all of them.
 
 ```bash
 # Install Docker!

@@ -1,4 +1,3 @@
-
 +++
 archetype = "home"
 +++

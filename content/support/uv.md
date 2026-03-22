@@ -34,10 +34,12 @@ uv --version
 
 {{% /tab %}}
 {{% tab title="Arch/Manjaro" %}}
+Use your package manager, `yay`, `paru`, `pacman`, what ever you have installed.
+We are going to be showing with `yay`, but its the same for all of them.
 
 ```bash
 # Install uv!
-yay -Syu uv
+yay -Syu --noconfirm uv && yay -Yccc --noconfirm
 
 # Test it out!
 uv --version

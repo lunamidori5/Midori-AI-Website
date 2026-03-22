@@ -36,7 +36,7 @@ docker run --rm lunamidori5/pixelarch:emerald /bin/bash -lc 'echo hello world'
 
 [Docker Setup](https://docs.docker.com/engine/install/fedora)
 
-On `RPM` based distributions, such as `CentOS`, `Fedora` or `RHEL`, you need to start it manually using the appropriate `systemctl` or `service` command. As the message indicates, non-root users can't run Docker commands by default, but we will set it up so non root users can use it..
+On `RPM`-based distributions such as `CentOS`, `Fedora`, or `RHEL`, start Docker manually with the appropriate `systemctl` or `service` command. Non-root users cannot run Docker commands by default. We will set that up next.
 
 ```bash
 # Setup
@@ -102,4 +102,3 @@ docker run --rm lunamidori5/pixelarch:emerald /bin/bash -lc 'echo hello world'
 
 {{% /tab %}}
 {{< /tabs >}}
-

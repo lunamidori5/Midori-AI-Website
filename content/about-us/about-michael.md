@@ -28,10 +28,10 @@ Within the committee, I work to foster conversations on system transparency, evo
 
 ## A Bit More About Me
 
-Family means everything to me. Whether I’m hiking with wife at our favorite conservation area, encouraging my daughter’s creativity (especially when she’s lost in imaginative play or dreaming up new adventures), or enjoying a quiet evening at home, these moments keep me grounded. I’m an avid reader, with science fiction, philosophy, and compelling non-fiction being particular favorites for sparking new ideas.
+Family means everything to me. Whether I’m hiking with my wife at our favorite conservation area, encouraging my daughter’s creativity (especially when she’s lost in imaginative play or dreaming up new adventures), or enjoying a quiet evening at home, these moments keep me grounded. I’m an avid reader, with science fiction, philosophy, and compelling non-fiction being particular favorites for sparking new ideas.
 
 I’m passionate about gaming, both video games and strategy board games, as they offer creative challenges and a great way to connect with others. For me, games allow for creative expression, foster problem-solving, and help build and maintain community. I also love good conversation, especially on philosophy, and never pass up an opportunity to debate ideas or discover new perspectives.
 
-All of that being said, my perfect weekend day is spent tending a brisket on the smoker while catching up on ever expanding podcast library or enjoying the latest book on my reading list. If you enjoy deep discussions, thoughtful stories, or trading tips for the perfect barbecue, I’m always open to connecting.
+All of that being said, my perfect weekend day is spent tending a brisket on the smoker while catching up on my ever-expanding podcast library or enjoying the latest book on my reading list. If you enjoy deep discussions, thoughtful stories, or trading tips for the perfect barbecue, I’m always open to connecting.
 
 ---

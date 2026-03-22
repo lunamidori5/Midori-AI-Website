@@ -20,6 +20,6 @@ Follow us on social media for the latest news and updates:
 * Facebook: [Luna Midori](https://www.facebook.com/TWLunagreen)
 * Discord: [Midori AI / The Cookie Club](https://discord.gg/xdgCx3VyHU)
 
-### Contact Us Today!
+### Reach Out
 
 We look forward to hearing from you soon. Please don't hesitate to reach out to us with any questions or concerns.

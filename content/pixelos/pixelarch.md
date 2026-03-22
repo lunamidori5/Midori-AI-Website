@@ -52,7 +52,7 @@ Level 4: Emerald
 
 Image Size - ``5.33GB``
 
-Remote access, Agents, and developer tooling, presented for clarity:
+This flavor groups its remote access tools, Agents, and developer CLIs as follows:
 
 - Remote access: `openssh`, `tmate`
 - Tor utilities: `tor`, `torsocks`, `torbrowser-launcher`

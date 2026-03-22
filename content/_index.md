@@ -21,12 +21,13 @@ Welcome to Midori AI — we love helping people build, break, and tinker with ma
 
 ## What We Offer
 
-- **OS for ML Development:** deployment for larger experiments.
+- **OS for ML Development:** deploy larger experiments in reproducible, container-first environments.
 - **Memory & Retrieval Research:** improving external memory and long-term learning for models.
-- **Tailored ML Support:** hands-on help for setup, tooling, and workflows. Schedule with Luna: https://zcal.co/lunamidori
- - **VMs for Students:** free virtual machines for high-school students to learn programming, machine learning, and systems work in a safe environment.
- - **Community Hangouts:** regular Discord hangouts for tutorials, office hours, project help, and informal collaboration — join our community to learn together.
- - **Safe Research / Hosting Environment:** hosted support for larger, ground-breaking projects (for example, Carly, and The Gideon Project) while keeping work open and reproducible so the world can see our (and our partners) process.
+- **Tailored ML Support**
+  - Hands-on help for setup, tooling, and workflows. Schedule with Luna: https://zcal.co/lunamidori
+  - **VMs for Students:** free virtual machines for high-school students to learn programming, machine learning, and systems work in a safe environment.
+  - **Community Hangouts:** regular Discord hangouts for tutorials, office hours, project help, and informal collaboration — join our community to learn together.
+  - **Safe Research / Hosting Environment:** hosted support for larger, ground-breaking projects (for example, Carly, and The Gideon Project) while keeping work open and reproducible so the world can see the process used by us and our partners.
 
 ---
 

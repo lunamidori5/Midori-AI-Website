@@ -8,7 +8,7 @@ weight = 10
 
 ## Agents Runner: A GUI for AI Coding Agents
 
-Agents Runner is a PySide6-based desktop application for orchestrating AI coding agents inside Docker containers. It provides a unified interface for managing workspaces, configuring environments, launching interactive terminal sessions, and handling GitHub branch/PR workflows—all without touching the command line.
+Agents Runner is a PySide6-based desktop application for orchestrating coding agents inside Docker containers. It provides a unified interface for managing workspaces and configuring environments. It also launches interactive terminal sessions and handles GitHub branch and PR workflows.
 
 Built on Python 3.13+ with a modern async architecture, Agents Runner streamlines the process of running AI agents like OpenAI Codex, Claude Code, GitHub Copilot, and Google Gemini in consistent, isolated containerized environments.
 

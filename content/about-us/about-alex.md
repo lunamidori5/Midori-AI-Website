@@ -8,7 +8,7 @@ weight = 4
 
 ![photo of a person](https://tea-cup.midori-ai.xyz/download/IMG_20240723_005758.jpg)
 
-Hello everyone, I'm Alexander -  but please, call me Alex. I'm thrilled to connect with you all! I've been a passionate gamer for as long as I can remember, practically raised in the world of Final Fantasy XI. Those early experiences taught me the power of community and the importance of forging genuine connections.
+Hello everyone—I'm Alexander, but please call me Alex. I'm thrilled to connect with you all. I've been a passionate gamer for as long as I can remember, practically raised in the world of Final Fantasy XI. Those early experiences taught me the power of community and the importance of forging genuine connections.
 
 These days, you can find me streaming, leading groups, and constantly pushing boundaries. I believe that true success is built upon a foundation of resilience and a willingness to learn from every setback. And trust me, I've had my fair share of those!
 

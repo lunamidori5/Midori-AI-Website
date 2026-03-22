@@ -130,7 +130,7 @@ git push
 {{% /tab %}}
 {{% tab title="LRM Assistant Setup" %}}
 
-### Have Agent Setup Template
+### Let an Agent Set Up the Template
 
 You can install the template by just sending this message to your agent (Codex, GitHub Copilot, Claude) and it will set it up.
 

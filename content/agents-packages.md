@@ -8,7 +8,7 @@ weight = 10
 
 ## Large Reasoning Model Agents Ecosystem
 
-**Midori AI Agents Packages** is a comprehensive Python ecosystem for building Large Reasoning Model (LRM) agent systems. This modular collection provides everything needed to create sophisticated LRM agents with memory, reasoning, emotion, and security capabilities.
+**Midori AI Agents Packages** is a Python package collection for building Large Reasoning Model (LRM) agent systems. It includes reusable components for memory, reasoning, emotion, and security.
 
 Built with a protocol-based architecture, the packages offer interchangeable backends, encrypted media handling, sophisticated mood systems, and advanced context management—all designed to work together seamlessly while remaining independently usable.
 

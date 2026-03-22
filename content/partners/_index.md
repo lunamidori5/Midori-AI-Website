@@ -3,4 +3,4 @@ disableToc = false
 title = "Partners"
 +++
 
-Here are all of the Partners or Friends of Midori AI!
+Here are the partners and friends of Midori AI.

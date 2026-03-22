@@ -74,14 +74,6 @@ uv --version
 ```
 
 {{% /tab %}}
-{{% tab title="macOS" %}}
-
-```bash
-# TODO: install uv (recommended method)
-# TODO: verify with: uv --version
-```
-
-{{% /tab %}}
 {{< /tabs >}}
 
 ## Common Commands

@@ -101,15 +101,5 @@ docker run --rm lunamidori5/pixelarch:emerald /bin/bash -lc 'echo hello world'
 ```
 
 {{% /tab %}}
-{{% tab title="macOS (Rosetta)" %}}
-
-```bash
-# TODO: install Docker Desktop
-# TODO: (Apple Silicon) install Rosetta if you need x86_64 tooling:
-# softwareupdate --install-rosetta --agree-to-license
-# TODO: verify with: docker run --rm hello-world
-```
-
-{{% /tab %}}
 {{< /tabs >}}
 

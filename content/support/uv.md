@@ -68,9 +68,30 @@ uv --version
 {{% /tab %}}
 {{% tab title="openSUSE" %}}
 
+### openSUSE Tumbleweed
+
 ```bash
-# TODO: install uv (recommended method)
-# TODO: verify with: uv --version
+# Install uv.
+sudo zypper install -y uv
+
+# Test it out!
+uv --version
+```
+
+### openSUSE Leap
+
+```bash
+# Install prerequisites for the official installer.
+sudo zypper install -y curl ca-certificates tar gzip
+
+# Install uv.
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Load uv in this shell session.
+export PATH="$HOME/.local/bin:$PATH"
+
+# Test it out!
+uv --version
 ```
 
 {{% /tab %}}

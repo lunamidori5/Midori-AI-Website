@@ -27,9 +27,29 @@ uv --version
 {{% /tab %}}
 {{% tab title="Fedora/RHEL" %}}
 
+### Fedora
+
 ```bash
-# TODO: install uv (recommended method)
-# TODO: verify with: uv --version
+# Install uv.
+sudo dnf install -y uv
+
+# Test it out!
+uv --version
+```
+
+### RHEL
+
+```bash
+# Install uv with the official installer.
+command -v curl >/dev/null || sudo dnf install -y curl-minimal
+sudo dnf install -y ca-certificates
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Load uv in this shell session.
+export PATH="$HOME/.local/bin:$PATH"
+
+# Test it out!
+uv --version
 ```
 
 {{% /tab %}}

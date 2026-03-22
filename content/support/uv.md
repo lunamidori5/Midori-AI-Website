@@ -100,13 +100,30 @@ uv --version
 ## Common Commands
 
 ```bash
-# TODO: create/sync a project environment
-# uv venv
-# uv sync
+# Create/sync a project environment.
+uv venv
+uv sync
 
-# TODO: run a project entrypoint
-# uv run <command>
+# Run a project command.
+uv run <command>
 
-# TODO: add a dependency
-# uv add <package>
+# Add a dependency.
+uv add <package>
+```
+
+## Real Repo Example
+
+```bash
+# Clone a real uv project.
+git clone https://github.com/Midori-AI-OSS/Agents-Runner
+cd Agents-Runner
+
+# Install dependencies from the project.
+uv sync
+
+# Run a quick command in the project environment.
+uv run python -V
+
+# Project quick start (requires Docker + ffmpeg).
+uv run main.py
 ```

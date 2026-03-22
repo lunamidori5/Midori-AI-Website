@@ -11,9 +11,17 @@ weight = 2
 {{< tabs >}}
 {{% tab title="Ubuntu/Debian" %}}
 
+[uv Installation](https://docs.astral.sh/uv/getting-started/installation/)
+
 ```bash
-# TODO: install uv (recommended method)
-# TODO: verify with: uv --version
+# Install uv!
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Load uv in this shell session.
+. "$HOME/.local/bin/env"
+
+# Test it out!
+uv --version
 ```
 
 {{% /tab %}}
@@ -64,4 +72,3 @@ weight = 2
 # TODO: add a dependency
 # uv add <package>
 ```
-

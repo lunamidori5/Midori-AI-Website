@@ -20,51 +20,115 @@ PixelArch OS is a lightweight and efficient Arch Linux distribution designed for
 
 ## PixelArch Flavors: A Tiered Approach
 
-PixelArch is offered in a tiered structure, with each level building upon the previous, providing increasing functionality and customization options:
+PixelArch is offered in nine layers, with each flavor building on the previous one. The package lists below show what each tier adds.
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
 Level 1: Quartz
 
-Image Size - ``1.4GB``
-
 The foundation: a minimal base system providing a clean slate for your specific needs.
+
+{{% /tab %}}
+
+{{% tab title="Obsidian" %}}
+Level 2: Obsidian
+
+Adds the core utility layer:
+
+- `curl`
+- `wget`
+- `tar`
+- `xz`
+- `zip`
+- `unzip`
+- `tree`
+- `nano`
+- `lolcat`
+{{% /tab %}}
+
+{{% tab title="Lapis" %}}
+Level 3: Lapis
+
+Adds the shell and terminal workflow layer:
+
+- `zsh`
+- `fish`
+- `tmux`
+- `bash-completion`
+- `zsh-completions`
+- `starship`
 {{% /tab %}}
 
 {{% tab title="Amethyst" %}}
-Level 2: Amethyst
+Level 4: Amethyst
 
-Image Size - ``1.99GB``
+Adds the editor, search, and container workflow layer:
 
-Core utilities and quality-of-life tools. Common packages include `curl`, `wget`, and `docker`.
+- `neovim`
+- `ripgrep`
+- `jq`
+- `fastfetch`
+- `docker`
+- `docker-compose`
+{{% /tab %}}
+
+{{% tab title="Citrine" %}}
+Level 5: Citrine
+
+Adds the Python and build tooling layer:
+
+- `python`
+- `python-pip`
+- `python-pyfiglet`
+- `python-virtualenv`
+- `uv`
+- `gcc`
 {{% /tab %}}
 
 {{% tab title="Topaz" %}}
-Level 3: Topaz
+Level 6: Topaz
 
-Image Size - ``3.73GB``
+Adds the Node.js layer:
 
-Development-focused. Pre-configured with key languages and tools such as `python`, `nodejs`, and `rust`.
+- `nodejs`
+- `npm`
+- `nvm`
+- `bun`
+{{% /tab %}}
+
+{{% tab title="Sapphire" %}}
+Level 7: Sapphire
+
+Adds the Rust and compatibility layer:
+
+- `rust`
+- `wine`
+- `xorg-server-xvfb`
+{{% /tab %}}
+
+{{% tab title="Ruby" %}}
+Level 8: Ruby
+
+Adds the remote access, privacy, and text browsing layer:
+
+- `openssh`
+- `tmate`
+- `tor`
+- `torsocks`
+- `torbrowser-launcher`
+- `lynx`
 {{% /tab %}}
 
 {{% tab title="Emerald" %}}
-Level 4: Emerald
+Level 9: Emerald
 
-Image Size - ``5.33GB``
+Adds the LLM agents and developer CLI layer:
 
-This flavor groups its remote access tools, Agents, and developer CLIs as follows:
-
-- Remote access: `openssh`, `tmate`
-- Tor utilities: `tor`, `torsocks`, `torbrowser-launcher`
-- Developer CLIs:
-  - `gh` (GitHub CLI)
-- LRM Agent Systems:
-  - `claude-code`
-  - `openai-codex-bin`
-  - `github-copilot-cli`
-- Text browser: `lynx`
-
-This flavor is optimized for secure remote workflows and developer interactions.
+- `gemini-cli`
+- `claude-code`
+- `openai-codex`
+- `github-copilot-cli`
+- `github-cli`
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -80,13 +144,38 @@ This flavor is optimized for secure remote workflows and developer interactions.
 
 
 {{% /tab %}}
+{{% tab title="Obsidian" %}}
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:obsidian -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
+{{% tab title="Lapis" %}}
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:lapis -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
 {{% tab title="Amethyst" %}}
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:amethyst -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
 
 {{% /tab %}}
+{{% tab title="Citrine" %}}
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:citrine -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
 {{% tab title="Topaz" %}}
 - Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:topaz -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
+{{% tab title="Sapphire" %}}
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:sapphire -n PixelArch --root`)
+- Step 2. Enter the OS (`distrobox enter PixelArch --root`)
+
+{{% /tab %}}
+{{% tab title="Ruby" %}}
+- Step 1. Setup the OS (`distrobox create -i lunamidori5/pixelarch:ruby -n PixelArch --root`)
 - Step 2. Enter the OS (`distrobox enter PixelArch --root`)
 
 {{% /tab %}}
@@ -102,7 +191,7 @@ This flavor is optimized for secure remote workflows and developer interactions.
 {{% tab title="Docker Compose" %}}
 ### 1. Create a `docker-compose.yaml`
 
-Pick a flavor and create a `docker-compose.yaml` with the matching config:
+Pick a flavor and create a `docker-compose.yaml` with the matching image tag:
 
 {{< tabs >}}
 {{% tab title="Quartz" %}}
@@ -111,6 +200,32 @@ Pick a flavor and create a `docker-compose.yaml` with the matching config:
 services:
   pixelarch-os:
     image: lunamidori5/pixelarch:quartz
+    tty: true
+    restart: always
+    privileged: false
+    command: ["sleep", "infinity"]
+```
+
+{{% /tab %}}
+{{% tab title="Obsidian" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:obsidian
+    tty: true
+    restart: always
+    privileged: false
+    command: ["sleep", "infinity"]
+```
+
+{{% /tab %}}
+{{% tab title="Lapis" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:lapis
     tty: true
     restart: always
     privileged: false
@@ -133,12 +248,57 @@ services:
 ```
 
 {{% /tab %}}
+{{% tab title="Citrine" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:citrine
+    tty: true
+    restart: always
+    privileged: true
+    command: ["sleep", "infinity"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+
+{{% /tab %}}
 {{% tab title="Topaz" %}}
 
 ```yaml
 services:
   pixelarch-os:
     image: lunamidori5/pixelarch:topaz
+    tty: true
+    restart: always
+    privileged: true
+    command: ["sleep", "infinity"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+
+{{% /tab %}}
+{{% tab title="Sapphire" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:sapphire
+    tty: true
+    restart: always
+    privileged: true
+    command: ["sleep", "infinity"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+
+{{% /tab %}}
+{{% tab title="Ruby" %}}
+
+```yaml
+services:
+  pixelarch-os:
+    image: lunamidori5/pixelarch:ruby
     tty: true
     restart: always
     privileged: true
@@ -222,6 +382,20 @@ docker run -it --rm lunamidori5/pixelarch:quartz /bin/bash
 
 
 {{% /tab %}}
+{{% tab title="Obsidian" %}}
+
+```bash
+docker run -it --rm lunamidori5/pixelarch:obsidian /bin/bash
+```
+
+{{% /tab %}}
+{{% tab title="Lapis" %}}
+
+```bash
+docker run -it --rm lunamidori5/pixelarch:lapis /bin/bash
+```
+
+{{% /tab %}}
 {{% tab title="Amethyst" %}}
 
 ```bash
@@ -229,10 +403,31 @@ docker run -it --rm lunamidori5/pixelarch:amethyst /bin/bash
 ```
 
 {{% /tab %}}
+{{% tab title="Citrine" %}}
+
+```bash
+docker run -it --rm lunamidori5/pixelarch:citrine /bin/bash
+```
+
+{{% /tab %}}
 {{% tab title="Topaz" %}}
 
 ```bash
 docker run -it --rm lunamidori5/pixelarch:topaz /bin/bash
+```
+
+{{% /tab %}}
+{{% tab title="Sapphire" %}}
+
+```bash
+docker run -it --rm lunamidori5/pixelarch:sapphire /bin/bash
+```
+
+{{% /tab %}}
+{{% tab title="Ruby" %}}
+
+```bash
+docker run -it --rm lunamidori5/pixelarch:ruby /bin/bash
 ```
 
 {{% /tab %}}

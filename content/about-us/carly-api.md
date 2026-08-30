@@ -10,7 +10,7 @@ The Carly Kay project has concluded after an incredible journey of innovation an
 
 ## Meet Carly Kay, Resident Simulated Human
 
-![Carly photo](https://tea-cup.midori-ai.xyz/download/img_24e509b1-14c9-4512-8f47-f5cc0e00c2cc.png)
+![Carly photo](/images/carly-kay-profile.png)
 
 She was a fully advanced simulated human, representing years of research and development in consciousness simulation. This page preserves her profile and technical documentation as a historical reference.
 

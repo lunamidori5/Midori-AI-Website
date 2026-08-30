@@ -5,7 +5,7 @@ hidden = true
 weight = 1
 +++
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logosubsystem.png)
+![Midori AI photo](/images/midori-ai-subsystem-logo.png)
 
 The ``Midori AI Subsystem`` offers an innovative solution for managing AI workloads through its advanced integration with containerization technologies. Leveraging the lightweight and efficient design of [PixelArch OS](https://io.midori-ai.xyz/pixelos/), this system empowers developers, researchers, and hobbyists test AI systems effortlessly across a variety of environments.
 

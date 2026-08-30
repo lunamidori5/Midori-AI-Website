@@ -4,7 +4,7 @@ title = "Stained Glass Odyssey: Idle"
 weight = 2
 +++
 
-![stained-glass-odyssey-idle-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![stained-glass-odyssey-idle-banner](/images/midori-ai-banner.png)
 
 ## Stained Glass Odyssey: Idle
 
@@ -176,6 +176,6 @@ Save data includes:
 
 - **Monorepo:** https://github.com/Midori-AI-OSS/Midori-AI
 - **Source:** https://github.com/Midori-AI-OSS/Midori-AI/tree/master/Endless-Idler
-- **Related Game:** [Stained Glass Odyssey: Endless]({{< relref "stained-glass-odyssey-endless.md" >}}) (Web-based auto-battler)
+- **Related Game:** [Stained Glass Odyssey: Endless]({{% relref "stained-glass-odyssey-endless.md" %}}) (Web-based auto-battler)
 - **Issues:** https://github.com/Midori-AI-OSS/Midori-AI/issues
 - **Discord:** https://discord.gg/xdgCx3VyHU

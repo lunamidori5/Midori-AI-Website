@@ -101,10 +101,10 @@ other = "Lugha"
 other = "Mandhari"
 
 [Submenu]
-other = "Menyu ndogo {{.}}"
+other = "Menyu ndogo {{.title}}"
 
 [Subsections]
-other = "Vifungu vidogo vya {{.}}"
+other = "Vifungu vidogo vya {{.title}}"
 
 [tags]
 other = "Tagi"

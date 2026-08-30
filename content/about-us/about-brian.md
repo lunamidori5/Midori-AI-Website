@@ -7,7 +7,7 @@ weight = 5
 
 ## Ethics & Stewardship Council Member
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/brian_and_lyra.jpg)
+![Midori AI photo](/images/brian-boatz-and-lyra.jpg)
 
 ### A Foundation of Ethical Integrity
 

@@ -5,7 +5,7 @@ weight = 11
 aliases = ["/codex-template/"]
 +++
 
-![agents-template-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![agents-template-banner](/images/midori-ai-banner.png)
 
 ## LRM-Native Collaboration Framework
 

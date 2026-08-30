@@ -5,7 +5,7 @@ hidden = true
 weight = 1
 +++
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logosubsystem.png)
+![Midori AI photo](/images/midori-ai-subsystem-logo.png)
 
 **How Docker Works**
 

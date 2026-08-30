@@ -39,19 +39,7 @@
     <meta name="twitter:title" content="{{ $title }}">
     <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
-{{- /* Deprecate site.Social.twitter in favor of site.Params.social.twitter */}}
-{{- $twitterSite := "" }}
-{{- with site.Params.social.twitter }}
-  {{- $twitterSite = . }}
-{{- else }}
-  {{- with site.Social.twitter }}
-    {{- $twitterSite = . }}
-    {{- $hugoVersion := "0.120.0" }}
-    {{- if ge hugo.Version $hugoVersion }}
-      {{- warnf "The social key in site configuration is deprecated. Use params.social.twitter instead." }}
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{- $twitterSite := site.Params.social.twitter | default "" }}
 
 {{- with $twitterSite }}
     <meta name="twitter:site" content="@{{ . }}">

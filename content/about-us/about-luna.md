@@ -5,7 +5,7 @@ weight = 2
 +++
 
 ## Founding Engineer & Project Steward
-![Luna Midori photo](https://tea-cup.midori-ai.xyz/download/lunamidoriphoto.png)
+![Luna Midori photo](/images/luna-midori-profile.png)
 
 Riley Midori *(They/Them)* (IRL) — Luna Midori *(She/Her)* (Online)
 

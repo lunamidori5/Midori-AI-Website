@@ -101,10 +101,10 @@ other = "Kieli"
 other = "Teema"
 
 [Submenu]
-other = "Alavalikko {{.}}"
+other = "Alavalikko {{.title}}"
 
 [Subsections]
-other = "Osa {{.}}"
+other = "Osa {{.title}}"
 
 [tags]
 other = "Tunnisteet"

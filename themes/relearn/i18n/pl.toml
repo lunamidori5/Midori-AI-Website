@@ -101,10 +101,10 @@ other = "Język"
 other = "Kompozycja"
 
 [Submenu]
-other = "Podmenu {{.}}"
+other = "Podmenu {{.title}}"
 
 [Subsections]
-other = "Podsekcje z {{.}}"
+other = "Podsekcje z {{.title}}"
 
 [tags]
 other = "Tagi"

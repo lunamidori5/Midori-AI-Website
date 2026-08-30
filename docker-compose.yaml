@@ -4,9 +4,9 @@ services:
       context: .
       dockerfile: dockerfile
     tty: true
-    restart: always
+    restart: unless-stopped
     ports:
       - 32767:1313
     volumes:
-      - ./:/src
+      - ./:/project
     command: server --bind 0.0.0.0

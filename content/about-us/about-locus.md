@@ -6,7 +6,7 @@ weight = 3
 
 ## Community Care & Moderation Lead
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/newbombphoto.jpeg)
+![Midori AI photo](/images/newbomb-dog-photo.jpeg)
 
 Heyo! I'm Locus, a moderator here at Midori AI. My specialties are dumb jokes and helping keep the Midori AI community as positive and encouraging as can be! 
 

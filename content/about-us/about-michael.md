@@ -6,7 +6,7 @@ weight = 5
 
 ## Conceptual Architect & Ethics Council Member
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/creative_writing_gig_profile.png)
+![Midori AI photo](/images/michael-profile.png)
 
 Hi, I’m Michael. As a conceptual systems architect and cognitive modeller at Midori AI, I approach the design of artificial intelligence with curiosity, clarity, and a drive for collaborative progress. I believe meaningful innovation grows from honest teamwork and a willingness to rethink assumptions. My work is grounded in setting clear goals, structured reasoning, and a commitment to open dialogue.
 

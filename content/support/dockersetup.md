@@ -4,7 +4,7 @@ title = "Docker Setup"
 weight = 1
 +++
 
-![docker-setup-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![docker-setup-banner](/images/midori-ai-banner.png)
 
 ## Setup
 

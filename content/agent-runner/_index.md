@@ -4,7 +4,7 @@ title = "Agents Runner"
 weight = 10
 +++
 
-![agent-runner-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![agent-runner-banner](/images/midori-ai-banner.png)
 
 ## Agents Runner: A GUI for AI Coding Agents
 

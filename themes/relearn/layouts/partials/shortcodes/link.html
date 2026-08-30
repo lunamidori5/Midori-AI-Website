@@ -34,8 +34,8 @@
     {{- else }}
       {{- /* is it a link into another translation? */}}
       {{- if strings.HasPrefix $path "/" }}
-        {{- range $page.Sites }}
-          {{- $lang := .Language.Lang }}
+        {{- range hugo.Sites }}
+          {{- $lang := .Language.Name }}
           {{- $prefix := printf "/%s" $lang }}
           {{- $suffix := strings.TrimPrefix $prefix $path | default "/" }}
           {{- if and (strings.HasPrefix $path $prefix) (strings.HasPrefix $suffix "/") }}

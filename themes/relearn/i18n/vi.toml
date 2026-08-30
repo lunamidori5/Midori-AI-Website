@@ -104,10 +104,10 @@ other = "Ngôn ngữ"
 other = "Đề tài"
 
 [Submenu]
-other = "Menu con {{.}}"
+other = "Menu con {{.title}}"
 
 [Subsections]
-other = "Tiểu mục của {{.}}"
+other = "Tiểu mục của {{.title}}"
 
 [tags]
 other = "Thẻ"

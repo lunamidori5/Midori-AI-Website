@@ -5,13 +5,13 @@
 {{- if eq $outputFormat "searchpage" }}
   {{- $basename = partial "BaseName.hugo" $format.RelPermalink }}
 {{- end }}
-{{- if eq . .Site.Sites.First.Home }}
+{{- if eq . hugo.Sites.Default.Home }}
   {{- $hugoVersion := "0.112.4" }}
   {{- if lt hugo.Version $hugoVersion }}
     {{- errorf "The Relearn theme requires Hugo %s or later" $hugoVersion }}
   {{- end }}
 {{- end }}
-<html lang="{{ .Page.Language.LanguageCode | default "en" }}" dir="{{ .Page.Language.LanguageDirection | default (T "Reading-direction") | default "ltr" }}">
+<html lang="{{ .Page.Language.Locale | default "en" }}" dir="{{ .Page.Language.Direction | default (T "Reading-direction") | default "ltr" }}">
   <head>
     {{- partial "meta.html" . }}
     {{- $page := . }}
@@ -39,7 +39,7 @@
         {{- if eq $index 0 }}
     <link href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true "basename" $basename) }}" rel="alternate" hreflang="x-default">
         {{- end }}
-    <link href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true "basename" $basename) }}" rel="alternate" hreflang="{{ .Language.LanguageCode }}">
+    <link href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true "basename" $basename) }}" rel="alternate" hreflang="{{ .Language.Locale }}">
       {{- end }}
     {{- end }}
 

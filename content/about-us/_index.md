@@ -4,7 +4,7 @@ title = "About"
 weight = 1
 +++
 
-![Midori AI photo](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![Midori AI photo](/images/midori-ai-banner.png)
 
 Meet the people and projects behind Midori AI, and get a quick feel for the work, values, and personalities that shape our community.
 

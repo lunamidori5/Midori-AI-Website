@@ -5,7 +5,7 @@ hidden = true
 weight = 8
 +++
 
-![command_line_tools_banner_photo](https://tea-cup.midori-ai.xyz/download/command_line_tools_banner_photo.png)
+![command_line_tools_banner_photo](/images/midori-ai-cli-banner.png)
 
 {{% notice  style="warning" title="Notice" %}}
 **SUNSET NOTICE**: The Midori AI CLI tools are being sunset and will be removed on January 1st, 2026 in favor of our new Python packages. Please plan to migrate to our new Python-based tools.

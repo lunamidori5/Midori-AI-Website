@@ -4,7 +4,7 @@ title = "PixelArch OS"
 weight = 1
 +++
 
-![pixelarch-logo](https://tea-cup.midori-ai.xyz/download/pixalarch-banner.png)
+![pixelarch-logo](/images/pixelarch-banner.png)
 
 ## PixelArch OS: A Docker-Optimized Arch Linux Distribution
 

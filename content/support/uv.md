@@ -4,7 +4,7 @@ title = "UV (Python)"
 weight = 2
 +++
 
-![uv-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![uv-banner](/images/midori-ai-banner.png)
 
 ## Setup
 

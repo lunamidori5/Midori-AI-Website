@@ -101,10 +101,10 @@ other = "اللغة"
 other = "موضوع"
 
 [Submenu]
-other = "{{.}} القائمة الفرعية"
+other = "{{.title}} القائمة الفرعية"
 
 [Subsections]
-other = "{{.}} الأقسام الفرعية"
+other = "{{.title}} الأقسام الفرعية"
 
 [tags]
 other = "الكلمات الدالة"

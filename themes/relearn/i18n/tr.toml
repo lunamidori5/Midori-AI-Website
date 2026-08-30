@@ -101,10 +101,10 @@ other = "Dil"
 other = "Tema"
 
 [Submenu]
-other = "Alt menü {{.}}"
+other = "Alt menü {{.title}}"
 
 [Subsections]
-other = "{{.}} alt bölümleri"
+other = "{{.title}} alt bölümleri"
 
 [tags]
 other = "Etiketler"

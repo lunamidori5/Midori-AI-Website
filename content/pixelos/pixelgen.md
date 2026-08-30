@@ -4,7 +4,7 @@ title = "PixelGen OS"
 weight = 2
 +++
 
-![pixelgen-logo](https://tea-cup.midori-ai.xyz/download/pixelgen-banner.png)
+![pixelgen-logo](/images/pixelgen-banner.png)
 
 ## PixelGen OS: A Docker-Optimized Gentoo Linux Distribution
 

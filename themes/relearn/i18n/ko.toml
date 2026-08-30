@@ -104,10 +104,10 @@ other = "언어"
 other = "주제"
 
 [Submenu]
-other = "하위 메뉴 {{.}}"
+other = "하위 메뉴 {{.title}}"
 
 [Subsections]
-other = "{{.}}의 하위 섹션"
+other = "{{.title}}의 하위 섹션"
 
 [tags]
 other = "태그"

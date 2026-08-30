@@ -101,10 +101,10 @@ other = "语言"
 other = "主题"
 
 [Submenu]
-other = "子菜单{{.}}"
+other = "子菜单{{.title}}"
 
 [Subsections]
-other = "{{.}} 的子部分"
+other = "{{.title}} 的子部分"
 
 [tags]
 other = "标签"

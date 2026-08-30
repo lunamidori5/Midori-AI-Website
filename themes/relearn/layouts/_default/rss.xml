@@ -1,19 +1,9 @@
 {{- partialCached "page-meta.hugo" . .RelPermalink }}
-{{- /* Deprecate site.Author.email in favor of site.Params.author.email */}}
 {{- $authorEmail := "" }}
 {{- if and .Site.Params.author (reflect.IsMap .Site.Params.author) .Site.Params.author.email }}
   {{- $authorEmail = .Site.Params.author.email }}
-{{- else }}
-  {{- with .Site.Author.email }}
-    {{- $authorEmail = . }}
-    {{- $hugoVersion := "0.120.0" }}
-    {{- if ge hugo.Version $hugoVersion }}
-      {{- warnf "The author key in site configuration is deprecated. Use params.author.email instead." }}
-    {{- end }}
-  {{- end }}
 {{- end }}
 
-{{- /* Deprecate site.Author.name in favor of site.Params.author.name */}}
 {{- $authorName := partialCached "authorname.hugo" . }}
 
 {{- $pages := .Page.Pages }}
@@ -28,7 +18,7 @@
     <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ partial "relLangPrettyUglyURL.hugo" (dict "to" . "abs" true) }}</link>
     <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+    <generator>Hugo -- gohugo.io</generator>{{ with .Site.Language.Locale }}
     <language>{{ . }}</language>{{end}}{{ with $authorEmail }}
     <managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}

@@ -5,7 +5,7 @@ weight = 1
 aliases = ["/endless-autofighter/"]
 +++
 
-![autofighter-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![autofighter-banner](/images/midori-ai-banner.png)
 
 ## Stained Glass Odyssey: Endless
 

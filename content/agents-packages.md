@@ -4,7 +4,7 @@ title = "Agents Packages"
 weight = 10
 +++
 
-![agents-packages-banner](https://tea-cup.midori-ai.xyz/download/logo_color1.png)
+![agents-packages-banner](/images/midori-ai-banner.png)
 
 ## Large Reasoning Model Agents Ecosystem
 
@@ -369,7 +369,7 @@ The Midori AI Agents Packages ecosystem powers **Carly-AGI**, a sophisticated Di
 - Vector-based context retrieval
 - Time-based memory decay
 
-See the [Carly-AGI project]({{< relref "about-us/carly-api.md" >}}) for a production implementation.
+See the [Carly-AGI project]({{% relref "about-us/carly-api.md" %}}) for a production implementation.
 
 ## Documentation
 

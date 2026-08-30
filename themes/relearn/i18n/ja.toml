@@ -101,10 +101,10 @@ other = "言語"
 other = "テーマ"
 
 [Submenu]
-other = "サブメニュー {{.}}"
+other = "サブメニュー {{.title}}"
 
 [Subsections]
-other = "{{.}}のサブセクション"
+other = "{{.title}}のサブセクション"
 
 [tags]
 other = "タグ"

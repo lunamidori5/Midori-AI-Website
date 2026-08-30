@@ -101,10 +101,10 @@ other = "Taal"
 other = "Thema"
 
 [Submenu]
-other = "Submenu {{.}}"
+other = "Submenu {{.title}}"
 
 [Subsections]
-other = "Subsecties van {{.}}"
+other = "Subsecties van {{.title}}"
 
 [tags]
 other = "Tags"

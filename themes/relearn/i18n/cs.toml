@@ -101,10 +101,10 @@ other = "Jazyk"
 other = "Motiv"
 
 [Submenu]
-other = "Podmenu {{.}}"
+other = "Podmenu {{.title}}"
 
 [Subsections]
-other = "Podsekce {{.}}"
+other = "Podsekce {{.title}}"
 
 [tags]
 other = "Klíčová Slova"

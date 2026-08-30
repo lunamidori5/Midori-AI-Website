@@ -7,7 +7,7 @@
   {{- template "section-print" dict "sect" . "currentnode" $currentNode "outputFormat" $outputFormat }}
   {{- if $pages }}
           <section>
-            <h1 class="a11y-only">{{ T "Subsections" .Title }}</h1>
+            <h1 class="a11y-only">{{ T "Subsections" (dict "title" .Title) }}</h1>
   {{- end }}
   {{- range $pages }}
     {{- template "section-tree-print" dict "sect" . "currentnode" $currentNode "outputFormat" $outputFormat }}
@@ -31,7 +31,7 @@
       {{- template "section-print" dict "sect" . "currentnode" $currentNode "outputFormat" $outputFormat }}
       {{- if $pages }}
           <section>
-            <h1 class="a11y-only">{{ T "Subsections" .Title }}</h1>
+            <h1 class="a11y-only">{{ T "Subsections" (dict "title" .Title) }}</h1>
       {{- end }}
       {{- range $pages }}
         {{- template "section-tree-print" dict "sect" . "currentnode" $currentNode "outputFormat" $outputFormat }}

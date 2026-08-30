@@ -101,10 +101,10 @@ other = "Nyelv"
 other = "Téma"
 
 [Submenu]
-other = "{{.}} almenü"
+other = "{{.title}} almenü"
 
 [Subsections]
-other = "{{.}} alszekciói"
+other = "{{.title}} alszekciói"
 
 [tags]
 other = "Címkék"

@@ -79,7 +79,6 @@ Adds the Python and build tooling layer:
 
 - `python`
 - `python-pip`
-- `python-pyfiglet`
 - `python-virtualenv`
 - `uv`
 - `gcc`

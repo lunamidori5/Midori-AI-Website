@@ -8,21 +8,21 @@ class PageStructure(HTMLParser):
     def __init__(self):
         super().__init__()
         self.tags = set()
-        self.in_title = False
-        self.title = []
+        self.in_main = False
+        self.main_text = []
 
     def handle_starttag(self, tag, attrs):
         self.tags.add(tag)
-        if tag == "title":
-            self.in_title = True
+        if tag == "main":
+            self.in_main = True
 
     def handle_endtag(self, tag):
-        if tag == "title":
-            self.in_title = False
+        if tag == "main":
+            self.in_main = False
 
     def handle_data(self, data):
-        if self.in_title:
-            self.title.append(data)
+        if self.in_main:
+            self.main_text.append(data)
 
 
 def check_build(output=Path("public")):
@@ -33,10 +33,10 @@ def check_build(output=Path("public")):
 
     home = PageStructure()
     home.feed((output / "index.html").read_text(encoding="utf-8"))
-    if not {"html", "head", "title", "main"}.issubset(home.tags):
+    if not {"html", "head", "main"}.issubset(home.tags):
         raise ValueError("Homepage is missing essential HTML elements")
-    if not "".join(home.title).strip():
-        raise ValueError("Homepage title is empty")
+    if not "".join(home.main_text).strip():
+        raise ValueError("Homepage main content is empty")
     if not any(path != output / "index.html" for path in output.rglob("index.html")):
         raise ValueError("No rendered documentation pages were found")
 

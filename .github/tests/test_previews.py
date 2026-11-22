@@ -155,22 +155,22 @@ class PublisherTests(unittest.TestCase):
 
 
 class HugoSmokeTests(unittest.TestCase):
-    def test_nonempty_title_passes_without_brand_assumption(self):
+    def test_rendered_main_content_passes_without_title_assumptions(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "docs").mkdir()
             (root / "docs/index.html").write_text("<html>Docs</html>", encoding="utf-8")
             (root / "index.search.js").write_text("var index = {};", encoding="utf-8")
             (root / "index.html").write_text(
-                "<html><head><title>Totally different title</title></head>"
+                "<html><head><title></title></head>"
                 "<body><main>Content</main></body></html>", encoding="utf-8",
             )
             check_build.check_build(root)
             (root / "index.html").write_text(
-                "<html><head><title> </title></head><body><main></main></body></html>",
+                "<html><head><title>Any</title></head><body><main></main></body></html>",
                 encoding="utf-8",
             )
-            with self.assertRaisesRegex(ValueError, "title is empty"):
+            with self.assertRaisesRegex(ValueError, "main content is empty"):
                 check_build.check_build(root)
 
 

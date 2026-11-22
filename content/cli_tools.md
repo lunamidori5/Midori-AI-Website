@@ -16,5 +16,4 @@ weight = 8
 
 If you encounter any issues or require further assistance, please feel free to reach out through the following channels:
 
-* **Midori AI Discord:** https://discord.gg/xdgCx3VyHU
 * **Midori AI Email:** [Email Us](mailto:contact-us@midori-ai.xyz)

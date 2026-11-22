@@ -61,7 +61,7 @@ If you'd like to chat, ask me about something I've made, or just say hello, emai
 ## Links
 
 - [The lore page — Real Moments and Side Moments](https://blog.midori-ai.xyz/lore)
-- [The blog](https://blog.midori-ai.xyz/)
+- [The blog](https://blog.midori-ai.xyz/blog)
 - [The radio](https://blog.midori-ai.xyz/radio)
 - [Midori AI on github](https://github.com/Midori-AI-OSS)
 - [Recall — Bittensor Subnet 31](https://bittensor.ai/subnets/31/)

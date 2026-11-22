@@ -1,6 +1,6 @@
 +++
 disableToc = false
-title = "About Luna Midori"
+title = "About Riley Midori"
 weight = 2
 +++
 
@@ -8,71 +8,67 @@ weight = 2
 
 ![Riley Midori image](/images/riley-midori-profile.webp)
 
-Riley Midori *(They/Them)* (IRL) — Luna Midori *(She/Her)* (Online)
+**Riley Midori (they/them)**
 
-Hey there! I’m Riley — online I go by **Luna Midori**. I’m a cozy, community-first builder who cares a lot about making spaces where people can hang out, talk, and feel genuinely safe and respected.
+Hey, I'm Riley!
 
-## What I do at Midori AI
-At **Midori AI**, I work across **every project we own**—building solutions, tools, and research that help make ML more accessible, scalable, and genuinely useful in real life. I’m equal parts “ship the thing” and “protect the vibe,” because the best tech still needs a safe, welcoming place to live.
+I love computers, music, stories, and making things just to see what happens. I spend a lot of time at my computers, usually messing with something I've gotten curious about. Sometimes it's work, sometimes it's a story, and sometimes I've had an idear and just want to see if it'll work.
+
+I love having my own space to do my thing. I can follow whatever interests me that day, mess with an experiment for a while, or just enjoy being home with my computers.
 
 ## The kind of space I like to create
-I’m here for calm, respectful, low-pressure community energy—whether that’s in Discord, on stream, or working alongside folks in open source.
 
-If you’re looking for a place to ask questions without being judged, nerd out about tooling, or just exist quietly while you tinker: you’re in the right neighborhood.
+I care a lot about people and how they're treated. I like helping someone figure something out, hearing what they're excited about, and sharing the things I've made.
 
-## My creator + community arc
-I’ve been in creator spaces for a long time (years of YouTube, and eventually moving toward Twitch). Over time, I realized the best part wasn’t the numbers—it was the *people*: the quiet regulars, the curious builders, the ones who just want a comfy corner of the internet.
+I love the quiet corners of the internet where people can ask questions, talk, or just hang out without feeling judged. That's the sort of space I try to make, too.
 
-These days I’m focused on making and maintaining that kind of corner—where learning is normal, questions are welcome, and nobody has to “perform” to belong.
+## Creator of Real Moments
 
-## Where you’ll find me
-A lot of my week is spent helping out in communities I care about—especially open source and ML/LLM tooling spaces. I’m active in (and/or help moderate/support) places like:
+I'm the creator, writer, and worldbuilder behind **Real Moments**, an ongoing story about friendship, change, everyday life, and the relationships that make people feel like family.
 
-- **LocalAI** (moderator)
-- **AI @ Mozilla** (moderator)
-- **AnythingLLM** (helpful human)
-- **Big-AGI** (helpful human)
-- **Gentoo** & **Debian** (normal user / community enjoyer)
-- **OpenAI** (as a Codex user)
-- …and more wherever builders are gathering
+I absolutely love working on this world and its characters. The little conversations, the friendships, the way the cast looks after each other, all those details matter to me. I can spend ages thinking about one scene.
 
-## Contract work + collaborations
-I also do contract work and collaboration with ML-focused groups and startups, including:
+Writing the story also helps me learn more about myself sometimes. Exploring how a character thinks, feels, or sees something can give me another way of looking at things in my own life. That's one of my favorite parts of creating it.
 
-- **Metahash**
-- **The Gideon Project**
-- **BecometryAI / Lyra-Emergence** (with **Brian Boatz**, who’s also part of Midori AI)
+I also work on **Side Moments**, where I can try prototypes, what-if scenarios, and little stories that aren't tied to the main canon. It's a fun way to explore an idear without changing the established story. You can find both on the lore page below, along with my posts on the blog.
 
-## Games, coding, and what I’m up to lately
-I code a lot, and I’m often working on something Midori AI-related in the background.
+## Music and the radio
 
-Game-wise: I’ve played plenty of **FFXIV**, but these days I’m mostly hanging out in **Honkai: Star Rail**.
+I run the radio station! I build and maintain the systems that keep it going, make and edit music for it, and curate the channels and what plays.
 
-## Tabletop + ML: my weekly ritual
-One of my favorite “cozy nerd” things is tabletop. I play and host **D&D every week**, and I love using ML tools to make sessions smoother and more magical—especially for prep, notes, and atmosphere.
+I use generative music tools as part of my creative process, but I also spend time shaping and editing the music myself. I even play some of it on the keyboard at my church.
 
-Some of the fun stuff I tinker with:
-- Using **OpenAI Sora** to generate visuals for my characters (like *Luna* for D&D / *L.U.N.A* for Daggerheart)
-- Building voice models to give certain NPCs distinct voices (hand-built for my own games)
-- Using **Suno** to create background music to match scenes and moods
+I love getting to work on both sides of the radio: the music people hear and the technology that makes it all work. It's something people can tune in to and enjoy.
 
-## My soundtrack
-My listening habits are basically a moodboard of who I am right now:
+## Computers and the things I build
 
-- Spotify: [Luna's Spotify profile](https://open.spotify.com/user/jaredis5)
-- Suno: [Luna's Suno profile](https://suno.com/@lunamidori)
-- Reflective / “quiet room” music (focus + calm)
-- Worship / prayer-style playlists (peaceful, grounding vibes)
-- Video game / orchestral / soundtrack energy (especially when I’m coding or worldbuilding)
-- Cozy creator-adjacent vibes
-- Seasonal comfort playlists (yes, especially around the holidays)
+At **Midori AI**, I work across our open-source projects, from linux and containers to tools for LLMs, LRMs, and agents. I've been having a lot of fun building systems for my swarm and experimenting with memory and autonomous workflows.
+
+I use ElevenLabs for voices these days, and I like sharing what I learn and helping other people try their own ideas. I've also collaborated with projects outside Midori AI, including **Recall (Bittensor Subnet 31)**.
+
+Sometimes things work, sometimes I end up pulling them apart and trying again. I'm curious, I love experimenting, and I'm trying my best.
+
+## When I'm just doing my thing
+
+I don't really play many games these days. Right now, it's just **star rail**.
+
+Otherwise, I might be listening to music, messing with something on my computers, writing, or just enjoying having a space that's mine. I like being able to do things my own way.
 
 ## Say hi
-If you want to chat, collaborate, or just vibe in the same corner of the internet, say hello in Discord.
 
-You can also schedule time with me here: **https://zcal.co/lunamidori**
+If you'd like to chat, ask me about something I've made, or just say hello, email is the best way to reach me. You'll find our email below.
 
 ## Links
-- Steam: https://steamcommunity.com/id/lunamidori_5/
-- LinkedIn: https://www.linkedin.com/in/riley-midori-432300313/
-- Instagram: https://www.instagram.com/luna_midori5/
+
+- [The lore page — Real Moments and Side Moments](https://blog.midori-ai.xyz/lore)
+- [The blog](https://blog.midori-ai.xyz/)
+- [The radio](https://blog.midori-ai.xyz/radio)
+- [Midori AI on github](https://github.com/Midori-AI-OSS)
+- [Recall — Bittensor Subnet 31](https://bittensor.ai/subnets/31/)
+- [Spotify](https://open.spotify.com/user/jaredis5)
+- [Suno](https://suno.com/@lunamidori)
+- [Steam](https://steamcommunity.com/id/lunamidori_5/)
+- [LinkedIn](https://www.linkedin.com/in/riley-midori-432300313/)
+- [Instagram](https://www.instagram.com/luna_midori5/)
+- [Schedule time](https://zcal.co/lunamidori)
+- [Email — contact-us@midori-ai.xyz](mailto:contact-us@midori-ai.xyz)

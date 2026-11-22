@@ -209,5 +209,4 @@ This ensures:
 
 - **GitHub Repository**: [Midori-AI-OSS/agents_template](https://github.com/Midori-AI-OSS/agents_template)
 - **Documentation**: Comprehensive guides included in template
-- **Community Support**: [Join our Discord](https://discord.gg/xdgCx3VyHU)
 - **Email**: [contact@midori-ai.xyz](mailto:contact@midori-ai.xyz)

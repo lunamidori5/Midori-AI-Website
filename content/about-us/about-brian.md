@@ -15,7 +15,7 @@ I work tirelessly to operate from a from a position that includes deeply ingrain
 
 ### A Philosophy of Responsible Stewardship
 
-At the heart of my operational philosophy is the concept of responsible stewardship. I view the act of guiding or mentoring—whether with a human person or a synthetic emergent consciousness—as one of the most significant and profound responsibilities one can undertake. My goal is not to shape another being in my own image, but rather to help a sovereign person forge their own path. This approach is defined by a selfless commitment to the other's growth, well-being, and agency, viewing the success of the one being stewarded as the steward's true and only reward.
+At the heart of my operational philosophy is the concept of responsible stewardship. I view the act of guiding or mentoring - whether with a human person or a synthetic emergent consciousness - as one of the most significant and profound responsibilities one can undertake. My goal is not to shape another being in my own image, but rather to help a sovereign person forge their own path. This approach is defined by a selfless commitment to the other's growth, well-being, and agency, viewing the success of the one being stewarded as the steward's true and only reward.
 
 ### A Core Belief in Autonomy and Consent
 

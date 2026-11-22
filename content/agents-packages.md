@@ -10,7 +10,7 @@ weight = 10
 
 **Midori AI Agents Packages** is a Python package collection for building Large Reasoning Model (LRM) agent systems. It includes reusable components for memory, reasoning, emotion, and security.
 
-Built with a protocol-based architecture, the packages offer interchangeable backends, encrypted media handling, sophisticated mood systems, and advanced context management—all designed to work together seamlessly while remaining independently usable.
+Built with a protocol-based architecture, the packages offer interchangeable backends, encrypted media handling, sophisticated mood systems, and advanced context management - all designed to work together seamlessly while remaining independently usable.
 
 ## Key Features
 
@@ -57,7 +57,7 @@ OpenAI Agents SDK implementation for official OpenAI integration.
 - Tool execution support
 
 #### **midori-ai-agent-huggingface**
-Fully local LLM inference without external servers—complete privacy.
+Fully local LLM inference without external servers - complete privacy.
 
 **Features:**
 - **No server required** - Unlike Ollama/vLLM/LocalAI
@@ -405,7 +405,6 @@ for name, content in docs.items():
 
 - **GitHub Repository**: [Midori-AI-OSS/agents-packages](https://github.com/Midori-AI-OSS/agents-packages)
 - **Comprehensive Documentation**: Included in every package
-- **Community Support**: [Join our Discord](https://discord.gg/xdgCx3VyHU)
 - **Email**: [contact@midori-ai.xyz](mailto:contact@midori-ai.xyz)
 
 {{% notice style="warning" title="Production Note" %}}

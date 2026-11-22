@@ -54,7 +54,7 @@ uv --version
 
 {{% /tab %}}
 {{% tab title="Arch Flavors" %}}
-Use your package manager—`yay`, `paru`, `pacman`, or whatever you have installed.
+Use your package manager - `yay`, `paru`, `pacman`, or whatever you have installed.
 We use `yay` in the example, but the steps are the same for all of them.
 
 ```bash

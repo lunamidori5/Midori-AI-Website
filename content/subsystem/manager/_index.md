@@ -33,7 +33,6 @@ If you encounter any issues or require further assistance, please feel free to r
 
 * **Midori AI Github:** [Github Issue](https://github.com/lunamidori5/Midori-AI/issues/new/choose)
 * **Midori AI Email:** [Email Us](mailto:contact-us@midori-ai.xyz)
-* **Midori AI Discord:** [Join our Discord server](https://discord.gg/xdgCx3VyHU)
 
 
 ## ----- Disclaimer -----

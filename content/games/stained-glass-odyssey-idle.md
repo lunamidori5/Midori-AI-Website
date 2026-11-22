@@ -8,7 +8,7 @@ weight = 2
 
 ## Stained Glass Odyssey: Idle
 
-Stained Glass Odyssey: Idle is a PySide6-based desktop idle game set in the shared Stained Glass Odyssey universe. Build your party of characters, deploy them to onsite and offsite positions, and watch them battle automatically while earning experience and progression rewards—even when you're not actively playing.
+Stained Glass Odyssey: Idle is a PySide6-based desktop idle game set in the shared Stained Glass Odyssey universe. Build your party of characters, deploy them to onsite and offsite positions, and watch them battle automatically while earning experience and progression rewards - even when you're not actively playing.
 
 The game features the same beloved characters from Stained Glass Odyssey: Endless, including Luna, Carly, Becca, and many others, each with unique damage types, stats, and abilities. Built with Python 3.13+ and a stained-glass aesthetic UI theme, the game offers a relaxing but strategic idle experience.
 
@@ -178,4 +178,3 @@ Save data includes:
 - **Source:** https://github.com/Midori-AI-OSS/Midori-AI/tree/master/Endless-Idler
 - **Related Game:** [Stained Glass Odyssey: Endless]({{% relref "stained-glass-odyssey-endless.md" %}}) (Web-based auto-battler)
 - **Issues:** https://github.com/Midori-AI-OSS/Midori-AI/issues
-- **Discord:** https://discord.gg/xdgCx3VyHU

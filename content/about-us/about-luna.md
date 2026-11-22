@@ -60,7 +60,7 @@ If you'd like to chat, ask me about something I've made, or just say hello, emai
 
 ## Links
 
-- [The lore page — Real Moments and Side Moments](https://blog.midori-ai.xyz/lore)
+- [The lore page - Real Moments and Side Moments](https://blog.midori-ai.xyz/lore)
 - [The blog](https://blog.midori-ai.xyz/blog)
 - [The radio](https://blog.midori-ai.xyz/radio)
 - [Midori AI on github](https://github.com/Midori-AI-OSS)
@@ -71,4 +71,4 @@ If you'd like to chat, ask me about something I've made, or just say hello, emai
 - [LinkedIn](https://www.linkedin.com/in/riley-midori-432300313/)
 - [Instagram](https://www.instagram.com/luna_midori5/)
 - [Schedule time](https://zcal.co/lunamidori)
-- [Email — contact-us@midori-ai.xyz](mailto:contact-us@midori-ai.xyz)
+- [Email - contact-us@midori-ai.xyz](mailto:contact-us@midori-ai.xyz)

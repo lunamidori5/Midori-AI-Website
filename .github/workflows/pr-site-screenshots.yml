@@ -33,7 +33,8 @@ jobs:
           PR_CHECKOUT_SHA: ${{ github.sha }}
         run: |
           python3 .github/scripts/capture_previews.py prepare
-          if python3 -c 'import json,sys; sys.exit(not bool(json.load(open("pr-preview/manifest.json"))["pages"]))'; then
+          count=$(python3 -c 'import json; print(len(json.load(open("pr-preview/manifest.json"))["pages"]))')
+          if [ "$count" -gt 0 ]; then
             echo "has_pages=true" >> "$GITHUB_OUTPUT"
           else
             echo "has_pages=false" >> "$GITHUB_OUTPUT"

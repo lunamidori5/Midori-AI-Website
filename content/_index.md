@@ -24,7 +24,7 @@ Welcome to Midori AI — we love helping people build, break, and tinker with ma
 - **OS for ML Development:** deploy larger experiments in reproducible, container-first environments.
 - **Memory & Retrieval Research:** improving external memory and long-term learning for models.
 - **Tailored ML Support**
-  - Hands-on help for setup, tooling, and workflows. Schedule with Luna: https://zcal.co/lunamidori
+  - Hands-on help for setup, tooling, and workflows. Schedule with Riley: https://zcal.co/lunamidori
   - **VMs for Students:** free virtual machines for high-school students to learn programming, machine learning, and systems work in a safe environment.
   - **Community Hangouts:** regular Discord hangouts for tutorials, office hours, project help, and informal collaboration — join our community to learn together.
   - **Safe Research / Hosting Environment:** hosted support for larger, ground-breaking projects (for example, Carly, and The Gideon Project) while keeping work open and reproducible so the world can see the process used by us and our partners.
@@ -40,7 +40,7 @@ Linux offers superior privacy, customizability, and support for open-source soft
 
 Midori AI is committed to creating a safe and empowering space for users to explore, learn, and create with ML, while respecting their freedom and time.
 
-Should you encounter any challenges or require assistance with the transition process, please reach out to [Luna Midori](https://zcal.co/lunamidori/move-to-linux). Luna is available to provide guidance and support to help ensure a smooth and successful migration to Linux.
+Should you encounter any challenges or require assistance with the transition process, please reach out to [Riley Midori](https://zcal.co/lunamidori/move-to-linux). Riley is available to provide guidance and support to help ensure a smooth and successful migration to Linux.
 
 *Please note that while we are happy to assist with the transition to Linux, we will not provide any support for Microsoft Windows systems.*
 {{% /notice %}}

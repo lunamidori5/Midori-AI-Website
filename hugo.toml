@@ -43,7 +43,7 @@ disableHugoGeneratorInject = false
 
 [params]
   description = "Documentation for Midori-AI"
-  author = { name = "Luna Midori" }
+  author = { name = "Riley Midori" }
   showVisitedLinks = false
   collapsibleMenu = true
   disableBreadcrumb = false

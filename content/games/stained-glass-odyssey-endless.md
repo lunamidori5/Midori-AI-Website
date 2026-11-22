@@ -61,7 +61,7 @@ docker compose up --build frontend backend
 Open your browser to `http://YOUR_SYSTEM_IP:59001`.
 
 
-## Deep Dive — Systems & Mechanics
+## Deep Dive - Systems & Mechanics
 
 ### Combat details
 - Foes scale by floor, room pressure, and loop count. Each defeated foe temporarily boosts the run's `rdr` by +55% for the remainder of the battle, increasing relic and gold expectations.
@@ -102,7 +102,6 @@ Screenshots used in docs live in `.codex/screenshots/`.
 
 - Repository root: https://github.com/Midori-AI-OSS/Midori-AI/tree/master/Endless-Autofighter
 - Issues: https://github.com/Midori-AI-OSS/Midori-AI/issues
-- Discord: https://discord.gg/xdgCx3VyHU
 
 ---
 

@@ -126,4 +126,3 @@ agents_runner/
 
 - **Repository:** https://github.com/Midori-AI-OSS/Agents-Runner
 - **Issues:** https://github.com/Midori-AI-OSS/Agents-Runner/issues
-- **Discord:** https://discord.gg/xdgCx3VyHU

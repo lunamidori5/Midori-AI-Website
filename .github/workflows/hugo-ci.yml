@@ -1,0 +1,42 @@
+name: Hugo CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Workflow, YAML, and Python lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v10.4.0
+        with:
+          version: latest-known
+      - name: YAML lint
+        run: uvx --from yamllint==1.37.1 yamllint --strict -c .yamllint.yml .github/workflows
+      - name: Python lint
+        run: uvx --from ruff==0.14.6 ruff check .github/scripts
+      - name: GitHub Actions lint
+        run: docker run --rm -v "$PWD:/repo" -w /repo rhysd/actionlint:1.7.12
+
+  hugo:
+    name: Build and smoke test Hugo
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.170.1'
+      - name: Hugo production build
+        run: hugo --minify --gc --cleanDestinationDir
+      - name: Check generated pages and search index
+        run: python3 .github/scripts/check_build.py

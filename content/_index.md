@@ -4,18 +4,18 @@ archetype = "home"
 
 ![Midori AI photo](/images/midori-ai-banner.png)
 
-Welcome to Midori AI — we love helping people build, break, and tinker with machine learning. This is a friendly, experimental space for makers, learners, and teams to explore practical tools, try bold ideas, and ship imperfect prototypes. Come mess with models, experiment loudly, and learn together — we’ll help you every step of the way.
+Welcome to Midori AI - we love helping people build, break, and tinker with machine learning. This is a friendly, experimental space for makers, learners, and teams to explore practical tools, try bold ideas, and ship imperfect prototypes. Come mess with models, experiment loudly, and learn together - we’ll help you every step of the way.
 
 ---
 
 ## Projects
 
-- **Midori AI Monorepo** — central source for our projects and tooling. GitHub: https://github.com/Midori-AI-OSS/Midori-AI
-- **Pixel OS** — container-first Linux distributions for Docker and ML workloads (PixelArch + PixelGen). Learn more: [Pixel OS]({{% relref "pixelos/_index.md" %}})
-- **Games** — Stained Glass Odyssey series (Endless + Idle). Learn more: [Games]({{% relref "games/_index.md" %}})
-- **Agents Runner** — run AI agents in Docker with workspace + GitHub management. Learn more: [Agents Runner]({{% relref "agent-runner/_index.md" %}})
-- **Carly** — an advanced conversational research project. Learn more: [Carly]({{% relref "about-us/carly-api.md" %}})
-- **Blog** — weekly updates and deep dives into our projects and research. Visit: https://blog.midori-ai.xyz/
+- **Midori AI Monorepo** - central source for our projects and tooling. GitHub: https://github.com/Midori-AI-OSS/Midori-AI
+- **Pixel OS** - container-first Linux distributions for Docker and ML workloads (PixelArch + PixelGen). Learn more: [Pixel OS]({{% relref "pixelos/_index.md" %}})
+- **Games** - Stained Glass Odyssey series (Endless + Idle). Learn more: [Games]({{% relref "games/_index.md" %}})
+- **Agents Runner** - run AI agents in Docker with workspace + GitHub management. Learn more: [Agents Runner]({{% relref "agent-runner/_index.md" %}})
+- **Carly** - an advanced conversational research project. Learn more: [Carly]({{% relref "about-us/carly-api.md" %}})
+- **Blog** - weekly updates and deep dives into our projects and research. Visit: https://blog.midori-ai.xyz/blog
 
 ---
 
@@ -26,7 +26,6 @@ Welcome to Midori AI — we love helping people build, break, and tinker with ma
 - **Tailored ML Support**
   - Hands-on help for setup, tooling, and workflows. Schedule with Riley: https://zcal.co/lunamidori
   - **VMs for Students:** free virtual machines for high-school students to learn programming, machine learning, and systems work in a safe environment.
-  - **Community Hangouts:** regular Discord hangouts for tutorials, office hours, project help, and informal collaboration — join our community to learn together.
   - **Safe Research / Hosting Environment:** hosted support for larger, ground-breaking projects (for example, Carly, and The Gideon Project) while keeping work open and reproducible so the world can see the process used by us and our partners.
 
 ---
@@ -51,7 +50,7 @@ Should you encounter any challenges or require assistance with the transition pr
 
 |Check|Us|Out|
 |---|---|---|
-| [Discord](https://discord.gg/xdgCx3VyHU) | [Twitch](https://www.twitch.tv/luna_midori5) | [YouTube](https://www.youtube.com/channel/UCVQo4TxFJEoE5kccScY-xow) |
+| [GitHub](https://github.com/Midori-AI-OSS) | [Twitch](https://www.twitch.tv/luna_midori5) | [YouTube](https://www.youtube.com/channel/UCVQo4TxFJEoE5kccScY-xow) |
 | [Facebook](https://www.facebook.com/TWLunagreen) | [Twitter](https://twitter.com/lunamidori5) | [Pinterest](https://www.pinterest.com/luna_midori5/) |
 | | [PayPal](https://paypal.me/midoricookieclub?country.x=US&locale.x=en_US) | [Email Us](mailto:contact-us@midori-ai.xyz) |
 

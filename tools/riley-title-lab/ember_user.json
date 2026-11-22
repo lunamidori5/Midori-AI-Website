@@ -1,0 +1,33 @@
+{
+  "schema": "io.riley-title-lab.v1",
+  "title": "Riley Midori",
+  "paletteName": "Ember",
+  "stops": [
+    {"at": 0, "color": "#ffefb6"},
+    {"at": 0.17, "color": "#ffc16b"},
+    {"at": 0.37, "color": "#f27e82"},
+    {"at": 0.6, "color": "#d38cff"},
+    {"at": 0.81, "color": "#e89ebb"},
+    {"at": 1, "color": "#ffead5"}
+  ],
+  "geometry": {"x": 0.5, "y": 0.765, "scale": 1, "angle": 0},
+  "layers": {
+    "blackOffset": true,
+    "offsetX": 11,
+    "offsetY": 13,
+    "offsetColor": "#03050b",
+    "blackOpacity": 0.98,
+    "shadow": true,
+    "shadowOpacity": 0.7,
+    "shadowBlur": 11,
+    "keyline": false,
+    "keylineRadius": 2,
+    "chroma": true,
+    "chromaOpacity": 0.68,
+    "glow": true,
+    "glowOpacity": 0.12,
+    "highlights": true,
+    "highlightOpacity": 0.33
+  },
+  "animation": {"mode": "lively", "duration": 8, "fps": 30, "swing": 0.3}
+}

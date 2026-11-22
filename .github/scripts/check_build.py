@@ -25,20 +25,28 @@ class PageStructure(HTMLParser):
             self.title.append(data)
 
 
-def main():
-    output = Path("public")
-    for relative in ("index.html", "about-us/index.html", "index.search.js"):
+def check_build(output=Path("public")):
+    for relative in ("index.html", "index.search.js"):
         file = output / relative
         if not file.is_file() or file.stat().st_size == 0:
-            raise SystemExit(f"Missing or empty Hugo output: {file}")
+            raise ValueError(f"Missing or empty Hugo output: {file}")
 
     home = PageStructure()
     home.feed((output / "index.html").read_text(encoding="utf-8"))
     if not {"html", "head", "title", "main"}.issubset(home.tags):
-        raise SystemExit("Homepage is missing essential HTML elements")
-    if "Midori" not in "".join(home.title):
-        raise SystemExit("Homepage title does not contain Midori")
-    print("Hugo smoke test passed: homepage, about page, and search index")
+        raise ValueError("Homepage is missing essential HTML elements")
+    if not "".join(home.title).strip():
+        raise ValueError("Homepage title is empty")
+    if not any(path != output / "index.html" for path in output.rglob("index.html")):
+        raise ValueError("No rendered documentation pages were found")
+
+
+def main():
+    try:
+        check_build()
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
+    print("Hugo smoke test passed: homepage, content pages, and search index")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,56 @@
+name: PR site screenshots
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-site-screenshots-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  screenshots:
+    name: Desktop, mobile, and changed-page previews
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.170.1'
+      - uses: astral-sh/setup-uv@v10.4.0
+        with:
+          version: latest-known
+      - name: Install Chromium
+        run: uv run --no-project --with playwright==1.65.2 python -m playwright install --with-deps chromium
+      - name: Start local Hugo server
+        run: |
+          hugo server --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ \
+            --disableFastRender > /tmp/hugo-preview.log 2>&1 &
+          for attempt in $(seq 1 40); do
+            if curl --fail --silent --output /dev/null http://127.0.0.1:1313/; then
+              exit 0
+            fi
+            echo "Waiting for Hugo ($attempt/40)"
+            sleep 1
+          done
+          cat /tmp/hugo-preview.log
+          exit 1
+      - name: Capture three previews
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: uv run --no-project --with playwright==1.65.2 python .github/scripts/capture_previews.py
+      - name: Save screenshot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview-${{ github.event.pull_request.number }}
+          path: pr-preview/
+          if-no-files-found: error
+          retention-days: 14

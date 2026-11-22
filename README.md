@@ -4,7 +4,6 @@ This is our website! -> https://io.midori-ai.xyz/
 
 ## Get Involved:
 
-* **Join our Discord community:** https://discord.gg/xdgCx3VyHU
 * **Connect with us on Facebook:** https://www.facebook.com/TWLunagreen
 * **Follow us on Twitter:** https://twitter.com/lunamidori5
 * **Explore our Pinterest boards:** https://www.pinterest.com/luna_midori5/

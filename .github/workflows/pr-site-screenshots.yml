@@ -14,22 +14,39 @@ concurrency:
 
 jobs:
   screenshots:
-    name: Desktop, mobile, and changed-page previews
+    name: One screenshot per changed Hugo page
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.170.1'
+      - name: Identify changed published pages
+        id: pages
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_CHECKOUT_SHA: ${{ github.sha }}
+        run: |
+          python3 .github/scripts/capture_previews.py prepare
+          if python3 -c 'import json; assert json.load(open("pr-preview/manifest.json"))["pages"]'; then
+            echo "has_pages=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_pages=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: astral-sh/setup-uv@v10.4.0
+        if: steps.pages.outputs.has_pages == 'true'
         with:
           version: latest-known
       - name: Install Chromium
+        if: steps.pages.outputs.has_pages == 'true'
         run: uv run --no-project --with playwright==1.65.2 python -m playwright install --with-deps chromium
       - name: Start local Hugo server
+        if: steps.pages.outputs.has_pages == 'true'
         run: |
           hugo server --bind 127.0.0.1 --port 1313 --baseURL http://127.0.0.1:1313/ \
             --disableFastRender > /tmp/hugo-preview.log 2>&1 &
@@ -42,12 +59,10 @@ jobs:
           done
           cat /tmp/hugo-preview.log
           exit 1
-      - name: Capture three previews
-        env:
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: uv run --no-project --with playwright==1.65.2 python .github/scripts/capture_previews.py
-      - name: Save screenshot artifact
+      - name: Capture changed pages
+        if: steps.pages.outputs.has_pages == 'true'
+        run: uv run --no-project --with playwright==1.65.2 python .github/scripts/capture_previews.py capture
+      - name: Save screenshot artifact (including zero-page manifest)
         uses: actions/upload-artifact@v4
         with:
           name: site-preview-${{ github.event.pull_request.number }}

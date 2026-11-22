@@ -10,6 +10,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: pr-site-preview-publication
+  cancel-in-progress: false
+
 jobs:
   publish:
     if: >-

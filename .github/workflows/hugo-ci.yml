@@ -23,7 +23,7 @@ jobs:
       - name: YAML lint
         run: uvx --from yamllint==1.37.1 yamllint --strict -c .yamllint.yml .github/workflows
       - name: Python lint
-        run: uvx --from ruff==0.14.6 ruff check .github/scripts
+        run: uvx --from ruff==0.14.6 ruff check .github/scripts .github/tests
       - name: GitHub Actions lint
         run: docker run --rm -v "$PWD:/repo" -w /repo rhysd/actionlint:1.7.12
 
@@ -40,3 +40,5 @@ jobs:
         run: hugo --minify --gc --cleanDestinationDir
       - name: Check generated pages and search index
         run: python3 .github/scripts/check_build.py
+      - name: Run CI helper regression tests
+        run: python3 -m unittest discover -s .github/tests -v
